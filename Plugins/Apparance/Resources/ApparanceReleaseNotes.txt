@@ -1,0 +1,119 @@
+---- Release Notes
+
+---- Important:Welcome to the Apparance Plugin for Unreal
+Thankyou for using Apparance and I hope that with it you are empowered to create great things.
+
+---- Link:Please ensure you have read the set-up instructions online.
+#URL=https://apparance.uk/manual-setup.htm
+
+---- Link:Join us on the Apparance Forums for the latest info and support.
+#URL=https://forums.apparance.uk/
+
+---- Info:29/4/2024 - Version 1.2.12
+* UE 5.4 support
+* Blueprint support for List parameters (via structs/arrays)
+* Improved Blueprint function categorisation
+* Rotate operator added to UV mapping support
+* Minor instanced mesh crash fixes
+
+---- Info:11/10/2023 - Version 1.2.11
+* Replace missing Polygon and PolygonExtrude operators (new Shape based inputs)
+* Fix editor install/launch issue
+* Fix minor shutdown crash
+
+---- Info:29/9/2023 - Version 1.2.10
+* UE 5.3 support
+* Better 2D shape/hole support (with Combine, Area Filter, Frame Filter, Make shape ops)
+* Fix crash playing standalone from in-editor
+
+---- Info:17/5/2023 - Version 1.2.9
+* UE 5.2 support
+* Fix editor note persistance in many locales
+
+---- Info:1/3/2023 - Version 1.2.8
+* Vector input box interactive drag sometimes wasn't updating the view
+* Copy/paste wasn't working in some languages
+* Corrected character display in details panel (e.g. parameter names) for some languages
+* General plugin hardening (from prototype work)
+* Instanced mesh update optimisation
+* Improved mobility management
+* Instanced mesh navigation control
+* Blueprint parameter access fixes
+* Blueprint Busy flag and timeslice control
+* Blueprint float inputs now connect to standard double types properly (UE5 only)
+* RebuildApparanceEntity node Target input has default [self] behaviour so you don't have to add a self node (UE5 only)
+* RebuildApparanceEntity node was sometimes showing really long input node names when selecting procedure type.
+* Autoselected procedure type now reflected immediately on node inputs.
+* Content timeslicing and generation counters
+* Smoother/faster operation under heavy placement load
+* Plugin shutdown tidy and crash fix
+
+---- Info:18/1/2023 - Version 1.2.7
+* Internal version only, not released
+
+---- Info:24/11/2022 - Version 1.2.6
+* Fix ArcTan operator (which was actually calculating ArcCos) :/
+* Invert operator for flipping geometry side (e.g. if you want the inside of extruded shape)
+* Complex collision mesh generation support (material flag)
+* Fix incorrect slider default for RotateVDeg input
+* Allow project to force use of instanced rendering, and allow per-mesh use of instanced rendering
+* General Unreal 5.1 build compatibility fixes
+* Remove use of RerunConstructionScripts in non-editor builds
+* Fix blueprint placement in cooked builds (persist BP generated class, not the blueprint itself)
+* For custom builds that support it we can fix UV distortion issues on long/thin polys by switching UPMC to high precision UVs
+* Translate/Rotate/Scale/Move geometry operators now transform placed objects too
+* Copy operator (same semantics as Move, but copies, including objects)
+* Performance optims: Disable overlap update during component creation/setup. Don't create proc geom/collision components if not needed (also warning spam)
+* Standalone startup crash fix
+* Entity optimisations: All rebuilds now deferred to properly coalesce build requests
+* Entity improvements: ProcMeshComponent for geometry and collision only created if needed (WIP)
+* List opertors: Reverse, and path (Vector3 list) length
+* Vector normalise operator
+* Allow instanced meshes to affect navigation
+* Standalone cook fixes
+EXPERIMENTAL/WORK IN PROGRESS:
+* Image operators (can be used to modify bulk frame operations and other gen operators)
+* Spline/path/shape composition operators (line/point, arc, ellipse, rect, bezier)
+* Loft operator (basic geometry from shape moved along path)
+* Height Map operator to apply image value as mesh vertex offsets
+* Warp frames - Map frames from XY to two paths
+* New bulk frame operators: Grid, Resolve, Place, Offset, Turn, Resize, Cull.
+* New 'frame on a path' operator
+* Polygon vertex validation checks (inf/nan/den checked for and fail poly op)
+* Data operator file slots (to read multiple sources simultaneously)
+* Noise warp affects objects too
+	
+---- Info:3/8/2022 - Version 1.2.5
+* Internal version only, not released
+
+---- Info:6/4/2022 - Version 1.2.4
+* Fix placed blueprint entity sub-geometry offset
+* Fix access to non-entity BP placement parameters
+* Fix failing placement parameters Blueprint string accessor
+* Add missing accessor Blueprint functions for Frame parameters
+* Deprecated support for Unreal axis/scale in spatial parameters
+
+---- Info:23/3/2022 - Version 1.2.3
+* Procedure category and name validation prevent invalid filename crash
+* Fixed broken/crashing input metadata editing when single input selected
+* Speculative fix for missing UI elements on some machines/locales
+* Input metadata controls (e.g. on Frame) now wrap to avoid being cut off
+* Fix generation breakage when rearranging procedure outputs
+* Fix to stop parameter values in Presets always being overridded by defaults
+* Dynamic update rate limiting for parameter changes to smooth out interaction and stop lag
+* Fix for procedure saving from Unreal side not working in some UE versions
+
+---- Info:13/3/2022 - Version 1.2.2
+* UE 5.0 Preview 2 support (5.0 P1 no-longer supported)
+* Fixed Clamp operator input order mixup
+* Added an integer Clamp operator
+* Revert some recent input reordering for better UX
+
+---- Info:27/2/2022 - Version 1.2.1
+* UE 5.0 Preview 1 support (5.0EA no-longer supported)
+* Operator double-click crash fixed
+* Fix crash adding unconnected procedure output
+
+---- Info:14/2/2022 - Version 1.2.0
+The first public release of Apparance!
+Check back here on future builds to see what's new and improved.

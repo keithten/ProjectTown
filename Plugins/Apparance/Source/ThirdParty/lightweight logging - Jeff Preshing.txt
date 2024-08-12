@@ -1,0 +1,6 @@
+﻿lightweight logging
+http://preshing.com/20120522/lightweight-in-memory-logging
+Copyright © 2021 Jeff Preshing 
+Jeff Preshing (https://twitter.com/preshing)
+
+No explicit license available, publicly presented as available for general use.

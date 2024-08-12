@@ -1,0 +1,10 @@
+This directory is junctioned from the source controlled Unreal development branch here:
+	D:\Work\Dev\Branch\Unreal\ApparanceUnreal
+
+to the Unreal project workspace(s) the unreal plugin is being developed in the context of:
+	D:\Work\Clients\Apparance\UnrealWorkspace\Plugins\ApparancePlugin
+	D:\Work\Clients\Apparance\UnrealDungeons\Plugins\ApparancePlugin
+	D:\Work\Clients\Apparance\UnrealExamples\Plugins\ApparancePlugin
+
+To create such a junction use the following command line:
+	...\Plugins>mklink /J ApparanceUnreal D:\Work\Dev\Branch\Unreal\ApparanceUnreal

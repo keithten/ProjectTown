@@ -1,0 +1,6 @@
+﻿3d noise function
+http://donw.io/post/high-prec-gradient-noise/
+© Don Williamson 2016-2018 | All rights reserved
+Don Williamson (https://twitter.com/Donzanoid)
+
+No explicit license available, publicly presented as available for general use.

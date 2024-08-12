@@ -1,0 +1,44 @@
+{
+	"FileVersion": 3,
+	"Version": 10208,
+	"VersionName": "1.2.8",
+	"FriendlyName": "Apparance (Demo)",
+	"Description": "Run-time procedural generation system with rapid live authoring of rich and detailed interactive assets",
+	"Category": "Procedural",
+	"CreatedBy": "Apparance Studios Ltd",
+	"CreatedByURL": "https://www.apparance.uk",
+	"DocsURL": "https://www.apparance.uk/manual-unreal.htm",
+	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/be30505a25784e118164aee83efb06a3",
+	"SupportURL": "https://forums.apparance.uk",
+	"EngineVersion" : "5.3.0",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "ApparanceUnreal",
+			"Type": "Runtime",
+			"LoadingPhase": "PreDefault",
+			"WhitelistPlatforms": [ "Win64" ]
+		},
+		{
+			"Name": "ApparanceUnrealScripting",
+			"Type": "UncookedOnly",
+			"LoadingPhase": "PreDefault",
+			"WhitelistPlatforms": [ "Win64" ]
+		},
+		{
+			"Name": "ApparanceUnrealEditor",
+			"Type": "Editor",
+			"LoadingPhase": "PostEngineInit",
+			"WhitelistPlatforms": [ "Win64" ]
+		}
+	],
+    "Plugins":[
+    {
+      "Name": "ProceduralMeshComponent",
+      "Enabled": true
+    }
+	]
+}

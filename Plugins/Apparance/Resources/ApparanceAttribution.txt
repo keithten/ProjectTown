@@ -1,0 +1,75 @@
+---- Third-party Attribution
+Third Party Software used in the development and release of this product:
+
+---- INFO:C++ Code
+
+3d noise function 
+* by Don Williamson (https://twitter.com/Donzanoid)
+* http://donw.io/post/high-prec-gradient-noise/
+
+lightweight logging
+* Jeff Preshing (https://twitter.com/preshing)
+* http://preshing.com/20120522/lightweight-in-memory-logging
+
+Hash function
+* Robert Jenkins' 32 bit integer hash function.
+* http://web.archive.org/web/20071223173210/http://www.concentric.net/~Ttwang/tech/inthash.htm
+* Public Domain (http://web.archive.org/web/20071227193615/http://burtleburtle.net/bob/hash/doobs.html)
+
+Upptest
+* Lightweight unit test framework
+* Oli Wilkinson
+* github.com/evolutional/upptest
+* Public Domain (https://unlicense.org/)
+
+Tinyxml2
+* XML file support
+* Lee Thomason
+* www.grinninglizard.com
+* zlib license
+
+gpc
+* General Polygon Clipper Library
+* Alan Murta
+* Licensed directly
+* https://en.wikipedia.org/wiki/General_Polygon_Clipper
+
+
+---- INFO:C# Code
+
+Sharp3D Maths library
+* C# maths classes for numerics
+* Eran Kampf (http://ekampf.com)
+* http://sharp3d.codeplex.com/
+* https://github.com/treeDiM/Sharp3D.Math
+* MIT License
+
+
+---- INFO:Other
+
+DarkTheme
+* WPF XAML theme
+* (c) Copyright Microsoft Corporation.
+* Microsoft Public License (Ms-PL) https://opensource.org/licenses/MS-PL
+
+
+---- INFO:Development Tools
+
+Remotery
+* Performance profiler
+* Don Williamson
+* github.com/Celtoys
+
+MemPro
+* Memory diagnostics
+* Stewart Lynch
+* www.puredevsoftware.com
+
+FastFind
+* Lightning fast search for VS
+* Stewart Lynch
+* www.puredevsoftware.com
+
+Graphviz
+* Graph visualisation software
+* www.graphviz.org

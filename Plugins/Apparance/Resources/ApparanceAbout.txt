@@ -1,0 +1,20 @@
+---- About Apparance
+
+---- Link:Please ensure you have read the set-up instructions online.
+#Icon=Important
+#URL=https://apparance.uk/manual-setup.htm
+
+---- Info:Bringing the power of the Apparance Procedural Synthesis Engine to Unreal.
+* Node based procedures - Codify your procedural logic with ease
+* Interactive editing - Changes appear immediately as you iterate
+* Runtime generation - Procedural content is produced on demand
+* Parametric designs - Control and vary your creations in any way you want
+* Smart objects - Build hugely flexible parts for your project
+* Many uses - Build small objects, provide decoration, generate structure, or just plan layouts
+* Large operator library - Compose custom procedures from component parts
+* Procedure hierarchies - Re-use procedures throughout your design
+* Object placement - Place meshes, instances, blueprints and components
+
+---- Link:For more information visit the Apparance web-site
+#Icon=Web
+#URL=https://apparance.uk

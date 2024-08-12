@@ -1,0 +1,18 @@
+---- License and Usage
+
+---- Info:Apparance Procedural Generation Engine and Tools
+User License terms and conditions of use
+(License Version 1.1L, 13th Sept 2021)
+Copyright (c)2021 - Sam Swain, Apparance Studios Ltd
+
+* Unreal Editor and Runtime plug-in modules for 64 bit PC platform running Windows 10 or later..
+* Don't share it with anyone else.
+* Do not modify or reverse engineer.
+* Updates available via the Unreal Marketplace (or Itch.io for the Demo version)
+* Support and documentation via Apparance website and forums
+* The Runtime is available for other platforms via separate, direct licensing, please enquire.
+* I've done my best to ensure it works properly, but it's software, it may break, please be understanding and patient.
+* Be cool and we can make amazing things together.
+
+---- Link: See online Products page for more information
+#URL=https://apparance.uk/products.htm

@@ -1,0 +1,19 @@
+General Polygon Clipper Library
+Alan Murta
+https://en.wikipedia.org/wiki/General_Polygon_Clipper
+
+Licensed directly/no license, see below
+
+--------------------
+
+Hi Sam
+You may use GPC commercially for no charge. GPC is no longer a University of Manchester thing, and is no longer available for new users. So there are no licensing issues.
+For your attribution information please just attribute Alan Murta and make no mention of the University.
+If you have any queries please let me know.
+Best wishes
+Toby
+-- 
+Honorary Reader
+Department of Computer Science, The University of Manchester
+www.cs.man.ac.uk/~toby @tobyhoward
+

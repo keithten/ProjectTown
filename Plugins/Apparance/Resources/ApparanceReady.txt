@@ -1,0 +1,14 @@
+---- Plugin Setup
+Everything seems set up correctly.  Perhaps now try...
+
+---- Link:Learn about core Apparance concepts online
+#URL=https://apparance.uk/manual-concepts.htm
+
+---- Link:Follow one of the online tutorials
+#URL=https://apparance.uk/manual-tutorials.htm
+
+---- Link:Lookup information about the Apparance Editor online
+#URL=https://apparance.uk/manual-editor.htm
+
+---- Link:Explore the downloadable Examples project
+#URL=https://apparance.uk/manual-setup.htm#example-project

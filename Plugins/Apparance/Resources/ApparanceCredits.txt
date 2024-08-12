@@ -1,0 +1,12 @@
+---- Credits
+
+---- Info:Apparance
+Apparance Plugin, Engine, and Tools written by Sam R. Swain of Apparance Studios Limited.
+
+---- Info:Thanks
+* Thanks to my friends and family for their support over the many years of development taken place so far.
+* (also to Indie the cat for much furry company on many of the days working on Apparance)
+* Special thanks to the game-dev community in and around Guildford for their friendliness and spirit.
+* Thanks to Epic for the Megagrant that enabled me to start on the Unreal port of Apparance.
+* And thanks to you for supporting Apparance and the use of procedural generation in your projects.
+
