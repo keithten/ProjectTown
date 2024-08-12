@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="8CD90096">
+    <Inputs>
+        <Input id="1" type="List" name="Towns" description=""/>
+        <Input id="2" type="Integer" name="i" description=""/>
+        <Input id="3" type="Vector3" name="Tile Origin" description=""/>
+        <Input id="4" type="Frame" name="Mask" description=""/>
+    </Inputs>
+    <Constants>
+        <Constant id="-5" type="ModelSegment"></Constant>
+        <Constant id="-14" type="Integer">1</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="5C4E98DC">
+            <Connect in="100" input="1"/>
+        </Operator>
+        <Operator id="2" type="B3B228AF">
+            <Connect in="100" input="2"/>
+            <Connect in="101" to="1" out="100"/>
+        </Operator>
+        <Operator id="3" type="C01FB46B">
+            <Connect in="100" to="2" out="100"/>
+            <Connect in="101" constant="-5"/>
+            <Connect in="102" to="6" out="100"/>
+        </Operator>
+        <Operator id="4" type="8CDA3F1D">
+            <Connect in="1" to="5" out="100"/>
+            <Connect in="2" input="3"/>
+            <Connect in="3" input="4"/>
+        </Operator>
+        <Operator id="5" type="D56CEA6D">
+            <Connect in="100" input="1"/>
+            <Connect in="101" input="2"/>
+        </Operator>
+        <Operator id="6" type="0F77F09B">
+            <Connect in="100" to="4" out="1"/>
+            <Connect in="101" to="9" out="1"/>
+        </Operator>
+        <Operator id="8" type="87F5E2D0">
+            <Connect in="100" input="2"/>
+            <Connect in="101" constant="-14"/>
+        </Operator>
+        <Operator id="9" type="8CD90096">
+            <Connect in="1" input="1"/>
+            <Connect in="2" to="8" out="100"/>
+            <Connect in="3" input="3"/>
+            <Connect in="4" input="4"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="ModelSegment" name="Out" description="" to="3" out="100"/>
+    </Outputs>
+</Procedure>

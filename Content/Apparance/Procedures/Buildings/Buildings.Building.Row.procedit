@@ -13,7 +13,7 @@
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
       <Location>422.719,95.83469</Location>
-      <Size>149.99,104.04</Size>
+      <Size>149.99,117</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -76,6 +76,11 @@
       <Description>
       </Description>
     </Object>
+    <Object type="ProcedureInputState" id="6">
+      <Name>Mask</Name>
+      <Description>
+      </Description>
+    </Object>
     <Object type="ProcedureOutputState" id="1">
       <Name>Out</Name>
       <Description>
@@ -106,6 +111,14 @@
           <Value type="842221088" value="10" />
         </Input>
       </Metadata>
+    </Input>
+    <Input id="5">
+      <Value type="1819242306" value="False" />
+      <Metadata />
+    </Input>
+    <Input id="6">
+      <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
+      <Metadata />
     </Input>
   </DefaultInputs>
 </ProcedureEditData>

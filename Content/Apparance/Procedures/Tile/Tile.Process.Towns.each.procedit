@@ -1,0 +1,131 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>578.1568,331.2562</Centre>
+    <Zoom>1</Zoom>
+  </View>
+  <Procedure>
+    <Category>Tile</Category>
+    <DisplayName>Process.Towns.each</DisplayName>
+    <Description>What to do with each town</Description>
+    <TopLeft>-30,-20</TopLeft>
+    <BottomRight>873.7567,668.2</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>258,85</Location>
+      <Size>63.73667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>bounds</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>257,182</Location>
+      <Size>63.73667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>parameters</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>386.0165,236.0331</Location>
+      <Size>63.73667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[0] Seed</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>389.1323,312.6033</Location>
+      <Size>63.73667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[1] Spacing</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>692.8749,93.52071</Location>
+      <Size>136.1833,91.08</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="6">
+      <Location>562,541</Location>
+      <Size>77.85,52.2</Size>
+      <NoteID>1</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="7">
+      <Location>927,230</Location>
+      <Size>46.75667,58.84</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="8">
+      <Location>335,544</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>1</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="9">
+      <Location>427,524</Location>
+      <Size>72.34333,52.2</Size>
+      <NoteID>1</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>Town</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Tile Origin</Name>
+      <Description>World origin of tile</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="3">
+      <Name>Mask</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>Out</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureNote" id="1">
+      <ID>1</ID>
+      <Location>
+        <X>310</X>
+        <Y>482</Y>
+      </Location>
+      <Size>
+        <Width>354.85</Width>
+        <Height>136.2</Height>
+      </Size>
+      <Title>Diagnostics</Title>
+      <Text>
+      </Text>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="1953720652" value="" />
+      <Metadata />
+    </Input>
+    <Input id="2">
+      <Value type="862152022" value="[0,0,0]" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
+</ProcedureEditData>

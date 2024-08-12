@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="8CE8A9FB">
+    <Inputs/>
+    <Constants>
+        <Constant id="-1" type="Integer">1</Constant>
+        <Constant id="-2" type="Integer">6</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="787414B5">
+            <Connect in="100" constant="-1"/>
+            <Connect in="101" constant="-2"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="Integer" name="Texture Size" description="" to="1" out="100"/>
+    </Outputs>
+</Procedure>

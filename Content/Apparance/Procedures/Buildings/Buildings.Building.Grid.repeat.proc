@@ -8,6 +8,7 @@
         <Input id="6" type="Float" name="Building Spacing" description=""/>
         <Input id="5" type="Integer" name="#" description=""/>
         <Input id="7" type="Bool" name="Random Direction?" description=""/>
+        <Input id="8" type="Frame" name="Mask" description=""/>
     </Inputs>
     <Constants>
         <Constant id="-4" type="ModelSegment"></Constant>
@@ -50,12 +51,14 @@
             <Connect in="5" to="5" out="100"/>
             <Connect in="6" input="6"/>
             <Connect in="7" input="7"/>
+            <Connect in="8" input="8"/>
         </Operator>
         <Operator id="4" type="A45F4267">
             <Connect in="1" to="2" out="8"/>
             <Connect in="2" input="5"/>
             <Connect in="3" input="6"/>
             <Connect in="5" input="7"/>
+            <Connect in="6" input="8"/>
         </Operator>
         <Operator id="5" type="0B64055F">
             <Connect in="100" input="5"/>
@@ -69,6 +72,7 @@
             <Connect in="5" to="7" out="100"/>
             <Connect in="6" input="6"/>
             <Connect in="7" input="7"/>
+            <Connect in="8" input="8"/>
         </Operator>
         <Operator id="7" type="0B64055F">
             <Connect in="100" input="5"/>

@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="B66DD1F6">
+    <Inputs>
+        <Input id="1" type="Frame" name="Size" description=""/>
+        <Input id="2" type="Vector3" name="World Origin" description="Where in the world is this tile"/>
+        <Input id="3" type="List" name="Towns" description="Town modifiers"/>
+    </Inputs>
+    <Constants>
+        <Constant id="-6" type="Integer">0</Constant>
+        <Constant id="-7" type="Integer">0</Constant>
+        <Constant id="-8" type="Integer">0</Constant>
+        <Constant id="-18" type="Integer">2</Constant>
+        <Constant id="-19" type="Integer">1</Constant>
+        <Constant id="-20" type="Integer">0</Constant>
+        <Constant id="-22" type="FColour">[1.000000,0.000000,1.000000,1.000000]</Constant>
+        <Constant id="-23" type="Integer">2</Constant>
+        <Constant id="-24" type="Integer">1</Constant>
+        <Constant id="-25" type="Integer">0</Constant>
+        <Constant id="-31" type="String">Towns</Constant>
+        <Constant id="-36" type="ModelSegment"></Constant>
+        <Constant id="-37" type="ModelSegment"></Constant>
+        <Constant id="-41" type="Integer">0</Constant>
+        <Constant id="-44" type="ModelSegment"></Constant>
+        <Constant id="-45" type="ModelSegment"></Constant>
+        <Constant id="-46" type="ModelSegment"></Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="B605B5EE">
+            <Connect in="1" input="1"/>
+            <Connect in="2" to="3" out="100"/>
+            <Connect in="3" to="6" out="100"/>
+            <Connect in="4" to="8" out="100"/>
+        </Operator>
+        <Operator id="3" type="EAE4856E">
+            <Connect in="100" input="1"/>
+            <Connect in="101" input="2"/>
+            <Connect in="102" constant="-6"/>
+            <Connect in="103" constant="-7"/>
+            <Connect in="104" constant="-8"/>
+        </Operator>
+        <Operator id="5" type="A0D214B9">
+            <Connect in="110" input="1"/>
+            <Connect in="111" to="7" out="1"/>
+            <Connect in="112" to="7" out="1"/>
+            <Connect in="113" constant="-18"/>
+            <Connect in="114" constant="-19"/>
+            <Connect in="115" constant="-20"/>
+        </Operator>
+        <Operator id="6" type="188652B6">
+            <Connect in="100" to="5" out="100"/>
+            <Connect in="101" constant="-22"/>
+        </Operator>
+        <Operator id="7" type="8CE8A9FB"/>
+        <Operator id="8" type="A0D214B9">
+            <Connect in="110" input="1"/>
+            <Connect in="111" to="7" out="1"/>
+            <Connect in="112" to="7" out="1"/>
+            <Connect in="113" constant="-23"/>
+            <Connect in="114" constant="-24"/>
+            <Connect in="115" constant="-25"/>
+        </Operator>
+        <Operator id="11" type="181E9506">
+            <Connect in="100" constant="-31"/>
+            <Connect in="101" input="1"/>
+        </Operator>
+        <Operator id="12" type="EB4EAAA4">
+            <Connect in="100" to="1" out="1"/>
+            <Connect in="101" constant="-46"/>
+            <Connect in="102" to="14" out="1"/>
+            <Connect in="103" constant="-36"/>
+            <Connect in="104" constant="-37"/>
+        </Operator>
+        <Operator id="14" type="8CD90096">
+            <Connect in="1" input="3"/>
+            <Connect in="2" constant="-41"/>
+            <Connect in="3" input="2"/>
+            <Connect in="4" input="1"/>
+        </Operator>
+        <Operator id="15" type="88B7A911">
+            <Connect in="100" to="12" out="100"/>
+            <Connect in="101" to="11" out="100"/>
+            <Connect in="102" constant="-44"/>
+            <Connect in="103" constant="-45"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="ModelSegment" name="" description="" to="15" out="100"/>
+    </Outputs>
+</Procedure>

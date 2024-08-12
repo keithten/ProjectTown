@@ -1,15 +1,24 @@
 <?xml version="1.0"?>
 <Procedure Version="5" type="A5A68A5E">
     <Inputs>
-        <Input id="1" type="Frame" name="In" description=""/>
+        <Input id="1" type="Frame" name="Where?" description=""/>
         <Input id="3" type="Integer" name="#" description=""/>
         <Input id="2" type="Bool" name="Random Direction?" description=""/>
+        <Input id="4" type="Frame" name="Mask" description=""/>
     </Inputs>
     <Constants>
         <Constant id="-5" type="Integer">2</Constant>
         <Constant id="-7" type="Integer">0</Constant>
         <Constant id="-10" type="Integer">0</Constant>
         <Constant id="-11" type="Integer">3</Constant>
+        <Constant id="-15" type="Vector3">0.000000, 0.000000, 1.000000</Constant>
+        <Constant id="-16" type="Integer">0</Constant>
+        <Constant id="-17" type="Integer">0</Constant>
+        <Constant id="-18" type="Integer">1</Constant>
+        <Constant id="-19" type="Integer">1</Constant>
+        <Constant id="-20" type="Integer">1</Constant>
+        <Constant id="-21" type="Integer">0</Constant>
+        <Constant id="-23" type="ModelSegment"></Constant>
     </Constants>
     <Operators>
         <Operator id="1" type="A4524818">
@@ -31,8 +40,27 @@
             <Connect in="101" constant="-10"/>
             <Connect in="102" constant="-11"/>
         </Operator>
+        <Operator id="5" type="61FA0B38">
+            <Connect in="100" input="4"/>
+            <Connect in="101" to="6" out="100"/>
+        </Operator>
+        <Operator id="6" type="E99E1179">
+            <Connect in="100" to="2" out="100"/>
+            <Connect in="101" constant="-15"/>
+            <Connect in="102" constant="-16"/>
+            <Connect in="103" constant="-17"/>
+            <Connect in="104" constant="-18"/>
+            <Connect in="105" constant="-19"/>
+            <Connect in="106" constant="-20"/>
+            <Connect in="107" constant="-21"/>
+        </Operator>
+        <Operator id="7" type="C01FB46B">
+            <Connect in="100" to="5" out="100"/>
+            <Connect in="101" constant="-23"/>
+            <Connect in="102" to="1" out="1"/>
+        </Operator>
     </Operators>
     <Outputs>
-        <Output id="1" type="ModelSegment" name="Object" description="" to="1" out="1"/>
+        <Output id="1" type="ModelSegment" name="Object" description="" to="7" out="100"/>
     </Outputs>
 </Procedure>

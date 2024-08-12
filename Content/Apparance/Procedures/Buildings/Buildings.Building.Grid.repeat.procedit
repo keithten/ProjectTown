@@ -29,7 +29,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="3">
       <Location>539.1818,-182.2727</Location>
-      <Size>149.79,117</Size>
+      <Size>149.79,129.96</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -37,7 +37,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="4">
       <Location>563.4548,263.4545</Location>
-      <Size>136.1833,78.12</Size>
+      <Size>136.1833,91.08</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -53,7 +53,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="6">
       <Location>534.2727,-49.90911</Location>
-      <Size>149.79,117</Size>
+      <Size>149.79,129.96</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -102,6 +102,11 @@
       <Description>
       </Description>
     </Object>
+    <Object type="ProcedureInputState" id="8">
+      <Name>Mask</Name>
+      <Description>
+      </Description>
+    </Object>
     <Object type="ProcedureOutputState" id="1">
       <Name>Out</Name>
       <Description>
@@ -140,6 +145,10 @@
     </Input>
     <Input id="7">
       <Value type="1819242306" value="False" />
+      <Metadata />
+    </Input>
+    <Input id="8">
+      <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
       <Metadata />
     </Input>
   </DefaultInputs>

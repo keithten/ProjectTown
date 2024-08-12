@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="8CC08944">
+    <Inputs>
+        <Input id="1" type="Frame" name="Bounds" description=""/>
+        <Input id="2" type="FColour" name="Colour" description=""/>
+    </Inputs>
+    <Constants>
+        <Constant id="-1" type="List"></Constant>
+        <Constant id="-2" type="List"></Constant>
+        <Constant id="-3" type="String">Apparance.Material.Coloured</Constant>
+        <Constant id="-4" type="Frame">[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]</Constant>
+        <Constant id="-5" type="Integer">0</Constant>
+        <Constant id="-8" type="Integer">63</Constant>
+        <Constant id="-9" type="Integer">1</Constant>
+        <Constant id="-10" type="Integer">1</Constant>
+        <Constant id="-11" type="Integer">1</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="8564374F">
+            <Connect in="100" to="3" out="100"/>
+            <Connect in="101" to="2" out="100"/>
+            <Connect in="102" constant="-1"/>
+            <Connect in="103" constant="-2"/>
+        </Operator>
+        <Operator id="2" type="36BD1471">
+            <Connect in="100" constant="-3"/>
+            <Connect in="101" constant="-4"/>
+            <Connect in="102" constant="-5"/>
+        </Operator>
+        <Operator id="3" type="09FEED26">
+            <Connect in="100" input="1"/>
+            <Connect in="104" constant="-8"/>
+            <Connect in="105" constant="-9"/>
+            <Connect in="106" constant="-10"/>
+            <Connect in="107" constant="-11"/>
+        </Operator>
+        <Operator id="4" type="E1078DA9">
+            <Connect in="100" to="1" out="100"/>
+            <Connect in="101" input="2"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="ModelSegment" name="" description="" to="4" out="100"/>
+    </Outputs>
+</Procedure>
