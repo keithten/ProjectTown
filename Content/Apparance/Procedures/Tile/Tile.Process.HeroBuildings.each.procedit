@@ -1,0 +1,90 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>490.1651,134.6697</Centre>
+    <Zoom>1.1</Zoom>
+  </View>
+  <Procedure>
+    <Category>Tile</Category>
+    <DisplayName>Process.HeroBuildings.each</DisplayName>
+    <Description>for each building</Description>
+    <TopLeft>-30,-93.0909</TopLeft>
+    <BottomRight>709.0685,400</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>300,117</Location>
+      <Size>63.73667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>bounds</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>297.438,189.8182</Location>
+      <Size>63.73667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>params</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>662.4803,-23.124</Location>
+      <Size>100.43,142.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>730.3645,158.1823</Location>
+      <Size>65.97667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>437.3637,-35.81818</Location>
+      <Size>126.8733,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>Hero Building</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>footprints</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="3">
+      <Name>Occlusion Margin</Name>
+      <Description>Extra amount to use for occlusion checks</Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>Occlusion</Name>
+      <Description>Building occlusion</Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="2">
+      <Name>Footprint</Name>
+      <Description>Road footprint</Description>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="1953720652" value="" />
+      <Metadata />
+    </Input>
+    <Input id="3">
+      <Value type="842221088" value="0" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
+</ProcedureEditData>

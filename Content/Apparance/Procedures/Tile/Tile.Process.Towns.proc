@@ -4,8 +4,9 @@
         <Input id="1" type="List" name="Towns" description=""/>
         <Input id="2" type="Integer" name="i" description=""/>
         <Input id="3" type="Vector3" name="Tile Origin" description=""/>
-        <Input id="4" type="Frame" name="Mask" description=""/>
+        <Input id="4" type="Frame" name="Tile Mask" description="Rectangular frame to mask tile contents too|Default=[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]"/>
         <Input id="5" type="List" name="p" description=""/>
+        <Input id="6" type="List" name="Poly Mask" description=""/>
     </Inputs>
     <Constants>
         <Constant id="-5" type="ModelSegment"></Constant>
@@ -28,6 +29,7 @@
             <Connect in="1" to="5" out="100"/>
             <Connect in="2" input="3"/>
             <Connect in="3" input="4"/>
+            <Connect in="4" input="6"/>
         </Operator>
         <Operator id="5" type="D56CEA6D">
             <Connect in="100" input="1"/>
@@ -47,6 +49,7 @@
             <Connect in="3" input="3"/>
             <Connect in="4" input="4"/>
             <Connect in="5" to="10" out="100"/>
+            <Connect in="6" input="6"/>
         </Operator>
         <Operator id="10" type="62201849">
             <Connect in="100" input="5"/>

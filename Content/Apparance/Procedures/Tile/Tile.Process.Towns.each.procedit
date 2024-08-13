@@ -1,14 +1,14 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>897.9757,354.4507</Centre>
-    <Zoom>0.7513149</Zoom>
+    <Centre>1098.353,420.7592</Centre>
+    <Zoom>0.751315057</Zoom>
   </View>
   <Procedure>
     <Category>Tile</Category>
     <DisplayName>Process.Towns.each</DisplayName>
     <Description>What to do with each town</Description>
     <TopLeft>-30,-103.5</TopLeft>
-    <BottomRight>1451.255,719.5001</BottomRight>
+    <BottomRight>1786.425,727.0197</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
@@ -56,7 +56,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="7">
-      <Location>1504.498,193.7</Location>
+      <Location>1839.668,176.76</Location>
       <Size>46.75667,58.84</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -80,7 +80,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="10">
-      <Location>565.8004,136.5001</Location>
+      <Location>570.5195,292.1059</Location>
       <Size>107.8433,52.2</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -96,7 +96,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="12">
-      <Location>1195.479,3.541186</Location>
+      <Location>1634.709,65.25107</Location>
       <Size>136.1833,78.12</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -104,18 +104,32 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="13">
-      <Location>908.4998,76.89997</Location>
+      <Location>974.3237,-6.83188</Location>
       <Size>100.8467,65.16</Size>
       <NoteID>0</NoteID>
-      <Comment>mask out</Comment>
+      <Comment>tile mask buildings</Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="14">
-      <Location>788.6998,-53.50002</Location>
+      <Location>792.8137,3.127989</Location>
       <Size>100.43,142.92</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="15">
+      <Location>1144.263,39.46765</Location>
+      <Size>105.45,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>poly mask buildings</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="16">
+      <Location>1066.773,434.8369</Location>
+      <Size>108.8367,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>poly mask footprints</Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureInputState" id="1">
@@ -128,7 +142,12 @@
       <Description>World origin of tile</Description>
     </Object>
     <Object type="ProcedureInputState" id="3">
-      <Name>Mask</Name>
+      <Name>Tile Mask</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="4">
+      <Name>Poly Mask</Name>
       <Description>
       </Description>
     </Object>

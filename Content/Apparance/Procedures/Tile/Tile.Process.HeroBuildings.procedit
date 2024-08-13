@@ -1,18 +1,18 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>609.3433,234.4158</Centre>
-    <Zoom>1.00000024</Zoom>
+    <Centre>732.1741,252.4364</Centre>
+    <Zoom>0.7513149</Zoom>
   </View>
   <Procedure>
     <Category>Tile</Category>
-    <DisplayName>Process.Towns</DisplayName>
-    <Description>Handle towns we have intersecting our tile</Description>
+    <DisplayName>Process.HeroBuildings</DisplayName>
+    <Description>What do do with hero buildings?</Description>
     <TopLeft>-30,-20</TopLeft>
-    <BottomRight>997.0533,548.2784</BottomRight>
+    <BottomRight>1175.98,524.5604</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
-      <Location>181.8099,45.05783</Location>
+      <Location>215,107</Location>
       <Size>64.82333,39.28</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -20,75 +20,71 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="2">
-      <Location>319.2149,54.76028</Location>
-      <Size>46.75667,32.92</Size>
-      <NoteID>0</NoteID>
-      <Comment>
-      </Comment>
-      <InputMetadata />
-    </Object>
-    <Object type="ProcedureOperatorState" id="3">
-      <Location>999.5831,41.28925</Location>
-      <Size>74.33,65.16</Size>
-      <NoteID>0</NoteID>
-      <Comment>more?</Comment>
-      <InputMetadata />
-    </Object>
-    <Object type="ProcedureOperatorState" id="4">
-      <Location>445.1653,147.9918</Location>
-      <Size>146.7233,78.12</Size>
-      <NoteID>0</NoteID>
-      <Comment>for each...</Comment>
-      <InputMetadata />
-    </Object>
-    <Object type="ProcedureOperatorState" id="5">
-      <Location>317.4132,140.7521</Location>
+      <Location>405.4901,186.4752</Location>
       <Size>63.73667,52.2</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
-    <Object type="ProcedureOperatorState" id="6">
-      <Location>808.9081,202.5207</Location>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>353.7769,61.44629</Location>
       <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>1201.65,44.59007</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>525.6229,193.2521</Location>
+      <Size>202.3233,54.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="6">
+      <Location>775.7002,247</Location>
+      <Size>65.97667,52.2</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="7">
-      <Location>522,279</Location>
-      <Size>146.7233,39.28</Size>
+      <Location>850.3995,409.4004</Location>
+      <Size>197.8667,91.08</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="8">
-      <Location>498.5371,465.3304</Location>
-      <Size>46.75667,32.92</Size>
-      <NoteID>0</NoteID>
-      <Comment>next</Comment>
-      <InputMetadata />
-    </Object>
-    <Object type="ProcedureOperatorState" id="9">
-      <Location>651.1566,407.1984</Location>
-      <Size>112.0033,104.04</Size>
-      <NoteID>0</NoteID>
-      <Comment>recrsive iteration</Comment>
-      <InputMetadata />
-    </Object>
-    <Object type="ProcedureOperatorState" id="10">
-      <Location>619.3126,239.4215</Location>
+      <Location>730.3998,437.7004</Location>
       <Size>46.75667,32.92</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
-    <Object type="ProcedureOperatorState" id="11">
-      <Location>995.4365,111.438</Location>
+    <Object type="ProcedureOperatorState" id="9">
+      <Location>761.5998,312.3999</Location>
+      <Size>65.97667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="10">
+      <Location>1199.999,122.2</Location>
       <Size>74.33,65.16</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -96,42 +92,33 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureInputState" id="1">
-      <Name>Towns</Name>
-      <Description>
-      </Description>
+      <Name>Buildings</Name>
+      <Description>The hero buildings</Description>
     </Object>
     <Object type="ProcedureInputState" id="2">
       <Name>i</Name>
-      <Description>
-      </Description>
+      <Description>index</Description>
     </Object>
     <Object type="ProcedureInputState" id="3">
-      <Name>Tile Origin</Name>
-      <Description>
-      </Description>
+      <Name>o</Name>
+      <Description>occlusion poly footprint accumulator</Description>
     </Object>
     <Object type="ProcedureInputState" id="4">
-      <Name>Tile Mask</Name>
-      <Description>Rectangular frame to mask tile contents too</Description>
+      <Name>ff</Name>
+      <Description>frame footprint accumulator</Description>
     </Object>
     <Object type="ProcedureInputState" id="5">
-      <Name>p</Name>
-      <Description>
-      </Description>
-    </Object>
-    <Object type="ProcedureInputState" id="6">
-      <Name>Poly Mask</Name>
+      <Name>Occlusion Margin</Name>
       <Description>
       </Description>
     </Object>
     <Object type="ProcedureOutputState" id="1">
-      <Name>Content</Name>
-      <Description>
-      </Description>
+      <Name>Occlusion</Name>
+      <Description>Poly footprints for occlusion</Description>
     </Object>
     <Object type="ProcedureOutputState" id="2">
-      <Name>Plots</Name>
-      <Description>List of building plots</Description>
+      <Name>Frame Footprints</Name>
+      <Description>Frame footprints for land effects</Description>
     </Object>
   </Objects>
   <Camera>
@@ -149,14 +136,10 @@
       <Metadata />
     </Input>
     <Input id="3">
-      <Value type="862152022" value="[0,0,0]" />
+      <Value type="1953720652" value="" />
       <Metadata />
     </Input>
     <Input id="4">
-      <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
-      <Metadata />
-    </Input>
-    <Input id="5">
       <Value type="1953720652" value="" />
       <Metadata />
     </Input>

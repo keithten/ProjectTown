@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="D20AE66D">
+    <Inputs>
+        <Input id="1" type="Frame" name="Bounds" description=""/>
+    </Inputs>
+    <Constants>
+        <Constant id="-6" type="ModelSegment"></Constant>
+        <Constant id="-7" type="ModelSegment"></Constant>
+        <Constant id="-8" type="String">Hero Buildings</Constant>
+        <Constant id="-10" type="List"></Constant>
+        <Constant id="-12" type="ModelSegment"></Constant>
+    </Constants>
+    <Operators>
+        <Operator id="2" type="88B7A911">
+            <Connect in="100" constant="-12"/>
+            <Connect in="101" to="3" out="100"/>
+            <Connect in="102" constant="-6"/>
+            <Connect in="103" constant="-7"/>
+        </Operator>
+        <Operator id="3" type="11A7478C">
+            <Connect in="100" constant="-8"/>
+            <Connect in="101" input="1"/>
+            <Connect in="102" constant="-10"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="ModelSegment" name="" description="" to="2" out="100"/>
+    </Outputs>
+</Procedure>

@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="D266A664">
+    <Inputs>
+        <Input id="1" type="List" name="Buildings" description="The hero buildings"/>
+        <Input id="2" type="Integer" name="i" description="index"/>
+        <Input id="3" type="List" name="o" description="occlusion poly footprint accumulator"/>
+        <Input id="4" type="List" name="ff" description="frame footprint accumulator"/>
+        <Input id="5" type="Float" name="Occlusion Margin" description=""/>
+    </Inputs>
+    <Constants>
+        <Constant id="-16" type="Integer">1</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="5C4E98DC">
+            <Connect in="100" input="1"/>
+        </Operator>
+        <Operator id="2" type="D56CEA6D">
+            <Connect in="100" input="1"/>
+            <Connect in="101" input="2"/>
+        </Operator>
+        <Operator id="3" type="B3B228AF">
+            <Connect in="100" input="2"/>
+            <Connect in="101" to="1" out="100"/>
+        </Operator>
+        <Operator id="4" type="DF46C795">
+            <Connect in="100" to="3" out="100"/>
+            <Connect in="101" input="3"/>
+            <Connect in="102" to="7" out="1"/>
+        </Operator>
+        <Operator id="5" type="D267A5DB">
+            <Connect in="1" to="2" out="100"/>
+            <Connect in="3" input="5"/>
+        </Operator>
+        <Operator id="6" type="B8C05957">
+            <Connect in="100" input="3"/>
+            <Connect in="101" to="5" out="1"/>
+        </Operator>
+        <Operator id="7" type="D266A664">
+            <Connect in="1" input="1"/>
+            <Connect in="2" to="8" out="100"/>
+            <Connect in="3" to="6" out="100"/>
+            <Connect in="4" to="9" out="100"/>
+            <Connect in="5" input="5"/>
+        </Operator>
+        <Operator id="8" type="87F5E2D0">
+            <Connect in="100" input="2"/>
+            <Connect in="101" constant="-16"/>
+        </Operator>
+        <Operator id="9" type="5420B650">
+            <Connect in="100" input="4"/>
+            <Connect in="101" to="5" out="2"/>
+        </Operator>
+        <Operator id="10" type="DF46C795">
+            <Connect in="100" to="3" out="100"/>
+            <Connect in="101" input="4"/>
+            <Connect in="102" to="7" out="2"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="List" name="Occlusion" description="" to="4" out="100"/>
+        <Output id="2" type="List" name="Frame Footprints" description="" to="10" out="100"/>
+    </Outputs>
+</Procedure>

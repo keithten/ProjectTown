@@ -1,14 +1,14 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>756.1138,549.3145</Centre>
-    <Zoom>0.751315236</Zoom>
+    <Centre>494.8466,666.0761</Centre>
+    <Zoom>1</Zoom>
   </View>
   <Procedure>
     <Category>Tile</Category>
     <DisplayName>Main</DisplayName>
     <Description>Main town tile repeat piece</Description>
     <TopLeft>-262.817,-65.38847</TopLeft>
-    <BottomRight>1537.863,962.1392</BottomRight>
+    <BottomRight>1537.863,1056.218</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
@@ -114,7 +114,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="14">
       <Location>328.3953,722.7415</Location>
-      <Size>112.0033,91.08</Size>
+      <Size>112.0033,104.04</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -129,7 +129,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="16">
-      <Location>754.3669,483.6323</Location>
+      <Location>809.8218,487.2686</Location>
       <Size>84.37666,78.12</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -153,8 +153,56 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="19">
-      <Location>583.9468,523.1826</Location>
+      <Location>552.1284,533.1827</Location>
       <Size>104.3233,168.84</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="20">
+      <Location>1023,130.627</Location>
+      <Size>102.94,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="21">
+      <Location>-19,685</Location>
+      <Size>64.82333,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="22">
+      <Location>240.918,928.0976</Location>
+      <Size>197.8667,91.08</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="23">
+      <Location>696,877</Location>
+      <Size>117.19,104.04</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="24">
+      <Location>1181.215,98.96692</Location>
+      <Size>46.75667,58.84</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="25">
+      <Location>695.3629,637.909</Location>
+      <Size>46.75667,32.92</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -172,6 +220,11 @@
     <Object type="ProcedureInputState" id="3">
       <Name>Towns</Name>
       <Description>Town modifiers</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="4">
+      <Name>Hero Buildings</Name>
+      <Description>
+      </Description>
     </Object>
     <Object type="ProcedureOutputState" id="1">
       <Name>
