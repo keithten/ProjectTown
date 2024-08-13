@@ -46,8 +46,10 @@ SourceArt/**/*.png
 SourceArt/**/*.tga
 
 # Binary Files
-Binaries/*
+#Binaries/*
 #Plugins/**/Binaries/*
+Binaries/**/*.pdb
+!Binaries/**/*.dll
 
 # Builds
 Build/*
