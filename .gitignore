@@ -47,7 +47,7 @@ SourceArt/**/*.tga
 
 # Binary Files
 Binaries/*
-Plugins/**/Binaries/*
+#Plugins/**/Binaries/*
 
 # Builds
 Build/*
@@ -72,3 +72,10 @@ Plugins/**/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+# Apparance Plugin
+!Plugins/Apparance/Source/ThirdParty/Apparance/lib/Win64/Shipping/*.lib
+!Plugins/Apparance/Binaries/Win64/*.dll
+Plugins/Apparance/Binaries/Win64/*.pdb
+Plugins/Apparance/Source/**/*.pdb
+Plugins/Apparance/Binaries/Apparance/*
