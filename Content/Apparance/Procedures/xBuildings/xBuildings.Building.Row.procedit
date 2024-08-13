@@ -1,42 +1,50 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>326.8181,170.7273</Centre>
+    <Centre>305.0413,232.438</Centre>
     <Zoom>1</Zoom>
   </View>
   <Procedure>
-    <Category>Buildings</Category>
-    <DisplayName>Building.Grid</DisplayName>
-    <Description>2D grid of buildings</Description>
-    <TopLeft>-232.7935,-63.54546</TopLeft>
-    <BottomRight>600,429.7742</BottomRight>
+    <Category>xBuildings</Category>
+    <DisplayName>Building.Row</DisplayName>
+    <Description>Row of buildings</Description>
+    <TopLeft>-232.7935,-58.18185</TopLeft>
+    <BottomRight>600,528.2222</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
-      <Location>445.438,87.31403</Location>
-      <Size>149.79,129.96</Size>
+      <Location>422.719,95.83469</Location>
+      <Size>149.99,117</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="2">
-      <Location>309.5124,288.6942</Location>
-      <Size>130.6233,91.08</Size>
+      <Location>336.438,258.9421</Location>
+      <Size>164.7867,219.28</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="3">
-      <Location>0.2314087,-13.54546</Location>
-      <Size>128.5367,69.28</Size>
+      <Location>310,261</Location>
+      <Size>130.6233,91.08</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="4">
-      <Location>160.2314,-11.54546</Location>
+      <Location>-32.79347,-8.181846</Location>
+      <Size>128.5367,69.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>128.4297,-6.41323</Location>
       <Size>92.17333,69.28</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -59,11 +67,16 @@
       </Description>
     </Object>
     <Object type="ProcedureInputState" id="4">
-      <Name>Random Direction?</Name>
+      <Name>Spacer Size</Name>
       <Description>
       </Description>
     </Object>
     <Object type="ProcedureInputState" id="5">
+      <Name>Random Direction?</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="6">
       <Name>Mask</Name>
       <Description>
       </Description>
@@ -95,15 +108,15 @@
           <Value type="842221088" value="0" />
         </Input>
         <Input Name="Max">
-          <Value type="842221088" value="20" />
+          <Value type="842221088" value="10" />
         </Input>
       </Metadata>
     </Input>
-    <Input id="4">
+    <Input id="5">
       <Value type="1819242306" value="False" />
       <Metadata />
     </Input>
-    <Input id="5">
+    <Input id="6">
       <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
       <Metadata />
     </Input>

@@ -1,119 +1,115 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>300.9091,217.562</Centre>
-    <Zoom>1</Zoom>
+    <Centre>708.4407,505.7059</Centre>
+    <Zoom>0.751315057</Zoom>
   </View>
   <Procedure>
     <Category>Buildings</Category>
-    <DisplayName>Building.Row.repeat</DisplayName>
-    <Description>array helper</Description>
-    <TopLeft>-260.2893,-243</TopLeft>
-    <BottomRight>625.9637,457.16</BottomRight>
+    <DisplayName>Buildings.Grid</DisplayName>
+    <Description>Generate placement frames for buildings in a grid</Description>
+    <TopLeft>-352.5619,-39.61984</TopLeft>
+    <BottomRight>1072.447,724.6201</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
-      <Location>610.0237,96.41318</Location>
-      <Size>115.94,117</Size>
+      <Location>299.8347,282.1652</Location>
+      <Size>102.2667,117</Size>
       <NoteID>0</NoteID>
-      <Comment>
-      </Comment>
+      <Comment>distribute buildings</Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="2">
-      <Location>0.7106934,77.82642</Location>
-      <Size>164.7867,219.28</Size>
+      <Location>-51.65284,12.19834</Location>
+      <Size>128.5367,69.28</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="3">
-      <Location>316,-193</Location>
-      <Size>149.99,117</Size>
+      <Location>108.3471,14.19834</Location>
+      <Size>92.17333,69.28</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="4">
-      <Location>315,-62</Location>
-      <Size>149.99,117</Size>
+      <Location>182.8178,330.2728</Location>
+      <Size>46.75667,32.92</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="5">
-      <Location>340,274</Location>
-      <Size>82.64667,52.2</Size>
+      <Location>681.9095,288.1819</Location>
+      <Size>128.8067,168.84</Size>
       <NoteID>0</NoteID>
-      <Comment>
-      </Comment>
+      <Comment>conform to building size</Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="6">
-      <Location>61,-137</Location>
-      <Size>58.81333,52.2</Size>
+      <Location>546.1818,258.0002</Location>
+      <Size>71.52666,45.88</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="7">
-      <Location>60,-65</Location>
-      <Size>58.81333,52.2</Size>
+      <Location>170.2726,337.091</Location>
+      <Size>46.75667,32.92</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="8">
-      <Location>314,342</Location>
-      <Size>151.1733,78.12</Size>
+      <Location>1024.994,270.9824</Location>
+      <Size>100.8467,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>mask out</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="9">
+      <Location>880.1001,529.5001</Location>
+      <Size>100.43,142.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="10">
+      <Location>170.8761,270.7521</Location>
+      <Size>46.75667,32.92</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureInputState" id="1">
-      <Name>Frame</Name>
+      <Name>Bounds</Name>
       <Description>
       </Description>
     </Object>
     <Object type="ProcedureInputState" id="2">
-      <Name>Select</Name>
+      <Name>Spacing</Name>
       <Description>
       </Description>
     </Object>
     <Object type="ProcedureInputState" id="3">
-      <Name>Object Size</Name>
-      <Description>
-      </Description>
-    </Object>
-    <Object type="ProcedureInputState" id="4">
-      <Name>Spacer Size</Name>
-      <Description>
-      </Description>
-    </Object>
-    <Object type="ProcedureInputState" id="5">
-      <Name>#</Name>
-      <Description>
-      </Description>
-    </Object>
-    <Object type="ProcedureInputState" id="6">
-      <Name>Random Direction?</Name>
-      <Description>
-      </Description>
-    </Object>
-    <Object type="ProcedureInputState" id="7">
       <Name>Mask</Name>
       <Description>
       </Description>
     </Object>
     <Object type="ProcedureOutputState" id="1">
-      <Name>Out</Name>
-      <Description>
-      </Description>
+      <Name>Plots</Name>
+      <Description>Frames to place each building in</Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="2">
+      <Name>All Plots</Name>
+      <Description>Un-masked plot list</Description>
     </Object>
   </Objects>
   <Camera>
@@ -127,28 +123,11 @@
       <Metadata />
     </Input>
     <Input id="2">
-      <Value type="842221856" value="0" />
+      <Value type="842221088" value="0" />
       <Metadata />
     </Input>
     <Input id="3">
-      <Value type="842221088" value="0" />
-      <Metadata />
-    </Input>
-    <Input id="4">
-      <Value type="842221088" value="0" />
-      <Metadata />
-    </Input>
-    <Input id="5">
-      <Value type="842221856" value="0" />
-      <Metadata />
-    </Input>
-    <Input id="6">
-      <Value type="1819242306" value="False" />
-      <Metadata />
-    </Input>
-    <Input id="7">
       <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
-      <Metadata />
     </Input>
   </DefaultInputs>
 </ProcedureEditData>

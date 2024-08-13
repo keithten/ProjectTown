@@ -1,14 +1,14 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>578.1568,331.2562</Centre>
-    <Zoom>1</Zoom>
+    <Centre>897.9757,354.4507</Centre>
+    <Zoom>0.7513149</Zoom>
   </View>
   <Procedure>
     <Category>Tile</Category>
     <DisplayName>Process.Towns.each</DisplayName>
     <Description>What to do with each town</Description>
-    <TopLeft>-30,-20</TopLeft>
-    <BottomRight>873.7567,668.2</BottomRight>
+    <TopLeft>-30,-103.5</TopLeft>
+    <BottomRight>1451.255,719.5001</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
@@ -56,7 +56,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="7">
-      <Location>927,230</Location>
+      <Location>1504.498,193.7</Location>
       <Size>46.75667,58.84</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -79,6 +79,45 @@
       </Comment>
       <InputMetadata />
     </Object>
+    <Object type="ProcedureOperatorState" id="10">
+      <Location>565.8004,136.5001</Location>
+      <Size>107.8433,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="11">
+      <Location>916.4996,238.0999</Location>
+      <Size>93.00667,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="12">
+      <Location>1195.479,3.541186</Location>
+      <Size>136.1833,78.12</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="13">
+      <Location>908.4998,76.89997</Location>
+      <Size>100.8467,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>mask out</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="14">
+      <Location>788.6998,-53.50002</Location>
+      <Size>100.43,142.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
     <Object type="ProcedureInputState" id="1">
       <Name>Town</Name>
       <Description>
@@ -94,9 +133,13 @@
       </Description>
     </Object>
     <Object type="ProcedureOutputState" id="1">
-      <Name>Out</Name>
+      <Name>Buildings</Name>
       <Description>
       </Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="2">
+      <Name>Plots</Name>
+      <Description>Where the buildings are (not masked)</Description>
     </Object>
     <Object type="ProcedureNote" id="1">
       <ID>1</ID>
@@ -125,6 +168,10 @@
     </Input>
     <Input id="2">
       <Value type="862152022" value="[0,0,0]" />
+      <Metadata />
+    </Input>
+    <Input id="3">
+      <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
       <Metadata />
     </Input>
   </DefaultInputs>

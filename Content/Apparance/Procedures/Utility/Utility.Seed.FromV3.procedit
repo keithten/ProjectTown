@@ -1,149 +1,139 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>559.1406,482.5383</Centre>
-    <Zoom>0.7513149</Zoom>
+    <Centre>560.4998,343.9999</Centre>
+    <Zoom>0.909090936</Zoom>
   </View>
   <Procedure>
-    <Category>Tile</Category>
-    <DisplayName>Main.Town</DisplayName>
-    <Description>Main town tile repeat piece</Description>
-    <TopLeft>-262.817,-65.38847</TopLeft>
-    <BottomRight>1387.822,908.7391</BottomRight>
+    <Category>Utility</Category>
+    <DisplayName>Seed.FromV3</DisplayName>
+    <Description>Derive a seed from a 3D position</Description>
+    <TopLeft>-30,-20</TopLeft>
+    <BottomRight>880.7573,478</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
-      <Location>937.339,94.83675</Location>
-      <Size>88.43333,78.12</Size>
-      <NoteID>0</NoteID>
-      <Comment>Ground</Comment>
-      <InputMetadata />
-    </Object>
-    <Object type="ProcedureOperatorState" id="2">
-      <Location>115.2975,-9.545553</Location>
-      <Size>126.8733,52.2</Size>
+      <Location>193.1239,98.9752</Location>
+      <Size>71.52666,50</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>338.5207,66.2975</Location>
+      <Size>124.69,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>at least 1mm resolution</Comment>
+      <InputMetadata />
+    </Object>
     <Object type="ProcedureOperatorState" id="3">
-      <Location>38.33896,101.5933</Location>
-      <Size>77.65667,91.08</Size>
+      <Location>338.8264,108.562</Location>
+      <Size>46.75667,32.92</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="4">
-      <Location>177.6612,8.38016</Location>
-      <Size>96.16333,78.12</Size>
+      <Location>339,150</Location>
+      <Size>46.75667,32.92</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="5">
-      <Location>358.8182,330.8926</Location>
-      <Size>102.9367,104.04</Size>
+      <Location>415,66</Location>
+      <Size>88.15667,28.10333</Size>
       <NoteID>0</NoteID>
-      <Comment>Workspace 1</Comment>
+      <Comment>
+      </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="6">
-      <Location>550,353</Location>
-      <Size>83.34,52.2</Size>
+      <Location>415,116</Location>
+      <Size>88.15667,28.10333</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="7">
-      <Location>129,367</Location>
-      <Size>107.1167,39.28</Size>
+      <Location>412,162</Location>
+      <Size>88.15667,28.10333</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="8">
-      <Location>356.1736,560.2314</Location>
-      <Size>102.9367,104.04</Size>
+      <Location>803.908,231.9091</Location>
+      <Size>65.33667,32.92</Size>
       <NoteID>0</NoteID>
-      <Comment>Tarmac Mask</Comment>
+      <Comment>
+      </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="9">
-      <Location>743.5465,584.7272</Location>
-      <Size>60.53,78.12</Size>
+      <Location>915.4207,320.0826</Location>
+      <Size>65.33667,32.92</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="10">
-      <Location>532.5452,653.727</Location>
-      <Size>126.8733,52.2</Size>
+      <Location>698,185</Location>
+      <Size>58.81333,52.2</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="11">
-      <Location>930.5922,290.6763</Location>
-      <Size>102.94,52.2</Size>
+      <Location>696,262</Location>
+      <Size>58.81333,52.2</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="12">
-      <Location>1226.45,262.7799</Location>
-      <Size>46.75667,71.8</Size>
+      <Location>625,288</Location>
+      <Size>46.75667,32.92</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="13">
-      <Location>710.9619,537.6455</Location>
-      <Size>63.73667,52.2</Size>
+      <Location>696,340</Location>
+      <Size>58.81333,52.2</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="14">
-      <Location>410.3787,806.5391</Location>
-      <Size>110.3033,78.12</Size>
-      <NoteID>0</NoteID>
-      <Comment>
-      </Comment>
-      <InputMetadata />
-    </Object>
-    <Object type="ProcedureOperatorState" id="15">
-      <Location>1382.869,332.976</Location>
-      <Size>104.9533,78.12</Size>
+      <Location>629,369</Location>
+      <Size>46.75667,32.92</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureInputState" id="1">
-      <Name>Size</Name>
+      <Name>Position</Name>
       <Description>
       </Description>
     </Object>
     <Object type="ProcedureInputState" id="2">
-      <Name>World Origin</Name>
-      <Description>Where in the world is this tile</Description>
-    </Object>
-    <Object type="ProcedureInputState" id="3">
-      <Name>Towns</Name>
-      <Description>Town modifiers</Description>
+      <Name>Variant</Name>
+      <Description>
+      </Description>
     </Object>
     <Object type="ProcedureOutputState" id="1">
-      <Name>
-      </Name>
+      <Name>#</Name>
       <Description>
       </Description>
     </Object>
@@ -155,15 +145,7 @@
   </Camera>
   <DefaultInputs>
     <Input id="1">
-      <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
-      <Metadata />
-    </Input>
-    <Input id="2">
       <Value type="862152022" value="[0,0,0]" />
-      <Metadata />
-    </Input>
-    <Input id="3">
-      <Value type="1953720652" value="" />
       <Metadata />
     </Input>
   </DefaultInputs>

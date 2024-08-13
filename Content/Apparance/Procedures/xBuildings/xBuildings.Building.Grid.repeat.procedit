@@ -1,0 +1,155 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>538.1807,212.8512</Centre>
+    <Zoom>1.1</Zoom>
+  </View>
+  <Procedure>
+    <Category>xBuildings</Category>
+    <DisplayName>Building.Grid.repeat</DisplayName>
+    <Description>array of rows</Description>
+    <TopLeft>-30,-232.2727</TopLeft>
+    <BottomRight>807.8722,400</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>791.9322,119.2066</Location>
+      <Size>115.94,117</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>216.7602,79.66943</Location>
+      <Size>164.7867,219.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>539.1818,-182.2727</Location>
+      <Size>149.79,129.96</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>563.4548,263.4545</Location>
+      <Size>136.1833,91.08</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>243,-101</Location>
+      <Size>58.81333,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="6">
+      <Location>534.2727,-49.90911</Location>
+      <Size>149.79,129.96</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="7">
+      <Location>246.6364,-27.36364</Location>
+      <Size>58.81333,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>Frame</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Select</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="3">
+      <Name>Row Size</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="4">
+      <Name>Row Spacing</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="5">
+      <Name>#</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="6">
+      <Name>Building Spacing</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="7">
+      <Name>Random Direction?</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="8">
+      <Name>Mask</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>Out</Name>
+      <Description>
+      </Description>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
+      <Metadata />
+    </Input>
+    <Input id="2">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="3">
+      <Value type="842221088" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="4">
+      <Value type="842221088" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="6">
+      <Value type="842221088" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="5">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="7">
+      <Value type="1819242306" value="False" />
+      <Metadata />
+    </Input>
+    <Input id="8">
+      <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
+</ProcedureEditData>

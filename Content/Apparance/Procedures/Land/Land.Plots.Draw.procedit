@@ -1,48 +1,48 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>609.3433,234.4158</Centre>
-    <Zoom>0.909090936</Zoom>
+    <Centre>546.7358,424.8674</Centre>
+    <Zoom>0.826446354</Zoom>
   </View>
   <Procedure>
-    <Category>Tile</Category>
-    <DisplayName>Process.Towns</DisplayName>
-    <Description>Handle towns we have intersecting our tile</Description>
-    <TopLeft>-30,-20</TopLeft>
-    <BottomRight>997.0533,548.2784</BottomRight>
+    <Category>Land</Category>
+    <DisplayName>Plots.Draw</DisplayName>
+    <Description>Draw building plots into an image</Description>
+    <TopLeft>-144,-20</TopLeft>
+    <BottomRight>909.9502,786.12</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
-      <Location>181.8099,45.05783</Location>
+      <Location>537.4963,344.8767</Location>
+      <Size>91.6,117</Size>
+      <NoteID>0</NoteID>
+      <Comment>for each...</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>56,108</Location>
       <Size>64.82333,39.28</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
-    <Object type="ProcedureOperatorState" id="2">
-      <Location>319.2149,54.76028</Location>
-      <Size>46.75667,32.92</Size>
-      <NoteID>0</NoteID>
-      <Comment>
-      </Comment>
-      <InputMetadata />
-    </Object>
     <Object type="ProcedureOperatorState" id="3">
-      <Location>999.5831,41.28925</Location>
-      <Size>74.33,65.16</Size>
+      <Location>170,126</Location>
+      <Size>46.75667,32.92</Size>
       <NoteID>0</NoteID>
       <Comment>more?</Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="4">
-      <Location>445.1653,147.9918</Location>
-      <Size>146.7233,65.16</Size>
+      <Location>935.6202,114.79</Location>
+      <Size>74.33,65.16</Size>
       <NoteID>0</NoteID>
-      <Comment>for each...</Comment>
+      <Comment>
+      </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="5">
-      <Location>317.4132,140.7521</Location>
+      <Location>162.3599,360.5701</Location>
       <Size>63.73667,52.2</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -50,7 +50,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="6">
-      <Location>808.9081,202.5207</Location>
+      <Location>655,266</Location>
       <Size>46.75667,32.92</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -58,47 +58,38 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="7">
-      <Location>522,279</Location>
-      <Size>146.7233,39.28</Size>
-      <NoteID>0</NoteID>
-      <Comment>
-      </Comment>
-      <InputMetadata />
-    </Object>
-    <Object type="ProcedureOperatorState" id="8">
-      <Location>498.5371,465.3304</Location>
+      <Location>545.9,703.2</Location>
       <Size>46.75667,32.92</Size>
       <NoteID>0</NoteID>
       <Comment>next</Comment>
       <InputMetadata />
     </Object>
-    <Object type="ProcedureOperatorState" id="9">
-      <Location>651.1566,407.1984</Location>
-      <Size>112.0033,91.08</Size>
+    <Object type="ProcedureOperatorState" id="8">
+      <Location>421,605</Location>
+      <Size>58.81333,52.2</Size>
       <NoteID>0</NoteID>
-      <Comment>recrsive iteration</Comment>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="9">
+      <Location>322,378</Location>
+      <Size>100.43,142.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="10">
-      <Location>619.3126,239.4215</Location>
-      <Size>46.75667,32.92</Size>
+      <Location>740.7601,634.04</Location>
+      <Size>84.37666,78.12</Size>
       <NoteID>0</NoteID>
-      <Comment>
-      </Comment>
-      <InputMetadata />
-    </Object>
-    <Object type="ProcedureOperatorState" id="11">
-      <Location>995.4365,111.438</Location>
-      <Size>74.33,65.16</Size>
-      <NoteID>0</NoteID>
-      <Comment>
-      </Comment>
+      <Comment>iterate</Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureInputState" id="1">
-      <Name>Towns</Name>
-      <Description>
-      </Description>
+      <Name>Plots</Name>
+      <Description>List of plot frames</Description>
     </Object>
     <Object type="ProcedureInputState" id="2">
       <Name>i</Name>
@@ -106,28 +97,18 @@
       </Description>
     </Object>
     <Object type="ProcedureInputState" id="3">
-      <Name>Tile Origin</Name>
-      <Description>
-      </Description>
+      <Name>Image</Name>
+      <Description>Image to draw into</Description>
     </Object>
     <Object type="ProcedureInputState" id="4">
-      <Name>Mask</Name>
-      <Description>
-      </Description>
-    </Object>
-    <Object type="ProcedureInputState" id="5">
-      <Name>p</Name>
+      <Name>Colour</Name>
       <Description>
       </Description>
     </Object>
     <Object type="ProcedureOutputState" id="1">
-      <Name>Content</Name>
+      <Name>Image</Name>
       <Description>
       </Description>
-    </Object>
-    <Object type="ProcedureOutputState" id="2">
-      <Name>Plots</Name>
-      <Description>List of building plots</Description>
     </Object>
   </Objects>
   <Camera>
@@ -136,20 +117,16 @@
     <Interest>0</Interest>
   </Camera>
   <DefaultInputs>
+    <Input id="3">
+      <Value type="1836016967" value="" />
+      <Metadata />
+    </Input>
     <Input id="1">
       <Value type="1953720652" value="" />
       <Metadata />
     </Input>
     <Input id="2">
       <Value type="842221856" value="0" />
-      <Metadata />
-    </Input>
-    <Input id="3">
-      <Value type="862152022" value="[0,0,0]" />
-      <Metadata />
-    </Input>
-    <Input id="4">
-      <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
       <Metadata />
     </Input>
   </DefaultInputs>

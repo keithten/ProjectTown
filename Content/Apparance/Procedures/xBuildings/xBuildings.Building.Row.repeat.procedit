@@ -1,133 +1,119 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>609.3433,234.4158</Centre>
-    <Zoom>0.909090936</Zoom>
+    <Centre>300.9091,217.562</Centre>
+    <Zoom>1</Zoom>
   </View>
   <Procedure>
-    <Category>Tile</Category>
-    <DisplayName>Process.Towns</DisplayName>
-    <Description>Handle towns we have intersecting our tile</Description>
-    <TopLeft>-30,-20</TopLeft>
-    <BottomRight>997.0533,548.2784</BottomRight>
+    <Category>xBuildings</Category>
+    <DisplayName>Building.Row.repeat</DisplayName>
+    <Description>array helper</Description>
+    <TopLeft>-260.2893,-243</TopLeft>
+    <BottomRight>625.9637,457.16</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
-      <Location>181.8099,45.05783</Location>
-      <Size>64.82333,39.28</Size>
+      <Location>610.0237,96.41318</Location>
+      <Size>115.94,117</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="2">
-      <Location>319.2149,54.76028</Location>
-      <Size>46.75667,32.92</Size>
+      <Location>0.7106934,77.82642</Location>
+      <Size>164.7867,219.28</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="3">
-      <Location>999.5831,41.28925</Location>
-      <Size>74.33,65.16</Size>
+      <Location>316,-193</Location>
+      <Size>149.99,117</Size>
       <NoteID>0</NoteID>
-      <Comment>more?</Comment>
+      <Comment>
+      </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="4">
-      <Location>445.1653,147.9918</Location>
-      <Size>146.7233,65.16</Size>
+      <Location>315,-62</Location>
+      <Size>149.99,117</Size>
       <NoteID>0</NoteID>
-      <Comment>for each...</Comment>
+      <Comment>
+      </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="5">
-      <Location>317.4132,140.7521</Location>
-      <Size>63.73667,52.2</Size>
+      <Location>340,274</Location>
+      <Size>82.64667,52.2</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="6">
-      <Location>808.9081,202.5207</Location>
-      <Size>46.75667,32.92</Size>
+      <Location>61,-137</Location>
+      <Size>58.81333,52.2</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="7">
-      <Location>522,279</Location>
-      <Size>146.7233,39.28</Size>
+      <Location>60,-65</Location>
+      <Size>58.81333,52.2</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="8">
-      <Location>498.5371,465.3304</Location>
-      <Size>46.75667,32.92</Size>
-      <NoteID>0</NoteID>
-      <Comment>next</Comment>
-      <InputMetadata />
-    </Object>
-    <Object type="ProcedureOperatorState" id="9">
-      <Location>651.1566,407.1984</Location>
-      <Size>112.0033,91.08</Size>
-      <NoteID>0</NoteID>
-      <Comment>recrsive iteration</Comment>
-      <InputMetadata />
-    </Object>
-    <Object type="ProcedureOperatorState" id="10">
-      <Location>619.3126,239.4215</Location>
-      <Size>46.75667,32.92</Size>
-      <NoteID>0</NoteID>
-      <Comment>
-      </Comment>
-      <InputMetadata />
-    </Object>
-    <Object type="ProcedureOperatorState" id="11">
-      <Location>995.4365,111.438</Location>
-      <Size>74.33,65.16</Size>
+      <Location>314,342</Location>
+      <Size>151.1733,78.12</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureInputState" id="1">
-      <Name>Towns</Name>
+      <Name>Frame</Name>
       <Description>
       </Description>
     </Object>
     <Object type="ProcedureInputState" id="2">
-      <Name>i</Name>
+      <Name>Select</Name>
       <Description>
       </Description>
     </Object>
     <Object type="ProcedureInputState" id="3">
-      <Name>Tile Origin</Name>
+      <Name>Object Size</Name>
       <Description>
       </Description>
     </Object>
     <Object type="ProcedureInputState" id="4">
-      <Name>Mask</Name>
+      <Name>Spacer Size</Name>
       <Description>
       </Description>
     </Object>
     <Object type="ProcedureInputState" id="5">
-      <Name>p</Name>
+      <Name>#</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="6">
+      <Name>Random Direction?</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="7">
+      <Name>Mask</Name>
       <Description>
       </Description>
     </Object>
     <Object type="ProcedureOutputState" id="1">
-      <Name>Content</Name>
+      <Name>Out</Name>
       <Description>
       </Description>
-    </Object>
-    <Object type="ProcedureOutputState" id="2">
-      <Name>Plots</Name>
-      <Description>List of building plots</Description>
     </Object>
   </Objects>
   <Camera>
@@ -137,7 +123,7 @@
   </Camera>
   <DefaultInputs>
     <Input id="1">
-      <Value type="1953720652" value="" />
+      <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
       <Metadata />
     </Input>
     <Input id="2">
@@ -145,10 +131,22 @@
       <Metadata />
     </Input>
     <Input id="3">
-      <Value type="862152022" value="[0,0,0]" />
+      <Value type="842221088" value="0" />
       <Metadata />
     </Input>
     <Input id="4">
+      <Value type="842221088" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="5">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="6">
+      <Value type="1819242306" value="False" />
+      <Metadata />
+    </Input>
+    <Input id="7">
       <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
       <Metadata />
     </Input>

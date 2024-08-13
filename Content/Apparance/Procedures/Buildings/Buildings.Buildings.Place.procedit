@@ -1,34 +1,33 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>576.5564,235.4008</Centre>
-    <Zoom>0.909090936</Zoom>
+    <Centre>486,348</Centre>
+    <Zoom>1</Zoom>
   </View>
   <Procedure>
     <Category>Buildings</Category>
-    <DisplayName>Building.Row.place</DisplayName>
-    <Description>Place a building on a row</Description>
-    <TopLeft>-30,-20</TopLeft>
-    <BottomRight>1009.629,540.0716</BottomRight>
+    <DisplayName>Buildings.Place</DisplayName>
+    <Description>Place the buildings in a list</Description>
+    <TopLeft>-144,-20</TopLeft>
+    <BottomRight>762.33,657.2</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
-      <Location>898.7909,144.281</Location>
-      <Size>82.64667,52.2</Size>
+      <Location>56,58</Location>
+      <Size>64.82333,39.28</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="2">
-      <Location>518.3306,130.0909</Location>
-      <Size>69.12,65.16</Size>
+      <Location>170,76</Location>
+      <Size>46.75667,32.92</Size>
       <NoteID>0</NoteID>
-      <Comment>
-      </Comment>
+      <Comment>more?</Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="3">
-      <Location>333.4298,174.843</Location>
+      <Location>788,66</Location>
       <Size>74.33,65.16</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -36,58 +35,70 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="4">
-      <Location>239.2066,224.2644</Location>
-      <Size>69.34,65.16</Size>
+      <Location>264,169</Location>
+      <Size>63.73667,52.2</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="5">
-      <Location>757.8647,435.7916</Location>
-      <Size>114.84,54.28</Size>
+      <Location>655,216</Location>
+      <Size>46.75667,32.92</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="6">
-      <Location>618.9997,282.6998</Location>
-      <Size>86.38,129.96</Size>
+      <Location>350,499</Location>
+      <Size>46.75667,32.92</Size>
       <NoteID>0</NoteID>
-      <Comment>centre point</Comment>
+      <Comment>
+      </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="7">
-      <Location>1035.299,299.4</Location>
-      <Size>74.33,65.16</Size>
+      <Location>532,485</Location>
+      <Size>136.1833,78.12</Size>
+      <NoteID>0</NoteID>
+      <Comment>iterate through buildings</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="8">
+      <Location>416,193</Location>
+      <Size>107.9467,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>for each...</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="9">
+      <Location>355,551</Location>
+      <Size>58.81333,52.2</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureInputState" id="1">
-      <Name>Where?</Name>
-      <Description>
-      </Description>
+      <Name>Buildings</Name>
+      <Description>List of building positions</Description>
     </Object>
     <Object type="ProcedureInputState" id="2">
-      <Name>Random Direction?</Name>
+      <Name>i</Name>
       <Description>
       </Description>
     </Object>
     <Object type="ProcedureInputState" id="3">
       <Name>#</Name>
-      <Description>
-      </Description>
+      <Description>seed</Description>
     </Object>
     <Object type="ProcedureInputState" id="4">
-      <Name>Mask</Name>
-      <Description>
-      </Description>
+      <Name>Random Direction?</Name>
+      <Description>Face in random cardinal direction?</Description>
     </Object>
     <Object type="ProcedureOutputState" id="1">
-      <Name>Object</Name>
+      <Name>Out</Name>
       <Description>
       </Description>
     </Object>
@@ -99,14 +110,18 @@
   </Camera>
   <DefaultInputs>
     <Input id="1">
-      <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
+      <Value type="1953720652" value="" />
+      <Metadata />
+    </Input>
+    <Input id="2">
+      <Value type="842221856" value="0" />
       <Metadata />
     </Input>
     <Input id="3">
       <Value type="842221856" value="0" />
       <Metadata />
     </Input>
-    <Input id="2">
+    <Input id="4">
       <Value type="1819242306" value="False" />
       <Metadata />
     </Input>
