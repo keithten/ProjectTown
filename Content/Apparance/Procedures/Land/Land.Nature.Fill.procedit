@@ -1,0 +1,168 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>770.541,243.98</Centre>
+    <Zoom>1.00000012</Zoom>
+  </View>
+  <Procedure>
+    <Category>Land</Category>
+    <DisplayName>Nature.Fill</DisplayName>
+    <Description>Fill tile with grass/trees etc</Description>
+    <TopLeft>-212.5073,-98.42271</TopLeft>
+    <BottomRight>1518.541,516.8912</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>316.0495,32.37188</Location>
+      <Size>89.58334,117</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>1504.635,152.976</Location>
+      <Size>113.9067,155.88</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>421.1671,293.9711</Location>
+      <Size>105.26,104.04</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>1116.974,98.22727</Location>
+      <Size>104.3233,129.96</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>130.3637,49.18182</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="6">
+      <Location>-12.50726,-48.42271</Location>
+      <Size>107.1167,69.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="7">
+      <Location>130,99</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="8">
+      <Location>921.9081,85.68166</Location>
+      <Size>99.50667,117</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="9">
+      <Location>804.2993,16.32728</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="10">
+      <Location>794.7813,142.9544</Location>
+      <Size>71.52666,45.88</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="11">
+      <Location>1279,223.7</Location>
+      <Size>104.3233,168.84</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="12">
+      <Location>1122.923,329.1901</Location>
+      <Size>71.52666,45.88</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>Tile</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Resources</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="3">
+      <Name>Density Mask</Name>
+      <Description>Where to place it?</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="4">
+      <Name>Mask Bounds</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="5">
+      <Name>#</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="6">
+      <Name>Spacing</Name>
+      <Description>Min spacing</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="7">
+      <Name>Dither</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>Objects</Name>
+      <Description>
+      </Description>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
+      <Metadata />
+    </Input>
+    <Input id="3">
+      <Value type="1836016967" value="" />
+      <Metadata />
+    </Input>
+    <Input id="6">
+      <Value type="842221088" value="0" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
+</ProcedureEditData>

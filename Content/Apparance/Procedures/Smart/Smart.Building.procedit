@@ -7,7 +7,7 @@
     <Category>Smart</Category>
     <DisplayName>Building</DisplayName>
     <Description>For hero buildings to use to suppress town buildings, etc.</Description>
-    <TopLeft>-30,-26.48759</TopLeft>
+    <TopLeft>-168.7935,-59.93391</TopLeft>
     <BottomRight>697.9268,400</BottomRight>
   </Procedure>
   <Objects>
@@ -35,6 +35,22 @@
       </Comment>
       <InputMetadata />
     </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>31.20654,-9.933905</Location>
+      <Size>107.1167,69.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>190.2314,39.13218</Location>
+      <Size>126.8733,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
     <Object type="ProcedureInputState" id="1">
       <Name>Bounds</Name>
       <Description>
@@ -52,4 +68,10 @@
     <Look>0,0,0</Look>
     <Interest>0</Interest>
   </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
 </ProcedureEditData>

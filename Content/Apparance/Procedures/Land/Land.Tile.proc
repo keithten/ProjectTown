@@ -59,6 +59,7 @@
         <Constant id="-113" type="Float">0.597403</Constant>
         <Constant id="-114" type="FColour">[0.000000,0.000000,0.000000,1.000000]</Constant>
         <Constant id="-115" type="FColour">[1.000000,1.000000,1.000000,1.000000]</Constant>
+        <Constant id="-116" type="FColour">[0.000000,0.000000,0.000000,1.000000]</Constant>
     </Constants>
     <Operators>
         <Operator id="1" type="10DEC4B5">
@@ -125,7 +126,7 @@
             <Connect in="105" constant="-41"/>
         </Operator>
         <Operator id="12" type="C5C00F04">
-            <Connect in="100" input="3"/>
+            <Connect in="100" to="34" out="100"/>
             <Connect in="101" constant="-67"/>
             <Connect in="102" to="11" out="100"/>
             <Connect in="103" constant="-69"/>
@@ -202,6 +203,10 @@
         </Operator>
         <Operator id="33" type="D2B5F0D9">
             <Connect in="1" input="2"/>
+        </Operator>
+        <Operator id="34" type="188652B6">
+            <Connect in="100" input="3"/>
+            <Connect in="101" constant="-116"/>
         </Operator>
     </Operators>
     <Outputs>

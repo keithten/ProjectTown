@@ -19,8 +19,13 @@
         </Operator>
         <Operator id="3" type="11A7478C">
             <Connect in="100" constant="-8"/>
-            <Connect in="101" input="1"/>
+            <Connect in="101" to="5" out="1"/>
             <Connect in="102" constant="-10"/>
+        </Operator>
+        <Operator id="4" type="8CE8A9FB"/>
+        <Operator id="5" type="B66C8439">
+            <Connect in="1" input="1"/>
+            <Connect in="2" to="4" out="2"/>
         </Operator>
     </Operators>
     <Outputs>

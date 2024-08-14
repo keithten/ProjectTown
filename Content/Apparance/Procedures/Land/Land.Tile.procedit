@@ -1,13 +1,13 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>521.3093,550.1129</Centre>
-    <Zoom>0.683013856</Zoom>
+    <Centre>250.6289,575.4525</Centre>
+    <Zoom>0.7513155</Zoom>
   </View>
   <Procedure>
     <Category>Land</Category>
     <DisplayName>Tile</DisplayName>
     <Description>Simple land tile</Description>
-    <TopLeft>-374.9814,-20</TopLeft>
+    <TopLeft>-569.9669,-20</TopLeft>
     <BottomRight>1224.773,1103.538</BottomRight>
   </Procedure>
   <Objects>
@@ -192,7 +192,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="18">
       <Location>-145.2293,552.985</Location>
-      <Size>107.1167,54.28</Size>
+      <Size>107.1167,69.28</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -207,7 +207,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="20">
-      <Location>220.145,895.1625</Location>
+      <Location>217.2168,885.7124</Location>
       <Size>62.75333,65.16</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -215,7 +215,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="21">
-      <Location>342.7274,894.9092</Location>
+      <Location>410.6081,881.5992</Location>
       <Size>65.58,104.04</Size>
       <NoteID>0</NoteID>
       <Comment>tarmac</Comment>
@@ -229,7 +229,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="23">
-      <Location>110.5999,894.8001</Location>
+      <Location>107.6717,885.35</Location>
       <Size>62.75333,52.2</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -311,6 +311,14 @@
     <Object type="ProcedureOperatorState" id="33">
       <Location>-73.39672,494.8347</Location>
       <Size>85.31333,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="34">
+      <Location>-369.9669,360.2256</Location>
+      <Size>83.34,52.2</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>

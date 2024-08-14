@@ -8,7 +8,7 @@
     <DisplayName>Process.HeroBuildings.each</DisplayName>
     <Description>for each building</Description>
     <TopLeft>-30,-93.0909</TopLeft>
-    <BottomRight>709.0685,400</BottomRight>
+    <BottomRight>778.3652,400</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
@@ -26,7 +26,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="3">
-      <Location>662.4803,-23.124</Location>
+      <Location>777.9352,-32.2149</Location>
       <Size>100.43,142.92</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -42,8 +42,24 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="5">
-      <Location>437.3637,-35.81818</Location>
+      <Location>541.9092,-9.454552</Location>
       <Size>126.8733,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="6">
+      <Location>408.2729,114.4546</Location>
+      <Size>135.6867,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="7">
+      <Location>200.0909,-33.27272</Location>
+      <Size>107.1167,69.28</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>

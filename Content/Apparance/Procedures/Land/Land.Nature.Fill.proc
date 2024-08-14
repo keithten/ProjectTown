@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="5C4CE24C">
+    <Inputs>
+        <Input id="1" type="Frame" name="Tile" description=""/>
+        <Input id="2" type="List" name="Resources" description=""/>
+        <Input id="3" type="ModelSegment" name="Density Mask" description="Where to place it?"/>
+        <Input id="4" type="Frame" name="Mask Bounds" description=""/>
+        <Input id="5" type="Integer" name="#" description=""/>
+        <Input id="6" type="Float" name="Spacing" description="Min spacing"/>
+        <Input id="7" type="Float" name="Dither" description=""/>
+    </Inputs>
+    <Constants>
+        <Constant id="-4" type="Float">0.000000</Constant>
+        <Constant id="-5" type="Float">0.000000</Constant>
+        <Constant id="-7" type="Integer">3</Constant>
+        <Constant id="-10" type="Integer">4</Constant>
+        <Constant id="-11" type="Integer">4</Constant>
+        <Constant id="-12" type="Integer">0</Constant>
+        <Constant id="-13" type="Integer">2</Constant>
+        <Constant id="-14" type="Integer">2</Constant>
+        <Constant id="-15" type="Integer">2</Constant>
+        <Constant id="-17" type="List"></Constant>
+        <Constant id="-20" type="Float">0.500000</Constant>
+        <Constant id="-26" type="Float">0.000000</Constant>
+        <Constant id="-27" type="Integer">2</Constant>
+        <Constant id="-28" type="Integer">1</Constant>
+        <Constant id="-29" type="Integer">1</Constant>
+        <Constant id="-30" type="Integer">1</Constant>
+        <Constant id="-31" type="Float">180.000000</Constant>
+        <Constant id="-34" type="Float">0.666000</Constant>
+        <Constant id="-35" type="Float">0.500000</Constant>
+        <Constant id="-37" type="Vector3">0.000000, 0.000000, 0.000000</Constant>
+        <Constant id="-38" type="Integer">0</Constant>
+        <Constant id="-39" type="Integer">0</Constant>
+        <Constant id="-40" type="Integer">0</Constant>
+        <Constant id="-43" type="Float">0.333000</Constant>
+        <Constant id="-46" type="Float">0.000000</Constant>
+        <Constant id="-48" type="Vector3">1.000000, 1.000000, 1.200000</Constant>
+        <Constant id="-49" type="Integer">0</Constant>
+        <Constant id="-50" type="Integer">0</Constant>
+        <Constant id="-51" type="Integer">0</Constant>
+        <Constant id="-52" type="Integer">1</Constant>
+        <Constant id="-53" type="Integer">1</Constant>
+        <Constant id="-54" type="Integer">0</Constant>
+        <Constant id="-56" type="Integer">4</Constant>
+        <Constant id="-61" type="Vector3">0.000000, 0.000000, 0.200000</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="439D9176">
+            <Connect in="100" input="1"/>
+            <Connect in="101" input="6"/>
+            <Connect in="102" to="5" out="100"/>
+            <Connect in="103" constant="-4"/>
+            <Connect in="104" constant="-5"/>
+            <Connect in="105" to="7" out="100"/>
+            <Connect in="106" constant="-7"/>
+        </Operator>
+        <Operator id="2" type="C198F381">
+            <Connect in="100" input="2"/>
+            <Connect in="101" to="11" out="100"/>
+            <Connect in="102" constant="-10"/>
+            <Connect in="103" constant="-11"/>
+            <Connect in="104" input="5"/>
+            <Connect in="105" constant="-17"/>
+            <Connect in="106" constant="-12"/>
+            <Connect in="107" constant="-13"/>
+            <Connect in="108" constant="-14"/>
+            <Connect in="109" constant="-15"/>
+        </Operator>
+        <Operator id="3" type="7F9A5757">
+            <Connect in="100" to="1" out="100"/>
+            <Connect in="101" input="4"/>
+            <Connect in="102" input="3"/>
+            <Connect in="103" constant="-20"/>
+            <Connect in="104" input="7"/>
+            <Connect in="105" input="5"/>
+        </Operator>
+        <Operator id="4" type="24B699E4">
+            <Connect in="100" to="8" out="100"/>
+            <Connect in="101" constant="-26"/>
+            <Connect in="102" constant="-27"/>
+            <Connect in="103" constant="-28"/>
+            <Connect in="104" constant="-29"/>
+            <Connect in="105" constant="-30"/>
+            <Connect in="106" constant="-31"/>
+            <Connect in="107" input="5"/>
+        </Operator>
+        <Operator id="5" type="971515D0">
+            <Connect in="100" input="6"/>
+            <Connect in="101" constant="-34"/>
+        </Operator>
+        <Operator id="7" type="971515D0">
+            <Connect in="100" input="6"/>
+            <Connect in="101" constant="-35"/>
+        </Operator>
+        <Operator id="8" type="74A16908">
+            <Connect in="100" to="3" out="100"/>
+            <Connect in="101" constant="-37"/>
+            <Connect in="102" constant="-38"/>
+            <Connect in="103" constant="-39"/>
+            <Connect in="104" constant="-40"/>
+            <Connect in="105" to="10" out="100"/>
+            <Connect in="106" input="5"/>
+        </Operator>
+        <Operator id="9" type="971515D0">
+            <Connect in="100" input="6"/>
+            <Connect in="101" constant="-43"/>
+        </Operator>
+        <Operator id="10" type="D2698D20">
+            <Connect in="100" to="9" out="100"/>
+            <Connect in="101" to="9" out="100"/>
+            <Connect in="102" constant="-46"/>
+        </Operator>
+        <Operator id="11" type="E30CEFB0">
+            <Connect in="100" to="4" out="100"/>
+            <Connect in="101" constant="-48"/>
+            <Connect in="102" constant="-49"/>
+            <Connect in="103" constant="-50"/>
+            <Connect in="104" constant="-51"/>
+            <Connect in="105" constant="-52"/>
+            <Connect in="106" constant="-53"/>
+            <Connect in="107" constant="-54"/>
+            <Connect in="108" constant="-61"/>
+            <Connect in="109" input="5"/>
+            <Connect in="110" constant="-56"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="ModelSegment" name="Objects" description="" to="2" out="100"/>
+    </Outputs>
+</Procedure>

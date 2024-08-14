@@ -8,7 +8,7 @@
     <DisplayName>Configuration</DisplayName>
     <Description>Global control parameters</Description>
     <TopLeft>-30,-20</TopLeft>
-    <BottomRight>600,400</BottomRight>
+    <BottomRight>600,413.1818</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
@@ -25,6 +25,13 @@
       <Comment>Margin (m)</Comment>
       <InputMetadata />
     </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>363.3058,320.1075</Location>
+      <Size>90.85667,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>Min Tree Spacing</Comment>
+      <InputMetadata />
+    </Object>
     <Object type="ProcedureOutputState" id="1">
       <Name>Texture Size</Name>
       <Description>
@@ -33,6 +40,10 @@
     <Object type="ProcedureOutputState" id="2">
       <Name>Margin</Name>
       <Description>Tile margin in metres</Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="3">
+      <Name>Tree Spacing</Name>
+      <Description>min tree spacing</Description>
     </Object>
   </Objects>
   <Camera>
