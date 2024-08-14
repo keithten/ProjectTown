@@ -1,0 +1,80 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>410,225</Centre>
+    <Zoom>1.1</Zoom>
+  </View>
+  <Procedure>
+    <Category>Tile</Category>
+    <DisplayName>Configuration.Features</DisplayName>
+    <Description>Turn features on and off</Description>
+    <TopLeft>-30,-70.8181</TopLeft>
+    <BottomRight>600,470.8099</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>374.4628,78.80991</Location>
+      <Size>73.16333,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>Footprints</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>373.1736,163.5372</Location>
+      <Size>73.16333,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>Nature</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>371,247.1736</Location>
+      <Size>73.16333,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>Towns</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>368,330</Location>
+      <Size>73.16333,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>Hero Effects</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>376.4545,-4.454463</Location>
+      <Size>73.16333,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>Ground</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>Footprints?</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="2">
+      <Name>Nature?</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="3">
+      <Name>Towns?</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="4">
+      <Name>Hero Effects?</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="5">
+      <Name>Ground</Name>
+      <Description>
+      </Description>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+</ProcedureEditData>

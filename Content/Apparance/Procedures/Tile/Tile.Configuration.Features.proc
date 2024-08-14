@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="69AFB575">
+    <Inputs/>
+    <Constants>
+        <Constant id="-1" type="Bool">True</Constant>
+        <Constant id="-2" type="Bool">True</Constant>
+        <Constant id="-3" type="Bool">True</Constant>
+        <Constant id="-4" type="Bool">True</Constant>
+        <Constant id="-5" type="Bool">True</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="DB89EED3">
+            <Connect in="100" constant="-1"/>
+        </Operator>
+        <Operator id="2" type="DB89EED3">
+            <Connect in="100" constant="-2"/>
+        </Operator>
+        <Operator id="3" type="DB89EED3">
+            <Connect in="100" constant="-3"/>
+        </Operator>
+        <Operator id="4" type="DB89EED3">
+            <Connect in="100" constant="-4"/>
+        </Operator>
+        <Operator id="5" type="DB89EED3">
+            <Connect in="100" constant="-5"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="5" type="Bool" name="Ground" description="" to="5" out="100"/>
+        <Output id="1" type="Bool" name="Footprints?" description="" to="1" out="100"/>
+        <Output id="2" type="Bool" name="Nature?" description="" to="2" out="100"/>
+        <Output id="3" type="Bool" name="Towns?" description="" to="3" out="100"/>
+        <Output id="4" type="Bool" name="Hero Effects?" description="" to="4" out="100"/>
+    </Outputs>
+</Procedure>

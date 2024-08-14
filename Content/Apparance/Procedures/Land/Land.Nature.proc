@@ -55,7 +55,7 @@
         <Constant id="-74" type="Integer">0</Constant>
         <Constant id="-76" type="Float">2.000000</Constant>
         <Constant id="-77" type="Float">0.000000</Constant>
-        <Constant id="-78" type="Float">0.337662</Constant>
+        <Constant id="-78" type="Float">0.363636</Constant>
     </Constants>
     <Operators>
         <Operator id="1" type="5C4CE24C">
