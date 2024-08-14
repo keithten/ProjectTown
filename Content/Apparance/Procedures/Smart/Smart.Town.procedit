@@ -1,13 +1,13 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>719.9164,215.9091</Centre>
+    <Centre>443.0569,215.0827</Centre>
     <Zoom>1.21</Zoom>
   </View>
   <Procedure>
     <Category>Smart</Category>
     <DisplayName>Town</DisplayName>
     <Description>Region of town buildings</Description>
-    <TopLeft>-30,-20</TopLeft>
+    <TopLeft>-120.9091,-36.09918</TopLeft>
     <BottomRight>829.7523,433.0265</BottomRight>
   </Procedure>
   <Objects>
@@ -59,6 +59,22 @@
       </Comment>
       <InputMetadata />
     </Object>
+    <Object type="ProcedureOperatorState" id="7">
+      <Location>96.44623,19.68594</Location>
+      <Size>107.1167,54.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="8">
+      <Location>238.1655,59.18176</Location>
+      <Size>126.8733,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>ensure tracking overlap
+happens before needed</Comment>
+      <InputMetadata />
+    </Object>
     <Object type="ProcedureInputState" id="1">
       <Name>Frame</Name>
       <Description>
@@ -92,6 +108,10 @@
     </Input>
     <Input id="2">
       <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="3">
+      <Value type="842221088" value="0" />
       <Metadata />
     </Input>
   </DefaultInputs>

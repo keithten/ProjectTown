@@ -48,7 +48,7 @@
         <Constant id="-85" type="ModelSegment"></Constant>
         <Constant id="-89" type="ModelSegment"></Constant>
         <Constant id="-91" type="List"></Constant>
-        <Constant id="-92" type="Float">6.493506</Constant>
+        <Constant id="-92" type="Float">3.376623</Constant>
     </Constants>
     <Operators>
         <Operator id="1" type="B605B5EE">
@@ -65,7 +65,7 @@
             <Connect in="104" constant="-8"/>
         </Operator>
         <Operator id="5" type="A0D214B9">
-            <Connect in="110" input="1"/>
+            <Connect in="110" to="26" out="1"/>
             <Connect in="111" to="7" out="1"/>
             <Connect in="112" to="7" out="1"/>
             <Connect in="113" constant="-18"/>
@@ -78,7 +78,7 @@
         </Operator>
         <Operator id="7" type="8CE8A9FB"/>
         <Operator id="8" type="A0D214B9">
-            <Connect in="110" input="1"/>
+            <Connect in="110" to="26" out="1"/>
             <Connect in="111" to="7" out="1"/>
             <Connect in="112" to="7" out="1"/>
             <Connect in="113" constant="-23"/>
@@ -157,6 +157,9 @@
         <Operator id="25" type="62201849">
             <Connect in="100" to="19" out="100"/>
             <Connect in="101" to="22" out="2"/>
+        </Operator>
+        <Operator id="26" type="D2B5F0D9">
+            <Connect in="1" input="1"/>
         </Operator>
     </Operators>
     <Outputs>

@@ -15,7 +15,7 @@
     <Operators>
         <Operator id="2" type="11A7478C">
             <Connect in="100" constant="-5"/>
-            <Connect in="101" input="1"/>
+            <Connect in="101" to="8" out="1"/>
             <Connect in="102" to="5" out="100"/>
         </Operator>
         <Operator id="4" type="4474330E">
@@ -31,6 +31,11 @@
             <Connect in="101" to="2" out="100"/>
             <Connect in="102" constant="-16"/>
             <Connect in="103" constant="-17"/>
+        </Operator>
+        <Operator id="7" type="8CE8A9FB"/>
+        <Operator id="8" type="B66C8439">
+            <Connect in="1" input="1"/>
+            <Connect in="2" to="7" out="2"/>
         </Operator>
     </Operators>
     <Outputs>

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="D2A3223F">
+    <Inputs>
+        <Input id="1" type="Frame" name="Frame" description=""/>
+        <Input id="2" type="Float" name="Amount" description=""/>
+    </Inputs>
+    <Constants>
+        <Constant id="-1" type="Integer">0</Constant>
+        <Constant id="-2" type="Integer">0</Constant>
+        <Constant id="-3" type="Bool">True</Constant>
+        <Constant id="-4" type="Integer">0</Constant>
+        <Constant id="-5" type="Integer">1</Constant>
+        <Constant id="-6" type="Bool">True</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="E853B53E">
+            <Connect in="100" input="1"/>
+            <Connect in="101" input="2"/>
+            <Connect in="102" constant="-1"/>
+            <Connect in="103" constant="-2"/>
+            <Connect in="104" constant="-3"/>
+        </Operator>
+        <Operator id="2" type="E853B53E">
+            <Connect in="100" to="1" out="101"/>
+            <Connect in="101" input="2"/>
+            <Connect in="102" constant="-4"/>
+            <Connect in="103" constant="-5"/>
+            <Connect in="104" constant="-6"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="Frame" name="Frame" description="" to="2" out="101"/>
+    </Outputs>
+</Procedure>

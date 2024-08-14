@@ -1,13 +1,13 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>1098.353,420.7592</Centre>
-    <Zoom>0.751315057</Zoom>
+    <Centre>569.5845,312.1954</Centre>
+    <Zoom>1.00000048</Zoom>
   </View>
   <Procedure>
     <Category>Tile</Category>
     <DisplayName>Process.Towns.each</DisplayName>
     <Description>What to do with each town</Description>
-    <TopLeft>-30,-103.5</TopLeft>
+    <TopLeft>-30,-104</TopLeft>
     <BottomRight>1786.425,727.0197</BottomRight>
   </Procedure>
   <Objects>
@@ -132,6 +132,37 @@
       <Comment>poly mask footprints</Comment>
       <InputMetadata />
     </Object>
+    <Object type="ProcedureOperatorState" id="17">
+      <Location>427,-11</Location>
+      <Size>126.8733,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="18">
+      <Location>282,-37</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="19">
+      <Location>354,63.99998</Location>
+      <Size>143.0333,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>remove overlap contingent</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="20">
+      <Location>222,-10.00002</Location>
+      <Size>107.1167,54.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
     <Object type="ProcedureInputState" id="1">
       <Name>Town</Name>
       <Description>
@@ -191,6 +222,10 @@
     </Input>
     <Input id="3">
       <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
+      <Metadata />
+    </Input>
+    <Input id="4">
+      <Value type="1953720652" value="" />
       <Metadata />
     </Input>
   </DefaultInputs>

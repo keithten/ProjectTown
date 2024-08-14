@@ -1,7 +1,7 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>662.8383,640.98</Centre>
-    <Zoom>0.683013558</Zoom>
+    <Centre>521.3093,550.1129</Centre>
+    <Zoom>0.683013856</Zoom>
   </View>
   <Procedure>
     <Category>Land</Category>
@@ -36,7 +36,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="4">
-      <Location>55.13643,552.364</Location>
+      <Location>52.13643,543.364</Location>
       <Size>75.14333,155.88</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -191,8 +191,8 @@
       </InputMetadata>
     </Object>
     <Object type="ProcedureOperatorState" id="18">
-      <Location>-174.9814,557.1172</Location>
-      <Size>107.1167,39.28</Size>
+      <Location>-145.2293,552.985</Location>
+      <Size>107.1167,54.28</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -303,6 +303,14 @@
     <Object type="ProcedureOperatorState" id="32">
       <Location>962.1895,630.3058</Location>
       <Size>64.82333,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="33">
+      <Location>-73.39672,494.8347</Location>
+      <Size>85.31333,39.28</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>

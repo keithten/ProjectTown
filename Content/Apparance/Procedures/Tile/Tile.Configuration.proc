@@ -3,15 +3,20 @@
     <Inputs/>
     <Constants>
         <Constant id="-1" type="Integer">1</Constant>
-        <Constant id="-2" type="Integer">6</Constant>
+        <Constant id="-2" type="Integer">7</Constant>
+        <Constant id="-3" type="Float">15.000000</Constant>
     </Constants>
     <Operators>
         <Operator id="1" type="787414B5">
             <Connect in="100" constant="-1"/>
             <Connect in="101" constant="-2"/>
         </Operator>
+        <Operator id="2" type="DA4FC7F9">
+            <Connect in="100" constant="-3"/>
+        </Operator>
     </Operators>
     <Outputs>
         <Output id="1" type="Integer" name="Texture Size" description="" to="1" out="100"/>
+        <Output id="2" type="Float" name="Margin" description="" to="2" out="100"/>
     </Outputs>
 </Procedure>
