@@ -1,14 +1,14 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>1239.541,315.98</Centre>
-    <Zoom>1.21</Zoom>
+    <Centre>764.1333,314.98</Centre>
+    <Zoom>0.683013558</Zoom>
   </View>
   <Procedure>
     <Category>Land</Category>
     <DisplayName>Nature.Fill</DisplayName>
     <Description>Fill tile with grass/trees etc</Description>
     <TopLeft>-212.5073,-98.42271</TopLeft>
-    <BottomRight>1518.541,516.8912</BottomRight>
+    <BottomRight>1518.541,685</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
@@ -28,7 +28,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="3">
-      <Location>421.1671,293.9711</Location>
+      <Location>437.1671,243.9711</Location>
       <Size>105.26,104.04</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -100,8 +100,32 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="12">
-      <Location>1122.923,329.1901</Location>
-      <Size>71.52666,45.88</Size>
+      <Location>797,365</Location>
+      <Size>58.81333,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="13">
+      <Location>796,425</Location>
+      <Size>58.81333,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="14">
+      <Location>795,485</Location>
+      <Size>58.81333,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="15">
+      <Location>794,545</Location>
+      <Size>58.81333,52.2</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>

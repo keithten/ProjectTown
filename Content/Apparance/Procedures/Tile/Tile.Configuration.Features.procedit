@@ -8,7 +8,7 @@
     <DisplayName>Configuration.Features</DisplayName>
     <Description>Turn features on and off</Description>
     <TopLeft>-30,-70.8181</TopLeft>
-    <BottomRight>600,470.8099</BottomRight>
+    <BottomRight>600,490.8252</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
@@ -46,6 +46,13 @@
       <Comment>Ground</Comment>
       <InputMetadata />
     </Object>
+    <Object type="ProcedureOperatorState" id="6">
+      <Location>368.2727,401.5452</Location>
+      <Size>73.16333,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>Forests</Comment>
+      <InputMetadata />
+    </Object>
     <Object type="ProcedureOutputState" id="1">
       <Name>Footprints?</Name>
       <Description>
@@ -71,10 +78,16 @@
       <Description>
       </Description>
     </Object>
+    <Object type="ProcedureOutputState" id="6">
+      <Name>Forests?</Name>
+      <Description>
+      </Description>
+    </Object>
   </Objects>
   <Camera>
     <Position>0,0,0</Position>
     <Look>0,0,0</Look>
     <Interest>0</Interest>
   </Camera>
+  <DefaultInputs />
 </ProcedureEditData>

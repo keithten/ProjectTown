@@ -1,0 +1,91 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>484,234</Centre>
+    <Zoom>1</Zoom>
+  </View>
+  <Procedure>
+    <Category>Smart</Category>
+    <DisplayName>Forest</DisplayName>
+    <Description>TODO: Documentation</Description>
+    <TopLeft>-103.5538,-20</TopLeft>
+    <BottomRight>799.799,400</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>524,115</Location>
+      <Size>119.9967,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>773,167</Location>
+      <Size>104.9533,78.12</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>96,69</Location>
+      <Size>107.1167,69.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>255,81</Location>
+      <Size>126.8733,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>ensure tracking overlap
+happens before needed</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>371,230</Location>
+      <Size>65.97667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>Density</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>Out</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>Frame</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Density</Name>
+      <Description>
+      </Description>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
+      <Metadata />
+    </Input>
+    <Input id="2">
+      <Value type="842221088" value="1" />
+      <Metadata>
+        <Input Name="Min">
+          <Value type="842221088" value="0" />
+        </Input>
+        <Input Name="Max">
+          <Value type="842221088" value="1" />
+        </Input>
+      </Metadata>
+    </Input>
+  </DefaultInputs>
+</ProcedureEditData>

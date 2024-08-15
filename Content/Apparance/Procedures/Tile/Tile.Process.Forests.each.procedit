@@ -1,0 +1,142 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>286.032,123.1682</Centre>
+    <Zoom>1.21</Zoom>
+  </View>
+  <Procedure>
+    <Category>Tile</Category>
+    <DisplayName>Process.Forests.each</DisplayName>
+    <Description>Process each forest</Description>
+    <TopLeft>-442.0497,-304.7604</TopLeft>
+    <BottomRight>600,459.28</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>336,154</Location>
+      <Size>142.4533,78.12</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>-94.0744,-142.0166</Location>
+      <Size>90.50333,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[0] forest bounds</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>-95.0083,-57.09921</Location>
+      <Size>89.55,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[1] forest params</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>-242.0497,-254.7604</Location>
+      <Size>107.1167,69.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>26.18174,-146.0661</Location>
+      <Size>135.6867,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>back to actual bounds</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="6">
+      <Location>495,-4</Location>
+      <Size>91.6,117</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata>
+        <Input id="104">
+          <Data name="MaximumValue">
+            <DataValue typeid="842221088">
+              <Float>1</Float>
+            </DataValue>
+          </Data>
+        </Input>
+      </InputMetadata>
+    </Object>
+    <Object type="ProcedureOperatorState" id="7">
+      <Location>308,355</Location>
+      <Size>80.96,54.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>passthrough</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="8">
+      <Location>327,75</Location>
+      <Size>70.53,117</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="9">
+      <Location>497,233</Location>
+      <Size>91.6,117</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata>
+        <Input id="104">
+          <Data name="MaximumValue">
+            <DataValue typeid="842221088">
+              <Float>1</Float>
+            </DataValue>
+          </Data>
+        </Input>
+      </InputMetadata>
+    </Object>
+    <Object type="ProcedureOperatorState" id="10">
+      <Location>59.49588,-33</Location>
+      <Size>63.73667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>Density</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>In</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Town Mask</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="3">
+      <Name>Forest Mask</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>Town Mask</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="2">
+      <Name>Forest Mask</Name>
+      <Description>
+      </Description>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="1953720652" value="" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
+</ProcedureEditData>

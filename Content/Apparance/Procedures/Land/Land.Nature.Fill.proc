@@ -44,6 +44,10 @@
         <Constant id="-54" type="Integer">0</Constant>
         <Constant id="-56" type="Integer">4</Constant>
         <Constant id="-61" type="Vector3">0.000000, 0.000000, 0.200000</Constant>
+        <Constant id="-63" type="Integer">0</Constant>
+        <Constant id="-64" type="Integer">1</Constant>
+        <Constant id="-65" type="Integer">2</Constant>
+        <Constant id="-66" type="Integer">3</Constant>
     </Constants>
     <Operators>
         <Operator id="1" type="439D9176">
@@ -60,7 +64,7 @@
             <Connect in="101" to="11" out="100"/>
             <Connect in="102" constant="-10"/>
             <Connect in="103" constant="-11"/>
-            <Connect in="104" input="5"/>
+            <Connect in="104" to="15" out="100"/>
             <Connect in="105" constant="-17"/>
             <Connect in="106" constant="-12"/>
             <Connect in="107" constant="-13"/>
@@ -83,7 +87,7 @@
             <Connect in="104" constant="-29"/>
             <Connect in="105" constant="-30"/>
             <Connect in="106" constant="-31"/>
-            <Connect in="107" input="5"/>
+            <Connect in="107" to="13" out="100"/>
         </Operator>
         <Operator id="5" type="971515D0">
             <Connect in="100" input="6"/>
@@ -100,7 +104,7 @@
             <Connect in="103" constant="-39"/>
             <Connect in="104" constant="-40"/>
             <Connect in="105" to="10" out="100"/>
-            <Connect in="106" input="5"/>
+            <Connect in="106" to="12" out="100"/>
         </Operator>
         <Operator id="9" type="971515D0">
             <Connect in="100" input="6"/>
@@ -121,8 +125,24 @@
             <Connect in="106" constant="-53"/>
             <Connect in="107" constant="-54"/>
             <Connect in="108" constant="-61"/>
-            <Connect in="109" input="5"/>
+            <Connect in="109" to="14" out="100"/>
             <Connect in="110" constant="-56"/>
+        </Operator>
+        <Operator id="12" type="0B64055F">
+            <Connect in="100" input="5"/>
+            <Connect in="101" constant="-63"/>
+        </Operator>
+        <Operator id="13" type="0B64055F">
+            <Connect in="100" input="5"/>
+            <Connect in="101" constant="-64"/>
+        </Operator>
+        <Operator id="14" type="0B64055F">
+            <Connect in="100" input="5"/>
+            <Connect in="101" constant="-65"/>
+        </Operator>
+        <Operator id="15" type="0B64055F">
+            <Connect in="100" input="5"/>
+            <Connect in="101" constant="-66"/>
         </Operator>
     </Operators>
     <Outputs>

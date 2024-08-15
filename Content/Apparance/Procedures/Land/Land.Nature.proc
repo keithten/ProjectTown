@@ -7,6 +7,7 @@
         <Input id="2" type="Frame" name="Mask Bounds" description=""/>
         <Input id="5" type="ModelSegment" name="Workspace" description=""/>
         <Input id="6" type="Frame" name="World Tile" description=""/>
+        <Input id="7" type="ModelSegment" name="Forest" description="Add more trees"/>
     </Inputs>
     <Constants>
         <Constant id="-1" type="String">Town.Nature.Trees</Constant>
@@ -28,8 +29,8 @@
         <Constant id="-30" type="Float">1.000000</Constant>
         <Constant id="-42" type="Float">-1.000000</Constant>
         <Constant id="-43" type="Float">1.000000</Constant>
-        <Constant id="-44" type="Float">0.116883</Constant>
-        <Constant id="-45" type="Float">0.548052</Constant>
+        <Constant id="-44" type="Float">0.000000</Constant>
+        <Constant id="-45" type="Float">0.440153</Constant>
         <Constant id="-46" type="Integer">3</Constant>
         <Constant id="-50" type="Frame">[0,0,0][0,0,0][0,0,0][0,0,0][0,0,0]</Constant>
         <Constant id="-52" type="Frame">[0,0,0][0,0,0][0,0,0][0,0,0][0,0,0]</Constant>
@@ -54,14 +55,23 @@
         <Constant id="-72" type="Integer">3</Constant>
         <Constant id="-74" type="Integer">0</Constant>
         <Constant id="-76" type="Float">2.000000</Constant>
-        <Constant id="-77" type="Float">0.000000</Constant>
+        <Constant id="-77" type="Float">0.220779</Constant>
         <Constant id="-78" type="Float">0.363636</Constant>
+        <Constant id="-80" type="Vector3">0.000000, 0.000000, 0.000000</Constant>
+        <Constant id="-82" type="Frame">[0,0,0][0,0,0][0,0,0][0,0,0][0,0,0]</Constant>
+        <Constant id="-83" type="Integer">6</Constant>
+        <Constant id="-84" type="Float">1.000000</Constant>
+        <Constant id="-85" type="ModelSegment"></Constant>
+        <Constant id="-86" type="Frame">[0,0,0][0,0,0][0,0,0][0,0,0][0,0,0]</Constant>
+        <Constant id="-88" type="Float">4.000000</Constant>
+        <Constant id="-89" type="Integer">1</Constant>
+        <Constant id="-91" type="Integer">5</Constant>
     </Constants>
     <Operators>
         <Operator id="1" type="5C4CE24C">
             <Connect in="1" input="1"/>
             <Connect in="2" to="2" out="100"/>
-            <Connect in="3" to="11" out="100"/>
+            <Connect in="3" to="23" out="100"/>
             <Connect in="4" input="2"/>
             <Connect in="5" input="3"/>
             <Connect in="6" to="22" out="3"/>
@@ -177,6 +187,25 @@
             <Connect in="101" constant="-74"/>
         </Operator>
         <Operator id="22" type="8CE8A9FB"/>
+        <Operator id="23" type="C5C00F04">
+            <Connect in="100" to="11" out="100"/>
+            <Connect in="101" constant="-80"/>
+            <Connect in="102" to="24" out="100"/>
+            <Connect in="103" constant="-82"/>
+            <Connect in="104" constant="-83"/>
+            <Connect in="105" constant="-84"/>
+            <Connect in="106" constant="-85"/>
+            <Connect in="107" constant="-86"/>
+        </Operator>
+        <Operator id="24" type="52C9B85B">
+            <Connect in="100" to="25" out="100"/>
+            <Connect in="101" constant="-88"/>
+            <Connect in="102" constant="-89"/>
+        </Operator>
+        <Operator id="25" type="26E462B9">
+            <Connect in="100" input="7"/>
+            <Connect in="101" constant="-91"/>
+        </Operator>
     </Operators>
     <Outputs>
         <Output id="1" type="ModelSegment" name="" description="" to="6" out="100"/>

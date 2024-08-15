@@ -1,26 +1,34 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>163.5586,586.3178</Centre>
-    <Zoom>0.8264474</Zoom>
+    <Centre>-393.7522,669.3682</Centre>
+    <Zoom>1</Zoom>
   </View>
   <Procedure>
     <Category>Land</Category>
     <DisplayName>Nature</DisplayName>
     <Description>Add natural assets to tile</Description>
-    <TopLeft>-741.2972,-236.1287</TopLeft>
+    <TopLeft>-828,-236.1287</TopLeft>
     <BottomRight>1361.069,1094.267</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
-      <Location>544.9094,223.7984</Location>
+      <Location>767.186,217.1434</Location>
       <Size>125.8633,117</Size>
       <NoteID>3</NoteID>
       <Comment>
       </Comment>
-      <InputMetadata />
+      <InputMetadata>
+        <Input id="7">
+          <Data name="MaximumValue">
+            <DataValue typeid="842221088">
+              <Float>1</Float>
+            </DataValue>
+          </Data>
+        </Input>
+      </InputMetadata>
     </Object>
     <Object type="ProcedureOperatorState" id="2">
-      <Location>397.2886,354.4182</Location>
+      <Location>620.8963,81.56362</Location>
       <Size>122.8333,39.28</Size>
       <NoteID>3</NoteID>
       <Comment>
@@ -119,8 +127,7 @@
       <Location>267.598,153.7681</Location>
       <Size>86.29333,129.96</Size>
       <NoteID>3</NoteID>
-      <Comment>
-      </Comment>
+      <Comment>base coverage</Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="12">
@@ -141,12 +148,12 @@
         <Input id="104">
           <Data name="MaximumValue">
             <DataValue typeid="842221088">
-              <Float>0.6</Float>
+              <Float>1</Float>
             </DataValue>
           </Data>
           <Data name="MinimumValue">
             <DataValue typeid="842221088">
-              <Float>0.5</Float>
+              <Float>0</Float>
             </DataValue>
           </Data>
         </Input>
@@ -177,7 +184,7 @@
       </InputMetadata>
     </Object>
     <Object type="ProcedureOperatorState" id="16">
-      <Location>400.63,782.9551</Location>
+      <Location>401.961,471.5018</Location>
       <Size>122.8333,39.28</Size>
       <NoteID>4</NoteID>
       <Comment>
@@ -225,8 +232,31 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="22">
-      <Location>283,-61</Location>
+      <Location>591.7912,-123.5569</Location>
       <Size>107.1167,69.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="23">
+      <Location>491.1448,172.4228</Location>
+      <Size>86.29333,129.96</Size>
+      <NoteID>3</NoteID>
+      <Comment>tree boost</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="24">
+      <Location>-494.0718,572.618</Location>
+      <Size>62.75333,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="25">
+      <Location>-620,576</Location>
+      <Size>62.75333,52.2</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -262,6 +292,10 @@
       <Description>
       </Description>
     </Object>
+    <Object type="ProcedureInputState" id="7">
+      <Name>Forest</Name>
+      <Description>Add more trees</Description>
+    </Object>
     <Object type="ProcedureOutputState" id="1">
       <Name>
       </Name>
@@ -288,7 +322,7 @@
         <Y>62.54066</Y>
       </Location>
       <Size>
-        <Width>914.4504</Width>
+        <Width>1170.002</Width>
         <Height>356.1576</Height>
       </Size>
       <Title>Trees</Title>
@@ -338,6 +372,10 @@
     </Input>
     <Input id="6">
       <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
+      <Metadata />
+    </Input>
+    <Input id="7">
+      <Value type="1836016967" value="" />
       <Metadata />
     </Input>
   </DefaultInputs>

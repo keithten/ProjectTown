@@ -1,7 +1,7 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>569.5845,312.1954</Centre>
-    <Zoom>1.00000048</Zoom>
+    <Centre>509.0285,298.9709</Centre>
+    <Zoom>0.9090916</Zoom>
   </View>
   <Procedure>
     <Category>Tile</Category>
@@ -104,14 +104,14 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="13">
-      <Location>974.3237,-6.83188</Location>
-      <Size>100.8467,65.16</Size>
+      <Location>971.3237,-14.83187</Location>
+      <Size>146.8767,65.16</Size>
       <NoteID>0</NoteID>
-      <Comment>tile mask buildings</Comment>
+      <Comment>limit building meshes to tile</Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="14">
-      <Location>792.8137,3.127989</Location>
+      <Location>799.8137,2.127989</Location>
       <Size>100.43,142.92</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -126,7 +126,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="16">
-      <Location>1066.773,434.8369</Location>
+      <Location>1141.572,454.637</Location>
       <Size>108.8367,65.16</Size>
       <NoteID>0</NoteID>
       <Comment>poly mask footprints</Comment>
@@ -157,10 +157,17 @@
     </Object>
     <Object type="ProcedureOperatorState" id="20">
       <Location>222,-10.00002</Location>
-      <Size>107.1167,54.28</Size>
+      <Size>107.1167,69.28</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="21">
+      <Location>726.7261,337.1818</Location>
+      <Size>156.54,104.04</Size>
+      <NoteID>0</NoteID>
+      <Comment>suppress buildings altogether</Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureInputState" id="1">
@@ -179,6 +186,16 @@
     </Object>
     <Object type="ProcedureInputState" id="4">
       <Name>Poly Mask</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="5">
+      <Name>Image Mask</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="6">
+      <Name>World Tile</Name>
       <Description>
       </Description>
     </Object>

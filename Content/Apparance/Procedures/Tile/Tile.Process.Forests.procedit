@@ -1,0 +1,126 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>701.151,252.8788</Centre>
+    <Zoom>0.7513149</Zoom>
+  </View>
+  <Procedure>
+    <Category>Tile</Category>
+    <DisplayName>Process.Forests</DisplayName>
+    <Description>Generate forest masks</Description>
+    <TopLeft>-30,-51.05524</TopLeft>
+    <BottomRight>1040.101,522.5279</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>393.0648,318.8932</Location>
+      <Size>63.73667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>343.739,7.06703</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>190.6258,-0.4688649</Location>
+      <Size>64.82333,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>1064.894,-1.055237</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>1065.771,70.80431</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="6">
+      <Location>485.8021,371.4307</Location>
+      <Size>153.2433,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>for each</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="7">
+      <Location>701.8456,235.9981</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="8">
+      <Location>827.8599,201.9981</Location>
+      <Size>142.4533,78.12</Size>
+      <NoteID>0</NoteID>
+      <Comment>iterate through</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>In</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Index</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="3">
+      <Name>Town Mask</Name>
+      <Description>Workspace image for building town mask</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="4">
+      <Name>Forest Mask</Name>
+      <Description>Workspace image for building forest placement mask</Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>Town Mask</Name>
+      <Description>Suppress town</Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="2">
+      <Name>Forest Mask</Name>
+      <Description>Place forest</Description>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="1953720652" value="" />
+      <Metadata />
+    </Input>
+    <Input id="2">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="3">
+      <Value type="1836016967" value="" />
+      <Metadata />
+    </Input>
+    <Input id="4">
+      <Value type="1836016967" value="" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
+</ProcedureEditData>
