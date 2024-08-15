@@ -1,51 +1,59 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>526,272</Centre>
-    <Zoom>1</Zoom>
+    <Centre>440.5785,247.3141</Centre>
+    <Zoom>1.21</Zoom>
   </View>
   <Procedure>
-    <Category>Buildings</Category>
-    <DisplayName>Building.Place</DisplayName>
-    <Description>Place a building</Description>
+    <Category>Utility</Category>
+    <DisplayName>List.Some</DisplayName>
+    <Description>Choose a number of items from a list</Description>
     <TopLeft>-30,-20</TopLeft>
-    <BottomRight>873.7909,414.2644</BottomRight>
+    <BottomRight>600,400</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
-      <Location>831.8847,112.1818</Location>
-      <Size>112.9033,52.2</Size>
+      <Location>254,115</Location>
+      <Size>64.82333,39.28</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="2">
-      <Location>690.8843,80.18179</Location>
-      <Size>69.12,65.16</Size>
-      <NoteID>0</NoteID>
-      <Comment>
-      </Comment>
-      <InputMetadata />
-    </Object>
-    <Object type="ProcedureOperatorState" id="3">
-      <Location>505.8843,124.1818</Location>
-      <Size>74.33,65.16</Size>
-      <NoteID>0</NoteID>
-      <Comment>
-      </Comment>
-      <InputMetadata />
-    </Object>
-    <Object type="ProcedureOperatorState" id="4">
-      <Location>411.8843,174.1818</Location>
+      <Location>339.2314,202.124</Location>
       <Size>69.34,65.16</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>339,272.6612</Location>
+      <Size>69.34,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>254,165</Location>
+      <Size>64.82333,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
     <Object type="ProcedureOperatorState" id="5">
-      <Location>860,197</Location>
-      <Size>67.74667,52.2</Size>
+      <Location>339,252</Location>
+      <Size>69.34,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="6">
+      <Location>366.3884,143.0826</Location>
+      <Size>120.7867,78.12</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -57,17 +65,17 @@
       </Description>
     </Object>
     <Object type="ProcedureInputState" id="2">
-      <Name>#</Name>
+      <Name>Quantity</Name>
       <Description>
       </Description>
     </Object>
     <Object type="ProcedureInputState" id="3">
-      <Name>Control</Name>
+      <Name>#</Name>
       <Description>
       </Description>
     </Object>
     <Object type="ProcedureOutputState" id="1">
-      <Name>Object</Name>
+      <Name>Out</Name>
       <Description>
       </Description>
     </Object>
@@ -79,15 +87,11 @@
   </Camera>
   <DefaultInputs>
     <Input id="1">
-      <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
+      <Value type="1953720652" value="" />
       <Metadata />
     </Input>
     <Input id="2">
-      <Value type="842221856" value="0" />
-      <Metadata />
-    </Input>
-    <Input id="3">
-      <Value type="1819242306" value="False" />
+      <Value type="842221856" value="1" />
       <Metadata />
     </Input>
   </DefaultInputs>

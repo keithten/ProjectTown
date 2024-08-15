@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="C11F3866">
+    <Inputs>
+        <Input id="1" type="Frame" name="Bounds" description=""/>
+        <Input id="4" type="Integer" name="#" description=""/>
+        <Input id="2" type="Float" name="Spacing" description=""/>
+        <Input id="3" type="Bool" name="Random Direction?" description=""/>
+    </Inputs>
+    <Constants>
+        <Constant id="-6" type="Integer">0</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="E4A0C4ED">
+            <Connect in="1" input="1"/>
+            <Connect in="2" input="2"/>
+        </Operator>
+        <Operator id="2" type="E4D41E18">
+            <Connect in="1" to="1" out="1"/>
+            <Connect in="2" constant="-6"/>
+            <Connect in="3" input="4"/>
+            <Connect in="4" input="3"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="ModelSegment" name="Out" description="" to="2" out="1"/>
+    </Outputs>
+</Procedure>

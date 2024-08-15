@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="C117D643">
+    <Inputs>
+        <Input id="1" type="List" name="List" description=""/>
+        <Input id="2" type="Integer" name="Index" description=""/>
+    </Inputs>
+    <Constants/>
+    <Operators>
+        <Operator id="1" type="5C4E98DC">
+            <Connect in="100" input="1"/>
+        </Operator>
+        <Operator id="2" type="D56CEA6D">
+            <Connect in="100" input="1"/>
+            <Connect in="101" to="3" out="100"/>
+        </Operator>
+        <Operator id="3" type="9872345B">
+            <Connect in="100" input="2"/>
+            <Connect in="101" to="1" out="100"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="List" name="Item" description="" to="2" out="100"/>
+    </Outputs>
+</Procedure>
