@@ -33,6 +33,11 @@
         <Constant id="-48" type="Float">0.500000</Constant>
         <Constant id="-49" type="Float">0.000000</Constant>
         <Constant id="-50" type="Integer">0</Constant>
+        <Constant id="-52" type="Integer">0</Constant>
+        <Constant id="-53" type="List"></Constant>
+        <Constant id="-56" type="Integer">2</Constant>
+        <Constant id="-58" type="Integer">3</Constant>
+        <Constant id="-63" type="Integer">54</Constant>
     </Constants>
     <Operators>
         <Operator id="1" type="B06BD8E5">
@@ -111,12 +116,36 @@
         </Operator>
         <Operator id="20" type="8CE8A9FB"/>
         <Operator id="21" type="7F9A5757">
-            <Connect in="100" to="10" out="1"/>
+            <Connect in="100" to="22" out="1"/>
             <Connect in="101" input="6"/>
             <Connect in="102" input="5"/>
             <Connect in="103" constant="-48"/>
             <Connect in="104" constant="-49"/>
             <Connect in="105" constant="-50"/>
+        </Operator>
+        <Operator id="22" type="33951DEA">
+            <Connect in="1" to="10" out="1"/>
+            <Connect in="2" constant="-52"/>
+            <Connect in="3" constant="-53"/>
+            <Connect in="4" to="19" out="1"/>
+            <Connect in="5" to="23" out="100"/>
+            <Connect in="6" to="26" out="100"/>
+            <Connect in="8" to="25" out="100"/>
+        </Operator>
+        <Operator id="23" type="81C10C38">
+            <Connect in="100" to="2" out="100"/>
+            <Connect in="101" constant="-56"/>
+        </Operator>
+        <Operator id="24" type="81C10C38">
+            <Connect in="100" to="2" out="100"/>
+            <Connect in="101" constant="-58"/>
+        </Operator>
+        <Operator id="25" type="D0C62994">
+            <Connect in="100" to="24" out="100"/>
+        </Operator>
+        <Operator id="26" type="0B64055F">
+            <Connect in="100" to="3" out="100"/>
+            <Connect in="101" constant="-63"/>
         </Operator>
     </Operators>
     <Outputs>

@@ -1,6 +1,6 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>443.0569,215.0827</Centre>
+    <Centre>395.9494,220.0414</Centre>
     <Zoom>1.21</Zoom>
   </View>
   <Procedure>
@@ -8,7 +8,7 @@
     <DisplayName>Town</DisplayName>
     <Description>Region of town buildings</Description>
     <TopLeft>-120.9091,-36.09918</TopLeft>
-    <BottomRight>829.7523,433.0265</BottomRight>
+    <BottomRight>829.7523,504.9587</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
@@ -61,7 +61,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="7">
       <Location>96.44623,19.68594</Location>
-      <Size>107.1167,54.28</Size>
+      <Size>107.1167,69.28</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -73,6 +73,22 @@
       <NoteID>0</NoteID>
       <Comment>ensure tracking overlap
 happens before needed</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="9">
+      <Location>282,314.9587</Location>
+      <Size>65.97667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="10">
+      <Location>284.4793,376.3967</Location>
+      <Size>65.97667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureInputState" id="1">
@@ -87,8 +103,15 @@ happens before needed</Comment>
     </Object>
     <Object type="ProcedureInputState" id="3">
       <Name>Spacing</Name>
-      <Description>
-      </Description>
+      <Description>Gaps between buildings</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="4">
+      <Name>Falloff</Name>
+      <Description>Lower buildings around edge?</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="5">
+      <Name>Density %</Name>
+      <Description>How densely populated</Description>
     </Object>
     <Object type="ProcedureOutputState" id="1">
       <Name>Out</Name>
@@ -113,6 +136,28 @@ happens before needed</Comment>
     <Input id="3">
       <Value type="842221088" value="0" />
       <Metadata />
+    </Input>
+    <Input id="4">
+      <Value type="842221088" value="0" />
+      <Metadata>
+        <Input Name="Min">
+          <Value type="842221088" value="0" />
+        </Input>
+        <Input Name="Max">
+          <Value type="842221088" value="1" />
+        </Input>
+      </Metadata>
+    </Input>
+    <Input id="5">
+      <Value type="842221088" value="100" />
+      <Metadata>
+        <Input Name="Min">
+          <Value type="842221088" value="0" />
+        </Input>
+        <Input Name="Max">
+          <Value type="842221088" value="100" />
+        </Input>
+      </Metadata>
     </Input>
   </DefaultInputs>
 </ProcedureEditData>

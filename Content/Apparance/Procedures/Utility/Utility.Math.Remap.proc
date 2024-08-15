@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="338FF6F4">
+    <Inputs>
+        <Input id="1" type="Float" name="In A" description=""/>
+        <Input id="2" type="Float" name="In B" description="|Default=1"/>
+        <Input id="3" type="Float" name="In" description=""/>
+        <Input id="4" type="Float" name="Out A" description=""/>
+        <Input id="5" type="Float" name="Out B" description="|Default=1"/>
+    </Inputs>
+    <Constants/>
+    <Operators>
+        <Operator id="1" type="DED78D0E">
+            <Connect in="100" to="6" out="100"/>
+            <Connect in="101" to="3" out="100"/>
+        </Operator>
+        <Operator id="2" type="85D4CBD8">
+            <Connect in="100" input="4"/>
+            <Connect in="101" to="4" out="100"/>
+        </Operator>
+        <Operator id="3" type="A2AAB92C">
+            <Connect in="100" input="2"/>
+            <Connect in="101" input="1"/>
+        </Operator>
+        <Operator id="4" type="971515D0">
+            <Connect in="100" to="1" out="100"/>
+            <Connect in="101" to="5" out="100"/>
+        </Operator>
+        <Operator id="5" type="A2AAB92C">
+            <Connect in="100" input="5"/>
+            <Connect in="101" input="4"/>
+        </Operator>
+        <Operator id="6" type="A2AAB92C">
+            <Connect in="100" input="3"/>
+            <Connect in="101" input="1"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="Float" name="Out" description="" to="2" out="100"/>
+    </Outputs>
+</Procedure>

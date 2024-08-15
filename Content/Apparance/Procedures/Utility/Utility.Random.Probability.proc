@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="33B99B39">
+    <Inputs>
+        <Input id="1" type="Integer" name="#" description=""/>
+        <Input id="2" type="Integer" name="%" description="|Min=0|Max=100"/>
+    </Inputs>
+    <Constants>
+        <Constant id="-9" type="Integer">0</Constant>
+        <Constant id="-10" type="Integer">99</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="3" type="B3B228AF">
+            <Connect in="100" to="4" out="101"/>
+            <Connect in="101" input="2"/>
+        </Operator>
+        <Operator id="4" type="AC2F6398">
+            <Connect in="100" input="1"/>
+            <Connect in="101" constant="-9"/>
+            <Connect in="102" constant="-10"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="Integer" name="#" description="" to="4" out="100"/>
+        <Output id="2" type="Bool" name="?" description="" to="3" out="100"/>
+    </Outputs>
+</Procedure>
