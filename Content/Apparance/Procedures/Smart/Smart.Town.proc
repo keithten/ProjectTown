@@ -12,8 +12,8 @@
         <Constant id="-10" type="List"></Constant>
         <Constant id="-17" type="ModelSegment"></Constant>
         <Constant id="-19" type="String">Frame</Constant>
-        <Constant id="-20" type="Bool">False</Constant>
-        <Constant id="-21" type="Vector3">0.000000, 0.000000, 1.000000</Constant>
+        <Constant id="-20" type="Bool">True</Constant>
+        <Constant id="-21" type="Vector3">0.000000, 0.000000, 0.000000</Constant>
         <Constant id="-22" type="Integer">0</Constant>
         <Constant id="-23" type="Integer">0</Constant>
         <Constant id="-24" type="Integer">0</Constant>

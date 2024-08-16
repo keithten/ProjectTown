@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="39C4CE95">
+    <Inputs/>
+    <Constants>
+        <Constant id="-1" type="Bool">False</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="DB89EED3">
+            <Connect in="100" constant="-1"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="Bool" name="Force Handles?" description="" to="1" out="100"/>
+    </Outputs>
+</Procedure>

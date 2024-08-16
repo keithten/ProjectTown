@@ -1,13 +1,13 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>491.7462,363.8983</Centre>
-    <Zoom>0.7513164</Zoom>
+    <Centre>-242.9642,687.3301</Centre>
+    <Zoom>1.21</Zoom>
   </View>
   <Procedure>
     <Category>Widget</Category>
     <DisplayName>Corner</DisplayName>
     <Description>Corner arrows</Description>
-    <TopLeft>-687.5037,-59.54546</TopLeft>
+    <TopLeft>-689.6269,-59.54546</TopLeft>
     <BottomRight>3004.766,1333.249</BottomRight>
   </Procedure>
   <Objects>
@@ -558,8 +558,24 @@ same as original for all</Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="68">
-      <Location>-469,656</Location>
+      <Location>-321.0661,686.5782</Location>
       <Size>45.43667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="69">
+      <Location>-428.6269,751.1364</Location>
+      <Size>45.43667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="70">
+      <Location>-489.6269,853.1364</Location>
+      <Size>109.6667,39.28</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>

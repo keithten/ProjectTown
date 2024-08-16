@@ -43,6 +43,7 @@
         <Constant id="-101" type="Integer">1</Constant>
         <Constant id="-102" type="Integer">1</Constant>
         <Constant id="-104" type="ModelSegment"></Constant>
+        <Constant id="-106" type="ModelSegment"></Constant>
     </Constants>
     <Operators>
         <Operator id="2" type="587CD688">
@@ -59,7 +60,7 @@
         </Operator>
         <Operator id="6" type="FA692D46">
             <Connect in="1" to="5" out="100"/>
-            <Connect in="3" input="2"/>
+            <Connect in="3" to="41" out="100"/>
         </Operator>
         <Operator id="7" type="D729EF5D">
             <Connect in="100" to="37" out="2"/>
@@ -138,11 +139,11 @@
         </Operator>
         <Operator id="27" type="FA5C48B1">
             <Connect in="1" to="35" out="100"/>
-            <Connect in="3" input="2"/>
+            <Connect in="3" to="41" out="100"/>
         </Operator>
         <Operator id="28" type="0F77F09B">
             <Connect in="100" to="6" out="1"/>
-            <Connect in="101" to="29" out="100"/>
+            <Connect in="101" constant="-106"/>
         </Operator>
         <Operator id="29" type="C01FB46B">
             <Connect in="100" to="30" out="100"/>
@@ -185,11 +186,20 @@
         <Operator id="39" type="C01FB46B">
             <Connect in="100" to="40" out="100"/>
             <Connect in="101" constant="-104"/>
-            <Connect in="102" to="38" out="100"/>
+            <Connect in="102" to="43" out="100"/>
         </Operator>
         <Operator id="40" type="7C4C983A">
-            <Connect in="100" input="2"/>
+            <Connect in="100" to="41" out="100"/>
             <Connect in="101" input="5"/>
+        </Operator>
+        <Operator id="41" type="7C4C983A">
+            <Connect in="100" input="2"/>
+            <Connect in="101" to="42" out="1"/>
+        </Operator>
+        <Operator id="42" type="39C4CE95"/>
+        <Operator id="43" type="0F77F09B">
+            <Connect in="100" to="38" out="100"/>
+            <Connect in="101" to="29" out="100"/>
         </Operator>
     </Operators>
     <Outputs>

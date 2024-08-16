@@ -1,13 +1,13 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>769.1771,364.0305</Centre>
-    <Zoom>0.466507852</Zoom>
+    <Centre>-273.9367,381.9875</Centre>
+    <Zoom>1.21</Zoom>
   </View>
   <Procedure>
     <Category>Widget</Category>
     <DisplayName>Edge</DisplayName>
     <Description>Edge with arrow on</Description>
-    <TopLeft>-440.9999,-92.09094</TopLeft>
+    <TopLeft>-667.281,-92.09094</TopLeft>
     <BottomRight>1875.92,833.3436</BottomRight>
   </Procedure>
   <Objects>
@@ -237,6 +237,22 @@
       </Comment>
       <InputMetadata />
     </Object>
+    <Object type="ProcedureOperatorState" id="30">
+      <Location>-406.1736,399.3308</Location>
+      <Size>45.43667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="31">
+      <Location>-467.281,501.5622</Location>
+      <Size>109.6667,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
     <Object type="ProcedureInputState" id="1">
       <Name>Bounds</Name>
       <Description>Make along +Y edge</Description>
@@ -300,14 +316,7 @@
     </Input>
     <Input id="2">
       <Value type="842221088" value="0.333" />
-      <Metadata>
-        <Input Name="Min">
-          <Value type="842221088" value="0" />
-        </Input>
-        <Input Name="Max">
-          <Value type="842221088" value="1" />
-        </Input>
-      </Metadata>
+      <Metadata />
     </Input>
     <Input id="4">
       <Value type="1819242306" value="True" />
@@ -319,14 +328,7 @@
     </Input>
     <Input id="5">
       <Value type="842221856" value="0" />
-      <Metadata>
-        <Input Name="Min">
-          <Value type="842221856" value="0" />
-        </Input>
-        <Input Name="Max">
-          <Value type="842221856" value="3" />
-        </Input>
-      </Metadata>
+      <Metadata />
     </Input>
     <Input id="6">
       <Value type="1819242306" value="False" />

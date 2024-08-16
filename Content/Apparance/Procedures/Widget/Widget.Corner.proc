@@ -138,7 +138,7 @@
         </Operator>
         <Operator id="2" type="FA692D46">
             <Connect in="1" to="1" out="100"/>
-            <Connect in="3" input="3"/>
+            <Connect in="3" to="69" out="100"/>
         </Operator>
         <Operator id="3" type="301DC6F3">
             <Connect in="100" to="55" out="100"/>
@@ -464,9 +464,14 @@
             <Connect in="102" to="59" out="100"/>
         </Operator>
         <Operator id="68" type="7C4C983A">
-            <Connect in="100" input="3"/>
+            <Connect in="100" to="69" out="100"/>
             <Connect in="101" input="5"/>
         </Operator>
+        <Operator id="69" type="7C4C983A">
+            <Connect in="100" input="3"/>
+            <Connect in="101" to="70" out="1"/>
+        </Operator>
+        <Operator id="70" type="39C4CE95"/>
     </Operators>
     <Outputs>
         <Output id="1" type="ModelSegment" name="Out" description="" to="67" out="100"/>

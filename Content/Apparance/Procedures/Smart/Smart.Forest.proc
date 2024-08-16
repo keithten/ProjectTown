@@ -9,8 +9,8 @@
         <Constant id="-4" type="ModelSegment"></Constant>
         <Constant id="-7" type="List"></Constant>
         <Constant id="-10" type="String">Frame</Constant>
-        <Constant id="-11" type="Bool">False</Constant>
-        <Constant id="-13" type="Vector3">0.000000, 0.000000, 1.000000</Constant>
+        <Constant id="-11" type="Bool">True</Constant>
+        <Constant id="-13" type="Vector3">0.000000, 0.000000, 0.000000</Constant>
         <Constant id="-14" type="Integer">0</Constant>
         <Constant id="-15" type="Integer">0</Constant>
         <Constant id="-16" type="Integer">0</Constant>

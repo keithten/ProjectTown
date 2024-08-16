@@ -1,13 +1,13 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>541.3829,551.3165</Centre>
-    <Zoom>0.424098551</Zoom>
+    <Centre>1020.246,623.2625</Centre>
+    <Zoom>0.620921433</Zoom>
   </View>
   <Procedure>
     <Category>Widget</Category>
     <DisplayName>Ring</DisplayName>
     <Description>Circular ring</Description>
-    <TopLeft>-661.2214,-30.32392</TopLeft>
+    <TopLeft>-814.9337,-30.32392</TopLeft>
     <BottomRight>1561.414,1101.68</BottomRight>
   </Procedure>
   <Objects>
@@ -226,7 +226,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="28">
-      <Location>1145.179,581.4082</Location>
+      <Location>1140.347,544.3664</Location>
       <Size>46.75667,32.92</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -306,7 +306,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="38">
-      <Location>1421.17,522.714</Location>
+      <Location>1285.887,569.4189</Location>
       <Size>100.1467,104.04</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -322,8 +322,32 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="40">
-      <Location>-461.2215,592.4318</Location>
+      <Location>-430.643,689.1257</Location>
       <Size>45.43667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="41">
+      <Location>-538.2317,539.0829</Location>
+      <Size>45.43667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="42">
+      <Location>-614.9337,454.3058</Location>
+      <Size>109.6667,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="43">
+      <Location>1429.892,660.0308</Location>
+      <Size>46.75667,32.92</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -375,14 +399,7 @@
     </Input>
     <Input id="3">
       <Value type="842221856" value="15" />
-      <Metadata>
-        <Input Name="Min">
-          <Value type="842221856" value="0" />
-        </Input>
-        <Input Name="Max">
-          <Value type="842221856" value="31" />
-        </Input>
-      </Metadata>
+      <Metadata />
     </Input>
     <Input id="5">
       <Value type="1819242306" value="False" />
