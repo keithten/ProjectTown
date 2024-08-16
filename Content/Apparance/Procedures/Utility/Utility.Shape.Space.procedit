@@ -1,0 +1,70 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>501,229</Centre>
+    <Zoom>1</Zoom>
+  </View>
+  <Procedure>
+    <Category>Utility</Category>
+    <DisplayName>Shape.Space</DisplayName>
+    <Description>Set up a space to build a shape in, to move properly later</Description>
+    <TopLeft>-30,-20</TopLeft>
+    <BottomRight>612.12,425.8608</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>470.6033,80.90082</Location>
+      <Size>86.38,129.96</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>260.6033,92.25613</Location>
+      <Size>45.96667,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>334,45</Location>
+      <Size>91.55334,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>568,270</Location>
+      <Size>99.97,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>NOP, pass through</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>Bounds</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>Bounds</Name>
+      <Description>Space to move to</Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="2">
+      <Name>Shape</Name>
+      <Description>Space to build in</Description>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
+</ProcedureEditData>

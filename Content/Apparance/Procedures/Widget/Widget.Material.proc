@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="FA692D46">
+    <Inputs>
+        <Input id="1" type="ModelSegment" name="In" description=""/>
+        <Input id="3" type="Bool" name="Highlight?" description="|Default=True"/>
+    </Inputs>
+    <Constants>
+        <Constant id="-1" type="String">Editing.Widget.Material</Constant>
+        <Constant id="-2" type="Frame">[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]</Constant>
+        <Constant id="-3" type="Integer">0</Constant>
+        <Constant id="-6" type="List"></Constant>
+        <Constant id="-7" type="List"></Constant>
+        <Constant id="-11" type="Float">0.100000</Constant>
+        <Constant id="-12" type="Float">1.000000</Constant>
+        <Constant id="-15" type="Frame">[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="36BD1471">
+            <Connect in="100" constant="-1"/>
+            <Connect in="101" constant="-2"/>
+            <Connect in="102" constant="-3"/>
+        </Operator>
+        <Operator id="2" type="8564374F">
+            <Connect in="100" input="1"/>
+            <Connect in="101" to="1" out="100"/>
+            <Connect in="102" constant="-6"/>
+            <Connect in="103" constant="-7"/>
+        </Operator>
+        <Operator id="3" type="E1078DA9">
+            <Connect in="100" to="2" out="100"/>
+            <Connect in="101" to="4" out="100"/>
+        </Operator>
+        <Operator id="4" type="DC123662">
+            <Connect in="100" to="6" out="2"/>
+            <Connect in="101" to="5" out="100"/>
+        </Operator>
+        <Operator id="5" type="C0BB1E82">
+            <Connect in="100" input="3"/>
+            <Connect in="101" constant="-11"/>
+            <Connect in="102" constant="-12"/>
+        </Operator>
+        <Operator id="6" type="FA7216F7">
+            <Connect in="1" constant="-15"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="ModelSegment" name="Out" description="" to="3" out="100"/>
+    </Outputs>
+</Procedure>

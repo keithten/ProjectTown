@@ -1,82 +1,86 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>484,234</Centre>
-    <Zoom>1</Zoom>
+    <Centre>410,225</Centre>
+    <Zoom>0.8264463</Zoom>
   </View>
   <Procedure>
-    <Category>Smart</Category>
-    <DisplayName>Forest</DisplayName>
-    <Description>TODO: Documentation</Description>
-    <TopLeft>-103.5538,-108</TopLeft>
-    <BottomRight>799.799,426.28</BottomRight>
+    <Category>Editing</Category>
+    <DisplayName>Town.Handles</DisplayName>
+    <Description>Town editing controls</Description>
+    <TopLeft>-269.7,-20</TopLeft>
+    <BottomRight>752.0191,525.0001</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
-      <Location>524,115</Location>
-      <Size>119.9967,65.16</Size>
-      <NoteID>0</NoteID>
-      <Comment>
-      </Comment>
-      <InputMetadata />
-    </Object>
-    <Object type="ProcedureOperatorState" id="2">
-      <Location>773,167</Location>
-      <Size>104.9533,78.12</Size>
-      <NoteID>0</NoteID>
-      <Comment>
-      </Comment>
-      <InputMetadata />
-    </Object>
-    <Object type="ProcedureOperatorState" id="3">
-      <Location>96,69</Location>
-      <Size>107.1167,69.28</Size>
-      <NoteID>0</NoteID>
-      <Comment>
-      </Comment>
-      <InputMetadata />
-    </Object>
-    <Object type="ProcedureOperatorState" id="4">
-      <Location>267,67</Location>
-      <Size>126.8733,52.2</Size>
-      <NoteID>0</NoteID>
-      <Comment>ensure tracking overlap
-happens before needed</Comment>
-      <InputMetadata />
-    </Object>
-    <Object type="ProcedureOperatorState" id="5">
-      <Location>371,230</Location>
-      <Size>65.97667,52.2</Size>
-      <NoteID>0</NoteID>
-      <Comment>Density</Comment>
-      <InputMetadata />
-    </Object>
-    <Object type="ProcedureOperatorState" id="6">
-      <Location>499,337</Location>
-      <Size>113.8067,52.2</Size>
-      <NoteID>0</NoteID>
-      <Comment>
-      </Comment>
-      <InputMetadata />
-    </Object>
-    <Object type="ProcedureOperatorState" id="7">
-      <Location>630,-31</Location>
-      <Size>124.6767,52.2</Size>
-      <NoteID>0</NoteID>
-      <Comment>allow it to be selectable</Comment>
-      <InputMetadata />
-    </Object>
-    <Object type="ProcedureOperatorState" id="8">
-      <Location>522,-58</Location>
+      <Location>25.37997,205.3099</Location>
       <Size>77.65667,91.08</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
-    <Object type="ProcedureOutputState" id="1">
-      <Name>Out</Name>
-      <Description>
-      </Description>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>190.27,324.4999</Location>
+      <Size>77.65667,91.08</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>777,246</Location>
+      <Size>46.75667,58.84</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>447.7,151.3399</Location>
+      <Size>95.00667,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>499.37,339.29</Location>
+      <Size>69.33667,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="6">
+      <Location>216.2201,75.39004</Location>
+      <Size>86.38,129.96</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="7">
+      <Location>519.72,55.46001</Location>
+      <Size>107.0667,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>so can be clicked on</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="8">
+      <Location>520.48,34.55</Location>
+      <Size>89.30334,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="9">
+      <Location>465.4399,246.51</Location>
+      <Size>122.8733,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
     </Object>
     <Object type="ProcedureInputState" id="1">
       <Name>Frame</Name>
@@ -84,7 +88,12 @@ happens before needed</Comment>
       </Description>
     </Object>
     <Object type="ProcedureInputState" id="2">
-      <Name>Density</Name>
+      <Name>Name</Name>
+      <Description>Main frame param name</Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>
+      </Name>
       <Description>
       </Description>
     </Object>
@@ -100,15 +109,8 @@ happens before needed</Comment>
       <Metadata />
     </Input>
     <Input id="2">
-      <Value type="842221088" value="1" />
-      <Metadata>
-        <Input Name="Min">
-          <Value type="842221088" value="0" />
-        </Input>
-        <Input Name="Max">
-          <Value type="842221088" value="1" />
-        </Input>
-      </Metadata>
+      <Value type="1920226080" value="" />
+      <Metadata />
     </Input>
   </DefaultInputs>
 </ProcedureEditData>

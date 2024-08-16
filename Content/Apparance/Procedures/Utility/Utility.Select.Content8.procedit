@@ -1,0 +1,156 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>410,225</Centre>
+    <Zoom>1.21</Zoom>
+  </View>
+  <Procedure>
+    <Category>Utility</Category>
+    <DisplayName>Select.Content8</DisplayName>
+    <Description>Choose from 8 content inputs</Description>
+    <TopLeft>-30,-36.52069</TopLeft>
+    <BottomRight>660.2061,480.5124</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>291,128</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>191.5041,13.89255</Location>
+      <Size>68.83667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>291.8264,199.4876</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>292,270</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>292,340</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="6">
+      <Location>467.0331,164.7769</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="7">
+      <Location>372.4959,13.47931</Location>
+      <Size>68.83667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="8">
+      <Location>462.7355,296.8347</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="9">
+      <Location>669.3473,214.1901</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="10">
+      <Location>586.3808,19.09088</Location>
+      <Size>68.83667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>Select</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>0</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="3">
+      <Name>1</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="4">
+      <Name>2</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="5">
+      <Name>3</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="6">
+      <Name>4</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="7">
+      <Name>5</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="8">
+      <Name>6</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="9">
+      <Name>7</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>Out</Name>
+      <Description>
+      </Description>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
+</ProcedureEditData>

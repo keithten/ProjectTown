@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="FA7216F7">
+    <Inputs>
+        <Input id="1" type="Frame" name="Location" description=""/>
+    </Inputs>
+    <Constants>
+        <Constant id="-1" type="Float">4.000000</Constant>
+        <Constant id="-2" type="Integer">0</Constant>
+        <Constant id="-3" type="Vector3">0.500000, 0.500000, 0.500000</Constant>
+        <Constant id="-4" type="Integer">1</Constant>
+        <Constant id="-7" type="FColour">[1.000000,1.000000,1.000000,1.000000]</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="DA4FC7F9">
+            <Connect in="100" constant="-1"/>
+        </Operator>
+        <Operator id="2" type="5CACD339">
+            <Connect in="100" to="1" out="100"/>
+            <Connect in="101" constant="-2"/>
+            <Connect in="102" to="3" out="100"/>
+        </Operator>
+        <Operator id="3" type="F211101D">
+            <Connect in="100" input="1"/>
+            <Connect in="101" constant="-3"/>
+            <Connect in="102" constant="-4"/>
+        </Operator>
+        <Operator id="4" type="DCA3CE9D">
+            <Connect in="100" constant="-7"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="Float" name="Line Width" description="" to="2" out="100"/>
+        <Output id="2" type="FColour" name="Handle Colour" description="" to="4" out="100"/>
+    </Outputs>
+</Procedure>

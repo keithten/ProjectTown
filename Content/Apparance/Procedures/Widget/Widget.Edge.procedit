@@ -1,0 +1,336 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>769.1771,364.0305</Centre>
+    <Zoom>0.466507852</Zoom>
+  </View>
+  <Procedure>
+    <Category>Widget</Category>
+    <DisplayName>Edge</DisplayName>
+    <Description>Edge with arrow on</Description>
+    <TopLeft>-440.9999,-92.09094</TopLeft>
+    <BottomRight>1875.92,833.3436</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>86.78717,121.2727</Location>
+      <Size>114.5133,91.08</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>297.9256,152.752</Location>
+      <Size>98.82,91.08</Size>
+      <NoteID>0</NoteID>
+      <Comment>edge widget width</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>530.1655,185.6529</Location>
+      <Size>114.5133,91.08</Size>
+      <NoteID>0</NoteID>
+      <Comment>line along edge</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>144.1736,304.0165</Location>
+      <Size>136.4367,54.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>811,394</Location>
+      <Size>93.02666,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="6">
+      <Location>633.3001,406.3</Location>
+      <Size>89.55666,78.12</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="7">
+      <Location>482,354</Location>
+      <Size>90.55334,91.08</Size>
+      <NoteID>0</NoteID>
+      <Comment>arrow width</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="8">
+      <Location>764,162</Location>
+      <Size>100.43,142.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="9">
+      <Location>982,240</Location>
+      <Size>65.97667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="10">
+      <Location>966.1241,364.8017</Location>
+      <Size>65.97667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="11">
+      <Location>1365.815,237.5646</Location>
+      <Size>90.50667,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="12">
+      <Location>1519.666,251.9613</Location>
+      <Size>89.30334,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="13">
+      <Location>1053.37,323.9091</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="14">
+      <Location>261,406</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="15">
+      <Location>41.09092,446.1818</Location>
+      <Size>92.17333,69.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="16">
+      <Location>202,451</Location>
+      <Size>63.77667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="17">
+      <Location>330.3636,474.4545</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="18">
+      <Location>1251.008,234.719</Location>
+      <Size>74.71333,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="19">
+      <Location>1243.179,631.3107</Location>
+      <Size>86.38,129.96</Size>
+      <NoteID>0</NoteID>
+      <Comment>hit box</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="20">
+      <Location>204.3638,495.3636</Location>
+      <Size>59.94667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="21">
+      <Location>-240.9999,102</Location>
+      <Size>69.12,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="22">
+      <Location>-138.9422,57.2562</Location>
+      <Size>98.74,54.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="23">
+      <Location>1735.074,110.9075</Location>
+      <Size>100.1467,104.04</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="24">
+      <Location>-7.147342,631.0816</Location>
+      <Size>114.5133,91.08</Size>
+      <NoteID>4</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="25">
+      <Location>155.5373,654.761</Location>
+      <Size>98.82,91.08</Size>
+      <NoteID>4</NoteID>
+      <Comment>edge widget width</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="26">
+      <Location>310.94,667.2635</Location>
+      <Size>114.5133,91.08</Size>
+      <NoteID>4</NoteID>
+      <Comment>line along edge</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="27">
+      <Location>1379,674</Location>
+      <Size>69.12,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="28">
+      <Location>1901.59,231.23</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="29">
+      <Location>-207,489</Location>
+      <Size>45.43667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>Bounds</Name>
+      <Description>Make along +Y edge</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Proportion</Name>
+      <Description>Centre proportion of edge to use</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="3">
+      <Name>Highlight?</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="4">
+      <Name>Arrow?</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="5">
+      <Name>Edge</Name>
+      <Description>Which edge?</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="6">
+      <Name>Always Show?</Name>
+      <Description>otherwise, only shows if highlighted</Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>Out</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="2">
+      <Name>Hit Box</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureNote" id="4">
+      <ID>4</ID>
+      <Location>
+        <X>-32.14734</X>
+        <Y>591.0816</Y>
+      </Location>
+      <Size>
+        <Width>482.6007</Width>
+        <Height>192.262</Height>
+      </Size>
+      <Title>
+      </Title>
+      <Text>dupe of above but relative to actual entity location</Text>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
+      <Metadata />
+    </Input>
+    <Input id="2">
+      <Value type="842221088" value="0.333" />
+      <Metadata>
+        <Input Name="Min">
+          <Value type="842221088" value="0" />
+        </Input>
+        <Input Name="Max">
+          <Value type="842221088" value="1" />
+        </Input>
+      </Metadata>
+    </Input>
+    <Input id="4">
+      <Value type="1819242306" value="True" />
+      <Metadata />
+    </Input>
+    <Input id="3">
+      <Value type="1819242306" value="False" />
+      <Metadata />
+    </Input>
+    <Input id="5">
+      <Value type="842221856" value="0" />
+      <Metadata>
+        <Input Name="Min">
+          <Value type="842221856" value="0" />
+        </Input>
+        <Input Name="Max">
+          <Value type="842221856" value="3" />
+        </Input>
+      </Metadata>
+    </Input>
+    <Input id="6">
+      <Value type="1819242306" value="False" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
+</ProcedureEditData>

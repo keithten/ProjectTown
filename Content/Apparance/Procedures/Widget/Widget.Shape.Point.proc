@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="FA4DA6A6">
+    <Inputs>
+        <Input id="1" type="Frame" name="Bounds" description=""/>
+    </Inputs>
+    <Constants>
+        <Constant id="-1" type="List"></Constant>
+        <Constant id="-3" type="Integer">1</Constant>
+        <Constant id="-4" type="Integer">0</Constant>
+        <Constant id="-5" type="Vector3">0.000000, 0.000000, 0.000000</Constant>
+        <Constant id="-6" type="Vector3">0.500000, 1.000000, 0.000000</Constant>
+        <Constant id="-9" type="Integer">1</Constant>
+        <Constant id="-10" type="Integer">1</Constant>
+        <Constant id="-11" type="Vector3">0.000000, 0.000000, 0.000000</Constant>
+        <Constant id="-12" type="Vector3">1.000000, 0.000000, 0.000000</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="E4D9F8DE">
+            <Connect in="100" constant="-1"/>
+            <Connect in="101" input="1"/>
+            <Connect in="102" constant="-3"/>
+            <Connect in="103" constant="-4"/>
+            <Connect in="104" constant="-5"/>
+            <Connect in="105" constant="-6"/>
+        </Operator>
+        <Operator id="2" type="E4D9F8DE">
+            <Connect in="100" to="1" out="100"/>
+            <Connect in="101" input="1"/>
+            <Connect in="102" constant="-9"/>
+            <Connect in="103" constant="-10"/>
+            <Connect in="104" constant="-11"/>
+            <Connect in="105" constant="-12"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="List" name="Point" description="" to="2" out="100"/>
+    </Outputs>
+</Procedure>
