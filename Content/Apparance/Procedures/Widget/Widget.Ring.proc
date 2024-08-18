@@ -69,9 +69,7 @@
             <Connect in="103" constant="-20"/>
             <Connect in="104" constant="-21"/>
         </Operator>
-        <Operator id="10" type="FA7216F7">
-            <Connect in="1" input="1"/>
-        </Operator>
+        <Operator id="10" type="FA7216F7"/>
         <Operator id="12" type="A0CDD897">
             <Connect in="101" to="7" out="100"/>
             <Connect in="102" constant="-32"/>

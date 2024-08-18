@@ -12,7 +12,6 @@
         <Constant id="-7" type="List"></Constant>
         <Constant id="-11" type="Float">0.100000</Constant>
         <Constant id="-12" type="Float">1.000000</Constant>
-        <Constant id="-15" type="Frame">[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]</Constant>
     </Constants>
     <Operators>
         <Operator id="1" type="36BD1471">
@@ -39,9 +38,7 @@
             <Connect in="101" constant="-11"/>
             <Connect in="102" constant="-12"/>
         </Operator>
-        <Operator id="6" type="FA7216F7">
-            <Connect in="1" constant="-15"/>
-        </Operator>
+        <Operator id="6" type="FA7216F7"/>
     </Operators>
     <Outputs>
         <Output id="1" type="ModelSegment" name="Out" description="" to="3" out="100"/>

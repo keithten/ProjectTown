@@ -2,27 +2,24 @@
 <Procedure Version="5" type="FB9C1B9F">
     <Inputs>
         <Input id="1" type="Frame" name="Bounds" description=""/>
+        <Input id="2" type="List" name="Click" description=""/>
     </Inputs>
     <Constants>
         <Constant id="-2" type="Integer">0</Constant>
         <Constant id="-3" type="Bool">True</Constant>
         <Constant id="-13" type="String">Rotate1</Constant>
-        <Constant id="-15" type="List"></Constant>
         <Constant id="-17" type="Vector3">0.000000, 0.000000, -1.000000</Constant>
         <Constant id="-20" type="Vector3">0.500000, 0.500000, 0.000000</Constant>
         <Constant id="-21" type="Integer">1</Constant>
         <Constant id="-22" type="Integer">1</Constant>
         <Constant id="-23" type="Bool">True</Constant>
         <Constant id="-24" type="String">Rotate2</Constant>
-        <Constant id="-25" type="List"></Constant>
         <Constant id="-29" type="Integer">2</Constant>
         <Constant id="-30" type="Bool">True</Constant>
         <Constant id="-31" type="String">Rotate3</Constant>
-        <Constant id="-32" type="List"></Constant>
         <Constant id="-33" type="Integer">3</Constant>
         <Constant id="-34" type="Bool">True</Constant>
         <Constant id="-35" type="String">Rotate4</Constant>
-        <Constant id="-36" type="List"></Constant>
         <Constant id="-37" type="Bool">False</Constant>
         <Constant id="-38" type="Bool">False</Constant>
         <Constant id="-39" type="Bool">False</Constant>
@@ -49,7 +46,7 @@
         <Operator id="3" type="DFE4B30E">
             <Connect in="100" constant="-13"/>
             <Connect in="101" to="1" out="2"/>
-            <Connect in="102" constant="-15"/>
+            <Connect in="102" input="2"/>
             <Connect in="103" to="4" out="100"/>
         </Operator>
         <Operator id="4" type="291D5244">
@@ -71,7 +68,7 @@
         <Operator id="7" type="DFE4B30E">
             <Connect in="100" constant="-24"/>
             <Connect in="101" to="6" out="2"/>
-            <Connect in="102" constant="-25"/>
+            <Connect in="102" input="2"/>
             <Connect in="103" to="4" out="100"/>
         </Operator>
         <Operator id="9" type="FBA947FF">
@@ -84,7 +81,7 @@
         <Operator id="10" type="DFE4B30E">
             <Connect in="100" constant="-31"/>
             <Connect in="101" to="9" out="2"/>
-            <Connect in="102" constant="-32"/>
+            <Connect in="102" input="2"/>
             <Connect in="103" to="4" out="100"/>
         </Operator>
         <Operator id="11" type="FBA947FF">
@@ -97,7 +94,7 @@
         <Operator id="12" type="DFE4B30E">
             <Connect in="100" constant="-35"/>
             <Connect in="101" to="11" out="2"/>
-            <Connect in="102" constant="-36"/>
+            <Connect in="102" input="2"/>
             <Connect in="103" to="4" out="100"/>
         </Operator>
     </Operators>

@@ -1,6 +1,6 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>359.4134,657.6528</Centre>
+    <Centre>224.1134,439.8528</Centre>
     <Zoom>0.9090912</Zoom>
   </View>
   <Procedure>
@@ -109,6 +109,11 @@
     </Object>
     <Object type="ProcedureInputState" id="1">
       <Name>Bounds</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Click</Name>
       <Description>
       </Description>
     </Object>

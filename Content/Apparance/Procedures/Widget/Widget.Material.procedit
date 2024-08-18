@@ -90,11 +90,8 @@
       <Value type="1836016967" value="" />
       <Metadata />
     </Input>
-    <Input id="2">
-      <Value type="1919697734" value="[1,1,1,1]" />
-    </Input>
     <Input id="3">
-      <Value type="1819242306" value="True" />
+      <Value type="1819242306" value="False" />
       <Metadata />
     </Input>
   </DefaultInputs>

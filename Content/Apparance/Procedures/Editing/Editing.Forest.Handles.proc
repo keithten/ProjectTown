@@ -3,6 +3,7 @@
     <Inputs>
         <Input id="1" type="Frame" name="Frame" description=""/>
         <Input id="2" type="String" name="Name" description="name of entity frame parameter to resize"/>
+        <Input id="3" type="Float" name="Density" description=""/>
     </Inputs>
     <Constants>
         <Constant id="-1" type="Vector3">0.000000, 0.000000, 2.000000</Constant>
@@ -21,6 +22,17 @@
         <Constant id="-16" type="Integer">1</Constant>
         <Constant id="-17" type="Integer">1</Constant>
         <Constant id="-29" type="Bool">False</Constant>
+        <Constant id="-34" type="String">ModeB</Constant>
+        <Constant id="-38" type="ModelSegment"></Constant>
+        <Constant id="-39" type="ModelSegment"></Constant>
+        <Constant id="-40" type="ModelSegment"></Constant>
+        <Constant id="-44" type="ModelSegment"></Constant>
+        <Constant id="-51" type="String">ModeA</Constant>
+        <Constant id="-53" type="String">ModeB</Constant>
+        <Constant id="-54" type="Bool">False</Constant>
+        <Constant id="-55" type="List"></Constant>
+        <Constant id="-56" type="List"></Constant>
+        <Constant id="-57" type="List"></Constant>
     </Constants>
     <Operators>
         <Operator id="1" type="EAE4856E">
@@ -41,13 +53,15 @@
             <Connect in="100" to="4" out="1"/>
             <Connect in="101" to="7" out="1"/>
             <Connect in="102" to="5" out="1"/>
-            <Connect in="103" to="9" out="1"/>
+            <Connect in="103" constant="-44"/>
         </Operator>
         <Operator id="4" type="FB9A9073">
             <Connect in="1" to="6" out="100"/>
+            <Connect in="2" constant="-55"/>
         </Operator>
         <Operator id="5" type="FB9C1B9F">
             <Connect in="1" to="2" out="100"/>
+            <Connect in="2" constant="-56"/>
         </Operator>
         <Operator id="6" type="E99E1179">
             <Connect in="100" to="1" out="100"/>
@@ -62,13 +76,46 @@
         <Operator id="7" type="FB483B68">
             <Connect in="1" to="1" out="100"/>
             <Connect in="2" input="2"/>
+            <Connect in="3" constant="-57"/>
         </Operator>
         <Operator id="9" type="FA711A4D">
             <Connect in="1" to="1" out="100"/>
             <Connect in="2" constant="-29"/>
         </Operator>
+        <Operator id="10" type="388066ED">
+            <Connect in="100" constant="-34"/>
+        </Operator>
+        <Operator id="11" type="0F77F09B">
+            <Connect in="100" to="9" out="1"/>
+            <Connect in="101" to="13" out="100"/>
+        </Operator>
+        <Operator id="12" type="B4A997AD">
+            <Connect in="100" to="15" out="1"/>
+            <Connect in="101" constant="-38"/>
+            <Connect in="102" constant="-39"/>
+            <Connect in="103" constant="-40"/>
+        </Operator>
+        <Operator id="13" type="C01FB46B">
+            <Connect in="100" to="18" out="100"/>
+            <Connect in="101" to="3" out="100"/>
+            <Connect in="102" to="12" out="100"/>
+        </Operator>
+        <Operator id="15" type="39D74C53">
+            <Connect in="1" to="6" out="100"/>
+            <Connect in="2" to="16" out="100"/>
+            <Connect in="3" input="3"/>
+        </Operator>
+        <Operator id="16" type="388066ED">
+            <Connect in="100" constant="-51"/>
+        </Operator>
+        <Operator id="17" type="BC878A13"/>
+        <Operator id="18" type="402FDA76">
+            <Connect in="100" to="17" out="100"/>
+            <Connect in="101" constant="-53"/>
+            <Connect in="102" constant="-54"/>
+        </Operator>
     </Operators>
     <Outputs>
-        <Output id="1" type="ModelSegment" name="" description="" to="3" out="100"/>
+        <Output id="1" type="ModelSegment" name="" description="" to="11" out="100"/>
     </Outputs>
 </Procedure>

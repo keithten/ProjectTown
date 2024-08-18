@@ -88,6 +88,11 @@
       <Description>
       </Description>
     </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Click</Name>
+      <Description>
+      </Description>
+    </Object>
     <Object type="ProcedureOutputState" id="1">
       <Name>Handle</Name>
       <Description>

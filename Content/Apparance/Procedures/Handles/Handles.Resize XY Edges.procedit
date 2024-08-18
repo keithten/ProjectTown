@@ -1,7 +1,7 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>498.9352,616.7096</Centre>
-    <Zoom>0.620921433</Zoom>
+    <Centre>564.2753,464.2498</Centre>
+    <Zoom>0.826446354</Zoom>
   </View>
   <Procedure>
     <Category>Handles</Category>
@@ -250,6 +250,16 @@
     <Object type="ProcedureInputState" id="2">
       <Name>Name</Name>
       <Description>name of entity frame parameter to resize</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="3">
+      <Name>Click</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="4">
+      <Name>Click</Name>
+      <Description>
+      </Description>
     </Object>
     <Object type="ProcedureOutputState" id="1">
       <Name>

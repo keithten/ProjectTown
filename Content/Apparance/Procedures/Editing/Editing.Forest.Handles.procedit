@@ -1,18 +1,18 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>410,225</Centre>
-    <Zoom>0.909090936</Zoom>
+    <Centre>522.6637,367.5967</Centre>
+    <Zoom>0.826446354</Zoom>
   </View>
   <Procedure>
     <Category>Editing</Category>
     <DisplayName>Forest.Handles</DisplayName>
     <Description>Forest editing setup</Description>
-    <TopLeft>-160.1,-24.89999</TopLeft>
-    <BottomRight>763.3566,541.96</BottomRight>
+    <TopLeft>-262.8546,-103.0818</TopLeft>
+    <BottomRight>1061.257,812.78</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
-      <Location>78.59998,195</Location>
+      <Location>-62.85456,236.3637</Location>
       <Size>77.65667,91.08</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -20,7 +20,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="2">
-      <Location>352.6001,351.5998</Location>
+      <Location>109.3276,338.418</Location>
       <Size>77.65667,91.08</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -28,31 +28,30 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="3">
-      <Location>816.5999,240.9999</Location>
+      <Location>744.5999,264.9999</Location>
       <Size>46.75667,58.84</Size>
-      <NoteID>0</NoteID>
-      <Comment>
-      </Comment>
+      <NoteID>14</NoteID>
+      <Comment>Mode A</Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="4">
-      <Location>486.6002,146</Location>
-      <Size>95.00667,39.28</Size>
-      <NoteID>0</NoteID>
+      <Location>561.1459,193.2728</Location>
+      <Size>95.00667,52.2</Size>
+      <NoteID>14</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="5">
-      <Location>513.3002,349.9001</Location>
-      <Size>69.33667,39.28</Size>
-      <NoteID>0</NoteID>
+      <Location>564.2097,358.991</Location>
+      <Size>69.33667,52.2</Size>
+      <NoteID>14</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="6">
-      <Location>255.6,70.00004</Location>
+      <Location>115.9636,156.8181</Location>
       <Size>86.38,129.96</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -60,9 +59,9 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="7">
-      <Location>490.6001,243.9001</Location>
-      <Size>122.8733,52.2</Size>
-      <NoteID>0</NoteID>
+      <Location>553.3276,269.3547</Location>
+      <Size>122.8733,65.16</Size>
+      <NoteID>14</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
@@ -76,8 +75,77 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="9">
-      <Location>567.5001,25.10001</Location>
-      <Size>89.30334,52.2</Size>
+      <Location>567.2056,-45.8218</Location>
+      <Size>146.25,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>show outline when selected</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="10">
+      <Location>414.9973,435.1288</Location>
+      <Size>98.67,39.28</Size>
+      <NoteID>14</NoteID>
+      <Comment>B disabled for now</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="11">
+      <Location>1114.5,229.53</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="12">
+      <Location>738.7,604.1497</Location>
+      <Size>46.75667,58.84</Size>
+      <NoteID>15</NoteID>
+      <Comment>Mode B</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="13">
+      <Location>929,254</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="14">
+      <Location>541,543</Location>
+      <Size>108.7633,78.12</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="15">
+      <Location>549.92,544.8497</Location>
+      <Size>111.7367,65.16</Size>
+      <NoteID>15</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="16">
+      <Location>418.6,706.9697</Location>
+      <Size>94.95333,39.28</Size>
+      <NoteID>15</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="17">
+      <Location>535,56</Location>
+      <Size>74.48666,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="18">
+      <Location>676,71</Location>
+      <Size>70.04333,45.88</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -92,11 +160,42 @@
       <Name>Name</Name>
       <Description>name of entity frame parameter to resize</Description>
     </Object>
+    <Object type="ProcedureInputState" id="3">
+      <Name>Density</Name>
+      <Description>
+      </Description>
+    </Object>
     <Object type="ProcedureOutputState" id="1">
       <Name>
       </Name>
       <Description>
       </Description>
+    </Object>
+    <Object type="ProcedureNote" id="14">
+      <ID>14</ID>
+      <Location>
+        <X>348.5273</X>
+        <Y>149.3728</Y>
+      </Location>
+      <Size>
+        <Width>467.8293</Width>
+        <Height>336.726</Height>
+      </Size>
+      <Title>Mode A</Title>
+      <Text>Translate, resize, rotate</Text>
+    </Object>
+    <Object type="ProcedureNote" id="15">
+      <ID>15</ID>
+      <Location>
+        <X>351.8</X>
+        <Y>502.6</Y>
+      </Location>
+      <Size>
+        <Width>458.6567</Width>
+        <Height>260.18</Height>
+      </Size>
+      <Title>Mode B</Title>
+      <Text>Other parameters</Text>
     </Object>
   </Objects>
   <Camera>
@@ -111,6 +210,10 @@
     </Input>
     <Input id="2">
       <Value type="1920226080" value="" />
+      <Metadata />
+    </Input>
+    <Input id="3">
+      <Value type="842221088" value="0" />
       <Metadata />
     </Input>
   </DefaultInputs>

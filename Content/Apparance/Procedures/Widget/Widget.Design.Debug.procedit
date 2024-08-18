@@ -29,4 +29,5 @@
     <Look>0,0,0</Look>
     <Interest>0</Interest>
   </Camera>
+  <DefaultInputs />
 </ProcedureEditData>
