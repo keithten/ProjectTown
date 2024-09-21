@@ -22,6 +22,11 @@
 			"Name": "ApparanceUnreal",
 			"Enabled": true,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/be30505a25784e118164aee83efb06a3"
+		},
+		{
+			"Name": "OpenRTSCamera",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/94e9872ad3754e798b6ec53f4494f5de"
 		}
 	]
 }

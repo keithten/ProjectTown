@@ -99,8 +99,6 @@ void FEntityEditingMode::Enter()
 		Toolkit->Init( Owner->GetToolkitHost() );
 	}
 
-	ViewPoint = FVector::ZeroVector;
-	ViewDirection = FVector::ForwardVector;
 	CursorRayDirection = FVector::ForwardVector;
 	bInteractionButton = false;
 	iModifierKeyFlags = 0;
@@ -131,7 +129,6 @@ void FEntityEditingMode::Render( const FSceneView* View, FViewport* Viewport, FP
 
 void FEntityEditingMode::Tick( FEditorViewportClient* ViewportClient, float DeltaTime )
 {
-	UpdateViewportInfo( ViewportClient );
 }
 
 bool FEntityEditingMode::ShouldDrawWidget() const
@@ -214,48 +211,19 @@ bool FEntityEditingMode::InputKey( FEditorViewportClient* ViewportClient, FViewp
 	return changed || absorbed;
 }
 
-void FEntityEditingMode::UpdateViewportInfo( FEditorViewportClient* ViewportClient )
-{
-	//gather
-	FVector view_point = ViewportClient->GetViewLocation();
-	FRotator view_rotation = ViewportClient->GetViewRotation();
-	FVector view_direction = view_rotation.Vector();
-	float fov_angle = ViewportClient->FOVAngle;
-	FIntPoint origin, dimensions;
-	ViewportClient->GetViewportDimensions( origin, dimensions );
-
-	//changed?
-	if(view_point!=ViewPoint || view_direction!=ViewDirection || fov_angle!=ViewFOV || dimensions.X!=ViewPixelWidth)
-	{
-		//track
-		ViewPoint = view_point;
-		ViewFOV = fov_angle;
-		ViewPixelWidth = dimensions.X;
-		ViewDirection = view_direction;
-
-		//further calcs
-		float pixel_angle = fov_angle / (float)dimensions.X;	//degrees assigned to pixel
-
-		//apply
-		Apparance::Vector3 pos = VECTOR3_APPARANCESPACE_FROM_UNREALSPACE( ViewPoint );
-		Apparance::Vector3 dir = APPARANCEHANDEDNESS_FROM_UNREALHANDEDNESS( ViewDirection );
-		FApparanceUnrealModule::GetEngine()->UpdateInteractiveViewport( pos, dir, fov_angle, pixel_angle );
-	}
-}
-
 // send current state to editing tools
 //
 bool FEntityEditingMode::UpdateInteraction()
 {
-	//pass into Apparance engine
-	Apparance::Vector3 dir = VECTOR3_APPARANCEHANDEDNESS_FROM_UNREALHANDEDNESS( CursorRayDirection );
-	return FApparanceUnrealModule::GetEngine()->UpdateInteractiveEditing( dir, bInteractionButton, iModifierKeyFlags );
+	return FApparanceUnrealModule::GetModule()->Editor_UpdateInteraction( GetWorld(), CursorRayDirection, bInteractionButton/*, iModifierKeyFlags */ );
 }
 
 void FEntityEditingMode::SetEntityEditingEnable( bool enable )
 {
+	UWorld* world = GetWorld();
+	
 	//update editor with mode state
-	FApparanceUnrealModule::GetModule()->EnableEditing( enable );
+	FApparanceUnrealModule::GetModule()->EnableEditing( world, enable );
 
 	//restore widget location as seems not to track actor automatically when shown again
 	if(!enable)

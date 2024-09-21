@@ -364,7 +364,7 @@ void SEntityEditor::Tick( const FGeometry& AllottedGeometry, const double InCurr
 	//refreshing : edit mode control
 	if(bResyncMode)
 	{
-		FApparanceUnrealModule::GetModule()->EnableEditing( GetEdMode()->IsEntityEditingEnabled(), true/*force*/ );
+		FApparanceUnrealModule::GetModule()->EnableEditing( RepresentingWorld, GetEdMode()->IsEntityEditingEnabled(), true/*force*/ );
 		bResyncMode = false;
 	}
 

@@ -41,6 +41,7 @@ PRAGMA_DISABLE_OPTIMIZATION_ACTUAL
 #include "ResourceList/ApparanceResourceListEntry_Component.h"
 #include "Utility/ApparanceUtility.h"
 #include "Geometry/ApparanceRootComponent.h"
+#include "Support/SmartEditingState.h"
 
 #define LOCTEXT_NAMESPACE "ApparanceUnreal"
 
@@ -201,6 +202,7 @@ AApparanceEntity::AApparanceEntity()
 	bWasProcedurallyPlaced = false;
 	bSuppressParameterMapping = false;
 	m_bSelected = false;
+	bSuppressTransformUpdates = false;
 }
 
 // now exists due to being added in editor or game
@@ -691,14 +693,32 @@ void AApparanceEntity::SetSmartEditingSelected(bool is_selected)
 	Apparance::IEntity* p = GetEntityAPI();
 	if (p)
 	{
+		//select
 		m_bSelected = is_selected;
 		p->SetSelected(is_selected);
+
+		//maintain smart editing state to match
+		if (USmartEditingState* pse = FApparanceUnrealModule::GetModule()->IsEditingEnabled( GetWorld() ))
+		{
+			pse->NotifyEntitySelection( this, is_selected );
+		}
 	}
 }
 
 bool AApparanceEntity::IsSmartEditingSelected() const
 {
 	return m_bSelected;
+}
+
+
+// smart editing BP support
+void AApparanceEntity::SetEditingSelected(bool bSelected)
+{
+	SetSmartEditingSelected(bSelected);
+}
+bool AApparanceEntity::GetEditingSelected()
+{
+	return IsSmartEditingSelected();
 }
 
 
@@ -1035,6 +1055,12 @@ void AApparanceEntity::InteractiveParameterEdit(const Apparance::IParameterColle
 //
 void AApparanceEntity::NotifyTransformChanged()
 {
+	//ignore spurious notifications, e.g. during sub-actor attach/detach
+	if (bSuppressTransformUpdates )
+	{
+		return;
+	}
+	
 	//notify apparance of entity location
 	FVector origin = GetActorLocation();
 	FVector right = GetActorRightVector();
@@ -2569,7 +2595,9 @@ void AApparanceEntity::AddBlueprint_End( AActor* pactor, FMatrix& local_placemen
 #endif
 
 	//attach
+	bSuppressTransformUpdates = true;
 	pactor->AttachToActor( this, FAttachmentTransformRules::KeepRelativeTransform );
+	bSuppressTransformUpdates = false;
 	USceneComponent* proot = pactor->GetRootComponent();
 	proot->SetFlags( RF_Transient );	//HACK: ensure later detach doesn't dirty the parent
 	if(proot)
@@ -2608,7 +2636,9 @@ void AApparanceEntity::RemoveBlueprint(class AActor* pactor)
 
 		//HACK: workaround because Destroy on it's own of a transient actor dirties the parent actor and the scene/package
 		//SEE: 
+		bSuppressTransformUpdates = true;
 		pactor->DetachFromActor( FDetachmentTransformRules::KeepWorldTransform/*don't care*/ );
+		bSuppressTransformUpdates = false;
 
 		//remove from world and discard
 		pactor->Destroy( false, false );

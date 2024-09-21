@@ -98,6 +98,7 @@ public:
 	virtual bool IsGameRunning() const override;
 	virtual Apparance::IParameterCollection* BeginParameterEdit( class IProceduralObject* pentity, bool editing_transaction ) override;
 	virtual void EndParameterEdit( class IProceduralObject* pentity, bool editing_transaction, Apparance::ValueID input_id ) override;
+	virtual FViewport* FindEditorViewport() const override;
 
 	/** IHasMenuExtensibility interface */
 	virtual TSharedPtr<FExtensibilityManager> GetMenuExtensibilityManager() override { return MenuExtensibilityManager; }

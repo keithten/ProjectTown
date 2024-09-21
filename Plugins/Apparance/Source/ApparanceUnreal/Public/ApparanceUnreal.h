@@ -51,7 +51,7 @@ class APPARANCEUNREAL_API FApparanceUnrealModule
 	class UApparanceResourceList* ResourceRoot;
 
 	//editing
-	bool m_bIsEditing;	//smart object editing system is active
+	TMap<class UWorld* , class USmartEditingState*> m_EditingStates; //all active editing states and the world they are associated with
 
 public:
 
@@ -85,22 +85,29 @@ public:
 	// tick handler
 	bool Tick( float DeltaTime );
 
-	// editor notifications
+	// editor notifications/access
 	void 	NotifyExternalContentChanged();	//allowed to be called from runtime, but ignored
 	void	Editor_NotifyProcedureDefaultsChange( Apparance::ProcedureID proc_id, const Apparance::IParameterCollection* params, Apparance::ValueID changed_param );
 	void	Editor_NotifyEntityProcedureTypeChanged( Apparance::ProcedureID new_proc_id );
 	void 	Editor_NotifyAssetDatabaseChanged();
 	void 	Editor_NotifyResourceListStructureChanged( class UApparanceResourceList* pres_list, class UApparanceResourceListEntry* pentry, FName property );
 	void	Editor_NotifyResourceListAssetChanged( UApparanceResourceList* pres_list, UApparanceResourceListEntry* pentry, UObject* pnewasset );
+	void	Editor_NotifyPlayStopped();
 	UWorld* Editor_GetTempWorld();
-	
+	FViewport* Editor_FindViewport() const;
+	bool    Editor_UpdateInteraction( UWorld* world, FVector cursor_dir, bool bInteractionButton/*, iModifierKeyFlags */ );
+
 	// entity parameter editing (editor will want to be involved)
 	Apparance::IParameterCollection* BeginEntityParameterEdit( class IProceduralObject* pentity, bool editing_transaction );
 	void    EndEntityParameterEdit( class IProceduralObject* pentity, bool editing_transaction, Apparance::ValueID input_id );
 
 	// editing (smart objects/handles)
-	bool IsEditingEnabled() const;
-	void EnableEditing( bool enable, bool force=false );
+	class USmartEditingState* IsEditingEnabled( class UWorld* world ) const;
+	class USmartEditingState* EnableEditing( class UWorld* world, bool enable, bool force=false );
+	
+	//helpers
+	static FString MakeWorldIdentifier( AActor* pactor );
+	static FString MakeWorldIdentifier( UWorld* pworld );
 
 private:
 
@@ -111,4 +118,10 @@ private:
 	bool InitAssetDatabase();
 	void InitPlacement();
 	void InitProductInfo();
+	
+	// editing (smart objects/handles) state management
+	USmartEditingState* CreateSmartEditingState( UWorld* world );
+	void DestroySmartEditingState( USmartEditingState* state );
+	void HandleRemoveWorld( class UWorld* world );
+
 };

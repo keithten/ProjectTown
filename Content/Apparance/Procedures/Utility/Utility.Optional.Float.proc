@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="0A382224">
+    <Inputs>
+        <Input id="1" type="Float" name="In" description="Optional value"/>
+        <Input id="2" type="Float" name="Compare" description="if this value, then fallback"/>
+        <Input id="3" type="Float" name="Fallback" description=""/>
+    </Inputs>
+    <Constants/>
+    <Operators>
+        <Operator id="1" type="B2DC8FDA">
+            <Connect in="100" input="1"/>
+            <Connect in="101" input="2"/>
+        </Operator>
+        <Operator id="2" type="C0BB1E82">
+            <Connect in="100" to="1" out="100"/>
+            <Connect in="101" input="3"/>
+            <Connect in="102" input="1"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="Float" name="Out" description="" to="2" out="100"/>
+    </Outputs>
+</Procedure>

@@ -308,7 +308,7 @@ bool FApparanceUnrealEditorModule::Tick(float DeltaTime)
 		{
 			AApparanceEntity* pentity = SelectedEntities[i];
 			if(IsValid( pentity ) 
-				&& !MainModule->IsEditingEnabled())	//don't show bounds when using the Smart Editing system
+				&& !MainModule->IsEditingEnabled( pentity->GetWorld() ))	//don't show bounds when using the Smart Editing system
 			{
 				DrawDebugBounds( pentity );
 			}
@@ -1232,6 +1232,19 @@ void FApparanceUnrealEditorModule::EndParameterEdit( IProceduralObject* pentity,
 	}
 }
 
+FViewport* FApparanceUnrealEditorModule::FindEditorViewport() const
+{
+	for (FLevelEditorViewportClient* LevelVC : GEditor->GetLevelViewportClients())
+	{
+		if (LevelVC && LevelVC->IsPerspective())
+		{
+			return LevelVC->Viewport;
+		}
+	}
+	return nullptr;
+}
+
+
 
 
 // watch for PiE and SiE session changes
@@ -1267,6 +1280,9 @@ void FApparanceUnrealEditorModule::OnPlayInEditorStarting()
 void FApparanceUnrealEditorModule::OnPlayInEditorStopped()
 {
 	RebuildAllEntities();
+
+	//if was using smart editing, then stop it
+	FApparanceUnrealModule::GetModule()->Editor_NotifyPlayStopped();
 }
 
 // monitor for changes caused by external editor

@@ -302,7 +302,7 @@ namespace Apparance
 		//objects
 		virtual struct IClosure*             CreateClosure( Apparance::ProcedureID id ) const = 0;
 		virtual struct IParameterCollection* CreateParameterCollection() const = 0;
-		virtual struct IEntity*              CreateEntity( struct Host::IEntityRendering* entity_rendering, bool in_play_mode/*play-in-editor or standalone*/ ) = 0;
+		virtual struct IEntity*              CreateEntity( struct Host::IEntityRendering* entity_rendering, bool in_play_mode/*play-in-editor or standalone*/, const char* world_name, const char* debug_name=nullptr ) = 0;
 		virtual void                         DestroyEntity( struct Apparance::IEntity* entity ) = 0;
 
 		//misc
@@ -310,8 +310,8 @@ namespace Apparance
 		virtual void                         RunProcedure( struct Apparance::IClosure* procedure_input, struct Apparance::Host::IResultHandler* result_recipient ) = 0;
 
 		//editing handle interaction
-		virtual void                         UpdateInteractiveViewport( Apparance::Vector3 view_point, Apparance::Vector3 view_direction, float view_angle_degrees, float pixel_angle_degrees ) = 0;
-		virtual bool                         UpdateInteractiveEditing( Apparance::Vector3 cursor_direction_or_offset, bool interact_button_active, int modifier_key_flags ) = 0;  //returns true if input used
+		virtual void                         UpdateInteractiveViewport( const char* world_name, Apparance::Vector3 view_point, Apparance::Vector3 view_direction, float view_angle_degrees, float pixel_angle_degrees ) = 0;
+		virtual bool                         UpdateInteractiveEditing( const char* world_name, Apparance::Vector3 cursor_direction_or_offset, bool interact_button_active, int modifier_key_flags ) = 0;  //returns true if input used
 	};
 
 	//entity

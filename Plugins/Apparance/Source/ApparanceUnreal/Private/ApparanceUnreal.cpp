@@ -28,6 +28,7 @@ PRAGMA_DISABLE_OPTIMIZATION_ACTUAL
 #include "ApparanceEngineSetup.h"
 #include "ApparanceEntity.h"
 #include "ApparanceUnrealEditorAPI.h"
+#include "Support/SmartEditingState.h"
 
 
 // PROLOGUE
@@ -70,7 +71,6 @@ void FApparanceUnrealModule::StartupModule()
 	m_pModule = this;
 	m_bApparanceEngineDeferredStart = false;
 	m_bInventoryValid = false;
-	m_bIsEditing = false;
 
 	//need to start tick otherwise deferred startup can't trigger	
 	if (!InitTimers())
@@ -290,6 +290,14 @@ void FApparanceUnrealModule::InitPlacement()
 //
 void FApparanceUnrealModule::ShutdownModule()
 {
+	//release objects
+	TArray<class UWorld*> worlds;
+	m_EditingStates.GetKeys( worlds );
+	for (int i = 0; i < worlds.Num(); i++ )
+	{
+		DestroySmartEditingState( m_EditingStates[worlds[i]] );
+	}
+
 	//release pinned assets
 	if(ResourceRoot)
 	{
@@ -317,6 +325,13 @@ bool FApparanceUnrealModule::Tick( float DeltaTime )
 	if (!m_bApparanceEngineDeferredStart)
 	{
 		StartupModuleDeferred();
+	}
+
+	//smart editing
+	for (TMap<UWorld*, USmartEditingState*>::TIterator It(m_EditingStates); It; ++It)	
+	{
+		USmartEditingState* state = It.Value();
+		state->Tick();
 	}
 
 	//ongoing operation
@@ -407,6 +422,23 @@ void FApparanceUnrealModule::Editor_NotifyResourceListAssetChanged( UApparanceRe
 	}
 }
 
+// Play in Editor just stopped
+//
+void FApparanceUnrealModule::Editor_NotifyPlayStopped()
+{
+}
+
+// forward to state associated with world
+//
+bool FApparanceUnrealModule::Editor_UpdateInteraction(UWorld* world, FVector cursor_ray_direction, bool interaction_button/*, int modifiers*/)
+{
+	if (USmartEditingState* state = IsEditingEnabled( world ) )
+	{
+		return state->UpdateInteractiveEditing( cursor_ray_direction, interaction_button );
+	}
+	return false;
+}
+
 // some runtime module code includes editing functions that need a world to do temp things with
 //
 UWorld* FApparanceUnrealModule::Editor_GetTempWorld()
@@ -414,6 +446,17 @@ UWorld* FApparanceUnrealModule::Editor_GetTempWorld()
 	if(m_pEditorModule)
 	{
 		return m_pEditorModule->GetTempWorld();
+	}
+	return nullptr;
+}
+
+// viewport access when in editor only
+//
+FViewport* FApparanceUnrealModule::Editor_FindViewport() const
+{
+	if (m_pEditorModule)
+	{
+		return m_pEditorModule->FindEditorViewport();
 	}
 	return nullptr;
 }
@@ -600,28 +643,177 @@ class UStaticMesh* FApparanceUnrealModule::GetFallbackMesh()
 }
 
 
+// does this world have smart editing enabled?
+//
+class USmartEditingState* FApparanceUnrealModule::IsEditingEnabled( UWorld* world ) const
+{
+	if(USmartEditingState* const* p = m_EditingStates.Find( world ))
+	{
+		USmartEditingState* state = *p;
+		if(state && state->IsActive())
+		{
+			return state;
+		}
+	}
+	return nullptr;
+}
+
+// set up, start, or pause smart editing for this world
+//
+class USmartEditingState* FApparanceUnrealModule::EnableEditing( UWorld* world, bool enable, bool force )
+{
+	//existing state?
+	USmartEditingState* state = nullptr;
+	if (USmartEditingState** p = m_EditingStates.Find( world ) )
+	{
+		state = *p;
+		if (state->IsActive()==enable && !force )
+		{
+			//no change
+			return state;
+		}
+	}
+	
+	//first time, set up state
+	if(enable && !state)
+	{
+		state = CreateSmartEditingState( world );	
+	}
+
+	//switch active/inactive
+	if(enable)
+	{
+		state->Start();
+	}
+	else
+	{
+		state->Stop();
+	}
+
+	return state;
+}
+
+// respond to a world being removed, e.g. end of PIE session
+//
+void FApparanceUnrealModule::HandleRemoveWorld( class UWorld* world )
+{
+	//associated state?
+	USmartEditingState* state = nullptr;
+	if (USmartEditingState** p = m_EditingStates.Find( world ) )
+	{
+		state = *p;
+		DestroySmartEditingState( state );
+	}
+}
+
+
+// new smart editing state tracker needed for a world
+//
+USmartEditingState* FApparanceUnrealModule::CreateSmartEditingState( UWorld* world )
+{
+	//new state object
+	USmartEditingState* state = NewObject<USmartEditingState>();
+	state->AddToRoot();
+	state->Init( world );
+
+	//associate with world	
+	m_EditingStates.Add( world, state );
+
+	//first time, need to watch world destruction	
+	if (m_EditingStates.Num() == 1 )
+	{
+		FWorldDelegates::OnPreWorldFinishDestroy.AddRaw( this, &FApparanceUnrealModule::HandleRemoveWorld );
+	}
+	
+	return state;
+}
+
+// we're done with a smart editing state tracker
+//
+void FApparanceUnrealModule::DestroySmartEditingState( USmartEditingState* state )
+{
+	//NOTE: don't stop state, we only destroy these when world is removed anyway
+	
+	//remove from tracking
+	if(UWorld * const * p = m_EditingStates.FindKey(state))
+	{
+		UWorld* world = *p;
+		m_EditingStates.Remove( world );
+	}
+
+	//release
+	if (IsValid(state))
+	{
+		state->RemoveFromRoot();
+	}
+
+	//last time, nolonger need to watch world destruction	
+	if (m_EditingStates.Num() == 0 )
+	{
+		FWorldDelegates::OnPreWorldFinishDestroy.RemoveAll( this );
+	}
+}
+
+// build an identifying name for a given actors world
+//
+FString FApparanceUnrealModule::MakeWorldIdentifier( AActor* pactor )
+{
+	FString world_name;	
+	if (auto* world = pactor->GetWorld())
+	{
+		//has world, partition entities by world
+		world_name = MakeWorldIdentifier(world);
+	}
+	else if(pactor->HasAnyFlags( RF_ClassDefaultObject ))
+	{
+		//CDO objects seem to be getting entities
+		//TODO: stop this, they don't need them as they have no visual presence
+		world_name = "<Default Objects>";
+	}
+	else
+	{
+		//not sure where this entity is
+		world_name = "Unknown";
+	}
+	return world_name;
+}
+
+// build an identifying name for a given actors world
+//
+FString FApparanceUnrealModule::MakeWorldIdentifier(UWorld* pworld)
+{
+	FString world_name;
+	world_name = LexToString( pworld->WorldType );
+	world_name.Append(TEXT(": "));
+	world_name.Append(pworld->GetName());
+	return world_name;
+}
+
+#if 0
+//////////////////////////////////////////////////////////////////////////
+// Helpers
 
 // find the world we are working with
 //
-static UWorld* FindWorld()
+UWorld* FApparanceUnrealModule::FindWorld()
 {
 	UWorld* world = nullptr;
-	if(!world)
+	if (!world)
 	{
 		// try to pick the most suitable world context
 
 		// ideally we want a PIE world that is standalone or the first client
-		for(const FWorldContext& Context : GEngine->GetWorldContexts())
+		for (const FWorldContext& Context : GEngine->GetWorldContexts())
 		{
 			UWorld* World = Context.World();
-			if(World && Context.WorldType == EWorldType::PIE)
+			if (World && Context.WorldType == EWorldType::PIE)
 			{
-				if(World->GetNetMode() == NM_Standalone)
+				if (World->GetNetMode() == NM_Standalone)
 				{
 					world = World;
 					break;
 				}
-				else if(World->GetNetMode() == NM_Client && Context.PIEInstance == 2)	// Slightly dangerous: assumes server is always PIEInstance = 1;
+				else if (World->GetNetMode() == NM_Client && Context.PIEInstance == 2)	// Slightly dangerous: assumes server is always PIEInstance = 1;
 				{
 					world = World;
 					break;
@@ -630,72 +822,32 @@ static UWorld* FindWorld()
 		}
 	}
 
-	if(!world)
+	if (!world)
 	{
 		// still not world so fallback to old logic where we just prefer PIE over Editor
-		for(const FWorldContext& Context : GEngine->GetWorldContexts())
+		for (const FWorldContext& Context : GEngine->GetWorldContexts())
 		{
-			if(Context.WorldType == EWorldType::PIE)
+			if (Context.WorldType == EWorldType::PIE)
 			{
 				world = Context.World();
 				break;
 			}
-			else if(Context.WorldType == EWorldType::Editor)
+			else if (Context.WorldType == EWorldType::Editor)
 			{
 				world = Context.World();
 			}
 		}
 	}
 
-	return world;
-}
-
-
-// editing (smart objects/handles)
-bool FApparanceUnrealModule::IsEditingEnabled() const
-{
-	return m_bIsEditing;
-}
-
-void FApparanceUnrealModule::EnableEditing( bool enable, bool force )
-{
-	//change?
-	if(enable != m_bIsEditing || force)
+	if (!world)
 	{
-		m_bIsEditing = enable;
-
-		//update smart editing of all entities in world
-		UWorld* world = FindWorld();
-		if(world)
-		{
-			for(FActorIterator ActorIt( world ); ActorIt; ++ActorIt)
-			{
-				AActor* Actor = *ActorIt;
-				if(Actor)
-				{
-					AApparanceEntity* pentity = Cast<AApparanceEntity>( Actor );
-					if(pentity)
-					{
-						if(enable)
-						{
-							//on (straight to selected view mode if is selected)
-							bool unreal_selected = pentity->IsSelected();
-							pentity->SetSmartEditingSelected(unreal_selected);
-						}
-						else
-						{
-							//off
-							pentity->SetSmartEditingSelected(false);
-						}
-					}
-				}
-			}
-		}
+		//fall back to default
+		world = GetWorld();
 	}
 
+	return world;
 }
-
-
+#endif
 
 // EPILOGUE
 #undef LOCTEXT_NAMESPACE

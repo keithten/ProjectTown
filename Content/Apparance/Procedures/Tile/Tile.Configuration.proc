@@ -3,7 +3,7 @@
     <Inputs/>
     <Constants>
         <Constant id="-1" type="Integer">1</Constant>
-        <Constant id="-2" type="Integer">7</Constant>
+        <Constant id="-2" type="Integer">6</Constant>
         <Constant id="-3" type="Float">15.000000</Constant>
         <Constant id="-4" type="Float">4.500000</Constant>
     </Constants>

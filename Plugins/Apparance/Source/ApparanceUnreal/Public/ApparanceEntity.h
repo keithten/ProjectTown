@@ -106,13 +106,15 @@ class APPARANCEUNREAL_API AApparanceEntity
 	float AutoSeedTimer;
 	bool bRebuildDeferred;
 	bool bPostLoadInitRequired;
+	bool bSuppressTransformUpdates;
+
 	TArray<class UProceduralMeshComponent*> DeferredGeometryRemoval;
 	//cached parameters	
 	mutable TSharedPtr<Apparance::IParameterCollection>	InstanceParameters;
 	TSharedPtr<Apparance::IParameterCollection> OverrideParameters;
 	TSharedPtr<Apparance::IParameterCollection> GenerationParameters;
 	//editing
-	bool m_bSelected;
+	bool m_bSelected; //own selection state (independent of UObject selection state, which we won't rely on)
 	
 public:
 	// persistent properties
@@ -247,7 +249,13 @@ public:
 	void Rebuild();
 	UFUNCTION(BlueprintCallable, Category="Apparance|Entity")
 	void RebuildDeferred();
-	
+
+	// smart editing
+	UFUNCTION(BlueprintCallable, Category = "Apparance|Entity")
+	void SetEditingSelected(bool bSelected);
+	UFUNCTION(BlueprintCallable, Category = "Apparance|Entity")
+	bool GetEditingSelected();
+
 	// set parmeters
 
 	// events

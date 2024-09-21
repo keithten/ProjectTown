@@ -21,11 +21,6 @@ class FEntityEditingMode : public FEdMode
 {
 	TSharedPtr<class FEntityEditingToolkit> EntityToolkit;
 
-	//viewport
-	FVector ViewPoint;
-	FVector ViewDirection;
-	float ViewFOV;
-	int ViewPixelWidth;
 	//interaction
 	FVector CursorRayDirection;
 	bool bInteractionButton;

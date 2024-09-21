@@ -1,6 +1,6 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>403.3141,317.6116</Centre>
+    <Centre>350.3141,296.6116</Centre>
     <Zoom>1</Zoom>
   </View>
   <Procedure>
@@ -92,7 +92,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="11">
-      <Location>760,177</Location>
+      <Location>772,211</Location>
       <Size>57.14333,52.2</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -126,6 +126,14 @@ but leaves it selectable</Comment>
     <Object type="ProcedureOperatorState" id="15">
       <Location>-69,86</Location>
       <Size>114.5133,91.08</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="16">
+      <Location>695,312</Location>
+      <Size>77.46667,52.2</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>

@@ -53,4 +53,6 @@ struct IApparanceUnrealEditorAPI
 	// finish up an entity/etc edit (e.g. commit transaction)
 	virtual void EndParameterEdit( class IProceduralObject* pentity, bool editing_transaction, Apparance::ValueID input_id ) = 0;
 
+	// viewport access
+	virtual FViewport* FindEditorViewport() const = 0;
 };

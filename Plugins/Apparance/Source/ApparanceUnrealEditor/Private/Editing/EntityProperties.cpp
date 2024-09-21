@@ -340,9 +340,9 @@ FReply  FEntityPropertyCustomisation::Editor_OpenProcedure()
 
 
 // is smart editing enabled?
-static ECheckBoxState OnIsSmartEditingEnabled()
+static ECheckBoxState OnIsSmartEditingEnabled( UWorld* world )
 {
-	bool enable = FApparanceUnrealModule::GetModule()->IsEditingEnabled();
+	bool enable = FApparanceUnrealModule::GetModule()->IsEditingEnabled( world )!=nullptr;
 	return enable?ECheckBoxState::Checked:ECheckBoxState::Unchecked;
 }
 
@@ -523,7 +523,7 @@ void FEntityPropertyCustomisation::CustomizeDetails( IDetailLayoutBuilder& Detai
 					[
 						SNew(SCheckBox)
 						.Style( APPARANCE_STYLE, "Property.ToggleButton")
-						.IsChecked_Static( &OnIsSmartEditingEnabled )
+						.IsChecked_Static( &OnIsSmartEditingEnabled, pentityactor->GetWorld() )
 						.OnCheckStateChanged_Static( &OnSmartEditingChanged )
 						.ToolTipText( LOCTEXT("EntitySmartEditingButtonTooltip","Toggle the Apparance editing tools panel to enable smart editing features") )
 						.Visibility( show_smart_editing_button?EVisibility::Visible:EVisibility::Hidden )

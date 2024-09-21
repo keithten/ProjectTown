@@ -1,14 +1,14 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>707.0406,339.4763</Centre>
-    <Zoom>0.564474046</Zoom>
+    <Centre>367.7167,507.6694</Centre>
+    <Zoom>0.6830139</Zoom>
   </View>
   <Procedure>
     <Category>Widget</Category>
     <DisplayName>Box</DisplayName>
     <Description>Rectangular in-world UI element</Description>
     <TopLeft>-655.27,-20</TopLeft>
-    <BottomRight>1110.934,620</BottomRight>
+    <BottomRight>1111.478,649.8302</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
@@ -100,15 +100,15 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="12">
-      <Location>-92.05,330.7199</Location>
-      <Size>136.4367,54.28</Size>
+      <Location>-444.0496,365.9193</Location>
+      <Size>92.31333,54.28</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="13">
-      <Location>191.2728,368.1822</Location>
+      <Location>-43.46714,502.4923</Location>
       <Size>46.75667,32.92</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -116,7 +116,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="14">
-      <Location>-65.45456,461.7272</Location>
+      <Location>-263.8947,478.6672</Location>
       <Size>92.17333,69.28</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -132,7 +132,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="16">
-      <Location>55.81819,481.6364</Location>
+      <Location>-142.6217,498.5764</Location>
       <Size>59.94667,32.92</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -163,6 +163,46 @@
       </Comment>
       <InputMetadata />
     </Object>
+    <Object type="ProcedureOperatorState" id="20">
+      <Location>-326.4001,331.3996</Location>
+      <Size>109.3,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="21">
+      <Location>44.25982,469.3301</Location>
+      <Size>109.3,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="22">
+      <Location>739.345,402.1768</Location>
+      <Size>90.50667,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="23">
+      <Location>944.662,414.8247</Location>
+      <Size>89.30334,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="24">
+      <Location>1111.331,391.8896</Location>
+      <Size>100.1467,104.04</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
     <Object type="ProcedureInputState" id="1">
       <Name>Bounds</Name>
       <Description>
@@ -174,12 +214,21 @@
       </Description>
     </Object>
     <Object type="ProcedureInputState" id="3">
-      <Name>Colour</Name>
+      <Name>(Thickness)</Name>
+      <Description>Line thickness override</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="4">
+      <Name>(Radius)</Name>
       <Description>
       </Description>
     </Object>
     <Object type="ProcedureOutputState" id="1">
-      <Name>Out</Name>
+      <Name>Border</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="2">
+      <Name>Inside</Name>
       <Description>
       </Description>
     </Object>
@@ -197,6 +246,28 @@
     <Input id="2">
       <Value type="1819242306" value="False" />
       <Metadata />
+    </Input>
+    <Input id="3">
+      <Value type="842221088" value="0" />
+      <Metadata>
+        <Input Name="Min">
+          <Value type="842221088" value="0" />
+        </Input>
+        <Input Name="Max">
+          <Value type="842221088" value="1" />
+        </Input>
+      </Metadata>
+    </Input>
+    <Input id="4">
+      <Value type="842221088" value="0" />
+      <Metadata>
+        <Input Name="Min">
+          <Value type="842221088" value="0" />
+        </Input>
+        <Input Name="Max">
+          <Value type="842221088" value="1" />
+        </Input>
+      </Metadata>
     </Input>
   </DefaultInputs>
 </ProcedureEditData>

@@ -1,7 +1,7 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>536.6508,997.8839</Centre>
-    <Zoom>0.751315534</Zoom>
+    <Centre>66.20309,471.3139</Centre>
+    <Zoom>1.21</Zoom>
   </View>
   <Procedure>
     <Category>Land</Category>
@@ -423,6 +423,10 @@
       <Metadata />
     </Input>
     <Input id="4">
+      <Value type="1836016967" value="" />
+      <Metadata />
+    </Input>
+    <Input id="5">
       <Value type="1836016967" value="" />
       <Metadata />
     </Input>

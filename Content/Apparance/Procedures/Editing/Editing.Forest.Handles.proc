@@ -33,6 +33,8 @@
         <Constant id="-55" type="List"></Constant>
         <Constant id="-56" type="List"></Constant>
         <Constant id="-57" type="List"></Constant>
+        <Constant id="-58" type="Float">0.000000</Constant>
+        <Constant id="-59" type="Float">0.000000</Constant>
     </Constants>
     <Operators>
         <Operator id="1" type="EAE4856E">
@@ -81,6 +83,8 @@
         <Operator id="9" type="FA711A4D">
             <Connect in="1" to="1" out="100"/>
             <Connect in="2" constant="-29"/>
+            <Connect in="3" constant="-58"/>
+            <Connect in="4" constant="-59"/>
         </Operator>
         <Operator id="10" type="388066ED">
             <Connect in="100" constant="-34"/>

@@ -474,5 +474,22 @@ public:
 	UFUNCTION( BlueprintCallable, Category = "Apparance|Engine", meta = (ToolTip = "Get generation job and pending placement count since last ResetGenerationCounter.") )
 	static int GetGenerationCounter();
 
+	//global smart editing support
+
+	UFUNCTION(BlueprintCallable, Category = "Apparance|Editing", meta = (ToolTip = "Enable or disable smart editing systems such as handle support and inter-object awareness."))
+	static void EnableInteractiveEditing( bool bEnabled );
+
+	UFUNCTION(BlueprintCallable, Category = "Apparance|Editing", meta = (ToolTip = "List of entities currently marked as selected in the entity editing system."))
+	static TArray<class AApparanceEntity*> GetSelectedEntities( UWorld* world );
+	
+#if 0 //not used yet
+	UENUM()
+	enum EInteractionModifiers
+	{
+	}
+#endif
+	
+	UFUNCTION(BlueprintCallable, Category = "Apparance|Editing", meta = (ToolTip = "Inform Apparance of viewport interactions. Provide cursor direction vector from view point. Interact is button state true for pressed."))
+	static bool UpdateInteractiveEditing( FVector CursorDirection, bool Interact/*, EInteractionModifiers Modifiers*/ );
 
 };

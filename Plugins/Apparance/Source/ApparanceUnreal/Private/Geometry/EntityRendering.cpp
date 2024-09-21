@@ -170,7 +170,15 @@ void FEntityRendering::SetOwner( AApparanceEntity* powner )
 
 			//create us an apparance entity
 			bool is_play_mode = FApparanceUnrealModule::GetModule()->IsGameRunning();
-			m_pEntity = FApparanceUnrealModule::GetEngine()->CreateEntity( this, is_play_mode );
+			FString world_name = FApparanceUnrealModule::GetModule()->MakeWorldIdentifier( powner );
+			FString entity_debug_name = powner->GetName();
+			m_pEntity = FApparanceUnrealModule::GetEngine()->CreateEntity( this, is_play_mode, (const char*)StringCast<UTF8CHAR>(*world_name).Get(), (const char*)StringCast<UTF8CHAR>(*entity_debug_name).Get() );
+
+			//ensure new set up for smart editing
+			if (FApparanceUnrealModule::GetModule()->IsEditingEnabled( powner->GetWorld() ))
+			{
+				m_pEntity->EnableSmartEditing();
+			}
 
 //			UE_LOG( LogApparance, Log, TEXT( "Entity Actor %p, Apparance Entity %p : Created for Entity Rendering %p" ), m_pActor, m_pEntity, this );
 		}

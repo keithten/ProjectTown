@@ -62,6 +62,18 @@
 			"Type": "RequiredResource"
 		},
 		{
+			"Path": "$(ProjectDir)/Plugins/OpenRTSCamera/Binaries/Win64/UnrealEditor-OpenRTSCamera.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/OpenRTSCamera/Binaries/Win64/UnrealEditor-OpenRTSCamera.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/OpenRTSCamera/Binaries/Win64/UnrealEditor.modules",
+			"Type": "RequiredResource"
+		},
+		{
 			"Path": "$(EngineDir)/Binaries/Win64/AgentInterface.dll",
 			"Type": "DynamicLibrary"
 		},
@@ -6197,6 +6209,10 @@
 		},
 		{
 			"Path": "$(ProjectDir)/Plugins/Apparance/ApparanceUnreal.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/OpenRTSCamera/OpenRTSCamera.uplugin",
 			"Type": "UFS"
 		},
 		{

@@ -12,6 +12,7 @@
 #include "Utility/ApparanceConversion.h"
 #include "ApparanceParametersComponent.h"
 #include "Geometry/EntityRendering.h"
+#include "Support/SmartEditingState.h"
 
 //unreal
 
@@ -1685,3 +1686,191 @@ int UApparanceBlueprintLibrary::GetGenerationCounter()
 #endif
 }
 
+static UWorld* FindPlayWorld()
+{
+	// scan for play worlds as this functionality only works in Play/Pie/etc modes
+	UWorld* world = nullptr;
+	for (const FWorldContext& Context : GEngine->GetWorldContexts())
+	{
+		if (UWorld* w = Context.World())
+		{
+			//assume first play world is the main one
+			if (Context.WorldType == EWorldType::Game || Context.WorldType == EWorldType::GamePreview || Context.WorldType == EWorldType::GameRPC || Context.WorldType == EWorldType::PIE)
+			{
+				world = w;
+				break;
+			}
+		}
+	}
+
+	//need a world
+	if (!world)
+	{
+		UE_LOG(LogApparance, Error, TEXT("Enable Interactive Editing blueprint function only valid during play."));
+	}
+
+	return world;
+}
+
+
+void UApparanceBlueprintLibrary::EnableInteractiveEditing(bool bEnabled)
+{
+	if (UWorld* world = FindPlayWorld())
+	{
+		FApparanceUnrealModule::GetModule()->EnableEditing(world, bEnabled);
+	}
+}
+
+TArray<class AApparanceEntity*> UApparanceBlueprintLibrary::GetSelectedEntities(UWorld* world)
+{
+	TArray<class AApparanceEntity*> entities;
+	if (USmartEditingState* state = FApparanceUnrealModule::GetModule()->IsEditingEnabled(world))
+	{
+		state->GetSelectedEntities(entities);
+	}
+	return std::move(entities);
+}
+
+bool UApparanceBlueprintLibrary::UpdateInteractiveEditing( FVector CursorDirection, bool Interact/*, EInteractionModifiers Modifiers*/ )
+{
+	if (UWorld* world = FindPlayWorld())
+	{
+		if(USmartEditingState* state = FApparanceUnrealModule::GetModule()->IsEditingEnabled(world))
+		{
+			//pass into Apparance engine
+			return state->UpdateInteractiveEditing(CursorDirection, Interact/*, Modifiers*/);
+		}
+	}
+
+	return false;
+}
+
+
+#if 0
+
+//editing handle interaction
+void UApparanceBlueprintLibrary::UpdateInteractiveViewport( FCommonViewportClient* Viewport )
+{
+	// FVector view_point, FVector view_direction, float view_angle_degrees, float pixel_angle_degrees;
+
+	//Apparance::Vector3 view_point, Apparance::Vector3 view_direction, float view_angle_degrees, float pixel_angle_degrees) = 0;
+}
+bool UApparanceBlueprintLibrary::UpdateInteractiveEditing( )
+{
+	//Apparance::Vector3 cursor_direction_or_offset, bool interact_button_active, int modifier_key_flags
+}
+
+//----
+
+bool FEntityEditingMode::MouseMove(FEditorViewportClient* ViewportClient, FViewport* Viewport, int32 x, int32 y)
+{
+	//calculate relevant view info
+	FViewportCursorLocation vcl = ViewportClient->GetCursorWorldLocationFromMousePos();
+	FVector dir = vcl.GetDirection();
+
+	//check for change (synthesised mouse events fire this constantly otherwise)
+	if (dir != CursorRayDirection)
+	{
+		CursorRayDirection = dir;
+		return UpdateInteraction();
+	}
+
+	//no change
+	return false;
+}
+
+bool FEntityEditingMode::CapturedMouseMove(FEditorViewportClient* InViewportClient, FViewport* InViewport, int32 InMouseX, int32 InMouseY)
+{
+	return MouseMove(InViewportClient, InViewport, InMouseX, InMouseY);
+}
+
+bool FEntityEditingMode::InputKey(FEditorViewportClient* ViewportClient, FViewport* Viewport, FKey Key, EInputEvent Event)
+{
+	bool changed = false;
+	bool absorbed = false;
+
+	//check mouse change
+	if (Key == EKeys::LeftMouseButton)
+	{
+		const bool pressed = Event == EInputEvent::IE_Pressed;
+		const bool pressed2 = Event == EInputEvent::IE_DoubleClick;
+		const bool released = Event == EInputEvent::IE_Released;
+		if (pressed || pressed2 || released)
+		{
+			bool is_a_press = pressed || pressed2;
+			if (is_a_press != bInteractionButton)
+			{
+				bInteractionButton = is_a_press;
+				changed = true;
+			}
+		}
+		//also block all double-clicks from Unreal as this interferes with object selction
+		if (pressed2)
+		{
+			absorbed = true;
+		}
+	}
+
+	//check relevant modifier changed
+	const FModifierKeysState KeyState = FSlateApplication::Get().GetModifierKeys();
+	const bool bShiftDown = KeyState.IsShiftDown();
+	const bool bCtrlDown = KeyState.IsControlDown();
+	const bool bAltDown = KeyState.IsAltDown();
+	const int new_modifiers = (bShiftDown ? 1 : 0) | (bCtrlDown ? 2 : 0) | (bAltDown ? 4 : 0);
+	if (new_modifiers != iModifierKeyFlags)
+	{
+		iModifierKeyFlags = new_modifiers;
+		changed = true;
+	}
+
+	//apply if useful change
+	if (changed)
+	{
+		changed = UpdateInteraction();
+	}
+
+#if 0
+	FText event_type = UEnum::GetDisplayValueAsText<EInputEvent>(Event);
+	UE_LOG(LogApparance, Display, TEXT("INTERACTION KEY: %s :%s%s"), *event_type.ToString(), changed ? TEXT(" CHANGED") : TEXT(""), absorbed ? TEXT(" ABSORBED") : TEXT(""));
+#endif
+	return changed || absorbed;
+}
+
+void FEntityEditingMode::UpdateViewportInfo(FEditorViewportClient* ViewportClient)
+{
+	//gather
+	FVector view_point = ViewportClient->GetViewLocation();
+	FRotator view_rotation = ViewportClient->GetViewRotation();
+	FVector view_direction = view_rotation.Vector();
+	float fov_angle = ViewportClient->FOVAngle;
+	FIntPoint origin, dimensions;
+	ViewportClient->GetViewportDimensions(origin, dimensions);
+
+	//changed?
+	if (view_point != ViewPoint || view_direction != ViewDirection || fov_angle != ViewFOV || dimensions.X != ViewPixelWidth)
+	{
+		//track
+		ViewPoint = view_point;
+		ViewFOV = fov_angle;
+		ViewPixelWidth = dimensions.X;
+		ViewDirection = view_direction;
+
+		//further calcs
+		float pixel_angle = fov_angle / (float)dimensions.X;	//degrees assigned to pixel
+
+		//apply
+		Apparance::Vector3 pos = VECTOR3_APPARANCESPACE_FROM_UNREALSPACE(ViewPoint);
+		Apparance::Vector3 dir = APPARANCEHANDEDNESS_FROM_UNREALHANDEDNESS(ViewDirection);
+		FApparanceUnrealModule::GetEngine()->UpdateInteractiveViewport(pos, dir, fov_angle, pixel_angle);
+	}
+}
+
+// send current state to editing tools
+//
+bool FEntityEditingMode::UpdateInteraction()
+{
+	//pass into Apparance engine
+	Apparance::Vector3 dir = VECTOR3_APPARANCEHANDEDNESS_FROM_UNREALHANDEDNESS(CursorRayDirection);
+	return FApparanceUnrealModule::GetEngine()->UpdateInteractiveEditing(dir, bInteractionButton, iModifierKeyFlags);
+}
+#endif
