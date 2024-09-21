@@ -146,6 +146,7 @@ void FApparanceUnrealEditorModule::StartupModule()
 
 	//misc
 	bWasInGameViewBeforeInteractiveEditingBegan = false;
+	bInstallChecking = false;
 }
 
 
@@ -884,7 +885,7 @@ bool FApparanceUnrealEditorModule::CanLaunchApparanceEditor() const
 // installation process
 void FApparanceUnrealEditorModule::TickInstallation()
 {
-	if(IsInstalling())
+	if(IsCheckingInstall() || IsInstalling())
 	{
 		//check messages
 		bool failed = false;

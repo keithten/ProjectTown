@@ -1,0 +1,275 @@
+<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"  
+	xmlns:app="clr-namespace:Apparance.Plugin;assembly=Apparance.Engine"
+	xmlns:vice="clr-namespace:Vice.Core;assembly=Apparance.Core"
+	>
+   
+  <UserControl.Resources>
+	<!-- converters -->
+	<BooleanToVisibilityConverter x:Key="bool2vis" />
+	<vice:PropertyItemTemplateSelector x:Key="item_selector" />
+	<vice:PropertyValueTemplateSelector x:Key="value_selector" />
+	<vice:CustomPropertyValueTemplateSelector x:Key="custom_value_selector" />
+	<vice:DragSourceTemplateSelector x:Key="drag_template_selector" />
+	<vice:FloatToDoubleConverter x:Key="float2double" />
+	<vice:BooleanToStringConverter x:Key="bool2string" />
+	<vice:ColourConverter x:Key="colour" />
+	<app:ClassTemplateSelector x:Key="classselector" />
+
+	<Style x:Key="proplabel" TargetType="TextBlock">
+		<Setter Property="Opacity" Value="0.4" />
+	</Style>
+
+	<!-- Octree Children -->
+	<DataTemplate x:Key="octree_children2">
+		<StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+			<StackPanel VerticalAlignment="Center">
+			<Border BorderThickness="0,0,0,1" BorderBrush="White" Width="20" SnapsToDevicePixels="True">
+				<TextBlock Text="{Binding Children.Count}" Foreground="White" Margin="3,0" />
+			</Border>
+			<TextBlock Text="{Binding Children.Count}" Opacity="0"/>
+			</StackPanel>
+			<ItemsControl ItemsSource="{Binding Children}" ItemTemplateSelector="{StaticResource classselector}" VerticalAlignment="Center" />
+		</StackPanel>
+	</DataTemplate>
+
+	<!-- Octree Node -->
+	<DataTemplate x:Key="EntityAnalysis_OctreeNode">
+		<StackPanel Orientation="Horizontal">
+
+			<!-- Branch Lines -->
+			<Grid>
+				<Grid.RowDefinitions><RowDefinition/><RowDefinition/>	</Grid.RowDefinitions>
+				<Border Width="25" Grid.Row="0" BorderThickness="1,0,0,1" CornerRadius="0,0,0,4" BorderBrush="White" Visibility="{Binding IsLastChild,Converter={StaticResource bool2vis}}" >
+					<StackPanel Margin="2,0" VerticalAlignment="Bottom">
+						<TextBlock Text="{Binding NodeIndex}" Foreground="White"/>
+						<TextBlock Text="{Binding OctantDesc}" Foreground="White" Opacity="0.5"/>
+					</StackPanel>
+				</Border>
+				<Border Width="25" Grid.Row="1" BorderThickness="1,1,0,0" CornerRadius="4,0,0,0" BorderBrush="White" Visibility="{Binding IsFirstChild,Converter={StaticResource bool2vis}}" >
+					<StackPanel Margin="2,0" VerticalAlignment="Top">
+						<TextBlock Text="{Binding NodeIndex}" Foreground="White"/>
+						<TextBlock Text="{Binding OctantDesc}" Foreground="White" Opacity="0.5"/>
+					</StackPanel>
+				</Border>
+				<Border Width="25" Grid.Row="0" BorderThickness="1,0,0,1" BorderBrush="White" Visibility="{Binding IsMidChild,Converter={StaticResource bool2vis}}" >
+					<TextBlock Text="{Binding NodeIndex}" Margin="2,0" Foreground="White" VerticalAlignment="Bottom" />
+				</Border>
+				<Border Width="25" Grid.Row="1" BorderThickness="1,0,0,0" BorderBrush="White" Visibility="{Binding IsMidChild,Converter={StaticResource bool2vis}}">
+					<TextBlock Text="{Binding OctantDesc}" Margin="2,0" Foreground="White" Opacity="0.5"  VerticalAlignment="Top" />
+				</Border>
+				<Border Width="25" Grid.Row="0" BorderThickness="0,0,0,1" BorderBrush="White" Visibility="{Binding IsOnlyChild,Converter={StaticResource bool2vis}}" SnapsToDevicePixels="True">
+					<StackPanel Margin="2,0" VerticalAlignment="Bottom">
+						<TextBlock Text="{Binding NodeIndex}" Foreground="White"/>
+						<TextBlock Text="{Binding OctantDesc}" Foreground="White" Opacity="0.5"/>
+					</StackPanel>
+				</Border>
+			</Grid>
+
+			<!-- Node details -->
+			<Grid VerticalAlignment="Center">
+				<Border Background="#AAA" BorderBrush="White" CornerRadius="5" BorderThickness="1" Margin="0,2">
+					<StackPanel>
+						<DockPanel LastChildFill="False" Margin="5,0">
+							<TextBlock Text="Node" FontWeight="Bold" />
+							<StackPanel Orientation="Horizontal" Margin="4,0"><TextBlock Text="Size: " Style="{StaticResource proplabel}"/><TextBlock Text="{Binding BlockSize}" /></StackPanel>
+							<StackPanel Orientation="Horizontal" Margin="4,0"><TextBlock Text="Depth: " Style="{StaticResource proplabel}"/><TextBlock Text="{Binding NodeDepth}" /></StackPanel>
+							<StackPanel Orientation="Horizontal" Margin="4,0"><TextBlock Text="Models: " Style="{StaticResource proplabel}"/><TextBlock Text="{Binding Models.Count}" /></StackPanel>
+							<StackPanel Orientation="Horizontal" DockPanel.Dock="Right">
+								<TextBlock Text="0x" />
+								<TextBlock Text="{Binding AddressDesc}" />
+							</StackPanel>
+						</DockPanel>
+						<StackPanel Orientation="Horizontal" Margin="4,0">
+							<TextBlock Text="{Binding BlockBoundsMin}"/>
+							<TextBlock Text=" -> "/>
+							<TextBlock Text="{Binding BlockBoundsMax}"/>
+							<TextBlock Margin="8,0,0,0" Text="Refinements: " Style="{StaticResource proplabel}"/>
+							<TextBlock Text="{Binding Refinements.Count}" />
+						</StackPanel>
+						<StackPanel Orientation="Horizontal" Margin="4,0" TextBlock.FontWeight="Bold">
+							<TextBlock Margin="3,0" Text="Refinement:" />
+							<TextBlock Margin="3,0" Text="Required" Foreground="{Binding IsRefinementRequired,Converter={StaticResource bool2string},ConverterParameter=#A00|Lime}"/>
+							<StackPanel Orientation="Horizontal" Opacity="{Binding IsRefinementRequired,Converter={StaticResource bool2string},ConverterParameter=0.3|1.0}">
+								<TextBlock Margin="3,0" Text="Possible" Foreground="{Binding IsRefinementPossible,Converter={StaticResource bool2string},ConverterParameter=Red|Lime}"/>
+								<TextBlock Margin="0,0,3,0" Text="Completed" Foreground="{Binding IsRefined,Converter={StaticResource bool2string},ConverterParameter=Red|Lime}" Opacity="{Binding IsRefinementPossible,Converter={StaticResource bool2string},ConverterParameter=0.3|1.0}"/>
+							</StackPanel>
+							<StackPanel Orientation="Horizontal" Background="#F88" Visibility="{Binding IsRefinementLeaf,Converter={StaticResource bool2vis}}">
+								<TextBlock Margin="3,0" Text="Reason:" />
+								<TextBlock Margin="3,0" Text="Bounds" Foreground="{Binding IsBad_NoBounds,Converter={StaticResource bool2string},ConverterParameter=Gray|Red}" ToolTip="No bounds available"/>
+								<TextBlock Margin="3,0" Text="Size" Foreground="{Binding IsBad_TooBig,Converter={StaticResource bool2string},ConverterParameter=Gray|Red}" ToolTip="Model is too large"/>
+								<TextBlock Margin="3,0" Text="Closures" Foreground="{Binding IsBad_NoClosures,Converter={StaticResource bool2string},ConverterParameter=Gray|Red}" ToolTip="No closures captured"/>
+								<TextBlock Margin="3,0" Text="Bad" Foreground="{Binding IsBad_BadClosures,Converter={StaticResource bool2string},ConverterParameter=Gray|Red}" ToolTip="There are bad captures"/>
+							</StackPanel>
+						</StackPanel>
+		
+						<!-- Models -->
+						<ItemsControl Margin="4,4,4,0" ItemsSource="{Binding Models}" ItemTemplate="{DynamicResource octree_model}" />
+
+						<!-- Refinements -->
+						<ItemsControl Margin="4,4,4,0" ItemsSource="{Binding Refinements}" ItemTemplate="{DynamicResource octree_refinement}" Visibility="{Binding HasRefinements,Converter={StaticResource bool2vis}}" />
+		
+					</StackPanel>
+				</Border>
+			</Grid>
+
+			<!-- Child Nodes -->
+			<ContentPresenter Content="{Binding .}" ContentTemplate="{DynamicResource octree_children2}" Margin="0,2"/>
+
+		</StackPanel>
+	</DataTemplate>
+
+	<!-- Octree Node -->
+	<DataTemplate x:Key="EntityAnalysis_DummyNode">
+		<StackPanel Orientation="Horizontal">
+		
+			<!-- Branch Lines -->
+			<Grid>
+				<Grid.RowDefinitions><RowDefinition/><RowDefinition/>	</Grid.RowDefinitions>
+				<Border Width="25" Grid.Row="0" BorderThickness="1,0,0,1" CornerRadius="0,0,0,4" BorderBrush="White" Visibility="{Binding IsLastChild,Converter={StaticResource bool2vis}}" >
+					<StackPanel Margin="2,0" VerticalAlignment="Bottom">
+						<TextBlock Text="{Binding NodeIndex}" Foreground="White"/>
+						<TextBlock Text="{Binding OctantDesc}" Foreground="White" Opacity="0.5"/>
+					</StackPanel>
+				</Border>
+				<Border Width="25" Grid.Row="1" BorderThickness="1,1,0,0" CornerRadius="4,0,0,0" BorderBrush="White" Visibility="{Binding IsFirstChild,Converter={StaticResource bool2vis}}" >
+					<StackPanel Margin="2,0" VerticalAlignment="Top">
+						<TextBlock Text="{Binding NodeIndex}" Foreground="White"/>
+						<TextBlock Text="{Binding OctantDesc}" Foreground="White" Opacity="0.5"/>
+					</StackPanel>
+				</Border>
+				<Border Width="25" Grid.Row="0" BorderThickness="1,0,0,1" BorderBrush="White" Visibility="{Binding IsMidChild,Converter={StaticResource bool2vis}}" >
+					<TextBlock Text="{Binding NodeIndex}" Margin="2,0" Foreground="White" VerticalAlignment="Bottom" />
+				</Border>
+				<Border Width="25" Grid.Row="1" BorderThickness="1,0,0,0" BorderBrush="White" Visibility="{Binding IsMidChild,Converter={StaticResource bool2vis}}">
+					<TextBlock Text="{Binding OctantDesc}" Margin="2,0" Foreground="White" Opacity="0.5"  VerticalAlignment="Top" />
+				</Border>
+				<Border Width="25" Grid.Row="0" BorderThickness="0,0,0,1" BorderBrush="White" Visibility="{Binding IsOnlyChild,Converter={StaticResource bool2vis}}" SnapsToDevicePixels="True">
+					<StackPanel Margin="2,0" VerticalAlignment="Bottom">
+						<TextBlock Text="{Binding NodeIndex}" Foreground="White"/>
+						<TextBlock Text="{Binding OctantDesc}" Foreground="White" Opacity="0.5"/>
+					</StackPanel>
+				</Border>
+			</Grid>
+
+			<!-- Node details -->
+			<Grid VerticalAlignment="Center" MinHeight="50" MinWidth="100">
+				<Border Background="#AAA" BorderBrush="White" CornerRadius="5" BorderThickness="1" Margin="0,2">
+					<StackPanel Margin="3" VerticalAlignment="Center" HorizontalAlignment="Center">
+						<DockPanel LastChildFill="False" Margin="5,0">
+							<TextBlock Text="{Binding AddressDesc}"/>
+						</DockPanel>
+					</StackPanel>
+				</Border>
+			</Grid>
+
+		</StackPanel>
+	</DataTemplate>
+
+	<!-- Model -->
+	<DataTemplate x:Key="octree_model">
+		<Grid>
+		  <Border Background="#0CC" BorderBrush="Black" CornerRadius="5" BorderThickness="1">
+			<StackPanel>
+				<!-- Owners -->
+				<ItemsControl Margin="4,4,4,2" Opacity="0.4" ItemsSource="{Binding Owners}" ItemTemplate="{DynamicResource octree_closure}" Visibility="{Binding HasOwners,Converter={StaticResource bool2vis}}" />
+
+				<!-- Model details -->
+				<StackPanel>
+					<DockPanel Margin="5,0" LastChildFill="False">
+						<TextBlock Text="Model" FontWeight="Bold" />
+						<TextBlock Margin="5,0" Text="{Binding BoundsSize}"/>
+						<StackPanel Opacity="0.5" DockPanel.Dock="Right" Orientation="Horizontal">
+							<TextBlock Text="ID: " Opacity="0.5"/>
+							<TextBlock Text="{Binding ID}" />
+							<TextBlock Margin="10,0,0,0" Text="0x" />
+							<TextBlock Text="{Binding AddressDesc}" />
+						</StackPanel>
+					</DockPanel>
+					<StackPanel Margin="5,0" Orientation="Horizontal">
+						<TextBlock Text="{Binding BoundsMin}" Opacity="0.7"/>
+						<TextBlock Text=" -> " Opacity="0.7" />
+						<TextBlock Text="{Binding BoundsMax}" Opacity="0.7"/>
+					</StackPanel>
+					<StackPanel Margin="5,0" Orientation="Horizontal">
+						<TextBlock Margin="3,0" Text="Geometry" Foreground="{Binding HasGeometry,Converter={StaticResource bool2string},ConverterParameter=Red|Lime}" FontWeight="Bold"/>
+						<TextBlock Margin="3,0" Text="InOctree" Foreground="{Binding IsInOctree,Converter={StaticResource bool2string},ConverterParameter=Red|Lime}" FontWeight="Bold"/>
+
+						<TextBlock Margin="5,0,0,0" Text="Owners: " Style="{StaticResource proplabel}"/><TextBlock Text="{Binding Owners.Count}" />
+						<TextBlock Margin="5,0,0,0" Text="Closures: " Style="{StaticResource proplabel}"/><TextBlock Text="{Binding Closures.Count}" />
+					</StackPanel>
+					<TextBlock Text="{Binding ModellingError}" MaxWidth="350" TextWrapping="Wrap" FontWeight="Bold" Foreground="Red" Margin="4,0,0,0" Visibility="{Binding HasError,Converter={StaticResource bool2vis}}" />
+				</StackPanel>
+
+				<!-- Closures -->
+				<ItemsControl Margin="4,2,4,4" ItemsSource="{Binding Closures}" ItemTemplate="{DynamicResource octree_closure}" Visibility="{Binding HasClosures,Converter={StaticResource bool2vis}}" />
+
+			</StackPanel>
+		  </Border>
+		  <Border BorderBrush="Red" BorderThickness="3" CornerRadius="3" Visibility="{Binding IsHighlighted,Converter={StaticResource bool2vis}}" />
+		</Grid>
+	</DataTemplate>
+
+	<!-- Refinement -->
+	<DataTemplate x:Key="octree_refinement">
+		<Border Background="LightYellow" BorderBrush="Black" CornerRadius="5" BorderThickness="1">
+			<StackPanel>
+				<StackPanel Orientation="Horizontal">
+					<TextBlock Margin="5,0,0,0" Text="Refinement" FontWeight="Bold" />
+					<StackPanel Orientation="Horizontal" Margin="5,0"><TextBlock Text="State: " Style="{StaticResource proplabel}"/><TextBlock Text="{Binding State}" /></StackPanel>
+					<StackPanel Orientation="Horizontal" Margin="5,0"><TextBlock Text="Closures: " Style="{StaticResource proplabel}"/><TextBlock Text="{Binding Closures.Count}" Visibility="{Binding HasClosures,Converter={StaticResource bool2vis}}" /></StackPanel>
+				</StackPanel>
+		
+				<!-- Closures -->
+				<ItemsControl Margin="4,0,4,4" Opacity="0.4" ItemsSource="{Binding Closures}" ItemTemplate="{DynamicResource octree_closure}" Visibility="{Binding HasClosures,Converter={StaticResource bool2vis}}" />
+				
+			</StackPanel>
+		</Border>
+	</DataTemplate>
+
+	<!-- Closure -->
+	<DataTemplate x:Key="octree_closure">
+		<Grid>
+		  <Border Background="{Binding IsSelected,Converter={StaticResource bool2string},ConverterParameter=#ff8|Gold}" BorderBrush="Black" CornerRadius="5" BorderThickness="1">
+			<StackPanel>
+				<DockPanel LastChildFill="False">
+					<TextBlock Margin="2,0,0,0" Text="Closure" FontWeight="Bold" />
+					<StackPanel DockPanel.Dock="Right" Margin="5,0" Orientation="Horizontal" Opacity="0.5">
+						<TextBlock Text="0x" />
+						<TextBlock Text="{Binding AddressDesc}" />
+					</StackPanel>
+					<StackPanel Orientation="Horizontal" Margin="2,0,2,2">
+						<TextBlock Text="{Binding Procedure.ProcedureCategory}" Opacity="0.5"/>
+						<TextBlock Text="."/>
+						<TextBlock Text="{Binding Procedure.ProcedureName}" FontWeight="Bold"/>
+					</StackPanel>
+					<StackPanel Orientation="Horizontal" Margin="5,0" Visibility="{Binding HasInputs,Converter={StaticResource bool2vis}}">
+						<TextBlock Text="Inputs: " Style="{StaticResource proplabel}"/>
+						<TextBlock Text="{Binding Inputs.Count}" />
+					</StackPanel>
+					<TextBlock Margin="5,0,0,0" Text="{Binding State}" Foreground="Red" FontWeight="Bold" Visibility="{Binding IsInvalid,Converter={StaticResource bool2vis}}" />
+				</DockPanel>
+			</StackPanel>
+		  </Border>
+		  <Grid Background="Red" Opacity="0.4" Visibility="{Binding IsInvalid,Converter={StaticResource bool2vis}}" IsHitTestVisible="false" />
+		  <Border BorderBrush="Red" BorderThickness="3" CornerRadius="3" Visibility="{Binding IsHighlighted,Converter={StaticResource bool2vis}}" />
+		</Grid>
+	</DataTemplate>
+
+  </UserControl.Resources>
+	
+  <!-- MAIN PANEL -->
+  <Grid>
+	<ScrollViewer HorizontalScrollBarVisibility="Auto">
+		<StackPanel>
+			<ContentPresenter Content="{Binding UniverseAnalysis}" ContentTemplate="{StaticResource octree_children2}" />
+		</StackPanel>
+	</ScrollViewer>
+	
+	<!-- UI Overlay -->
+	<Button Margin="10" HorizontalAlignment="Right" Opacity="0.5" VerticalAlignment="Top" Padding="20,3" Content="Capture" Command="{Binding UniverseAnalysisCommand}" />
+  </Grid>
+
+</UserControl>

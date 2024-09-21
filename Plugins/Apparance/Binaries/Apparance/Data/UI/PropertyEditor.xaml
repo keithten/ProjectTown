@@ -1,0 +1,962 @@
+<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:system="clr-namespace:System;assembly=mscorlib"
+	xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"  
+	xmlns:app="clr-namespace:Apparance.Plugin;assembly=Apparance.Engine"
+	xmlns:vice="clr-namespace:Vice.Core;assembly=Apparance.Core"
+	xmlns:appui="clr-namespace:Apparance.UI;assembly=Apparance.Editor"
+	>
+   
+  <UserControl.Resources>
+	<!-- converters -->
+	<BooleanToVisibilityConverter x:Key="bool2vis" />
+	<vice:PropertyItemTemplateSelector x:Key="item_selector" />
+	<vice:PropertyValueTemplateSelector x:Key="value_selector" />
+	<vice:CustomPropertyValueTemplateSelector x:Key="custom_value_selector" />
+	<vice:FloatToDoubleConverter x:Key="float2double" />
+	<vice:IntegerToDoubleConverter x:Key="int2double" />
+	<vice:BooleanToStringConverter x:Key="bool2string" />
+	<vice:BooleanToDoubleConverter x:Key="bool2double" />
+	<vice:ObjectToFormattedStringConverter x:Key="object2formatted" />
+	<vice:ColourConverter x:Key="colour" />
+	<appui:TypeToColourConverter x:Key="type_colour" 
+		IntegerColour="#33F"
+		FloatColour="#F3F"
+		BoolColour="#0A0"
+		FColourColour="Gray"
+		Vector3Colour="Orange"
+		StringColour="#FF0"
+		ListColour="#660"
+		ModelSegmentColour="White"
+		FrameColour="Black"
+		DarkBlend="0.3"
+		LightBlend="0.1"
+	/>
+	<ObjectDataProvider x:Key="frameOriginEnumValues" MethodName="GetValues" ObjectType="{x:Type system:Enum}">
+		<ObjectDataProvider.MethodParameters>
+			<x:Type TypeName="vice:FrameOrigin"/>
+		</ObjectDataProvider.MethodParameters>
+	</ObjectDataProvider>
+
+	<!-- drawing resources -->
+	<LinearGradientBrush x:Key="row_brush" StartPoint="0,0" EndPoint="0,1">
+		<GradientStop Color="#10000000" Offset="0"/>
+		<GradientStop Color="#08000000" Offset="0.4"/>
+		<GradientStop Color="#08000000" Offset="0.8"/>
+		<GradientStop Color="#00000000" Offset="1"/>
+	</LinearGradientBrush>
+	<LinearGradientBrush x:Key="heading_brush" StartPoint="0,0" EndPoint="0,1">
+		<GradientStop Color="#666" Offset="0"/>
+		<GradientStop Color="#444" Offset="0.08"/>
+		<GradientStop Color="#222" Offset="0.16"/>
+		<GradientStop Color="#444" Offset="0.24"/>
+		<GradientStop Color="#444" Offset="1"/>
+	</LinearGradientBrush>
+
+	<!--======= STYLES ======-->
+	<Style x:Key="PropertyExpanderStyle" TargetType="{x:Type ToggleButton}">
+        <Setter Property="Foreground" Value="{DynamicResource TextBrush}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ToggleButton}">
+                    <ControlTemplate.Resources>
+                        <Storyboard x:Key="HoverOn">
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="HoverRectangle" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="HoverShineRectangle" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
+                            </DoubleAnimationUsingKeyFrames>
+                        </Storyboard>
+                        <Storyboard x:Key="HoverOff">
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="HoverShineRectangle" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="HoverRectangle" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                        </Storyboard>
+                        <Storyboard x:Key="PressedOn">
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="PressedRectangle" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
+                            </DoubleAnimationUsingKeyFrames>
+                        </Storyboard>
+                        <Storyboard x:Key="PressedOff">
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="PressedRectangle" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </ControlTemplate.Resources>
+                    <Border Padding="{TemplateBinding Padding}" Background="Transparent" BorderBrush="Transparent" BorderThickness="1,1,1,1" CornerRadius="2,2,2,2">
+                        <Grid SnapsToDevicePixels="False" Background="Transparent">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="19" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Rectangle Margin="2,2,2,2" x:Name="Rectangle" Fill="{DynamicResource NormalBrush}" Stroke="{DynamicResource NormalBorderBrush}" StrokeThickness="1" RadiusX="1" RadiusY="1" />
+                            <Rectangle Margin="2,2,2,2" x:Name="ShineRectangle" Fill="{DynamicResource ShineBrush}" Stroke="{DynamicResource NormalBorderBrush}" StrokeThickness="1" RadiusX="1" RadiusY="1" />
+                            <Rectangle Margin="2,2,2,2" x:Name="HoverRectangle" Fill="{DynamicResource HoverBrush}" Stroke="{DynamicResource NormalBorderBrush}" StrokeThickness="1" RadiusX="1" RadiusY="1" Opacity="0" />
+                            <Rectangle Margin="2,2,2,2" x:Name="HoverShineRectangle" Fill="{DynamicResource HoverShineBrush}" Stroke="{DynamicResource NormalBorderBrush}" StrokeThickness="1" RadiusX="1" RadiusY="1" Opacity="0" />
+                            <Rectangle Margin="2,2,2,2" x:Name="PressedRectangle" Fill="{DynamicResource PressedBrush}" Stroke="{DynamicResource PressedBorderBrush}" StrokeThickness="1" RadiusX="1" RadiusY="1" Opacity="0" />
+                            <Path HorizontalAlignment="Center" x:Name="Up_Arrow" VerticalAlignment="Center" Fill="{DynamicResource GlyphBrush}" Data="M 0 0 L 4 4 L 8 0 Z" />
+                            <Path Visibility="Collapsed" HorizontalAlignment="Center" x:Name="Down_Arrow" VerticalAlignment="Center" Fill="{DynamicResource GlyphBrush}" Data="M 0 4 L 4 0 L 8 4 Z" />
+                            <ContentPresenter SnapsToDevicePixels="True" Margin="1,0,0,1" VerticalAlignment="Center" Grid.Column="1" RecognizesAccessKey="True" />
+                        </Grid>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsChecked" Value="true">
+                            <Setter Property="Visibility" TargetName="Down_Arrow" Value="Visible" />
+                            <Setter Property="Visibility" TargetName="Up_Arrow" Value="Collapsed" />
+
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Trigger.ExitActions>
+                                <BeginStoryboard Storyboard="{StaticResource HoverOff}" x:Name="HoverOff_BeginStoryboard"/>
+                            </Trigger.ExitActions>
+                            <Trigger.EnterActions>
+                                <BeginStoryboard Storyboard="{StaticResource HoverOn}"/>
+                            </Trigger.EnterActions>
+
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="true">
+                            <Trigger.ExitActions>
+                                <BeginStoryboard Storyboard="{StaticResource PressedOff}" x:Name="PressedOff_BeginStoryboard"/>
+                            </Trigger.ExitActions>
+                            <Trigger.EnterActions>
+                                <BeginStoryboard Storyboard="{StaticResource PressedOn}" x:Name="PressedOn_BeginStoryboard"/>
+                            </Trigger.EnterActions>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+   	</Style>
+
+	<!--======= TEMPLATES ======-->
+	<Style x:Key="PropertyExpander" TargetType="{x:Type Expander}">
+        <Setter Property="Foreground" Value="{DynamicResource TextBrush}" />
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+        <Setter Property="VerticalContentAlignment" Value="Stretch" />
+		<Setter Property="BorderBrush" Value="Transparent" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Expander}">
+					<Border SnapsToDevicePixels="true" Background="{TemplateBinding Background}" BorderBrush="{DynamicResource NormalBorderBrush}" BorderThickness="0" CornerRadius="0">
+                        <DockPanel x:Name="dockPanel">
+                            <ToggleButton FontFamily="{TemplateBinding FontFamily}" FontSize="{TemplateBinding FontSize}" FontStretch="{TemplateBinding FontStretch}" FontStyle="{TemplateBinding FontStyle}" FontWeight="{TemplateBinding FontWeight}" Foreground="{TemplateBinding Foreground}" HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}" Padding="{TemplateBinding Padding}" VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}" FocusVisualStyle="{StaticResource ExpanderHeaderFocusVisual}" MinHeight="0" MinWidth="0" x:Name="HeaderSite" Style="{StaticResource PropertyExpanderStyle}" Content="{TemplateBinding Header}" ContentTemplate="{TemplateBinding HeaderTemplate}" ContentTemplateSelector="{TemplateBinding HeaderTemplateSelector}" IsChecked="{Binding Path=IsExpanded, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" DockPanel.Dock="Top" />
+                            <Border Visibility="Collapsed" Background="{DynamicResource ShadeBrush}" BorderBrush="Transparent" BorderThickness="0" CornerRadius="0" x:Name="border" Padding="1,1,1,1">
+                                <ContentPresenter Focusable="false" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="1,1,1,1" x:Name="ExpandSite" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" DockPanel.Dock="Bottom" />
+                            </Border>
+                        </DockPanel>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsExpanded" Value="true">
+                            <Setter Property="Visibility" TargetName="border" Value="Visible" />
+                        </Trigger>
+                        <Trigger Property="ExpandDirection" Value="Down" />
+                        <Trigger Property="ExpandDirection" Value="Right">
+                            <Setter Property="DockPanel.Dock" TargetName="ExpandSite" Value="Right" />
+                            <Setter Property="DockPanel.Dock" TargetName="HeaderSite" Value="Left" />
+                            <Setter Property="Style" TargetName="HeaderSite" Value="{StaticResource ExpanderRightHeaderStyle}" />
+                        </Trigger>
+                        <Trigger Property="ExpandDirection" Value="Up">
+                            <Setter Property="DockPanel.Dock" TargetName="ExpandSite" Value="Top" />
+                            <Setter Property="DockPanel.Dock" TargetName="HeaderSite" Value="Bottom" />
+                            <Setter Property="Style" TargetName="HeaderSite" Value="{StaticResource ExpanderUpHeaderStyle}" />
+                        </Trigger>
+                        <Trigger Property="ExpandDirection" Value="Left">
+                            <Setter Property="DockPanel.Dock" TargetName="ExpandSite" Value="Left" />
+                            <Setter Property="DockPanel.Dock" TargetName="HeaderSite" Value="Right" />
+                            <Setter Property="Style" TargetName="HeaderSite" Value="{StaticResource ExpanderLeftHeaderStyle}" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="false">
+                            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+	</Style>
+
+	<!--======= PROPERTY COLLECTION =======-->
+	<DataTemplate x:Key="PropertyTemplate_Object">
+		<ItemsControl ItemsSource="{Binding Value}" ItemTemplateSelector="{StaticResource item_selector}" Margin="0,0,0,0" />
+	</DataTemplate>
+	
+	<!-- PROPERTY ITEM -->
+	<DataTemplate x:Key="PropertyItem_Default">
+		<Grid Margin="0,0,0,1" Background="{StaticResource row_brush}">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="140"/>
+				<ColumnDefinition Width="*"/>
+			</Grid.ColumnDefinitions>
+
+			<TextBlock Foreground="#bbbbbb" VerticalAlignment="Center" Grid.Column="0" Text="{Binding Name}" TextAlignment="Right" Margin="0,0,6,0" ToolTip="{Binding Description}"/>
+			<ContentPresenter ContentTemplateSelector="{StaticResource value_selector}" Grid.Column="1" Content="{Binding .}" Margin="2,0,0,0" />
+		</Grid>
+	</DataTemplate>
+
+	<!-- COLLECTION ITEM -->
+	<DataTemplate x:Key="PropertyItem_Container">
+		<Border BorderThickness="1" CornerRadius="3" BorderBrush="{DynamicResource NormalBorderBrush}" Margin="0,1.5,3,1.5" >
+			<Expander IsExpanded="{Binding IsOpen}" Style="{StaticResource PropertyExpander}">
+				<Expander.Header>
+					<DockPanel LastChildFill="False">
+						<TextBlock DockPanel.Dock="Left" Foreground="#dddddd" Text="{Binding Name}" />
+						<TextBlock Visibility="Collapsed" DockPanel.Dock="Right" Opacity="0.5" Foreground="#dddddd" Text="{Binding DataType.Name}" />
+					</DockPanel>
+				</Expander.Header>
+				<ItemsControl ItemsSource="{Binding Value}" ItemTemplateSelector="{StaticResource item_selector}" Margin="10,-1,0,-1"/>
+			</Expander>
+		</Border>
+	</DataTemplate>
+
+	<!-- Default -->
+	<DataTemplate x:Key="PropertyTemplate_Default">
+		<TextBlock Text="{Binding Value}" />
+	</DataTemplate>
+
+	<!-- Null -->
+	<DataTemplate x:Key="PropertyTemplate_Null">
+		<TextBlock Text="N/A" Opacity="0.5" />
+	</DataTemplate>
+
+	<!-- Float Colour -->
+	<DataTemplate x:Key="PropertyTemplate_Colour">
+		<DockPanel>
+			<Grid DataContext="{Binding Value,Converter={StaticResource colour}}" DockPanel.Dock="Left">
+				<Border Width="50" BorderBrush="Black" BorderThickness="3" Height="60" Margin="0,0,4,0" SnapsToDevicePixels="True">
+					<Border.Background>
+						<SolidColorBrush Color="{Binding .}"/>
+					</Border.Background>
+				</Border>
+			</Grid>
+			<StackPanel>
+				<vice:ColourEditor x:Name="coloureditor" Input="{Binding Value,Mode=TwoWay}" />
+				<DockPanel>
+					<TextBlock Text="R" Width="10" DockPanel.Dock="Left" VerticalAlignment="Center" Margin="2,0,4,0" FontWeight="Bold" Foreground="Black" />
+					<TextBox Width="50" Text="{Binding Red,ElementName=coloureditor}" DockPanel.Dock="Left" />
+					<Slider Value="{Binding Red,ElementName=coloureditor}" Minimum="0" Maximum="1" VerticalAlignment="Center" Margin="5,0" />
+				</DockPanel>
+				<DockPanel>
+					<TextBlock Text="G" Width="10" DockPanel.Dock="Left" VerticalAlignment="Center" Margin="2,0,4,0" FontWeight="Bold" Foreground="Black" />
+					<TextBox Width="50" Text="{Binding Green,ElementName=coloureditor}" DockPanel.Dock="Left" />
+					<Slider Value="{Binding Green,ElementName=coloureditor}" Minimum="0" Maximum="1" VerticalAlignment="Center" Margin="5,0" />
+				</DockPanel>
+				<DockPanel>
+					<TextBlock Text="B" Width="10" DockPanel.Dock="Left" VerticalAlignment="Center" Margin="2,0,4,0" FontWeight="Bold" Foreground="Black" />
+					<TextBox Width="50" Text="{Binding Blue,ElementName=coloureditor}" DockPanel.Dock="Left" />
+					<Slider Value="{Binding Blue,ElementName=coloureditor}" Minimum="0" Maximum="1" VerticalAlignment="Center" Margin="5,0" />
+				</DockPanel>
+			</StackPanel>
+		</DockPanel>
+	</DataTemplate>
+	<DataTemplate x:Key="PropertyTemplate_Colour_ReadOnly">
+		<DockPanel Margin="10,0,0,0">
+			<Grid DataContext="{Binding Value,Converter={StaticResource colour}}" DockPanel.Dock="Left">
+				<Border Width="50" BorderBrush="Black" BorderThickness="2" Height="20" Margin="0,0,4,0" SnapsToDevicePixels="True">
+					<Border.Background>
+						<SolidColorBrush Color="{Binding .}"/>
+					</Border.Background>
+				</Border>
+			</Grid>
+			<StackPanel Orientation="Horizontal">
+				<vice:ColourEditor x:Name="coloureditor" Input="{Binding Value,Mode=TwoWay}" />
+				<TextBlock Text="R" Width="10" DockPanel.Dock="Left" VerticalAlignment="Center" Margin="4,0,2,0" FontWeight="Bold" Foreground="Black" />
+				<Grid Width="50" Background="#544">
+					<Grid Margin="1" Background="#955">
+						<Grid.RenderTransform>
+							<ScaleTransform ScaleX="{Binding Red,ElementName=coloureditor}" />
+						</Grid.RenderTransform>
+					</Grid>
+					<TextBlock Width="50" Margin="4,0,0,0" Text="{Binding Red,ElementName=coloureditor}" VerticalAlignment="Center" />
+				</Grid>
+				<TextBlock Text="G" Width="10" DockPanel.Dock="Left" VerticalAlignment="Center" Margin="4,0,2,0" FontWeight="Bold" Foreground="Black" />
+				<Grid Width="50" Background="#454">
+					<Grid Margin="1" Background="#595">
+						<Grid.RenderTransform>
+							<ScaleTransform ScaleX="{Binding Green,ElementName=coloureditor}" />
+						</Grid.RenderTransform>
+					</Grid>
+					<TextBlock Width="50" Margin="4,0,0,0" Text="{Binding Green,ElementName=coloureditor}" VerticalAlignment="Center" />
+				</Grid>
+				<TextBlock Text="B" Width="10" DockPanel.Dock="Left" VerticalAlignment="Center" Margin="4,0,2,0" FontWeight="Bold" Foreground="Black" />
+				<Grid Width="50" Background="#445">
+					<Grid Margin="1" Background="#559">
+						<Grid.RenderTransform>
+							<ScaleTransform ScaleX="{Binding Blue,ElementName=coloureditor}" />
+						</Grid.RenderTransform>
+					</Grid>
+					<TextBlock Width="50" Margin="4,0,0,0" Text="{Binding Blue,ElementName=coloureditor}" VerticalAlignment="Center" />
+				</Grid>
+			</StackPanel>
+		</DockPanel>
+	</DataTemplate>
+
+	<!-- Vector3 -->
+	<DataTemplate x:Key="PropertyTemplate_Vector3">
+		<StackPanel>
+			<app:Vector3Editor x:Name="valeditor" Input="{Binding Value,Mode=TwoWay}" />
+			<app:Vector3Editor x:Name="mineditor" Input="{Binding MinimumValue,Mode=TwoWay}" />
+			<app:Vector3Editor x:Name="maxeditor" Input="{Binding MaximumValue,Mode=TwoWay}" />
+			<DockPanel>
+				<TextBlock Text="X" Width="10" DockPanel.Dock="Left" VerticalAlignment="Center" Margin="0,0,2,0" FontWeight="Bold" Foreground="Black" />
+				<TextBox Width="50" Text="{Binding X,ElementName=valeditor}" DockPanel.Dock="Left" Margin="0,0,4,0" />
+				<TextBox Width="40" Text="{Binding X,ElementName=mineditor}" DockPanel.Dock="Left" Opacity="0.5" TextAlignment="Center" />
+				<TextBox Width="40" Text="{Binding X,ElementName=maxeditor}" DockPanel.Dock="Right" Opacity="0.5" TextAlignment="Center" />
+				<Slider Value="{Binding X,ElementName=valeditor}" Minimum="{Binding X,ElementName=mineditor}" Maximum="{Binding X,ElementName=maxeditor}" VerticalAlignment="Center" Margin="2,0" />
+			</DockPanel>
+			<DockPanel>
+				<TextBlock Text="Y" Width="10" DockPanel.Dock="Left" VerticalAlignment="Center" Margin="0,0,2,0" FontWeight="Bold" Foreground="Black" />
+				<TextBox Width="50" Text="{Binding Y,ElementName=valeditor}" DockPanel.Dock="Left" Margin="0,0,4,0" />
+				<TextBox Width="40" Text="{Binding Y,ElementName=mineditor}" DockPanel.Dock="Left" Opacity="0.5" TextAlignment="Center" />
+				<TextBox Width="40" Text="{Binding Y,ElementName=maxeditor}" DockPanel.Dock="Right" Opacity="0.5" TextAlignment="Center" />
+				<Slider Value="{Binding Y,ElementName=valeditor}" Minimum="{Binding Y,ElementName=mineditor}" Maximum="{Binding Y,ElementName=maxeditor}" VerticalAlignment="Center" Margin="2,0" />
+			</DockPanel>
+			<DockPanel>
+				<TextBlock Text="Z" Width="10" DockPanel.Dock="Left" VerticalAlignment="Center" Margin="0,0,2,0" FontWeight="Bold" Foreground="Black" />
+				<TextBox Width="50" Text="{Binding Z,ElementName=valeditor}" DockPanel.Dock="Left" Margin="0,0,4,0" />
+				<TextBox Width="40" Text="{Binding Z,ElementName=mineditor}" DockPanel.Dock="Left" Opacity="0.5" TextAlignment="Center" />
+				<TextBox Width="40" Text="{Binding Z,ElementName=maxeditor}" DockPanel.Dock="Right" Opacity="0.5" TextAlignment="Center" />
+				<Slider Value="{Binding Z,ElementName=valeditor}" Minimum="{Binding Z,ElementName=mineditor}" Maximum="{Binding Z,ElementName=maxeditor}" VerticalAlignment="Center" Margin="2,0" />
+			</DockPanel>
+		</StackPanel>
+	</DataTemplate>
+	<DataTemplate x:Key="PropertyTemplate_Vector3_ReadOnly">
+		<StackPanel Orientation="Horizontal">
+			<app:Vector3Editor x:Name="valeditor" Input="{Binding Value,Mode=TwoWay}" />
+			<TextBlock Text="{Binding X,ElementName=valeditor}" Margin="0,0,4,0" Width="50"/>
+			<TextBlock Text=", " Width="10" DockPanel.Dock="Left" VerticalAlignment="Center" Margin="0,0,2,0" FontWeight="Bold" Foreground="Black" />
+			<TextBlock Text="{Binding Y,ElementName=valeditor}" Margin="0,0,4,0" Width="50"/>
+			<TextBlock Text=", " Width="10" DockPanel.Dock="Left" VerticalAlignment="Center" Margin="0,0,2,0" FontWeight="Bold" Foreground="Black" />
+			<TextBlock Text="{Binding Z,ElementName=valeditor}" Margin="0,0,4,0" Width="50"/>
+		</StackPanel>
+	</DataTemplate>
+
+	<!-- Boolean -->
+	<DataTemplate x:Key="PropertyTemplate_Boolean">
+		<Grid  HorizontalAlignment="Left">
+			<ToggleButton IsChecked="{Binding Value}" Height="21">
+				<ToggleButton.Content>
+					<TextBlock Width="53" Text=" " />
+				</ToggleButton.Content>
+			</ToggleButton>
+			<TextBlock Text="{Binding Value}" HorizontalAlignment="Center" VerticalAlignment="Center" IsHitTestVisible="False" Opacity="0.4" />
+			<Border CornerRadius="3" Visibility="{Binding Value,Converter={StaticResource bool2vis}}" Background="Lime" Opacity="0.5" IsHitTestVisible="False" />
+		</Grid>
+	</DataTemplate>
+
+	<!-- Single -->
+	<DataTemplate x:Key="PropertyTemplate_Single">
+		<DockPanel>
+			<TextBlock Text="{Binding Value}" Visibility="{Binding IsReadOnly, Converter={StaticResource bool2vis}}" MinWidth="150" DockPanel.Dock="Left" Margin="0,0,4,0" />
+			<TextBox Text="{Binding Value}" Visibility="{Binding IsEditable, Converter={StaticResource bool2vis}}" MinWidth="{Binding IsRanged, Converter={StaticResource bool2double}, ConverterParameter=100|50}" MaxWidth="{Binding IsRanged, Converter={StaticResource bool2double}, ConverterParameter=100|50}" DockPanel.Dock="Left" Margin="0,0,4,0" />
+			<DockPanel Visibility="{Binding IsEditable, Converter={StaticResource bool2vis}}">
+				<TextBox Text="{Binding MinimumValue, Converter={StaticResource float2double}}" Visibility="{Binding IsRanged, Converter={StaticResource bool2vis}}" MinWidth="40" DockPanel.Dock="Left" VerticalAlignment="Center" Opacity="0.5" TextAlignment="Center" MaxWidth="40" />
+				<TextBox Text="{Binding MaximumValue, Converter={StaticResource float2double}}" Visibility="{Binding IsRanged, Converter={StaticResource bool2vis}}" MinWidth="40" DockPanel.Dock="Right" VerticalAlignment="Center" Opacity="0.5" TextAlignment="Center" MaxWidth="40" />
+				<Slider Minimum="{Binding MinimumValue, Converter={StaticResource float2double}}" Visibility="{Binding IsRanged, Converter={StaticResource bool2vis}}" Maximum="{Binding MaximumValue, Converter={StaticResource float2double}}" Value="{Binding Value,Converter={StaticResource float2double}}" Margin="2,0" VerticalAlignment="Center" />
+			</DockPanel>
+		</DockPanel>
+	</DataTemplate>
+
+	<!-- Integer -->
+	<DataTemplate x:Key="PropertyTemplate_Int32">
+		<DockPanel>
+			<TextBlock Text="{Binding Value,Converter={StaticResource object2formatted},ConverterParameter=:N0}" Visibility="{Binding IsReadOnly, Converter={StaticResource bool2vis}}" MinWidth="150" DockPanel.Dock="Left" Margin="0,0,4,0" />
+			<TextBox Text="{Binding Value}" Visibility="{Binding IsEditable, Converter={StaticResource bool2vis}}" MinWidth="{Binding IsRanged, Converter={StaticResource bool2double}, ConverterParameter=100|50}" MaxWidth="{Binding IsRanged, Converter={StaticResource bool2double}, ConverterParameter=100|50}" DockPanel.Dock="Left" Margin="0,0,4,0" />
+			<DockPanel Visibility="{Binding IsEditable, Converter={StaticResource bool2vis}}">
+				<TextBox Text="{Binding MinimumValue, Converter={StaticResource int2double}}" Visibility="{Binding IsRanged, Converter={StaticResource bool2vis}}" MinWidth="40" DockPanel.Dock="Left" VerticalAlignment="Center" Opacity="0.5" TextAlignment="Center" />
+				<TextBox Text="{Binding MaximumValue, Converter={StaticResource int2double}}" Visibility="{Binding IsRanged, Converter={StaticResource bool2vis}}" MinWidth="40" DockPanel.Dock="Right" VerticalAlignment="Center" Opacity="0.5" TextAlignment="Center" />
+				<Slider Minimum="{Binding MinimumValue, Converter={StaticResource int2double}}" Visibility="{Binding IsRanged, Converter={StaticResource bool2vis}}" Maximum="{Binding MaximumValue, Converter={StaticResource int2double}}" Value="{Binding Value,Converter={StaticResource int2double}}" Margin="2,0" VerticalAlignment="Center" />
+			</DockPanel>
+		</DockPanel>
+	</DataTemplate>
+
+	<!-- Enum : Drop List -->
+	<DataTemplate x:Key="PropertyTemplate_EnumDropList">
+		<ComboBox ItemsSource="{Binding Enumerations}" SelectedIndex="{Binding EnumIndex}" />
+	</DataTemplate>
+
+	<!-- Enum : Radio Buttons -->
+	<DataTemplate x:Key="PropertyTemplate_EnumRadioButtons">
+		<ItemsControl ItemsSource="{Binding Enumerations}">
+				<ItemsControl.ItemsPanel>
+					<ItemsPanelTemplate>
+						<WrapPanel />
+					</ItemsPanelTemplate>
+				</ItemsControl.ItemsPanel>		
+				<ItemsControl.ItemTemplate>
+					<DataTemplate>
+						<Grid  Margin="0,0,4,0">
+							<ToggleButton IsChecked="{Binding IsSelected}" ToolTip="{Binding Description}" MinWidth="50" Height="23">
+								<ToggleButton.Content>
+									<Grid >
+										<TextBlock Text="{Binding Name}" Margin="4,1" Foreground="White" VerticalAlignment="Center"/>
+									</Grid>
+								</ToggleButton.Content>
+							</ToggleButton>
+							<Grid Visibility="{Binding IsSelected,Converter={StaticResource bool2vis}}" Background="Red" Opacity="0.5" IsHitTestVisible="False" />
+						</Grid>
+					</DataTemplate>
+				</ItemsControl.ItemTemplate>
+		</ItemsControl>
+	</DataTemplate>
+	
+	<!-- Enum : Flags -->
+	<DataTemplate x:Key="PropertyTemplate_EnumFlags">
+		<ItemsControl ItemsSource="{Binding Enumerations}">
+				<ItemsControl.ItemsPanel>
+					<ItemsPanelTemplate>
+						<WrapPanel />
+					</ItemsPanelTemplate>
+				</ItemsControl.ItemsPanel>		
+				<ItemsControl.ItemTemplate>
+					<DataTemplate>
+						<Grid  Margin="0,0,4,0">
+							<ToggleButton IsChecked="{Binding IsSelected}" ToolTip="{Binding Description}" MinWidth="50" Height="23">
+								<ToggleButton.Content>
+									<Grid >
+										<TextBlock Text="{Binding Name}" Margin="4,1" Foreground="White" VerticalAlignment="Center"/>
+									</Grid>
+								</ToggleButton.Content>
+							</ToggleButton>
+							<Grid Visibility="{Binding IsSelected,Converter={StaticResource bool2vis}}" Background="Red" Opacity="0.5" IsHitTestVisible="False" />
+						</Grid>
+					</DataTemplate>
+				</ItemsControl.ItemTemplate>
+		</ItemsControl>
+	</DataTemplate>
+	
+	<!-- String -->
+	<DataTemplate x:Key="PropertyTemplate_String">
+		<DockPanel>
+			<CheckBox x:Name="enable_tab" Focusable="False" DockPanel.Dock="right" ToolTip="Tick to temporarily enable tab entry.  (Note this is also needed to paste tab characters into text field)" Opacity="0.5" />
+			<TextBox Text="{Binding Value}" FontFamily="Consolas" TextWrapping="Wrap" MinLines="1" AcceptsReturn="true" AcceptsTab="{Binding IsChecked,ElementName=enable_tab}" />
+		</DockPanel>
+	</DataTemplate>
+	<DataTemplate x:Key="PropertyTemplate_String_ReadOnly">
+		<TextBox Text="{Binding Value}" FontFamily="Consolas" IsReadOnly="true" TextWrapping="Wrap" MinLines="1" AcceptsReturn="true" />
+	</DataTemplate>
+
+	<!-- SectionHeading -->
+	<DataTemplate x:Key="PropertyTemplate_SectionHeading">
+		<Grid Background="{StaticResource heading_brush}" Margin="-140,0,0,0">
+			<TextBlock Text="{Binding Name}" Foreground="#FFF" FontSize="14" FontStyle="Italic" Margin="5,1,0,0" ToolTip="{Binding Description}"/>
+		</Grid>
+	</DataTemplate>
+
+	<!-- PointF -->
+	<DataTemplate x:Key="PropertyTemplate_PointF">
+		<StackPanel Orientation="Horizontal" >
+			<TextBlock Text="X:" Margin="0,0,3,0" VerticalAlignment="Center" />
+			<TextBox Text="{Binding Value.X,Mode=OneWay}" Width="80" IsReadOnly="True" />
+			<TextBlock Text="Y:" Margin="10,0,3,0" VerticalAlignment="Center" />
+			<TextBox Text="{Binding Value.Y,Mode=OneWay}" Width="80" IsReadOnly="True" />
+		</StackPanel>
+	</DataTemplate>
+
+	<!-- SizeF -->
+	<DataTemplate x:Key="PropertyTemplate_SizeF">
+		<StackPanel Orientation="Horizontal" >
+			<TextBlock Text="Width:" Margin="0,0,3,0" VerticalAlignment="Center" />
+			<TextBox Text="{Binding Value.Width,Mode=OneWay}" Width="80" IsReadOnly="True"/>
+			<TextBlock Text="Height:" Margin="10,0,3,0" VerticalAlignment="Center" />
+			<TextBox Text="{Binding Value.Height,Mode=OneWay}" Width="80" IsReadOnly="True" />
+		</StackPanel>
+	</DataTemplate>
+
+	<!-- Model Segment -->
+	<DataTemplate x:Key="PropertyTemplate_ModelSegment">
+	</DataTemplate>
+
+	<!-- Frame -->
+	<DataTemplate x:Key="PropertyTemplate_Frame">
+		<Expander Header="Edit" Margin="-10,0,-10,0">
+			<StackPanel Margin="4,0">
+				<TextBlock Text="Translation" />
+				<ContentPresenter Content="{Binding FrameEditing.TranslationProperty}" ContentTemplate="{StaticResource PropertyTemplate_Vector3}"/>
+				<TextBlock Text="Scale" />
+				<ContentPresenter Content="{Binding FrameEditing.ScaleProperty}" ContentTemplate="{StaticResource PropertyTemplate_Vector3}"/>
+				<TextBlock Text="Rotation" />
+				<ContentPresenter Content="{Binding FrameEditing.RotationProperty}" ContentTemplate="{StaticResource PropertyTemplate_Vector3}"/>
+			</StackPanel>
+		</Expander>
+	</DataTemplate>
+	<DataTemplate x:Key="PropertyTemplate_Frame_ReadOnly">
+		<StackPanel Margin="4,0">
+			<DockPanel>
+				<TextBlock Text="Translation" Width="70" Foreground="Black"/>
+				<ContentPresenter Content="{Binding FrameEditing.TranslationProperty}" ContentTemplate="{StaticResource PropertyTemplate_Vector3_ReadOnly}"/>
+			</DockPanel>
+			<DockPanel>
+				<TextBlock Text="Scale" Width="70" Foreground="Black"/>
+				<ContentPresenter Content="{Binding FrameEditing.ScaleProperty}" ContentTemplate="{StaticResource PropertyTemplate_Vector3_ReadOnly}"/>
+			</DockPanel>
+			<DockPanel>
+				<TextBlock Text="Rotation" Width="70" Foreground="Black"/>
+				<ContentPresenter Content="{Binding FrameEditing.RotationProperty}" ContentTemplate="{StaticResource PropertyTemplate_Vector3_ReadOnly}"/>
+			</DockPanel>
+		</StackPanel>
+	</DataTemplate>
+
+	<!-- ProcedureOperatorInput Custom UI -->
+	<DataTemplate x:Key="ProcedureOperatorInputDataTemplate">
+		<ContentPresenter Content="{Binding .}" ContentTemplateSelector="{StaticResource value_selector}" Margin="20,0,20,0"/>
+	</DataTemplate>
+
+	<!-- ProcedureOperator Custom UI -->
+	<DataTemplate x:Key="ProcedureOperatorDataTemplate">
+		<StackPanel>
+			<DockPanel Margin="5,0,5,2">
+				<TextBlock DockPanel.Dock="Bottom" Opacity="0.5" Text="{Binding Definition.Description}" />
+				<TextBlock DockPanel.Dock="Right" Opacity="0.25" Text="{Binding Definition.FullName}" VerticalAlignment="Center" />
+				<TextBlock Text="{Binding Definition.DisplayName}" FontSize="24" />
+			</DockPanel>
+			<DockPanel Margin="0,0,3,2" Opacity="{Binding Operator.HasComment,Converter={StaticResource bool2double},ConverterParameter=0.2|1.0}">
+				<TextBlock DockPanel.Dock="Left" Text="Comment" Width="60" Foreground="#bbbbbb" VerticalAlignment="Center" TextAlignment="Right" Margin="0,0,6,0" ToolTip="Comments can be attached to the top of an operator"/>
+				<TextBox Text="{Binding Operator.Comment}" AcceptsReturn="True" Margin="2,0,0,0" />
+			</DockPanel>
+			<ItemsControl ItemsSource="{Binding Inputs}">
+				<ItemsControl.ItemTemplate>
+				<DataTemplate>
+					<Grid Opacity="{Binding IsConnectedToConstant, Converter={StaticResource bool2double}, ConverterParameter=0.5|1.0}">
+						<Border Background="#666" CornerRadius="3" Margin="0,0,4,2" SnapsToDevicePixels="True">
+							<StackPanel>
+								<DockPanel>
+									<TextBlock Text="{Binding Name}" FontWeight="Bold" FontSize="16" Margin="5,0" VerticalAlignment="Center" />
+									<TextBlock Text="{Binding Description}" Opacity="0.5" Margin="5,0,0,0" VerticalAlignment="Center" />
+									<TextBlock Text="{Binding DataType}" HorizontalAlignment="Right" Opacity="0.25" Margin="0,0,5,0" VerticalAlignment="Center" ToolTip="{Binding Value}"  />
+								</DockPanel>
+								<Grid>
+									<ContentPresenter Content="{Binding .}" ContentTemplateSelector="{StaticResource custom_value_selector}" Margin="0,2" />
+								</Grid>
+							</StackPanel>
+						</Border>
+					</Grid>
+				</DataTemplate>
+				</ItemsControl.ItemTemplate>
+			</ItemsControl>
+		</StackPanel>
+	</DataTemplate>
+
+	<!-- Procedure Input Custom UI -->
+	<DataTemplate x:Key="ProcedureInputDataTemplate">
+		<Border Background="#666" CornerRadius="4" Margin="0,0,3,2" SnapsToDevicePixels="True">
+			<StackPanel Margin="4,1">
+				<DockPanel>
+					<TextBlock Width="75" Text="Name" Opacity="0.5" VerticalAlignment="Center" />
+					<!--<TextBlock DockPanel.Dock="Right" Text="(WorldSpace)" Visibility="{Binding IsWorldSpace,Converter={StaticResource bool2vis}}" HorizontalAlignment="Right" Opacity="0.25" Margin="0,0,5,0" VerticalAlignment="Center" />-->
+					<TextBlock DockPanel.Dock="Right" Text="{Binding DataType}" HorizontalAlignment="Right" Opacity="0.25" Margin="5,0,5,0" VerticalAlignment="Center" />
+					<TextBox Text="{Binding Name}" FontWeight="Bold" FontSize="16" VerticalAlignment="Center" />
+				</DockPanel>
+				<DockPanel>
+					<DockPanel Width="75">
+						<ToggleButton DockPanel.Dock="Bottom" x:Name="options" Height="20" Margin="0,0,0,1" Focusable="False" TextBlock.FontSize="10" Opacity="0.3" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch">
+							<StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
+								<TextBlock Text="{Binding IsChecked,ElementName=options,Converter={StaticResource bool2string}, ConverterParameter=4|6}" FontFamily="WebDings" FontSize="14"/>
+								<TextBlock Text="Metadata..."/>
+							</StackPanel>
+						</ToggleButton>
+						<TextBlock Text="Description" Opacity="0.5" Margin="0,0,5,0" VerticalAlignment="Center" />
+					</DockPanel>
+					<TextBox Text="{Binding Description}" MinLines="3" TextWrapping="Wrap" AcceptsReturn="True" />
+				</DockPanel>
+				<StackPanel Margin="3,0,3,3" Visibility="{Binding IsChecked,ElementName=options,Converter={StaticResource bool2vis}}">
+					<Grid Height="1" Background="#555" Margin="-8,2"/>
+					<DockPanel>
+						<TextBlock Width="75" Text="Default Value" Opacity="0.5" Margin="0,0,5,0" VerticalAlignment="Center" />
+						<ContentPresenter Content="{Binding .}" ContentTemplateSelector="{StaticResource value_selector}" Margin="0,0,0,0" />
+					</DockPanel>
+					<DockPanel>
+						<TextBlock Width="75" Text="Options" Opacity="0.5" Margin="0,0,5,0" VerticalAlignment="Center" />
+						<WrapPanel Orientation="Horizontal" Margin="0,2,0,0">
+							<CheckBox IsChecked="{Binding Model.IsRanged}" IsEnabled="{Binding Model.IsNumeric}" Margin="0,2,5,0" VerticalAlignment="Center">Ranged</CheckBox>
+							<CheckBox IsChecked="{Binding Model.IsLimited}" IsEnabled="{Binding Model.IsNumeric}" Margin="0,2,5,0" VerticalAlignment="Center">Limited</CheckBox>
+							<CheckBox IsChecked="{Binding Model.IsEnum}" IsEnabled="{Binding Model.IsInteger}" Margin="0,2,5,0" VerticalAlignment="Center">Enum</CheckBox>
+							<!--<CheckBox IsChecked="{Binding Model.IsWorldSpace}" IsEnabled="{Binding Model.IsSpatial}" Margin="0,2,5,0" VerticalAlignment="Center" ToolTip="Should host application map parameter between its own world space coordinate system and the Apparance coordinate system?">World Space</CheckBox>-->
+							<StackPanel Orientation="Horizontal" Visibility="{Binding IsFrame,Converter={StaticResource bool2vis}}" Margin="0,2,0,0">
+								<TextBlock Text="Origin:" ToolTip="Origin is in lower corner, middle of lower face, or frame centre" Margin="4,0" VerticalAlignment="Center" />
+								<ComboBox ItemsSource="{Binding Source={StaticResource frameOriginEnumValues}}" SelectedValue="{Binding Model.FrameOrigin,Mode=TwoWay}" MinWidth="70"/>
+							</StackPanel>
+						</WrapPanel>
+					</DockPanel>
+					<!-- Ranged? -->
+					<DockPanel>
+						<TextBlock Width="75" Text="Minimum" Visibility="{Binding Model.IsRanged,Converter={StaticResource bool2vis}}" Opacity="0.5" Margin="0,0,5,0" VerticalAlignment="Center" />
+						<ContentPresenter Content="{Binding Model.MinValueViewModel}" Visibility="{Binding Model.IsRanged,Converter={StaticResource bool2vis}}" ContentTemplateSelector="{StaticResource value_selector}" Margin="0,0,0,0" />
+					</DockPanel>
+					<DockPanel>
+						<TextBlock Width="75" Text="Maximum" Visibility="{Binding Model.IsRanged,Converter={StaticResource bool2vis}}" Opacity="0.5" Margin="0,0,5,0" VerticalAlignment="Center" />
+						<ContentPresenter Content="{Binding Model.MaxValueViewModel}" Visibility="{Binding Model.IsRanged,Converter={StaticResource bool2vis}}" ContentTemplateSelector="{StaticResource value_selector}" Margin="0,0,0,0" />
+					</DockPanel>
+					<!-- Limited? -->
+					<DockPanel>
+						<TextBlock Width="75" Text="Lower Limit" Visibility="{Binding Model.IsLimited,Converter={StaticResource bool2vis}}" Opacity="0.5" Margin="0,0,5,0" VerticalAlignment="Center" />
+						<ContentPresenter Content="{Binding Model.MinLimitViewModel}" Visibility="{Binding Model.IsLimited,Converter={StaticResource bool2vis}}" ContentTemplateSelector="{StaticResource value_selector}" Margin="0,0,0,0" />
+					</DockPanel>
+					<DockPanel>
+						<TextBlock Width="75" Text="Upper Limit" Visibility="{Binding Model.IsLimited,Converter={StaticResource bool2vis}}" Opacity="0.5" Margin="0,0,5,0" VerticalAlignment="Center" />
+						<ContentPresenter Content="{Binding Model.MaxLimitViewModel}" Visibility="{Binding Model.IsLimited,Converter={StaticResource bool2vis}}" ContentTemplateSelector="{StaticResource value_selector}" Margin="0,0,0,0" />
+					</DockPanel>
+					<!-- Enum? -->
+					<DockPanel>
+						<TextBlock Width="75" Text="Enum Type" Visibility="{Binding Model.IsEnum,Converter={StaticResource bool2vis}}" Opacity="0.5" Margin="0,0,5,0" VerticalAlignment="Center" />
+						<StackPanel Orientation="Horizontal" Visibility="{Binding Model.IsEnum,Converter={StaticResource bool2vis}}">
+								<ToggleButton IsChecked="{Binding Model.IsComboEnum}" Margin="0,1,2,1">List</ToggleButton>
+								<ToggleButton IsChecked="{Binding Model.IsRadioEnum}" Margin="0,1,2,1">Radio</ToggleButton>
+								<ToggleButton IsChecked="{Binding Model.IsFlagsEnum}" Margin="0,1,2,1">Flags</ToggleButton>
+						</StackPanel>
+					</DockPanel>
+					<DockPanel>
+						<TextBlock Width="75" Text="Enum Values" Visibility="{Binding Model.IsEnum,Converter={StaticResource bool2vis}}" Opacity="0.5" Margin="0,0,5,0" VerticalAlignment="Center" />
+						<StackPanel Visibility="{Binding Model.IsEnum,Converter={StaticResource bool2vis}}" >
+							<TextBlock Text="{Binding Model.EnumType}" />
+							<ComboBox Text="Enum" ItemsSource="{Binding Model.KnownEnums}" SelectedItem="{Binding Model.EnumType,Mode=TwoWay}" IsSynchronizedWithCurrentItem="True" />
+						</StackPanel>
+					</DockPanel>
+				</StackPanel>
+			</StackPanel>
+		</Border>
+	</DataTemplate>
+
+	<!-- Procedure Inputs Custom UI -->
+	<DataTemplate x:Key="ProcedureInputsDataTemplate">
+		<StackPanel>
+			<TextBlock Text="{Binding Name}" FontSize="24" Margin="4,0,0,0" />
+			<ItemsControl ItemsSource="{Binding Children}" ItemTemplate="{StaticResource ProcedureInputDataTemplate}" />
+		</StackPanel>
+	</DataTemplate>
+    
+  <!-- Procedure Input View Model -->
+  <DataTemplate x:Key="ProcedureInputViewModelDataTemplate">
+		<StackPanel>
+			<TextBlock Text="{Binding Name}" FontSize="24" Margin="4,0,0,0" />
+	  	  <ContentPresenter Content="{Binding InputProbe}" ContentTemplate="{StaticResource ProcedureInputDataTemplate}" />
+		</StackPanel>
+  </DataTemplate>
+
+	<!-- Procedure Output Custom UI (Design) -->
+	<DataTemplate x:Key="ProcedureOutputDesignDataTemplate">
+		<StackPanel>
+			<Border Background="#666" CornerRadius="4" Margin="0,0,3,2" SnapsToDevicePixels="True">
+				<StackPanel Margin="4,1">
+					<DockPanel>
+						<TextBlock Width="75" Text="Name" Opacity="0.5" VerticalAlignment="Center" />
+						<TextBlock DockPanel.Dock="Right" Text="{Binding DataType}" HorizontalAlignment="Right" Opacity="0.25" Margin="5,0,5,0" VerticalAlignment="Center" />
+						<TextBox Text="{Binding Name}" FontWeight="Bold" FontSize="16" VerticalAlignment="Center" />
+					</DockPanel>
+					<DockPanel>
+						<TextBlock Width="75" Text="Description" Opacity="0.5" VerticalAlignment="Center" />
+						<TextBox Text="{Binding Description}" MinLines="3" TextWrapping="Wrap" AcceptsReturn="True" />
+					</DockPanel>
+<!--					<Grid Opacity="{Binding IsConnectedToConstant, Converter={StaticResource bool2double}, ConverterParameter=0.5|1.0}">
+						<Border Background="#666" CornerRadius="3" Margin="0,0,4,2" SnapsToDevicePixels="True">
+							<ContentPresenter Content="{Binding .}" ContentTemplateSelector="{StaticResource value_selector}" Margin="0,2" />
+						</Border>
+					</Grid>
+-->
+				</StackPanel>
+			</Border>
+		</StackPanel>
+	</DataTemplate>
+
+	<!-- Procedure Output Custom UI (Value) -->
+	<DataTemplate x:Key="ProcedureOutputValueDataTemplate">
+		<StackPanel>
+			<Border Background="#666" CornerRadius="4" Margin="0,0,3,2" SnapsToDevicePixels="True">
+				<StackPanel>
+					<Grid Opacity="{Binding IsConnectedToConstant, Converter={StaticResource bool2string}, ConverterParameter=0.5|1}">
+						<vice:EnumToStringMapper x:Name="hilight" Input="{Binding Highlight}" Map="None=#666,Hover=White,Compatible=Lime,CompatibleBlocked=Red,Coerce=Green" />
+						<Border BorderBrush="{Binding Output,ElementName=hilight}" Background="#666" BorderThickness="1" CornerRadius="3" Margin="0,0,4,2" SnapsToDevicePixels="True">
+							<StackPanel>
+								<DockPanel TextBlock.Foreground="White">
+									<TextBlock Text="{Binding Name}" FontWeight="Bold" FontSize="16" Margin="5,0" VerticalAlignment="Center" />
+									<TextBlock Text="{Binding Description}" Opacity="0.5" Margin="5,0,0,0" VerticalAlignment="Center" />
+									<TextBlock Text="{Binding DataType}" HorizontalAlignment="Right" Opacity="0.25" Margin="0,0,5,0" VerticalAlignment="Center" />
+								</DockPanel>
+								<Grid TextBlock.Foreground="White">
+									<ContentPresenter Content="{Binding Sink}" ContentTemplateSelector="{StaticResource custom_value_selector}" Margin="0,2" />
+								</Grid>
+							</StackPanel>
+						</Border>
+					</Grid>
+
+
+				</StackPanel>
+			</Border>
+		</StackPanel>
+	</DataTemplate>
+
+	<!-- Procedure Outputs Custom UI -->
+	<DataTemplate x:Key="ProcedureOutputsDataTemplate">
+		<StackPanel >
+		<TextBlock Text="{Binding Name}" FontSize="24" Margin="4,0,0,0" />
+<!--		<TabControl>
+			<TabItem Header="Output Appearance">
+				<TabItem.Content> -->
+						<ItemsControl ItemsSource="{Binding Children}" ItemTemplate="{StaticResource ProcedureOutputDesignDataTemplate}" />
+<!--				</TabItem.Content>
+			</TabItem>
+			<TabItem Header="Output Values">
+				<TabItem.Content>
+						<ItemsControl ItemsSource="{Binding Children}" ItemTemplate="{StaticResource ProcedureOutputValueDataTemplate}" />
+				</TabItem.Content>
+			</TabItem>
+		</TabControl> -->
+		</StackPanel>
+	</DataTemplate>
+
+	<!-- Procedure Output Custom UI -->
+	<DataTemplate x:Key="ProcedureOutputDataTemplate">
+		<StackPanel >
+<!--		<TextBlock Text="{Binding Name}" FontSize="24" Margin="4,0,0,0" />
+		<TabControl>
+			<TabItem Header="Output Appearance">
+				<TabItem.Content> -->
+						<ContentPresenter ContentTemplate="{StaticResource ProcedureOutputDesignDataTemplate}" />
+<!--				</TabItem.Content>
+			</TabItem>
+			<TabItem Header="Output Values">
+				<TabItem.Content>
+						<ContentPresenter ContentTemplate="{StaticResource ProcedureOutputValueDataTemplate}" />
+				</TabItem.Content>
+			</TabItem>
+		</TabControl> -->
+		</StackPanel>
+	</DataTemplate>
+
+	<!-- Procedure Custom UI -->
+	<DataTemplate x:Key="ProcedureDataTemplate">
+		<StackPanel>
+			<DockPanel Margin="5,0,5,2">
+				<TextBlock DockPanel.Dock="Bottom" Opacity="0.5" Text="{Binding Description}" TextWrapping="Wrap"/>
+				<TextBlock DockPanel.Dock="Right" Opacity="0.25" Text="{Binding FullName}" VerticalAlignment="Center" />
+				<TextBlock Text="{Binding DisplayName}" FontSize="24" />
+			</DockPanel>
+			<Border Background="#666" CornerRadius="4" Margin="0,0,3,2" SnapsToDevicePixels="True">
+				<StackPanel>
+					<Grid Margin="4,2">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="Auto"/>
+							<ColumnDefinition Width="*" />
+						</Grid.ColumnDefinitions>
+						<Grid.RowDefinitions>
+							<RowDefinition />
+							<RowDefinition />
+							<RowDefinition />
+							<RowDefinition />
+						</Grid.RowDefinitions>
+						<TextBlock Grid.Row="0" Grid.Column="0" DockPanel.Dock="Left" Text="Category" Opacity="0.5" Margin="0,0,5,0" VerticalAlignment="Center" />
+						<TextBox Grid.Row="0" Grid.Column="1" Margin="0,0" ToolTip="{Binding RelativeSource={x:Static RelativeSource.Self}, Path=(Validation.Errors)[0].ErrorContent}" >
+							<TextBox.Text>
+								<Binding Path="ProcedureCategory">
+									<Binding.ValidationRules>
+										<vice:FilenameValidationRule/>
+									</Binding.ValidationRules>
+								</Binding>
+							</TextBox.Text>
+						</TextBox>
+						<TextBlock Grid.Row="1" Grid.Column="0" DockPanel.Dock="Left" Text="Name" Opacity="0.5" Margin="0,0,5,0" VerticalAlignment="Center" />
+						<TextBox Grid.Row="1" Grid.Column="1" Margin="0,0" ToolTip="{Binding RelativeSource={x:Static RelativeSource.Self}, Path=(Validation.Errors)[0].ErrorContent}" >
+							<TextBox.Text>
+								<Binding Path="ProcedureName">
+									<Binding.ValidationRules>
+										<vice:FilenameValidationRule/>
+									</Binding.ValidationRules>
+								</Binding>
+							</TextBox.Text>
+						</TextBox>
+						<TextBlock Grid.Row="2" Grid.Column="0" DockPanel.Dock="Left" Text="Description" Opacity="0.5" Margin="0,3,5,0" VerticalAlignment="Top" />
+						<TextBox Grid.Row="2" Grid.Column="1" Text="{Binding ProcedureDescription}" Margin="0,0"
+							MinLines="3" TextWrapping="Wrap" AcceptsReturn="True" />
+						<DockPanel Grid.Row="3" Grid.Column="1" Margin="0,1">
+							<Grid DockPanel.Dock="Left" HorizontalAlignment="Left">
+								<ToggleButton IsChecked="{Binding IsResource}" Height="17" ToolTip="Resource procedure evaluation is deferred and the result referenced by an integer ID">
+									<ToggleButton.Content>
+										<TextBlock Width="9" Text=" " />
+									</ToggleButton.Content>
+								</ToggleButton>
+								<Border CornerRadius="3" Visibility="{Binding IsResource,Converter={StaticResource bool2vis}}" Background="Lime" Opacity="0.5" IsHitTestVisible="False" />
+							</Grid>
+							<TextBlock VerticalAlignment="Center" Margin="5,0,0,0">Resource Procedure?</TextBlock>
+						</DockPanel>
+					</Grid>
+				</StackPanel>
+			</Border>
+			<TextBlock Text="Default Inputs" FontSize="24" Margin="5,0,0,2" VerticalAlignment="Center" />
+			<ItemsControl ItemsSource="{Binding Inputs}">
+				<ItemsControl.ItemTemplate>
+				<DataTemplate>
+					<Border Background="#666" CornerRadius="4" Margin="0,0,3,2" SnapsToDevicePixels="True" ToolTip="{Binding Description}">
+						<Grid>
+							<StackPanel>
+								<DockPanel>
+									<TextBlock Text="{Binding Name}" FontWeight="Bold" FontSize="16" Margin="5,0" VerticalAlignment="Center" />
+									<TextBlock Text="{Binding DataType}" DockPanel.Dock="Right" HorizontalAlignment="Right" Opacity="0.25" Margin="0,0,5,0" VerticalAlignment="Center" />
+									<TextBlock Text="{Binding Description}" Opacity="0.5" Margin="5,0,0,0" VerticalAlignment="Center" TextWrapping="Wrap" />
+								</DockPanel>
+								<Grid Margin="20,0">
+									<ContentPresenter Content="{Binding .}" ContentTemplateSelector="{StaticResource custom_value_selector}" Margin="0,2" />
+								</Grid>
+							</StackPanel>
+						</Grid>
+					</Border>
+				</DataTemplate>
+				</ItemsControl.ItemTemplate>
+			</ItemsControl>
+
+
+		</StackPanel>
+	</DataTemplate>
+
+	<!-- Operator Custom UI -->
+	<DataTemplate x:Key="OperatorDataTemplate">
+		<StackPanel>
+			<DockPanel Margin="5,0,5,2">
+				<TextBlock DockPanel.Dock="Bottom" Opacity="0.5" Text="{Binding Description}" TextWrapping="Wrap" />
+				<TextBlock DockPanel.Dock="Right" Opacity="0.25" Text="{Binding FullName}" VerticalAlignment="Center" />
+				<TextBlock Text="{Binding DisplayName}" FontSize="24" />
+			</DockPanel>
+			<TextBlock Text="Inputs" FontSize="24" Margin="5,0,0,2" VerticalAlignment="Center" />
+			<ItemsControl ItemsSource="{Binding Inputs}" Margin="0,0,0,0">
+				<ItemsControl.ItemTemplate>
+				<DataTemplate>
+					<Border Background="#666" CornerRadius="4" Margin="0,0,3,2" SnapsToDevicePixels="True" ToolTip="{Binding Description}">
+						<DockPanel>
+							<Grid Width="11" Height="12" Margin="5,0,0,0">
+								<Polygon Points="1,0 10,5 1,10" Stroke="{Binding DataType,Converter={StaticResource type_colour},ConverterParameter=DarkBrush}" Fill="{Binding DataType,Converter={StaticResource type_colour},ConverterParameter=Brush}" />
+							</Grid>
+							<TextBlock Text="{Binding Name}" FontWeight="Bold" FontSize="16" Margin="5,-1,5,1" VerticalAlignment="Center" />
+							<TextBlock Text="{Binding DataType}" DockPanel.Dock="Right" HorizontalAlignment="Right" Opacity="0.25" Margin="0,0,5,0" VerticalAlignment="Center" />
+							<TextBlock Text="{Binding Description}" Opacity="0.5" Margin="5,0,0,0" VerticalAlignment="Center" TextWrapping="Wrap" />
+						</DockPanel>
+					</Border>
+				</DataTemplate>
+				</ItemsControl.ItemTemplate>
+			</ItemsControl>
+
+			<TextBlock Text="Outputs" FontSize="24" Margin="5,0,0,2" VerticalAlignment="Center" />
+			<ItemsControl ItemsSource="{Binding Outputs}" Margin="0,0,0,0">
+				<ItemsControl.ItemTemplate>
+				<DataTemplate>
+					<Border Background="#666" CornerRadius="4" Margin="0,0,3,2" SnapsToDevicePixels="True" ToolTip="{Binding Description}">
+						<DockPanel Margin="2,0,0,0">
+							<TextBlock Text="{Binding Name}" FontWeight="Bold" FontSize="16" Margin="5,-1,5,1" VerticalAlignment="Center" />
+							<Grid Width="11" Height="12" Margin="2,2,3,0" DockPanel.Dock="Right">
+								<Polygon Points="1,0 10,5 1,10" Stroke="{Binding DataType,Converter={StaticResource type_colour},ConverterParameter=DarkBrush}" Fill="{Binding DataType,Converter={StaticResource type_colour},ConverterParameter=Brush}" />
+							</Grid>
+							<TextBlock DockPanel.Dock="Right" Text="{Binding DataType}" HorizontalAlignment="Right" Opacity="0.25" Margin="0,0,5,0" VerticalAlignment="Center" />
+							<TextBlock Text="{Binding Description}" Opacity="0.5" Margin="5,0,0,0" VerticalAlignment="Center" TextWrapping="Wrap" />
+						</DockPanel>
+					</Border>
+				</DataTemplate>
+				</ItemsControl.ItemTemplate>
+			</ItemsControl>
+
+		</StackPanel>
+	</DataTemplate>
+
+
+	<!-- Procedure Closure Custom UI -->
+	<DataTemplate x:Key="ProcedureClosureDataTemplate">
+		<StackPanel>
+			<WrapPanel>
+				<DockPanel Margin="5,0,5,2">
+					<TextBlock Text="{Binding Procedure.Category}" FontSize="20" Opacity="0.5" />
+					<TextBlock Text=" . " FontSize="20" Opacity="0.35"/>
+					<TextBlock Text="{Binding Procedure.Name}" FontSize="20" />
+				</DockPanel>
+				<TextBlock Text="{Binding Procedure.Description}" Opacity="0.5" TextWrapping="Wrap" />
+			</WrapPanel>
+			<ItemsControl ItemsSource="{Binding Inputs}" Grid.IsSharedSizeScope="True">
+				<ItemsControl.ItemTemplate>
+				<DataTemplate>
+					<Grid Opacity="{Binding IsConnectedToConstant, Converter={StaticResource bool2string}, ConverterParameter=0.5|1}">
+						<vice:EnumToStringMapper x:Name="hilight" Input="{Binding Highlight}" Map="None=#666,Hover=White,Compatible=Lime,CompatibleBlocked=Red,Coerce=Green" />
+						<Border BorderBrush="{Binding Output,ElementName=hilight}" Background="#666" BorderThickness="1" CornerRadius="3" Margin="0,0,4,0" SnapsToDevicePixels="True" ToolTip="{Binding Description}">
+							<WrapPanel>
+								<Grid>
+									<Grid.ColumnDefinitions>
+										<ColumnDefinition Width="Auto" SharedSizeGroup="Col0"/>
+										<ColumnDefinition Width="Auto" SharedSizeGroup="Col1"/>
+										<ColumnDefinition Width="Auto" SharedSizeGroup="Col2"/>
+									</Grid.ColumnDefinitions>
+									<TextBlock Grid.Column="0" Text="{Binding Index}" Margin="4,0,8,0" VerticalAlignment="Center" />
+									<TextBlock Grid.Column="1" Text="{Binding Type}" Opacity="0.75" Margin="0,0,4,0" VerticalAlignment="Center" />
+									<TextBlock Grid.Column="2" Text="{Binding Name}" FontWeight="Bold" FontSize="14" Margin="0,0,0,0" VerticalAlignment="Center" />
+								</Grid>
+								<TextBlock Grid.Column="3" Text="{Binding Value}" TextWrapping="Wrap" Margin="4,0" Opacity="0.75" VerticalAlignment="Center" />
+							</WrapPanel>
+						</Border>
+					</Grid>
+				</DataTemplate>
+				</ItemsControl.ItemTemplate>
+			</ItemsControl>
+		</StackPanel>
+	</DataTemplate>
+
+	<!-- Entity Analysis Closure Custom UI -->
+	<DataTemplate x:Key="EntityAnalysis_ClosureDataTemplate">
+		<StackPanel>
+			<WrapPanel Margin="5,0,5,0">
+				<TextBlock Text="{Binding Procedure.Category}" FontSize="20" Opacity="0.5" />
+				<TextBlock Text=" . " FontSize="20" Opacity="0.35"/>
+				<TextBlock Text="{Binding Procedure.Name}" FontSize="20" />
+			</WrapPanel>
+			<DockPanel Margin="0,0,0,2">
+				<TextBlock DockPanel.Dock="Right" Text="{Binding AddressDesc}" Opacity="0.5" Margin="0,0,4,0"/>
+				<TextBlock DockPanel.Dock="Right" Text="0x" Opacity="0.5" />
+				<TextBlock Text="{Binding Procedure.Description}" Opacity="0.5" TextWrapping="Wrap" />
+			</DockPanel>
+			<TextBlock Text="Inputs:" />
+			<ItemsControl ItemsSource="{Binding Inputs}" Grid.IsSharedSizeScope="True">
+				<ItemsControl.ItemTemplate>
+				<DataTemplate>
+					<Grid>
+						<Border Background="#666" CornerRadius="3" Margin="0,0,4,1" SnapsToDevicePixels="True" ToolTip="{Binding Description}">
+							<WrapPanel>
+								<Grid>
+									<Grid.ColumnDefinitions>
+										<ColumnDefinition Width="Auto" SharedSizeGroup="Col0"/>
+										<ColumnDefinition Width="Auto" SharedSizeGroup="Col1"/>
+										<ColumnDefinition Width="Auto" SharedSizeGroup="Col2"/>
+									</Grid.ColumnDefinitions>
+									<TextBlock Grid.Column="0" Text="{Binding Index}" Margin="4,0,8,0" VerticalAlignment="Center" />
+									<TextBlock Grid.Column="1" Text="{Binding Type}" Opacity="0.35" Margin="0,0,4,0" VerticalAlignment="Center"/>
+									<TextBlock Grid.Column="2" Text="{Binding Name}" FontWeight="Bold" FontSize="14" Margin="0,0,0,0" VerticalAlignment="Center" />
+								</Grid>
+								<ContentPresenter Grid.Column="3" Content="{Binding .}" ContentTemplateSelector="{StaticResource value_selector}" Margin="0,2" />
+							</WrapPanel>
+						</Border>
+					</Grid>
+				</DataTemplate>
+				</ItemsControl.ItemTemplate>
+			</ItemsControl>
+		</StackPanel>
+	</DataTemplate>
+  
+	<!-- Top Level Selector (custom UI can intercept here) -->
+	<DataTemplate x:Key="PropertyTemplate_Selector">
+		<ContentPresenter Content="{Binding .}" ContentTemplateSelector="{StaticResource item_selector}" Margin="0,0,0,0" />
+	</DataTemplate>
+
+
+  </UserControl.Resources>
+	
+  <!-- MAIN PANEL -->
+  <Border BorderThickness="2" BorderBrush="Black" CornerRadius="4">
+	<DockPanel>
+		<Grid Background="Black" DockPanel.Dock="Top">
+			<TextBlock Text="Properties" FontWeight="Bold" FontSize="12" Foreground="White" Margin="3"/>
+		</Grid>
+		<ScrollViewer Background="#444" TextBlock.Foreground="White">
+			<StackPanel>
+				<ItemsControl ItemsSource="{Binding .}" ItemTemplate="{StaticResource PropertyTemplate_Selector}"/>
+			</StackPanel>
+		</ScrollViewer>
+	</DockPanel>
+  </Border>
+</UserControl>

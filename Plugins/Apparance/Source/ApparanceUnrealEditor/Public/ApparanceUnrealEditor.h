@@ -73,6 +73,7 @@ class FApparanceUnrealEditorModule
 	UWorld* WorkspaceWorld;
 
 	// external editor installation
+	bool bInstallChecking;
 	TSharedPtr<FScopedSlowTask> InstallingProgress;
 	int ProgressPercentage;
 	FText CurrentProgressMessage;
@@ -174,6 +175,7 @@ private:
 		
 	//editor installation
 	bool IsInstalling() const { return InstallingProgress.IsValid(); }
+	bool IsCheckingInstall() const { return bInstallChecking; }
 	void TickInstallation();
 	bool CheckForVersionChange();
 	

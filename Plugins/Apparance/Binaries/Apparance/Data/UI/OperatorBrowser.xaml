@@ -1,0 +1,104 @@
+<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"  
+	xmlns:app="clr-namespace:Apparance.Plugin;assembly=Apparance.Engine"
+	xmlns:vice="clr-namespace:Vice.Core;assembly=Apparance.Core"
+	>
+   
+  <UserControl.Resources>
+	<!-- converters -->
+	<BooleanToVisibilityConverter x:Key="bool2vis" />
+	<vice:PropertyItemTemplateSelector x:Key="item_selector" />
+	<vice:PropertyValueTemplateSelector x:Key="value_selector" />
+	<vice:CustomPropertyValueTemplateSelector x:Key="custom_value_selector" />
+	<vice:FloatToDoubleConverter x:Key="float2double" />
+	<vice:BooleanToStringConverter x:Key="bool2string" />
+	<vice:ColourConverter x:Key="colour" />
+
+	<LinearGradientBrush x:Key="operator_brush" StartPoint="0,0" EndPoint="0,1">
+		<GradientStop Color="#FFFFFF" Offset="0"/>
+		<GradientStop Color="#EEEEEE" Offset="0.15"/>
+		<GradientStop Color="#EEEEEE" Offset="0.8"/>
+		<GradientStop Color="#BBBBBB" Offset="1"/>
+	</LinearGradientBrush>
+
+	<Style x:Key="Procedure_PromptOverlay" TargetType="Border">
+		<Setter Property="CornerRadius" Value="6" />
+		<Setter Property="BorderBrush" Value="white" />
+		<Setter Property="Opacity" Value="0.2" />
+		<Setter Property="BorderThickness" Value="1" />
+	</Style>
+
+  </UserControl.Resources>
+	
+  <!-- MAIN PANEL -->
+   <Border BorderThickness="2" BorderBrush="Black" CornerRadius="4">
+	<DockPanel>
+		<StackPanel DockPanel.Dock="Top">
+			<Grid Background="Black">
+				<StackPanel Margin="3">
+					<TextBlock Visibility="{Binding ShowProcedures,Converter={StaticResource bool2vis}}" Text="Procedures" FontWeight="Bold" FontSize="12" Foreground="White"/>
+					<TextBlock Visibility="{Binding ShowOperators,Converter={StaticResource bool2vis}}" Text="Operators" FontWeight="Bold" FontSize="12" Foreground="White"/>
+				</StackPanel>
+			</Grid>
+			<DockPanel>
+				<Grid DockPanel.Dock="Left" Margin="4,0,0,0" Height="18" >
+					<ToggleButton VerticalAlignment="Center" Foreground="White" Opacity="0.35" IsChecked="{Binding IsNameFilterActive}">
+						<TextBlock Text="Filter:" Margin="5,-3,5,0"/>
+					</ToggleButton>
+					<Border CornerRadius="3" Visibility="{Binding IsNameFilterActive,Converter={StaticResource bool2vis}}" Background="Lime" Opacity="0.5" IsHitTestVisible="False" />
+				</Grid>
+				<Grid>
+					<TextBox Text="{Binding NameFilter, UpdateSourceTrigger=PropertyChanged}" Foreground="White" Margin="4,1,0,1"/>
+					<TextBlock Visibility="{Binding IsNameFilterInactive,Converter={StaticResource bool2vis}}" Foreground="Silver" Opacity="0.5" Margin="8,3,2,0" SnapsToDevicePixels="true" IsHitTestVisible="false" Text="{Binding SearchPromptText}"/>
+				</Grid>
+			</DockPanel>
+		</StackPanel>
+		<ScrollViewer Margin="2,0">
+			<StackPanel>
+			  <ItemsControl ItemsSource="{Binding AvailableOperators}" Margin="0,0,0,2">
+				<ItemsControl.ItemTemplate>
+					<DataTemplate>
+						<DockPanel Background="Transparent" >
+							<DockPanel DockPanel.Dock="Top" Margin="0,0,0,0" LastChildFill="False" Background="#777">
+								<TextBlock DockPanel.Dock="Left" Margin="5,0,10,0" Text="{Binding Name}" FontWeight="Bold" Foreground="White" FontSize="12" HorizontalAlignment="Center" />
+							</DockPanel>
+							<ItemsControl ItemsSource="{Binding Operators}">
+								<ItemsControl.ItemsPanel>
+									<ItemsPanelTemplate>
+										<StackPanel/>
+									</ItemsPanelTemplate>
+								</ItemsControl.ItemsPanel>
+								<ItemsControl.ItemTemplate>
+									<DataTemplate>
+										<Grid ToolTip="{Binding Description}">
+											<vice:EnumToStringMapper x:Name="txtclr" Input="{Binding Appearance}" Map="Normal=White,Hidden=silver,Obsolete=salmon,Experimental=skyblue" />
+											<Border Background="Transparent" />
+											<Border Visibility="{Binding IsSelected,Converter={StaticResource bool2vis}}" Opacity="0.2" Background="Yellow" />
+											<Border Visibility="{Binding IsHighlighted,Converter={StaticResource bool2vis}}" Opacity="0.05" Background="White" />
+											<StackPanel Orientation="Horizontal" Margin="16,-2,0,-2">
+												<TextBlock Text="{Binding HierarchyPrefix}" FontSize="12" Foreground="{Binding Output,ElementName=txtclr}" HorizontalAlignment="Center" Opacity="0.4"/>
+												<TextBlock Text="{Binding HierarchyName}" FontSize="12" Foreground="{Binding Output,ElementName=txtclr}" HorizontalAlignment="Center" Visibility="{Binding DirtyFlag.IsClean,Converter={StaticResource bool2vis}}" />
+												<TextBlock Text="{Binding HierarchyName}" FontSize="12" Foreground="{Binding Output,ElementName=txtclr}" HorizontalAlignment="Center" FontWeight="Bold" Visibility="{Binding DirtyFlag.IsDirty,Converter={StaticResource bool2vis}}" />
+												<TextBlock Text="{Binding DisplayName}" Margin="8,0,0,0" FontSize="12" Foreground="{Binding Output,ElementName=txtclr}" Opacity="0.3" HorizontalAlignment="Center" Visibility="{Binding IsActuallyOperator,Converter={StaticResource bool2vis}}" />
+											</StackPanel>
+										</Grid>
+
+										</DataTemplate>
+								</ItemsControl.ItemTemplate>
+							</ItemsControl>
+						</DockPanel>
+					</DataTemplate>
+				</ItemsControl.ItemTemplate>
+			  </ItemsControl>
+			  <Border Style="{StaticResource Procedure_PromptOverlay}" Visibility="{Binding ShowProcedures,Converter={StaticResource bool2vis}}" Margin="4,4,4,4" SnapsToDevicePixels="true" IsHitTestVisible="false">
+				<TextBlock Foreground="white" Margin="12,0" TextAlignment="center" VerticalAlignment="center" HorizontalAlignment="center" TextWrapping="Wrap">
+					Right-click to create a new Procedure
+				</TextBlock>
+			  </Border>
+			</StackPanel>
+		</ScrollViewer>
+	</DockPanel>
+   </Border>
+</UserControl>
