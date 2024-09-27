@@ -5,7 +5,7 @@
     </Inputs>
     <Constants>
         <Constant id="-15" type="ModelSegment"></Constant>
-        <Constant id="-17" type="Vector3">0.000000, 0.000000, 1.000000</Constant>
+        <Constant id="-17" type="Vector3">0.000000, 0.000000, 5.000000</Constant>
         <Constant id="-18" type="Integer">0</Constant>
         <Constant id="-19" type="Integer">0</Constant>
         <Constant id="-20" type="Integer">0</Constant>
@@ -21,7 +21,7 @@
         <Constant id="-44" type="Integer">1</Constant>
         <Constant id="-45" type="Integer">1</Constant>
         <Constant id="-46" type="Integer">1</Constant>
-        <Constant id="-48" type="Float">3.000000</Constant>
+        <Constant id="-48" type="Float">2.000000</Constant>
         <Constant id="-49" type="List"></Constant>
         <Constant id="-50" type="List"></Constant>
         <Constant id="-51" type="Float">0.000000</Constant>

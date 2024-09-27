@@ -1,6 +1,6 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>522.6637,367.5967</Centre>
+    <Centre>464.5836,384.5367</Centre>
     <Zoom>0.826446354</Zoom>
   </View>
   <Procedure>
@@ -76,7 +76,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="9">
       <Location>567.2056,-45.8218</Location>
-      <Size>146.25,52.2</Size>
+      <Size>146.25,78.12</Size>
       <NoteID>0</NoteID>
       <Comment>show outline when selected</Comment>
       <InputMetadata />
