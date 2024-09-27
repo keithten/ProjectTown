@@ -318,15 +318,17 @@ Apparance::Parameter::Type UApparanceBaseNode::ApparanceTypeFromPinType( FEdGrap
 
 // Apparance parameter type -> Unreal blueprint pin type
 //
-FName UApparanceBaseNode::PinTypeFromApparanceType( Apparance::Parameter::Type param_type, UScriptStruct*& sub_type_out )
+FName UApparanceBaseNode::PinTypeFromApparanceType( Apparance::Parameter::Type param_type, FName& out_sub_type, UScriptStruct*& out_sub_type_struct )
 {
-	sub_type_out = nullptr;
+	out_sub_type = NAME_None;
+	out_sub_type_struct = nullptr;
 	switch(param_type)
 	{
 		case Apparance::Parameter::Integer:
 			return UEdGraphSchema_K2::PC_Int;
 		case Apparance::Parameter::Float:
 #if UE_VERSION_AT_LEAST(5,0,0)
+			out_sub_type = UEdGraphSchema_K2::PC_Float;
 			return UEdGraphSchema_K2::PC_Real;
 #else
 			return UEdGraphSchema_K2::PC_Float;
@@ -334,15 +336,15 @@ FName UApparanceBaseNode::PinTypeFromApparanceType( Apparance::Parameter::Type p
 		case Apparance::Parameter::Bool:
 			return UEdGraphSchema_K2::PC_Boolean;
 		case Apparance::Parameter::Colour:
-			sub_type_out = TBaseStructure<FLinearColor>::Get();
+			out_sub_type_struct = TBaseStructure<FLinearColor>::Get();
 			return UEdGraphSchema_K2::PC_Struct;
 		case Apparance::Parameter::String:
 			return UEdGraphSchema_K2::PC_String;
 		case Apparance::Parameter::Vector3:
-			sub_type_out = TBaseStructure<FVector>::Get();
+			out_sub_type_struct = TBaseStructure<FVector>::Get();
 			return UEdGraphSchema_K2::PC_Struct;
 		case Apparance::Parameter::Frame:
-			sub_type_out = TBaseStructure<FApparanceFrame>::Get();
+			out_sub_type_struct = TBaseStructure<FApparanceFrame>::Get();
 			return UEdGraphSchema_K2::PC_Struct;
 		case Apparance::Parameter::List:
 			return UEdGraphSchema_K2::PC_Wildcard; //lists default to wild
@@ -484,8 +486,9 @@ struct FInputPinSynchroniser : FSynchroniser<int, UEdGraphPin*>
 		const char* name = PinSpec->FindName( input_id );
 		
 		//input pin
-		UScriptStruct* sub_type = nullptr;
-		FName pin_type = UApparanceBaseNode::PinTypeFromApparanceType( input_type, sub_type );
+		FName sub_type = NAME_None;
+		UScriptStruct* sub_type_struct = nullptr;
+		FName pin_type = UApparanceBaseNode::PinTypeFromApparanceType( input_type, sub_type, sub_type_struct );
 		FString full_name = ANSI_TO_TCHAR( name );
 		FText display_name = FText::FromString( FApparanceUtility::GetMetadataSection( full_name, 0 ) );
 		FString tool_tip = FApparanceUtility::GetMetadataSection( full_name, 1 );
@@ -493,8 +496,8 @@ struct FInputPinSynchroniser : FSynchroniser<int, UEdGraphPin*>
 
 		//create
 		UEdGraphPin* new_pin = GraphNode->CreatePin( PinDirection, pin_type, code_name );
-		new_pin->PinType.PinSubCategory = NAME_None;
-		new_pin->PinType.PinSubCategoryObject = sub_type;
+		new_pin->PinType.PinSubCategory = sub_type;
+		new_pin->PinType.PinSubCategoryObject = sub_type_struct;
 		new_pin->PinFriendlyName = display_name;	//correct display name
 		if(!tool_tip.IsEmpty())
 		{

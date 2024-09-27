@@ -87,7 +87,7 @@ public:
 
 	//conversion	
 	static Apparance::Parameter::Type ApparanceTypeFromPinType( FEdGraphPinType pin_type, FApparanceEntityParameterVariants::Type& OutTypeVariant );
-	static FName PinTypeFromApparanceType( Apparance::Parameter::Type param_type, UScriptStruct*& sub_type_out );
+	static FName PinTypeFromApparanceType( Apparance::Parameter::Type param_type, FName& sub_type, UScriptStruct*& sub_type_out );
 	
 protected:
 	
