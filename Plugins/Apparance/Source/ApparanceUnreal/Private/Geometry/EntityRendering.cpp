@@ -1539,7 +1539,7 @@ class UMaterialInterface* FDetailTier::GetMaterial( AApparanceEntity* pactor, Ap
 		{
 			continue;
 		}
-		
+	
 		//parameters?
 		Apparance::IParameterCollection* existing_parameters = pexisting_mat->Parameters.Get();
 		bool has_params = parameters.IsValid();
@@ -1576,6 +1576,14 @@ class UMaterialInterface* FDetailTier::GetMaterial( AApparanceEntity* pactor, Ap
 			{
 				continue;
 			}
+		}
+
+		//found a match...
+		if (!pexisting_mat->MaterialInstance.IsValid())
+		{
+			//...but it has expired
+			Materials.RemoveAt( i ); //purge from tracking
+			break;
 		}
 
 		if(pwant_collision_out)
