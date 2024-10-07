@@ -25,7 +25,7 @@
         <Constant id="-34" type="FColour">[0.000000,0.000000,0.000000,1.000000]</Constant>
         <Constant id="-35" type="FColour">[0.000000,0.000000,0.000000,1.000000]</Constant>
         <Constant id="-36" type="FColour">[0.000000,0.000000,0.000000,1.000000]</Constant>
-        <Constant id="-38" type="Float">0.519481</Constant>
+        <Constant id="-38" type="Float">1.000000</Constant>
         <Constant id="-46" type="Float">1.000000</Constant>
         <Constant id="-47" type="FColour">[0.000000,0.000000,0.000000,1.000000]</Constant>
         <Constant id="-49" type="Integer">0</Constant>
@@ -76,7 +76,7 @@
         </Operator>
         <Operator id="10" type="A44B9ADA">
             <Connect in="100" to="11" out="100"/>
-            <Connect in="101" to="14" out="100"/>
+            <Connect in="101" to="5" out="100"/>
             <Connect in="102" constant="-28"/>
         </Operator>
         <Operator id="11" type="C0BB1E82">

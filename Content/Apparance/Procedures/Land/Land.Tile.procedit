@@ -1,7 +1,7 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>66.20309,471.3139</Centre>
-    <Zoom>1.21</Zoom>
+    <Centre>203.9749,618.7615</Centre>
+    <Zoom>0.826446354</Zoom>
   </View>
   <Procedure>
     <Category>Land</Category>
@@ -36,7 +36,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="4">
-      <Location>52.13643,543.364</Location>
+      <Location>93.2764,543.364</Location>
       <Size>75.14333,155.88</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -191,7 +191,7 @@
       </InputMetadata>
     </Object>
     <Object type="ProcedureOperatorState" id="18">
-      <Location>-145.2293,552.985</Location>
+      <Location>-68.99935,488.8549</Location>
       <Size>107.1167,69.28</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -305,7 +305,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="33">
-      <Location>-73.39672,494.8347</Location>
+      <Location>-241.5867,614.6248</Location>
       <Size>85.31333,39.28</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -356,6 +356,13 @@
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="40">
+      <Location>-86.69988,650.9401</Location>
+      <Size>86.38,129.96</Size>
+      <NoteID>0</NoteID>
+      <Comment>flip</Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureInputState" id="1">

@@ -1,13 +1,13 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>523.721,248.691</Centre>
-    <Zoom>1.1000005</Zoom>
+    <Centre>539.1212,139.791</Centre>
+    <Zoom>0.909091353</Zoom>
   </View>
   <Procedure>
     <Category>Tools</Category>
     <DisplayName>Tool</DisplayName>
     <Description>3D tool ui for a single tool</Description>
-    <TopLeft>-282,-293.4719</TopLeft>
+    <TopLeft>-282,-302.5</TopLeft>
     <BottomRight>1151.091,532.7964</BottomRight>
   </Procedure>
   <Objects>
@@ -139,7 +139,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="14">
-      <Location>479,-236</Location>
+      <Location>488.9001,-252.5</Location>
       <Size>64.82333,65.16</Size>
       <NoteID>0</NoteID>
       <Comment>

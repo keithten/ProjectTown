@@ -13,7 +13,7 @@
         <Constant id="-8" type="String">Town.Materials.Ground</Constant>
         <Constant id="-9" type="Frame">[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]</Constant>
         <Constant id="-10" type="Integer">0</Constant>
-        <Constant id="-14" type="Vector3">-0.871963, -0.581309, -0.435981</Constant>
+        <Constant id="-14" type="Vector3">-1.487347, -3.658232, -0.435981</Constant>
         <Constant id="-15" type="Float">0.026702</Constant>
         <Constant id="-16" type="Float">1.000000</Constant>
         <Constant id="-17" type="Integer">5</Constant>
@@ -75,6 +75,13 @@
         <Constant id="-128" type="ModelSegment"></Constant>
         <Constant id="-129" type="Frame">[0,0,0][0,0,0][0,0,0][0,0,0][0,0,0]</Constant>
         <Constant id="-134" type="Integer">4</Constant>
+        <Constant id="-136" type="Vector3">1.000000, -1.000000, 1.000000</Constant>
+        <Constant id="-137" type="Integer">1</Constant>
+        <Constant id="-138" type="Integer">1</Constant>
+        <Constant id="-139" type="Integer">1</Constant>
+        <Constant id="-140" type="Integer">1</Constant>
+        <Constant id="-141" type="Integer">1</Constant>
+        <Constant id="-142" type="Integer">1</Constant>
     </Constants>
     <Operators>
         <Operator id="1" type="10DEC4B5">
@@ -103,7 +110,7 @@
             <Connect in="106" constant="-19"/>
             <Connect in="107" constant="-20"/>
             <Connect in="108" to="18" out="1"/>
-            <Connect in="110" to="33" out="1"/>
+            <Connect in="110" to="40" out="100"/>
         </Operator>
         <Operator id="5" type="51042DD8">
             <Connect in="100" to="37" out="100"/>
@@ -249,6 +256,16 @@
         <Operator id="39" type="26E462B9">
             <Connect in="100" input="5"/>
             <Connect in="101" constant="-134"/>
+        </Operator>
+        <Operator id="40" type="E99E1179">
+            <Connect in="100" to="33" out="1"/>
+            <Connect in="101" constant="-136"/>
+            <Connect in="102" constant="-137"/>
+            <Connect in="103" constant="-138"/>
+            <Connect in="104" constant="-139"/>
+            <Connect in="105" constant="-140"/>
+            <Connect in="106" constant="-141"/>
+            <Connect in="107" constant="-142"/>
         </Operator>
     </Operators>
     <Outputs>

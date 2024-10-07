@@ -10,13 +10,13 @@
     <Constants>
         <Constant id="-5" type="String">Towns</Constant>
         <Constant id="-10" type="List"></Constant>
-        <Constant id="-17" type="ModelSegment"></Constant>
         <Constant id="-19" type="String">Frame</Constant>
         <Constant id="-20" type="Bool">True</Constant>
         <Constant id="-21" type="Vector3">0.000000, 0.000000, 0.000000</Constant>
         <Constant id="-22" type="Integer">0</Constant>
         <Constant id="-23" type="Integer">0</Constant>
         <Constant id="-24" type="Integer">0</Constant>
+        <Constant id="-56" type="ModelSegment"></Constant>
     </Constants>
     <Operators>
         <Operator id="2" type="11A7478C">
@@ -36,7 +36,7 @@
             <Connect in="100" to="12" out="1"/>
             <Connect in="101" to="2" out="100"/>
             <Connect in="102" to="11" out="1"/>
-            <Connect in="103" constant="-17"/>
+            <Connect in="103" constant="-56"/>
         </Operator>
         <Operator id="7" type="8CE8A9FB"/>
         <Operator id="8" type="B66C8439">
