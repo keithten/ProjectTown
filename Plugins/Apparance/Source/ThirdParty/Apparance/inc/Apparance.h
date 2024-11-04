@@ -380,7 +380,7 @@ namespace Apparance
 		//geometry factory
 		struct IGeometryFactory
 		{
-			virtual struct Apparance::Host::IGeometry* CreateGeometry() = 0;
+			virtual struct Apparance::Host::IGeometry* CreateGeometry( int debug_request_version ) = 0;
 			virtual void DestroyGeometry( struct Apparance::Host::IGeometry* pgeometry ) = 0;
 
 			virtual Apparance::MaterialID GetDefaultTriangleMaterial() = 0;

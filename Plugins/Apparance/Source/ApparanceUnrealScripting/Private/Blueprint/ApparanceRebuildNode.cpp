@@ -393,7 +393,9 @@ void UApparanceRebuildNode::CustomExpandNode(class FKismetCompilerContext& Compi
 	else
 	{
 		//no internal functionality required (no procedure selected or nothing connected), passthrough (right call???)
-		CompilerContext.MovePinLinksToIntermediate(*MainThenPin, *MainExecPin);
+		//CompilerContext.MovePinLinksToIntermediate(*MainThenPin, *MainExecPin);
+		//CompilerContext.MovePinLinksToIntermediate(*MainExecPin, *MainThenPin);
+		MainThenPin->MakeLinkTo(MainExecPin);
 	}
 	
 }
