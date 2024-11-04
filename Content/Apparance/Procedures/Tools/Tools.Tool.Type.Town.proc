@@ -34,6 +34,7 @@
         <Constant id="-62" type="Integer">0</Constant>
         <Constant id="-67" type="Vector3">0.750000, 0.750000, 1.000000</Constant>
         <Constant id="-68" type="Vector3">0.800000, 0.800000, 1.250000</Constant>
+        <Constant id="-70" type="Integer">0</Constant>
     </Constants>
     <Operators>
         <Operator id="1" type="E99E1179">
@@ -55,6 +56,7 @@
             <Connect in="2" constant="-16"/>
             <Connect in="3" constant="-14"/>
             <Connect in="4" constant="-15"/>
+            <Connect in="5" to="20" out="1"/>
         </Operator>
         <Operator id="8" type="E99E1179">
             <Connect in="100" to="1" out="100"/>
@@ -114,6 +116,9 @@
         <Operator id="19" type="7C4C983A">
             <Connect in="100" input="2"/>
             <Connect in="101" input="3"/>
+        </Operator>
+        <Operator id="20" type="2013FD9D">
+            <Connect in="1" constant="-70"/>
         </Operator>
     </Operators>
     <Outputs>

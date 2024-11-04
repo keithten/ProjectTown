@@ -1,0 +1,308 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>571.7797,478.5229</Centre>
+    <Zoom>0.683013558</Zoom>
+  </View>
+  <Procedure>
+    <Category>Buildings</Category>
+    <DisplayName>Holiday.Cabin.Assets</DisplayName>
+    <Description>Gather assets for holiday cabin</Description>
+    <TopLeft>-110.4711,-62.27273</TopLeft>
+    <BottomRight>1270.399,1099.07</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>257,77</Location>
+      <Size>113.9067,155.88</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>250.6859,3.826421</Location>
+      <Size>122.8333,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>251.3058,47.62808</Location>
+      <Size>122.8333,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>248.6529,170.8843</Location>
+      <Size>122.8333,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>270.6446,212.2397</Location>
+      <Size>122.8333,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="6">
+      <Location>253.9504,286.6777</Location>
+      <Size>122.8333,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="7">
+      <Location>272.9587,329.5042</Location>
+      <Size>122.8333,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="8">
+      <Location>258.8347,396.6529</Location>
+      <Size>122.8333,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="9">
+      <Location>277.8347,438.6529</Location>
+      <Size>122.8333,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="10">
+      <Location>250.4793,106.3058</Location>
+      <Size>122.8333,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="11">
+      <Location>514.438,-12.27273</Location>
+      <Size>65.97667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="12">
+      <Location>515.6529,40.30579</Location>
+      <Size>65.97667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="13">
+      <Location>713.7301,10.72264</Location>
+      <Size>68.37334,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[0] Plain Wall</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="14">
+      <Location>711.7402,95.28021</Location>
+      <Size>78.81667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[1] Corner Trim</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="15">
+      <Location>512.3471,151.7892</Location>
+      <Size>65.97667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="16">
+      <Location>513.3471,204.7892</Location>
+      <Size>65.97667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="17">
+      <Location>717.0543,188.4368</Location>
+      <Size>81.08667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[2] Wall + Door</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="18">
+      <Location>512.8264,266.1528</Location>
+      <Size>65.97667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="19">
+      <Location>513.8264,319.1528</Location>
+      <Size>65.97667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="20">
+      <Location>717.6164,301.1028</Location>
+      <Size>98.11667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[3] Wall + Window</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="21">
+      <Location>513,379.69</Location>
+      <Size>65.97667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="22">
+      <Location>514,432.69</Location>
+      <Size>65.97667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="23">
+      <Location>719,421.9</Location>
+      <Size>73.23333,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[4] Wall + Bay</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="24">
+      <Location>923.7093,420.7494</Location>
+      <Size>76.30666,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[0] Wall Assets</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="25">
+      <Location>926.6103,508.6502</Location>
+      <Size>78.29,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[1] Roof Assets</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="26">
+      <Location>257.64,579.9601</Location>
+      <Size>122.8333,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="27">
+      <Location>628.2499,576.2701</Location>
+      <Size>65.97667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[0] Roof Flat</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="28">
+      <Location>627.7501,651.3499</Location>
+      <Size>67.55,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[1] Roof Side</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="29">
+      <Location>254.58,647.15</Location>
+      <Size>122.8333,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="30">
+      <Location>252.16,729.4299</Location>
+      <Size>122.8333,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="31">
+      <Location>623.16,726.4299</Location>
+      <Size>75.42,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[2] Roof Ridge</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="32">
+      <Location>253.26,804.1899</Location>
+      <Size>122.8333,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="33">
+      <Location>624.26,801.1899</Location>
+      <Size>80.8,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[3] Roof Corner</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="34">
+      <Location>258.84,881.63</Location>
+      <Size>122.8333,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="35">
+      <Location>629.84,878.63</Location>
+      <Size>101.4133,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[4] Roof Side Gable</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="36">
+      <Location>264,959</Location>
+      <Size>122.8333,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="37">
+      <Location>635,956</Location>
+      <Size>109.2833,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[5] Roof Ridge Gable</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>Out</Name>
+      <Description>
+      </Description>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+</ProcedureEditData>

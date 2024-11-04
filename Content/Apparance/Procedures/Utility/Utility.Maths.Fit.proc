@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="C331A2D2">
+    <Inputs>
+        <Input id="1" type="Float" name="Space" description="Space to fill"/>
+        <Input id="2" type="Float" name="Size" description="Size of things to fit"/>
+    </Inputs>
+    <Constants>
+        <Constant id="-4" type="Float">0.500000</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="DED78D0E">
+            <Connect in="100" input="1"/>
+            <Connect in="101" input="2"/>
+        </Operator>
+        <Operator id="2" type="85D4CBD8">
+            <Connect in="100" to="1" out="100"/>
+            <Connect in="101" constant="-4"/>
+        </Operator>
+        <Operator id="3" type="D0C62994">
+            <Connect in="100" to="2" out="100"/>
+        </Operator>
+        <Operator id="4" type="D0A6FC99">
+            <Connect in="100" to="3" out="100"/>
+        </Operator>
+        <Operator id="5" type="971515D0">
+            <Connect in="100" to="4" out="100"/>
+            <Connect in="101" input="2"/>
+        </Operator>
+        <Operator id="6" type="DED78D0E">
+            <Connect in="100" input="1"/>
+            <Connect in="101" to="5" out="100"/>
+        </Operator>
+        <Operator id="7" type="971515D0">
+            <Connect in="100" input="2"/>
+            <Connect in="101" to="6" out="100"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="Integer" name="Quantity" description="" to="3" out="100"/>
+        <Output id="2" type="Float" name="New Size" description="" to="7" out="100"/>
+        <Output id="3" type="Float" name="Scaling" description="" to="6" out="100"/>
+    </Outputs>
+</Procedure>

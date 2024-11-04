@@ -1,11 +1,28 @@
 <?xml version="1.0"?>
 <Procedure Version="5" type="FA7216F7">
-    <Inputs/>
+    <Inputs>
+        <Input id="1" type="Integer" name="Theme" description=""/>
+    </Inputs>
     <Constants>
         <Constant id="-1" type="Float">4.000000</Constant>
         <Constant id="-2" type="Integer">0</Constant>
-        <Constant id="-7" type="FColour">[1.000000,1.000000,1.000000,1.000000]</Constant>
         <Constant id="-8" type="Vector3">0.000000, 0.000000, 0.000000</Constant>
+        <Constant id="-10" type="FColour">[1.000000,1.000000,1.000000,1.000000]</Constant>
+        <Constant id="-11" type="FColour">[0.000000,0.000000,0.000000,1.000000]</Constant>
+        <Constant id="-12" type="FColour">[0.000000,0.000000,0.000000,1.000000]</Constant>
+        <Constant id="-13" type="FColour">[0.000000,0.000000,0.000000,1.000000]</Constant>
+        <Constant id="-14" type="FColour">[0.000000,0.000000,0.000000,1.000000]</Constant>
+        <Constant id="-15" type="FColour">[0.000000,0.000000,0.000000,1.000000]</Constant>
+        <Constant id="-16" type="FColour">[0.000000,0.000000,0.000000,1.000000]</Constant>
+        <Constant id="-17" type="FColour">[0.000000,0.000000,0.000000,1.000000]</Constant>
+        <Constant id="-19" type="Float">0.100000</Constant>
+        <Constant id="-20" type="Float">0.500000</Constant>
+        <Constant id="-21" type="Float">0.000000</Constant>
+        <Constant id="-22" type="Float">0.000000</Constant>
+        <Constant id="-23" type="Float">0.000000</Constant>
+        <Constant id="-24" type="Float">0.000000</Constant>
+        <Constant id="-25" type="Float">0.000000</Constant>
+        <Constant id="-26" type="Float">0.000000</Constant>
     </Constants>
     <Operators>
         <Operator id="1" type="DA4FC7F9">
@@ -17,11 +34,34 @@
             <Connect in="102" constant="-8"/>
         </Operator>
         <Operator id="4" type="DCA3CE9D">
-            <Connect in="100" constant="-7"/>
+            <Connect in="100" to="5" out="1"/>
+        </Operator>
+        <Operator id="5" type="AECC7F4E">
+            <Connect in="1" input="1"/>
+            <Connect in="2" constant="-10"/>
+            <Connect in="3" constant="-11"/>
+            <Connect in="4" constant="-12"/>
+            <Connect in="5" constant="-13"/>
+            <Connect in="6" constant="-14"/>
+            <Connect in="7" constant="-15"/>
+            <Connect in="8" constant="-16"/>
+            <Connect in="9" constant="-17"/>
+        </Operator>
+        <Operator id="6" type="AECE8B22">
+            <Connect in="1" input="1"/>
+            <Connect in="2" constant="-19"/>
+            <Connect in="3" constant="-20"/>
+            <Connect in="4" constant="-21"/>
+            <Connect in="5" constant="-22"/>
+            <Connect in="6" constant="-23"/>
+            <Connect in="7" constant="-24"/>
+            <Connect in="8" constant="-25"/>
+            <Connect in="9" constant="-26"/>
         </Operator>
     </Operators>
     <Outputs>
         <Output id="1" type="Float" name="Line Width" description="" to="2" out="100"/>
         <Output id="2" type="FColour" name="Handle Colour" description="" to="4" out="100"/>
+        <Output id="3" type="Float" name="Handle Alpha" description="" to="6" out="1"/>
     </Outputs>
 </Procedure>

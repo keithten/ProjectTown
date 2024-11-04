@@ -7,6 +7,7 @@
         <Input id="4" type="List" name="Poly Mask" description=""/>
         <Input id="5" type="ModelSegment" name="Image Mask" description=""/>
         <Input id="6" type="Frame" name="World Tile" description=""/>
+        <Input id="7" type="List" name="Config" description=""/>
     </Inputs>
     <Constants>
         <Constant id="-2" type="Integer">0</Constant>
@@ -38,6 +39,7 @@
         <Constant id="-56" type="Integer">2</Constant>
         <Constant id="-58" type="Integer">3</Constant>
         <Constant id="-63" type="Integer">54</Constant>
+        <Constant id="-67" type="Integer">0</Constant>
     </Constants>
     <Operators>
         <Operator id="1" type="B06BD8E5">
@@ -61,7 +63,7 @@
             <Connect in="2" constant="-14"/>
         </Operator>
         <Operator id="7" type="B4A997AD">
-            <Connect in="100" to="12" out="1"/>
+            <Connect in="100" to="29" out="100"/>
             <Connect in="101" constant="-23"/>
             <Connect in="102" constant="-17"/>
             <Connect in="103" constant="-35"/>
@@ -83,6 +85,7 @@
             <Connect in="2" constant="-34"/>
             <Connect in="3" to="3" out="100"/>
             <Connect in="4" constant="-33"/>
+            <Connect in="5" input="7"/>
         </Operator>
         <Operator id="13" type="6DC301E5">
             <Connect in="100" to="21" out="100"/>
@@ -146,6 +149,20 @@
         <Operator id="26" type="0B64055F">
             <Connect in="100" to="3" out="100"/>
             <Connect in="101" constant="-63"/>
+        </Operator>
+        <Operator id="27" type="9555F5CD">
+            <Connect in="1" input="7"/>
+        </Operator>
+        <Operator id="28" type="95589C8F">
+            <Connect in="1" to="15" out="100"/>
+            <Connect in="2" to="3" out="100"/>
+            <Connect in="3" constant="-67"/>
+            <Connect in="4" input="7"/>
+        </Operator>
+        <Operator id="29" type="C01FB46B">
+            <Connect in="100" to="27" out="1"/>
+            <Connect in="101" to="12" out="1"/>
+            <Connect in="102" to="28" out="1"/>
         </Operator>
     </Operators>
     <Outputs>

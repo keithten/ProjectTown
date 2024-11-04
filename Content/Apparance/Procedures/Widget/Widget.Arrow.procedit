@@ -1,7 +1,7 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>457.5845,176.5523</Centre>
-    <Zoom>0.8264467</Zoom>
+    <Centre>724.4258,161.4758</Centre>
+    <Zoom>0.620921731</Zoom>
   </View>
   <Procedure>
     <Category>Widget</Category>
@@ -21,7 +21,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="2">
       <Location>-57.14879,205.529</Location>
-      <Size>136.4367,54.28</Size>
+      <Size>127.28,69.28</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -132,7 +132,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="16">
       <Location>1440.56,161.3539</Location>
-      <Size>89.30334,52.2</Size>
+      <Size>89.30334,65.16</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -150,6 +150,11 @@
     </Object>
     <Object type="ProcedureInputState" id="3">
       <Name>Highlight?</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="4">
+      <Name>Theme</Name>
       <Description>
       </Description>
     </Object>

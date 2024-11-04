@@ -3,6 +3,7 @@
     <Inputs>
         <Input id="1" type="Frame" name="Bounds" description=""/>
         <Input id="2" type="List" name="Click" description=""/>
+        <Input id="3" type="Integer" name="Theme" description=""/>
     </Inputs>
     <Constants>
         <Constant id="-1" type="Integer">15</Constant>
@@ -29,6 +30,7 @@
             <Connect in="2" to="2" out="101"/>
             <Connect in="3" constant="-1"/>
             <Connect in="5" constant="-27"/>
+            <Connect in="6" input="3"/>
         </Operator>
         <Operator id="2" type="DFE4B30E">
             <Connect in="100" constant="-2"/>

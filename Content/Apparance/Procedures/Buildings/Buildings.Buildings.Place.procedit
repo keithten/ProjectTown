@@ -1,6 +1,6 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>486,348</Centre>
+    <Centre>414,395</Centre>
     <Zoom>1</Zoom>
   </View>
   <Procedure>
@@ -60,14 +60,14 @@
     </Object>
     <Object type="ProcedureOperatorState" id="7">
       <Location>532,485</Location>
-      <Size>136.1833,78.12</Size>
+      <Size>136.1833,91.08</Size>
       <NoteID>0</NoteID>
       <Comment>iterate through buildings</Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="8">
       <Location>416,193</Location>
-      <Size>107.9467,65.16</Size>
+      <Size>107.9467,78.12</Size>
       <NoteID>0</NoteID>
       <Comment>for each...</Comment>
       <InputMetadata />
@@ -96,6 +96,11 @@
     <Object type="ProcedureInputState" id="4">
       <Name>Random Direction?</Name>
       <Description>Face in random cardinal direction?</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="5">
+      <Name>Config</Name>
+      <Description>
+      </Description>
     </Object>
     <Object type="ProcedureOutputState" id="1">
       <Name>Out</Name>

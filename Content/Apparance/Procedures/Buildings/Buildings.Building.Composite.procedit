@@ -1,13 +1,13 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>696.1826,145.388</Centre>
-    <Zoom>0.8264466</Zoom>
+    <Centre>381.4404,190.4166</Centre>
+    <Zoom>0.826446354</Zoom>
   </View>
   <Procedure>
     <Category>Buildings</Category>
     <DisplayName>Building.Composite</DisplayName>
     <Description>Composed of parts</Description>
-    <TopLeft>-70.50005,-245.7165</TopLeft>
+    <TopLeft>-233.5177,-245.7165</TopLeft>
     <BottomRight>1240.547,503.8801</BottomRight>
   </Procedure>
   <Objects>
@@ -158,14 +158,38 @@
       </Comment>
       <InputMetadata />
     </Object>
+    <Object type="ProcedureOperatorState" id="20">
+      <Location>104.8265,-143.9008</Location>
+      <Size>104.71,52.2</Size>
+      <NoteID>1</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="21">
+      <Location>106.3141,-73.99173</Location>
+      <Size>104.71,52.2</Size>
+      <NoteID>1</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="22">
+      <Location>125.8843,69.4215</Location>
+      <Size>104.71,52.2</Size>
+      <NoteID>1</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
     <Object type="ProcedureNote" id="1">
       <ID>1</ID>
       <Location>
-        <X>210.2839</X>
+        <X>-33.51773</X>
         <Y>-195.7165</Y>
       </Location>
       <Size>
-        <Width>560.8464</Width>
+        <Width>804.648</Width>
         <Height>351.7372</Height>
       </Size>
       <Title>Choose building design</Title>
@@ -179,6 +203,11 @@
     </Object>
     <Object type="ProcedureInputState" id="2">
       <Name>#</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="3">
+      <Name>Config</Name>
       <Description>
       </Description>
     </Object>
@@ -196,6 +225,10 @@
   <DefaultInputs>
     <Input id="1">
       <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
+      <Metadata />
+    </Input>
+    <Input id="2">
+      <Value type="842221856" value="0" />
       <Metadata />
     </Input>
   </DefaultInputs>

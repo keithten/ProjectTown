@@ -4,6 +4,7 @@
         <Input id="1" type="Frame" name="Frame" description=""/>
         <Input id="2" type="String" name="Name" description="name of entity frame parameter to resize"/>
         <Input id="3" type="List" name="Click" description=""/>
+        <Input id="4" type="Integer" name="Theme" description=""/>
     </Inputs>
     <Constants>
         <Constant id="-1" type="String">ResizeEast</Constant>
@@ -83,6 +84,7 @@
             <Connect in="4" constant="-21"/>
             <Connect in="5" constant="-19"/>
             <Connect in="6" constant="-46"/>
+            <Connect in="7" input="4"/>
         </Operator>
         <Operator id="8" type="B8C05957">
             <Connect in="100" constant="-23"/>
@@ -115,6 +117,7 @@
             <Connect in="4" constant="-39"/>
             <Connect in="5" constant="-37"/>
             <Connect in="6" constant="-47"/>
+            <Connect in="7" input="4"/>
         </Operator>
         <Operator id="13" type="3C922905">
             <Connect in="100" input="2"/>
@@ -147,6 +150,7 @@
             <Connect in="4" constant="-52"/>
             <Connect in="5" constant="-50"/>
             <Connect in="6" constant="-53"/>
+            <Connect in="7" input="4"/>
         </Operator>
         <Operator id="19" type="3C922905">
             <Connect in="100" input="2"/>
@@ -179,6 +183,7 @@
             <Connect in="4" constant="-64"/>
             <Connect in="5" constant="-62"/>
             <Connect in="6" constant="-65"/>
+            <Connect in="7" input="4"/>
         </Operator>
         <Operator id="25" type="3C922905">
             <Connect in="100" input="2"/>

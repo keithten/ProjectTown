@@ -9,6 +9,7 @@
         <Input id="6" type="List" name="Poly Mask" description=""/>
         <Input id="7" type="ModelSegment" name="Image Mask" description=""/>
         <Input id="8" type="Frame" name="World Tile" description=""/>
+        <Input id="9" type="List" name="Config" description=""/>
     </Inputs>
     <Constants>
         <Constant id="-5" type="ModelSegment"></Constant>
@@ -34,6 +35,7 @@
             <Connect in="4" input="6"/>
             <Connect in="5" input="7"/>
             <Connect in="6" input="8"/>
+            <Connect in="7" input="9"/>
         </Operator>
         <Operator id="5" type="D56CEA6D">
             <Connect in="100" input="1"/>
@@ -56,6 +58,7 @@
             <Connect in="6" input="6"/>
             <Connect in="7" input="7"/>
             <Connect in="8" input="8"/>
+            <Connect in="9" input="9"/>
         </Operator>
         <Operator id="10" type="62201849">
             <Connect in="100" input="5"/>

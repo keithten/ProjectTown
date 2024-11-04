@@ -1,7 +1,7 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>203.9749,618.7615</Centre>
-    <Zoom>0.826446354</Zoom>
+    <Centre>550.1339,637.688</Centre>
+    <Zoom>0.909090936</Zoom>
   </View>
   <Procedure>
     <Category>Land</Category>
@@ -365,6 +365,53 @@
       <Comment>flip</Comment>
       <InputMetadata />
     </Object>
+    <Object type="ProcedureOperatorState" id="41">
+      <Location>74.60992,53.09999</Location>
+      <Size>104.71,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="42">
+      <Location>773.925,631.7186</Location>
+      <Size>84.46333,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[1] Land colours</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="43">
+      <Location>932.859,886.0654</Location>
+      <Size>63.73667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="44">
+      <Location>937.8096,805.5541</Location>
+      <Size>63.73667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="45">
+      <Location>932.8923,716.8012</Location>
+      <Size>63.73667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="46">
+      <Location>933.0659,640.553</Location>
+      <Size>63.73667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
     <Object type="ProcedureInputState" id="1">
       <Name>Local</Name>
       <Description>
@@ -387,6 +434,11 @@
     </Object>
     <Object type="ProcedureInputState" id="5">
       <Name>Forest</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="6">
+      <Name>Config</Name>
       <Description>
       </Description>
     </Object>

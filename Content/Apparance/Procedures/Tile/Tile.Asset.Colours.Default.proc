@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="2001F8F8">
+    <Inputs/>
+    <Constants>
+        <Constant id="-1" type="FColour">[0.000000,0.043979,0.000000,1.000000]</Constant>
+        <Constant id="-2" type="Float">0.012987</Constant>
+        <Constant id="-3" type="FColour">[0.000000,0.000000,0.000000,1.000000]</Constant>
+        <Constant id="-4" type="FColour">[1.000000,1.000000,1.000000,1.000000]</Constant>
+        <Constant id="-5" type="Float">0.002024</Constant>
+        <Constant id="-6" type="FColour">[0.000000,0.000000,0.000000,1.000000]</Constant>
+        <Constant id="-7" type="FColour">[1.000000,1.000000,0.000000,1.000000]</Constant>
+        <Constant id="-8" type="Float">0.597403</Constant>
+        <Constant id="-9" type="FColour">[0.000000,0.000000,0.000000,1.000000]</Constant>
+        <Constant id="-10" type="FColour">[1.000000,1.000000,1.000000,1.000000]</Constant>
+        <Constant id="-11" type="List"></Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="DCA3CE9D">
+            <Connect in="100" constant="-1"/>
+        </Operator>
+        <Operator id="2" type="A44B9ADA">
+            <Connect in="100" constant="-2"/>
+            <Connect in="101" constant="-3"/>
+            <Connect in="102" constant="-4"/>
+        </Operator>
+        <Operator id="3" type="A44B9ADA">
+            <Connect in="100" constant="-5"/>
+            <Connect in="101" constant="-6"/>
+            <Connect in="102" constant="-7"/>
+        </Operator>
+        <Operator id="4" type="A44B9ADA">
+            <Connect in="100" constant="-8"/>
+            <Connect in="101" constant="-9"/>
+            <Connect in="102" constant="-10"/>
+        </Operator>
+        <Operator id="5" type="9171F974">
+            <Connect in="100" to="6" out="100"/>
+            <Connect in="101" to="4" out="100"/>
+        </Operator>
+        <Operator id="6" type="9171F974">
+            <Connect in="100" to="7" out="100"/>
+            <Connect in="101" to="2" out="100"/>
+        </Operator>
+        <Operator id="7" type="9171F974">
+            <Connect in="100" to="8" out="100"/>
+            <Connect in="101" to="1" out="100"/>
+        </Operator>
+        <Operator id="8" type="9171F974">
+            <Connect in="100" constant="-11"/>
+            <Connect in="101" to="3" out="100"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="List" name="Out" description="" to="5" out="100"/>
+    </Outputs>
+</Procedure>

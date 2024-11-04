@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="9555F5CD">
+    <Inputs>
+        <Input id="1" type="List" name="Config" description=""/>
+    </Inputs>
+    <Constants>
+        <Constant id="-2" type="Integer">2</Constant>
+        <Constant id="-4" type="Integer">1</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="B33D6C3E">
+            <Connect in="100" input="1"/>
+            <Connect in="101" constant="-2"/>
+        </Operator>
+        <Operator id="2" type="BB6EAC9D">
+            <Connect in="100" to="1" out="100"/>
+            <Connect in="101" constant="-4"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="Bool" name="Yes!" description="" to="2" out="100"/>
+    </Outputs>
+</Procedure>

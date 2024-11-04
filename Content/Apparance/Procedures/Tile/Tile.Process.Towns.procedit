@@ -1,6 +1,6 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>609.3433,234.4158</Centre>
+    <Centre>428.3433,357.4158</Centre>
     <Zoom>1.00000024</Zoom>
   </View>
   <Procedure>
@@ -8,7 +8,7 @@
     <DisplayName>Process.Towns</DisplayName>
     <Description>Handle towns we have intersecting our tile</Description>
     <TopLeft>-30,-20</TopLeft>
-    <BottomRight>997.0533,548.2784</BottomRight>
+    <BottomRight>997.0533,566.1184</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
@@ -36,7 +36,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="4">
       <Location>445.1653,147.9918</Location>
-      <Size>146.7233,104.04</Size>
+      <Size>146.7233,117</Size>
       <NoteID>0</NoteID>
       <Comment>for each...</Comment>
       <InputMetadata />
@@ -73,8 +73,8 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="9">
-      <Location>651.1566,407.1984</Location>
-      <Size>121.6567,129.96</Size>
+      <Location>655.1566,373.1984</Location>
+      <Size>121.6567,142.92</Size>
       <NoteID>0</NoteID>
       <Comment>recrsive iteration</Comment>
       <InputMetadata />
@@ -134,6 +134,11 @@
       <Description>
       </Description>
     </Object>
+    <Object type="ProcedureInputState" id="9">
+      <Name>Config</Name>
+      <Description>
+      </Description>
+    </Object>
     <Object type="ProcedureOutputState" id="1">
       <Name>Content</Name>
       <Description>
@@ -176,6 +181,10 @@
     </Input>
     <Input id="8">
       <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
+      <Metadata />
+    </Input>
+    <Input id="7">
+      <Value type="1836016967" value="" />
       <Metadata />
     </Input>
   </DefaultInputs>

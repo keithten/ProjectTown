@@ -33,7 +33,6 @@
         <Constant id="-32" type="Integer">7</Constant>
         <Constant id="-33" type="Float">0.000000</Constant>
         <Constant id="-34" type="Float">1.000000</Constant>
-        <Constant id="-38" type="String">Town.Nature.Trees</Constant>
         <Constant id="-39" type="Integer">256</Constant>
         <Constant id="-40" type="Float">128.000000</Constant>
         <Constant id="-41" type="Float">100.000000</Constant>
@@ -52,6 +51,8 @@
         <Constant id="-65" type="Float">1.000000</Constant>
         <Constant id="-66" type="ModelSegment"></Constant>
         <Constant id="-67" type="Frame">[0,0,0][0,0,0][0,0,0][0,0,0][0,0,0]</Constant>
+        <Constant id="-68" type="Integer">0</Constant>
+        <Constant id="-70" type="String">Nature.Trees</Constant>
     </Constants>
     <Operators>
         <Operator id="1" type="E99E1179">
@@ -133,7 +134,7 @@
             <Connect in="2" constant="-34"/>
         </Operator>
         <Operator id="14" type="F3E5FC30">
-            <Connect in="100" constant="-38"/>
+            <Connect in="100" to="21" out="1"/>
         </Operator>
         <Operator id="15" type="59521855">
             <Connect in="100" constant="-39"/>
@@ -161,6 +162,13 @@
             <Connect in="105" constant="-65"/>
             <Connect in="106" constant="-66"/>
             <Connect in="107" constant="-67"/>
+        </Operator>
+        <Operator id="20" type="2013FD9D">
+            <Connect in="1" constant="-68"/>
+        </Operator>
+        <Operator id="21" type="201B65FD">
+            <Connect in="1" to="20" out="1"/>
+            <Connect in="2" constant="-70"/>
         </Operator>
     </Operators>
     <Outputs>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="954B5E2E">
+    <Inputs/>
+    <Constants>
+        <Constant id="-1" type="String">Town.Holiday.Specific.Gifts.Box</Constant>
+        <Constant id="-2" type="String">Town.Holiday.Specific.Gifts.Lid</Constant>
+        <Constant id="-3" type="List"></Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="F3E5FC30">
+            <Connect in="100" constant="-1"/>
+        </Operator>
+        <Operator id="2" type="F3E5FC30">
+            <Connect in="100" constant="-2"/>
+        </Operator>
+        <Operator id="3" type="B8C05957">
+            <Connect in="100" constant="-3"/>
+            <Connect in="101" to="1" out="100"/>
+        </Operator>
+        <Operator id="4" type="B8C05957">
+            <Connect in="100" to="3" out="100"/>
+            <Connect in="101" to="2" out="100"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="List" name="Gift Assets" description="" to="4" out="100"/>
+    </Outputs>
+</Procedure>

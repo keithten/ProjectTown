@@ -1,19 +1,19 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>503.933,238.2315</Centre>
-    <Zoom>1.21</Zoom>
+    <Centre>362.5121,668.2877</Centre>
+    <Zoom>0.7513149</Zoom>
   </View>
   <Procedure>
     <Category>Editing</Category>
     <DisplayName>Widget.Highlight</DisplayName>
     <Description>World object hover highlighting cursor</Description>
-    <TopLeft>-30,-20</TopLeft>
-    <BottomRight>781.8718,476.8364</BottomRight>
+    <TopLeft>-294.3068,-20</TopLeft>
+    <BottomRight>1204.256,1221.986</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
       <Location>649.2568,183.1238</Location>
-      <Size>108.5833,78.12</Size>
+      <Size>108.5833,91.08</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -44,15 +44,23 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="5">
-      <Location>426.5454,133.4546</Location>
+      <Location>436.5454,96.18188</Location>
       <Size>46.75667,32.92</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
-      <InputMetadata />
+      <InputMetadata>
+        <Input id="101">
+          <Data name="MaximumValue">
+            <DataValue typeid="842221088">
+              <Float>0.5</Float>
+            </DataValue>
+          </Data>
+        </Input>
+      </InputMetadata>
     </Object>
     <Object type="ProcedureOperatorState" id="6">
-      <Location>496.1816,160.2729</Location>
+      <Location>511.6361,132.0912</Location>
       <Size>63.77667,32.92</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -76,7 +84,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="9">
-      <Location>645.5457,374.6364</Location>
+      <Location>838.0454,429.6366</Location>
       <Size>77.46667,52.2</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -84,11 +92,112 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="10">
-      <Location>824.7285,263.3638</Location>
+      <Location>978.7285,407.4642</Location>
       <Size>57.14333,52.2</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="11">
+      <Location>367.6233,1029.066</Location>
+      <Size>120.6167,142.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="12">
+      <Location>370.7272,384.5453</Location>
+      <Size>111.16,142.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>border</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="13">
+      <Location>862.5,374.5996</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="14">
+      <Location>507.6003,484.3005</Location>
+      <Size>98.64,142.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>alpha
+(0 for none)</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="15">
+      <Location>1071,358.5999</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="16">
+      <Location>1257.5,674.6</Location>
+      <Size>46.75667,45.88</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="17">
+      <Location>747.4001,709.4003</Location>
+      <Size>77.46667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="18">
+      <Location>888.4001,686.4002</Location>
+      <Size>57.14333,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="19">
+      <Location>371.1,666.1002</Location>
+      <Size>111.16,142.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>inside</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="20">
+      <Location>771.4001,654.4002</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="21">
+      <Location>514.876,788.0341</Location>
+      <Size>98.64,142.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>alpha
+(0 for none)</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="22">
+      <Location>980.4001,638.4002</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="23">
+      <Location>151.9281,350.1693</Location>
+      <Size>111.16,142.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>theme related</Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureInputState" id="1">
@@ -97,14 +206,13 @@
       </Description>
     </Object>
     <Object type="ProcedureInputState" id="2">
-      <Name>Colour</Name>
-      <Description>
-      </Description>
+      <Name>Type</Name>
+      <Description>0 simple
+1 delete</Description>
     </Object>
     <Object type="ProcedureInputState" id="3">
-      <Name>Alpha</Name>
-      <Description>
-      </Description>
+      <Name>Theme</Name>
+      <Description>For any theme changes needed</Description>
     </Object>
     <Object type="ProcedureOutputState" id="1">
       <Name>Border</Name>
@@ -122,19 +230,12 @@
       <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
       <Metadata />
     </Input>
-    <Input id="3">
-      <Value type="842221088" value="1" />
-      <Metadata>
-        <Input Name="Min">
-          <Value type="842221088" value="0" />
-        </Input>
-        <Input Name="Max">
-          <Value type="842221088" value="1" />
-        </Input>
-      </Metadata>
-    </Input>
     <Input id="2">
-      <Value type="1919697734" value="[1,1,1,1]" />
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="3">
+      <Value type="842221856" value="0" />
       <Metadata />
     </Input>
   </DefaultInputs>

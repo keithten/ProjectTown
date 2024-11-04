@@ -7,7 +7,7 @@
     <Constants>
         <Constant id="-6" type="Float">0.000000</Constant>
         <Constant id="-7" type="Integer">3</Constant>
-        <Constant id="-8" type="String">Town.Buildings.Tower</Constant>
+        <Constant id="-8" type="String">Town.Default.Buildings.Tower</Constant>
         <Constant id="-9" type="Frame">[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]</Constant>
         <Constant id="-10" type="Integer">1</Constant>
         <Constant id="-15" type="Integer">0</Constant>

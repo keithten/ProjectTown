@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="C2203357">
+    <Inputs/>
+    <Constants>
+        <Constant id="-1" type="Float">3.000000</Constant>
+        <Constant id="-3" type="Float">2.000000</Constant>
+        <Constant id="-11" type="String">Town.Holiday.Specific.Cabin.Wall</Constant>
+        <Constant id="-12" type="Frame">[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]</Constant>
+        <Constant id="-13" type="Integer">0</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="DA4FC7F9">
+            <Connect in="100" constant="-1"/>
+        </Operator>
+        <Operator id="2" type="DED78D0E">
+            <Connect in="100" to="1" out="100"/>
+            <Connect in="101" constant="-3"/>
+        </Operator>
+        <Operator id="3" type="DED78D0E">
+            <Connect in="100" to="1" out="100"/>
+            <Connect in="101" to="4" out="100"/>
+        </Operator>
+        <Operator id="4" type="EA5D30C6">
+            <Connect in="100" to="8" out="101"/>
+        </Operator>
+        <Operator id="8" type="36BD1471">
+            <Connect in="100" constant="-11"/>
+            <Connect in="101" constant="-12"/>
+            <Connect in="102" constant="-13"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="Float" name="Unit" description="" to="1" out="100"/>
+        <Output id="2" type="Float" name="Half Unit" description="" to="2" out="100"/>
+        <Output id="3" type="Float" name="Thickness Scale" description="" to="3" out="100"/>
+    </Outputs>
+</Procedure>

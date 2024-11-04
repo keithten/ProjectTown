@@ -36,7 +36,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="4">
       <Location>561.1459,193.2728</Location>
-      <Size>95.00667,52.2</Size>
+      <Size>95.00667,65.16</Size>
       <NoteID>14</NoteID>
       <Comment>
       </Comment>
@@ -44,7 +44,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="5">
       <Location>564.2097,358.991</Location>
-      <Size>69.33667,52.2</Size>
+      <Size>69.33667,65.16</Size>
       <NoteID>14</NoteID>
       <Comment>
       </Comment>
@@ -60,7 +60,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="7">
       <Location>553.3276,269.3547</Location>
-      <Size>122.8733,65.16</Size>
+      <Size>122.8733,78.12</Size>
       <NoteID>14</NoteID>
       <Comment>
       </Comment>
@@ -76,7 +76,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="9">
       <Location>567.2056,-45.8218</Location>
-      <Size>146.25,78.12</Size>
+      <Size>146.25,91.08</Size>
       <NoteID>0</NoteID>
       <Comment>show outline when selected</Comment>
       <InputMetadata />
@@ -162,6 +162,11 @@
     </Object>
     <Object type="ProcedureInputState" id="3">
       <Name>Density</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="4">
+      <Name>Theme</Name>
       <Description>
       </Description>
     </Object>

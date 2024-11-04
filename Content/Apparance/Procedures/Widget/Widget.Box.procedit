@@ -1,13 +1,13 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>367.7167,507.6694</Centre>
-    <Zoom>0.6830139</Zoom>
+    <Centre>110.6494,262.9652</Centre>
+    <Zoom>0.8264471</Zoom>
   </View>
   <Procedure>
     <Category>Widget</Category>
     <DisplayName>Box</DisplayName>
     <Description>Rectangular in-world UI element</Description>
-    <TopLeft>-655.27,-20</TopLeft>
+    <TopLeft>-698.2213,-20</TopLeft>
     <BottomRight>1111.478,649.8302</BottomRight>
   </Procedure>
   <Objects>
@@ -53,7 +53,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="6">
       <Location>942,265</Location>
-      <Size>89.30334,52.2</Size>
+      <Size>89.30334,65.16</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -100,8 +100,8 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="12">
-      <Location>-444.0496,365.9193</Location>
-      <Size>92.31333,54.28</Size>
+      <Location>-498.2213,408.3782</Location>
+      <Size>127.28,69.28</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -189,7 +189,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="23">
       <Location>944.662,414.8247</Location>
-      <Size>89.30334,52.2</Size>
+      <Size>89.30334,65.16</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -219,6 +219,11 @@
     </Object>
     <Object type="ProcedureInputState" id="4">
       <Name>(Radius)</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="5">
+      <Name>Theme</Name>
       <Description>
       </Description>
     </Object>

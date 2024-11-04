@@ -1,0 +1,198 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>369.6128,436.6732</Centre>
+    <Zoom>0.620921433</Zoom>
+  </View>
+  <Procedure>
+    <Category>Buildings</Category>
+    <DisplayName>Holiday.Cabin.Wall.Corner.Place</DisplayName>
+    <Description>Place corner piece</Description>
+    <TopLeft>-380.32,-136.4711</TopLeft>
+    <BottomRight>847.2115,888.5001</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>533.6447,140.0414</Location>
+      <Size>95.62334,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>514.7353,230.8761</Location>
+      <Size>86.40667,117</Size>
+      <NoteID>0</NoteID>
+      <Comment>lower corner</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>20.45455,136.9091</Location>
+      <Size>63.73667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[1] Bounds</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>21.63637,59.0001</Location>
+      <Size>63.73667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[0] Asset ID</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>711.8187,54.36367</Location>
+      <Size>108.8133,78.12</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="6">
+      <Location>900.4548,153.8183</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="7">
+      <Location>255.2077,411.7273</Location>
+      <Size>71.52666,45.88</Size>
+      <NoteID>14</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="8">
+      <Location>-49.84375,486.543</Location>
+      <Size>92.17333,69.28</Size>
+      <NoteID>14</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="9">
+      <Location>-46.0699,415.7109</Location>
+      <Size>92.17333,69.28</Size>
+      <NoteID>14</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="10">
+      <Location>97.75986,470.9207</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>14</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="11">
+      <Location>-153.0745,736.2167</Location>
+      <Size>159.8333,69.28</Size>
+      <NoteID>13</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="12">
+      <Location>128.5289,756.4487</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>13</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="13">
+      <Location>48.52878,762.0853</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>13</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="14">
+      <Location>589,563</Location>
+      <Size>86.38,129.96</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="15">
+      <Location>349.3001,734.5001</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>13</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="16">
+      <Location>589.1,709.3</Location>
+      <Size>114.5133,91.08</Size>
+      <NoteID>13</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>Frame</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Corner Asset</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="3">
+      <Name>Asset Scale</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="4">
+      <Name>Thickness Scale</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>
+      </Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureNote" id="13">
+      <ID>13</ID>
+      <Location>
+        <X>-178.0745</X>
+        <Y>623.6</Y>
+      </Location>
+      <Size>
+        <Width>907.7878</Width>
+        <Height>206.8967</Height>
+      </Size>
+      <Title>Extra Half</Title>
+      <Text>If half height wall used at all then we need a half corner piece too.
+Unfortunately there isn't a half height corner so we have to make do by placing a full height piece at the bottom and dig it into the ground.</Text>
+    </Object>
+    <Object type="ProcedureNote" id="14">
+      <ID>14</ID>
+      <Location>
+        <X>-73.51276</X>
+        <Y>355.641</Y>
+      </Location>
+      <Size>
+        <Width>425.2472</Width>
+        <Height>217.1961</Height>
+      </Size>
+      <Title>Height</Title>
+      <Text>z scaling to fit vertically</Text>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+</ProcedureEditData>

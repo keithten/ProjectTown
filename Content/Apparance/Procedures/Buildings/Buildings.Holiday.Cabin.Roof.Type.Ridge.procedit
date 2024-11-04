@@ -1,0 +1,450 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>-8.714558,257.1314</Centre>
+    <Zoom>0.620922446</Zoom>
+  </View>
+  <Procedure>
+    <Category>Buildings</Category>
+    <DisplayName>Holiday.Cabin.Roof.Type.Ridge</DisplayName>
+    <Description>A single width steep ridge</Description>
+    <TopLeft>-675.2435,-534.3923</TopLeft>
+    <BottomRight>1129.693,1002.958</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>358.7899,79.09001</Location>
+      <Size>95.62334,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>1131.503,421.1679</Location>
+      <Size>98.19,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>no next after ridge</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>697.439,214.0539</Location>
+      <Size>177.4667,104.04</Size>
+      <NoteID>27</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata>
+        <Input id="6">
+          <Data name="MinimumValue">
+            <DataValue typeid="862152022">
+              <X>-0.5</X>
+              <Y>-0.5</Y>
+              <Z>-0.5</Z>
+            </DataValue>
+          </Data>
+          <Data name="MaximumValue">
+            <DataValue typeid="862152022">
+              <X>0.5</X>
+              <Y>0.5</Y>
+              <Z>0.5</Z>
+            </DataValue>
+          </Data>
+        </Input>
+      </InputMetadata>
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>-152.2796,-41.98274</Location>
+      <Size>71.52666,50</Size>
+      <NoteID>24</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>-14.76472,183.0699</Location>
+      <Size>75.42,52.2</Size>
+      <NoteID>27</NoteID>
+      <Comment>[2] Roof Ridge</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="6">
+      <Location>588.9026,492.4006</Location>
+      <Size>86.40667,117</Size>
+      <NoteID>25</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata>
+        <Input id="102">
+          <Data name="MinimumValue">
+            <DataValue typeid="862152022">
+              <X>-10</X>
+              <Y>0</Y>
+              <Z>-10</Z>
+            </DataValue>
+          </Data>
+          <Data name="MaximumValue">
+            <DataValue typeid="862152022">
+              <X>10</X>
+              <Y>2</Y>
+              <Z>10</Z>
+            </DataValue>
+          </Data>
+        </Input>
+      </InputMetadata>
+    </Object>
+    <Object type="ProcedureOperatorState" id="7">
+      <Location>-135.4479,493.9141</Location>
+      <Size>89.55666,78.12</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="8">
+      <Location>-243.1049,651.5111</Location>
+      <Size>109.2833,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[5] Roof Ridge Gable</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="9">
+      <Location>400.386,431.2112</Location>
+      <Size>121.65,69.28</Size>
+      <NoteID>25</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="10">
+      <Location>785.0152,480.8452</Location>
+      <Size>108.8133,78.12</Size>
+      <NoteID>25</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="11">
+      <Location>1075.524,332.3891</Location>
+      <Size>46.75667,45.88</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="12">
+      <Location>-135.5297,697.8066</Location>
+      <Size>202.52,91.08</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata>
+        <Input id="4">
+          <Data name="MinimumValue">
+            <DataValue typeid="862152022">
+              <X>0.5</X>
+              <Y>0.5</Y>
+              <Z>0.5</Z>
+            </DataValue>
+          </Data>
+          <Data name="MaximumValue">
+            <DataValue typeid="862152022">
+              <X>1.5</X>
+              <Y>1.5</Y>
+              <Z>1.5</Z>
+            </DataValue>
+          </Data>
+        </Input>
+      </InputMetadata>
+    </Object>
+    <Object type="ProcedureOperatorState" id="13">
+      <Location>268,544</Location>
+      <Size>69.12,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="14">
+      <Location>578,631</Location>
+      <Size>69.12,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="15">
+      <Location>162.0962,256.8758</Location>
+      <Size>202.52,91.08</Size>
+      <NoteID>27</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata>
+        <Input id="4">
+          <Data name="MinimumValue">
+            <DataValue typeid="862152022">
+              <X>0.5</X>
+              <Y>0.5</Y>
+              <Z>0.5</Z>
+            </DataValue>
+          </Data>
+          <Data name="MaximumValue">
+            <DataValue typeid="862152022">
+              <X>1.5</X>
+              <Y>1.5</Y>
+              <Z>1.5</Z>
+            </DataValue>
+          </Data>
+        </Input>
+      </InputMetadata>
+    </Object>
+    <Object type="ProcedureOperatorState" id="16">
+      <Location>417,404</Location>
+      <Size>69.12,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="17">
+      <Location>-235.6246,469.6411</Location>
+      <Size>69.12,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="18">
+      <Location>587.676,810.9579</Location>
+      <Size>86.40667,117</Size>
+      <NoteID>26</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="19">
+      <Location>399.676,749.9579</Location>
+      <Size>121.65,69.28</Size>
+      <NoteID>26</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="20">
+      <Location>783.676,799.9579</Location>
+      <Size>108.8133,78.12</Size>
+      <NoteID>26</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="21">
+      <Location>65.32507,582.8411</Location>
+      <Size>69.12,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="22">
+      <Location>-142.7548,846.7111</Location>
+      <Size>73.16333,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>pivot adjust</Comment>
+      <InputMetadata>
+        <Input id="100">
+          <Data name="MinimumValue">
+            <DataValue typeid="862152022">
+              <X>0</X>
+              <Y>0</Y>
+              <Z>0</Z>
+            </DataValue>
+          </Data>
+          <Data name="MaximumValue">
+            <DataValue typeid="862152022">
+              <X>1</X>
+              <Y>2</Y>
+              <Z>1</Z>
+            </DataValue>
+          </Data>
+        </Input>
+      </InputMetadata>
+    </Object>
+    <Object type="ProcedureOperatorState" id="23">
+      <Location>-195.0456,-234.6164</Location>
+      <Size>92.17333,69.28</Size>
+      <NoteID>24</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="24">
+      <Location>-27.04556,-232.6164</Location>
+      <Size>73.50667,32.92</Size>
+      <NoteID>24</NoteID>
+      <Comment>add overhang</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="25">
+      <Location>45.95445,-211.6165</Location>
+      <Size>57.54333,32.92</Size>
+      <NoteID>24</NoteID>
+      <Comment>as scale up</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="26">
+      <Location>-151.0456,-336.6165</Location>
+      <Size>82.67667,32.92</Size>
+      <NoteID>24</NoteID>
+      <Comment>gable overhang</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="27">
+      <Location>-398.0457,-356.6165</Location>
+      <Size>159.8333,69.28</Size>
+      <NoteID>24</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="28">
+      <Location>279.5393,-158.0018</Location>
+      <Size>71.52666,45.88</Size>
+      <NoteID>24</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="29">
+      <Location>410.9333,-131.7759</Location>
+      <Size>86.38,129.96</Size>
+      <NoteID>24</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="30">
+      <Location>89.23447,-86.6865</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>24</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="31">
+      <Location>-291.8878,-204.6555</Location>
+      <Size>90.55334,91.08</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="32">
+      <Location>175.1976,-21.22397</Location>
+      <Size>71.52666,45.88</Size>
+      <NoteID>24</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>Frame</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Size Info</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="3">
+      <Name>Assets</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="4">
+      <Name>#</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="5">
+      <Name>Swap XY?</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>Out</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="2">
+      <Name>Next</Name>
+      <Description>No next after ridge</Description>
+    </Object>
+    <Object type="ProcedureNote" id="24">
+      <ID>24</ID>
+      <Location>
+        <X>-423.0456</X>
+        <Y>-411.3625</Y>
+      </Location>
+      <Size>
+        <Width>945.359</Width>
+        <Height>461.0185</Height>
+      </Size>
+      <Title>Overhang</Title>
+      <Text>
+      </Text>
+    </Object>
+    <Object type="ProcedureNote" id="25">
+      <ID>25</ID>
+      <Location>
+        <X>375.386</X>
+        <Y>371.1412</Y>
+      </Location>
+      <Size>
+        <Width>543.4425</Width>
+        <Height>263.2594</Height>
+      </Size>
+      <Title>One End</Title>
+      <Text>
+      </Text>
+    </Object>
+    <Object type="ProcedureNote" id="26">
+      <ID>26</ID>
+      <Location>
+        <X>374.676</X>
+        <Y>685.895</Y>
+      </Location>
+      <Size>
+        <Width>542.8133</Width>
+        <Height>267.063</Height>
+      </Size>
+      <Title>Other End</Title>
+      <Text>
+      </Text>
+    </Object>
+    <Object type="ProcedureNote" id="27">
+      <ID>27</ID>
+      <Location>
+        <X>-39.76471</X>
+        <Y>83.06992</Y>
+      </Location>
+      <Size>
+        <Width>939.6705</Width>
+        <Height>289.8859</Height>
+      </Size>
+      <Title>Ridge Roofing</Title>
+      <Text>
+      </Text>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
+</ProcedureEditData>

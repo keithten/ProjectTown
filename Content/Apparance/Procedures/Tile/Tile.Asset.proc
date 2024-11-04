@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="201B65FD">
+    <Inputs>
+        <Input id="1" type="List" name="Config" description=""/>
+        <Input id="2" type="String" name="Asset" description="Path to asset, within "/>
+    </Inputs>
+    <Constants>
+        <Constant id="-5" type="Integer">0</Constant>
+        <Constant id="-6" type="String">Town.</Constant>
+        <Constant id="-8" type="String">.</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="2" type="20EF33CD">
+            <Connect in="100" input="1"/>
+            <Connect in="101" constant="-5"/>
+        </Operator>
+        <Operator id="3" type="C938CD4E">
+            <Connect in="100" constant="-6"/>
+            <Connect in="101" to="2" out="100"/>
+            <Connect in="102" constant="-8"/>
+            <Connect in="103" input="2"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="String" name="Descriptor" description="" to="3" out="100"/>
+    </Outputs>
+</Procedure>

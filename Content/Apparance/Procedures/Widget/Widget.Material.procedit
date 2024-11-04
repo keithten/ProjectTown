@@ -1,14 +1,14 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>527.6998,206.3</Centre>
-    <Zoom>0.909091</Zoom>
+    <Centre>369.0222,258.3661</Centre>
+    <Zoom>1.21</Zoom>
   </View>
   <Procedure>
     <Category>Widget</Category>
     <DisplayName>Material</DisplayName>
     <Description>In-world widget material</Description>
     <TopLeft>-30,-21.0083</TopLeft>
-    <BottomRight>845,436.0103</BottomRight>
+    <BottomRight>845,441.7954</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
@@ -36,7 +36,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="4">
-      <Location>434.5101,278.7702</Location>
+      <Location>499.7994,287.8611</Location>
       <Size>77.46667,52.2</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -44,7 +44,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="5">
-      <Location>246.1296,320.8503</Location>
+      <Location>383.3197,326.6354</Location>
       <Size>74.33,65.16</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -52,8 +52,8 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="6">
-      <Location>223.9,236.4</Location>
-      <Size>136.4367,54.28</Size>
+      <Location>232.1645,227.3091</Location>
+      <Size>127.28,69.28</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -71,6 +71,11 @@
     </Object>
     <Object type="ProcedureInputState" id="3">
       <Name>Highlight?</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="4">
+      <Name>Theme</Name>
       <Description>
       </Description>
     </Object>

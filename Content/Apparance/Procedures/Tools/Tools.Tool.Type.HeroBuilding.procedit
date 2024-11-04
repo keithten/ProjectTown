@@ -1,6 +1,6 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>462.8707,335.7438</Centre>
+    <Centre>268.0607,402.2939</Centre>
     <Zoom>0.826446354</Zoom>
   </View>
   <Procedure>
@@ -8,7 +8,7 @@
     <DisplayName>Tool.Type.HeroBuilding</DisplayName>
     <Description>Visuals for hero building button</Description>
     <TopLeft>-455,-20</TopLeft>
-    <BottomRight>662.8702,577.0992</BottomRight>
+    <BottomRight>662.8702,579.9699</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
@@ -20,7 +20,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="2">
-      <Location>293.7852,288.7355</Location>
+      <Location>384.5352,454.5055</Location>
       <Size>128.5367,69.28</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -59,6 +59,22 @@
       </Comment>
       <InputMetadata />
     </Object>
+    <Object type="ProcedureOperatorState" id="7">
+      <Location>202.9799,477.7699</Location>
+      <Size>104.71,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="8">
+      <Location>37.83001,463.15</Location>
+      <Size>97.79667,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
     <Object type="ProcedureInputState" id="1">
       <Name>In</Name>
       <Description>
@@ -85,4 +101,18 @@
     <Look>0,0,0</Look>
     <Interest>0</Interest>
   </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
+      <Metadata />
+    </Input>
+    <Input id="2">
+      <Value type="1819242306" value="False" />
+      <Metadata />
+    </Input>
+    <Input id="3">
+      <Value type="1819242306" value="False" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
 </ProcedureEditData>

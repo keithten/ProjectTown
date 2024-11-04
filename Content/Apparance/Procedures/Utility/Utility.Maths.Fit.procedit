@@ -1,0 +1,102 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>696.2465,302.8304</Centre>
+    <Zoom>0.826446354</Zoom>
+  </View>
+  <Procedure>
+    <Category>Utility</Category>
+    <DisplayName>Maths.Fit</DisplayName>
+    <Description>Fit certain size things into a space, give actual size and quantity</Description>
+    <TopLeft>-30,-20</TopLeft>
+    <BottomRight>996.2766,449.92</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>254.686,167.2727</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>340.2231,167.0413</Location>
+      <Size>88.30334,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>round to nearest</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>482.1653,167.1653</Location>
+      <Size>88.15667,28.10333</Size>
+      <NoteID>0</NoteID>
+      <Comment>quantity that fit</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>558.3632,333.5537</Location>
+      <Size>88.15667,28.10333</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>683,355</Location>
+      <Size>56.14333,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>theoretical
+total size</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="6">
+      <Location>829,294</Location>
+      <Size>70.37666,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>scaling factor</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="7">
+      <Location>953,227</Location>
+      <Size>71.27666,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>Adjusted Size</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>Space</Name>
+      <Description>Space to fill</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Size</Name>
+      <Description>Size of things to fit</Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>Quantity</Name>
+      <Description>Number of things that fit</Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="2">
+      <Name>New Size</Name>
+      <Description>Size of things in order to fit</Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="3">
+      <Name>Scaling</Name>
+      <Description>The scaling factor applied to the things</Description>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="842221088" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="2">
+      <Value type="842221088" value="0" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
+</ProcedureEditData>

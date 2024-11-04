@@ -8,13 +8,12 @@
         <Input id="5" type="ModelSegment" name="Workspace" description=""/>
         <Input id="6" type="Frame" name="World Tile" description=""/>
         <Input id="7" type="ModelSegment" name="Forest" description="Add more trees"/>
+        <Input id="8" type="List" name="Config" description=""/>
     </Inputs>
     <Constants>
-        <Constant id="-1" type="String">Town.Nature.Trees</Constant>
         <Constant id="-2" type="Float">2.779221</Constant>
         <Constant id="-3" type="Integer">0</Constant>
         <Constant id="-4" type="Integer">5</Constant>
-        <Constant id="-11" type="ModelSegment"></Constant>
         <Constant id="-12" type="ModelSegment"></Constant>
         <Constant id="-13" type="FColour">[0.000000,0.000000,0.000000,1.000000]</Constant>
         <Constant id="-17" type="Vector3">0.000000, 0.000000, 0.000000</Constant>
@@ -34,7 +33,6 @@
         <Constant id="-46" type="Integer">3</Constant>
         <Constant id="-50" type="Frame">[0,0,0][0,0,0][0,0,0][0,0,0][0,0,0]</Constant>
         <Constant id="-52" type="Frame">[0,0,0][0,0,0][0,0,0][0,0,0][0,0,0]</Constant>
-        <Constant id="-54" type="String">Town.Nature.Grass</Constant>
         <Constant id="-55" type="FColour">[0.000000,0.000000,0.000000,1.000000]</Constant>
         <Constant id="-56" type="Vector3">0.000000, 0.000000, 0.000000</Constant>
         <Constant id="-57" type="Float">39.047657</Constant>
@@ -66,6 +64,9 @@
         <Constant id="-88" type="Float">4.000000</Constant>
         <Constant id="-89" type="Integer">1</Constant>
         <Constant id="-91" type="Integer">5</Constant>
+        <Constant id="-93" type="String">Nature.Trees</Constant>
+        <Constant id="-94" type="String">Nature.Grass</Constant>
+        <Constant id="-110" type="ModelSegment"></Constant>
     </Constants>
     <Operators>
         <Operator id="1" type="5C4CE24C">
@@ -78,7 +79,7 @@
             <Connect in="7" constant="-77"/>
         </Operator>
         <Operator id="2" type="F3E5FC30">
-            <Connect in="100" constant="-1"/>
+            <Connect in="100" to="26" out="1"/>
         </Operator>
         <Operator id="3" type="52C9B85B">
             <Connect in="100" to="4" out="100"/>
@@ -95,7 +96,7 @@
         <Operator id="6" type="B4A997AD">
             <Connect in="100" to="1" out="1"/>
             <Connect in="101" to="15" out="1"/>
-            <Connect in="102" constant="-11"/>
+            <Connect in="102" constant="-110"/>
             <Connect in="103" constant="-12"/>
         </Operator>
         <Operator id="7" type="188652B6">
@@ -146,7 +147,7 @@
             <Connect in="7" constant="-78"/>
         </Operator>
         <Operator id="16" type="F3E5FC30">
-            <Connect in="100" constant="-54"/>
+            <Connect in="100" to="27" out="1"/>
         </Operator>
         <Operator id="17" type="188652B6">
             <Connect in="100" input="5"/>
@@ -205,6 +206,14 @@
         <Operator id="25" type="26E462B9">
             <Connect in="100" input="7"/>
             <Connect in="101" constant="-91"/>
+        </Operator>
+        <Operator id="26" type="201B65FD">
+            <Connect in="1" input="8"/>
+            <Connect in="2" constant="-93"/>
+        </Operator>
+        <Operator id="27" type="201B65FD">
+            <Connect in="1" input="8"/>
+            <Connect in="2" constant="-94"/>
         </Operator>
     </Operators>
     <Outputs>

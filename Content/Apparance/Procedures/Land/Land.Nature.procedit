@@ -1,7 +1,7 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>-393.7522,669.3682</Centre>
-    <Zoom>1</Zoom>
+    <Centre>327.7226,521.9503</Centre>
+    <Zoom>0.909090936</Zoom>
   </View>
   <Procedure>
     <Category>Land</Category>
@@ -184,7 +184,7 @@
       </InputMetadata>
     </Object>
     <Object type="ProcedureOperatorState" id="16">
-      <Location>401.961,471.5018</Location>
+      <Location>407.5975,481.1833</Location>
       <Size>122.8333,39.28</Size>
       <NoteID>4</NoteID>
       <Comment>
@@ -262,6 +262,78 @@
       </Comment>
       <InputMetadata />
     </Object>
+    <Object type="ProcedureOperatorState" id="26">
+      <Location>352.7274,69.54543</Location>
+      <Size>104.71,52.2</Size>
+      <NoteID>3</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="27">
+      <Location>237.9863,472.5816</Location>
+      <Size>104.71,52.2</Size>
+      <NoteID>4</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="28">
+      <Location>946,478</Location>
+      <Size>77.85,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="29">
+      <Location>1142.819,271.2066</Location>
+      <Size>66.69,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="30">
+      <Location>1204.687,343.3719</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="31">
+      <Location>1012,107</Location>
+      <Size>63.73667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="32">
+      <Location>992,183</Location>
+      <Size>64.82333,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="33">
+      <Location>1099,193</Location>
+      <Size>89.59666,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="34">
+      <Location>1162,98</Location>
+      <Size>63.73667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
     <Object type="ProcedureInputState" id="1">
       <Name>Tile</Name>
       <Description>
@@ -295,6 +367,11 @@
     <Object type="ProcedureInputState" id="7">
       <Name>Forest</Name>
       <Description>Add more trees</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="8">
+      <Name>Config</Name>
+      <Description>
+      </Description>
     </Object>
     <Object type="ProcedureOutputState" id="1">
       <Name>
@@ -376,6 +453,10 @@
     </Input>
     <Input id="7">
       <Value type="1836016967" value="" />
+      <Metadata />
+    </Input>
+    <Input id="8">
+      <Value type="1953720652" value="" />
       <Metadata />
     </Input>
   </DefaultInputs>

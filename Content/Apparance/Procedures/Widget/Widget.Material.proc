@@ -3,6 +3,7 @@
     <Inputs>
         <Input id="1" type="ModelSegment" name="In" description=""/>
         <Input id="3" type="Bool" name="Highlight?" description="|Default=True"/>
+        <Input id="4" type="Integer" name="Theme" description=""/>
     </Inputs>
     <Constants>
         <Constant id="-1" type="String">Editing.Widget.Material</Constant>
@@ -10,7 +11,6 @@
         <Constant id="-3" type="Integer">0</Constant>
         <Constant id="-6" type="List"></Constant>
         <Constant id="-7" type="List"></Constant>
-        <Constant id="-11" type="Float">0.100000</Constant>
         <Constant id="-12" type="Float">1.000000</Constant>
     </Constants>
     <Operators>
@@ -35,10 +35,12 @@
         </Operator>
         <Operator id="5" type="C0BB1E82">
             <Connect in="100" input="3"/>
-            <Connect in="101" constant="-11"/>
+            <Connect in="101" to="6" out="3"/>
             <Connect in="102" constant="-12"/>
         </Operator>
-        <Operator id="6" type="FA7216F7"/>
+        <Operator id="6" type="FA7216F7">
+            <Connect in="1" input="4"/>
+        </Operator>
     </Operators>
     <Outputs>
         <Output id="1" type="ModelSegment" name="Out" description="" to="3" out="100"/>

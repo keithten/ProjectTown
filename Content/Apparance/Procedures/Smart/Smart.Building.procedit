@@ -1,14 +1,14 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>371.1253,346.302</Centre>
-    <Zoom>1</Zoom>
+    <Centre>221.4395,178.9422</Centre>
+    <Zoom>0.909091055</Zoom>
   </View>
   <Procedure>
     <Category>Smart</Category>
     <DisplayName>Building</DisplayName>
     <Description>For hero buildings to use to suppress town buildings, etc.</Description>
-    <TopLeft>-303.8641,-110.9097</TopLeft>
-    <BottomRight>697.9268,542.1884</BottomRight>
+    <TopLeft>-431,-223</TopLeft>
+    <BottomRight>697.9268,548.92</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
@@ -85,15 +85,55 @@
     </Object>
     <Object type="ProcedureOperatorState" id="10">
       <Location>466,247</Location>
-      <Size>128.2233,39.28</Size>
+      <Size>128.2233,52.2</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="11">
-      <Location>306,380</Location>
-      <Size>95.00667,39.28</Size>
+      <Location>427.0999,-173</Location>
+      <Size>120.6167,142.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="12">
+      <Location>41.6,-132.2</Location>
+      <Size>116.94,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="13">
+      <Location>164.5001,291.8</Location>
+      <Size>103.0233,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[0] Shape
+(0-square, 1-round)</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="14">
+      <Location>167.8322,396.743</Location>
+      <Size>74.68333,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[1] Scale
+(size modifier)</Comment>
+      <InputMetadata>
+        <Input id="101">
+          <Data name="MaximumValue">
+            <DataValue typeid="842221088">
+              <Float>2</Float>
+            </DataValue>
+          </Data>
+        </Input>
+      </InputMetadata>
+    </Object>
+    <Object type="ProcedureOperatorState" id="15">
+      <Location>-58,356</Location>
+      <Size>98.64,142.92</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -101,6 +141,11 @@
     </Object>
     <Object type="ProcedureInputState" id="1">
       <Name>Bounds</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Theme</Name>
       <Description>
       </Description>
     </Object>
@@ -120,6 +165,17 @@
     <Input id="1">
       <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
       <Metadata />
+    </Input>
+    <Input id="2">
+      <Value type="842221856" value="0" />
+      <Metadata>
+        <Input Name="Min">
+          <Value type="842221856" value="0" />
+        </Input>
+        <Input Name="Max">
+          <Value type="842221856" value="1" />
+        </Input>
+      </Metadata>
     </Input>
   </DefaultInputs>
 </ProcedureEditData>

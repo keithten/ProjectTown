@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="C0CB588C">
+    <Inputs>
+        <Input id="1" type="List" name="Assets" description="List of a type of asset"/>
+        <Input id="2" type="Vector3" name="Size Info" description="XY Size and Z Scaling"/>
+        <Input id="3" type="Bool" name="Swap XY?" description=""/>
+        <Input id="4" type="Vector3" name="Multiplier" description="Extra scaling adjustments|Default=[1,1,1]"/>
+        <Input id="5" type="Bool" name="Side?" description="A side object, i.e. swap Y and Z"/>
+    </Inputs>
+    <Constants>
+        <Constant id="-1" type="Integer">1</Constant>
+        <Constant id="-2" type="Integer">0</Constant>
+        <Constant id="-16" type="Float">0.000000</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="D2698D20">
+            <Connect in="100" to="11" out="100"/>
+            <Connect in="101" to="12" out="100"/>
+            <Connect in="102" to="13" out="100"/>
+        </Operator>
+        <Operator id="2" type="B06BD8E5">
+            <Connect in="100" to="3" out="100"/>
+            <Connect in="101" constant="-1"/>
+        </Operator>
+        <Operator id="3" type="D56CEA6D">
+            <Connect in="100" input="1"/>
+            <Connect in="101" constant="-2"/>
+        </Operator>
+        <Operator id="4" type="EA5D30C6">
+            <Connect in="100" to="2" out="100"/>
+        </Operator>
+        <Operator id="5" type="DED78D0E">
+            <Connect in="100" to="14" out="1"/>
+            <Connect in="101" to="4" out="100"/>
+        </Operator>
+        <Operator id="6" type="DED78D0E">
+            <Connect in="100" to="14" out="2"/>
+            <Connect in="101" to="4" out="101"/>
+        </Operator>
+        <Operator id="7" type="D233A94E">
+            <Connect in="100" input="2"/>
+        </Operator>
+        <Operator id="10" type="D233A94E">
+            <Connect in="100" input="4"/>
+        </Operator>
+        <Operator id="11" type="971515D0">
+            <Connect in="100" to="5" out="100"/>
+            <Connect in="101" to="10" out="100"/>
+        </Operator>
+        <Operator id="12" type="971515D0">
+            <Connect in="100" to="18" out="100"/>
+            <Connect in="101" to="10" out="101"/>
+        </Operator>
+        <Operator id="13" type="971515D0">
+            <Connect in="100" to="19" out="100"/>
+            <Connect in="101" to="10" out="102"/>
+        </Operator>
+        <Operator id="14" type="C0F4CD76">
+            <Connect in="1" input="3"/>
+            <Connect in="2" to="7" out="100"/>
+            <Connect in="3" to="7" out="101"/>
+        </Operator>
+        <Operator id="17" type="DED78D0E">
+            <Connect in="100" to="20" out="1"/>
+            <Connect in="101" to="4" out="102"/>
+        </Operator>
+        <Operator id="18" type="C0BB1E82">
+            <Connect in="100" input="5"/>
+            <Connect in="101" to="6" out="100"/>
+            <Connect in="102" to="7" out="102"/>
+        </Operator>
+        <Operator id="19" type="C0BB1E82">
+            <Connect in="100" input="5"/>
+            <Connect in="101" to="7" out="102"/>
+            <Connect in="102" to="17" out="100"/>
+        </Operator>
+        <Operator id="20" type="C2203357"/>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="Vector3" name="Scaling" description="" to="1" out="100"/>
+    </Outputs>
+</Procedure>

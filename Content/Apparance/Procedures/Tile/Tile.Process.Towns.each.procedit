@@ -1,14 +1,14 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>729.8821,440.7272</Centre>
-    <Zoom>1.000001</Zoom>
+    <Centre>1786.425,290.916</Centre>
+    <Zoom>0.909091353</Zoom>
   </View>
   <Procedure>
     <Category>Tile</Category>
     <DisplayName>Process.Towns.each</DisplayName>
     <Description>What to do with each town</Description>
     <TopLeft>-30,-104</TopLeft>
-    <BottomRight>1786.425,773.1999</BottomRight>
+    <BottomRight>2046.024,773.1999</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
@@ -56,7 +56,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="7">
-      <Location>1839.668,176.76</Location>
+      <Location>2099.268,219.6599</Location>
       <Size>46.75667,58.84</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -80,7 +80,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="10">
-      <Location>570.5195,292.1059</Location>
+      <Location>551.4284,274.8332</Location>
       <Size>107.8433,52.2</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -97,7 +97,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="12">
       <Location>1634.709,65.25107</Location>
-      <Size>136.1833,78.12</Size>
+      <Size>136.1833,91.08</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -216,6 +216,30 @@
         </Input>
       </InputMetadata>
     </Object>
+    <Object type="ProcedureOperatorState" id="27">
+      <Location>1591.988,199.3205</Location>
+      <Size>170.4833,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="28">
+      <Location>1675.12,248.97</Location>
+      <Size>82.27,78.12</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="29">
+      <Location>1844.3,201.5</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
     <Object type="ProcedureInputState" id="1">
       <Name>Town</Name>
       <Description>
@@ -242,6 +266,11 @@
     </Object>
     <Object type="ProcedureInputState" id="6">
       <Name>World Tile</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="7">
+      <Name>Config</Name>
       <Description>
       </Description>
     </Object>
@@ -297,6 +326,10 @@
     </Input>
     <Input id="6">
       <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
+      <Metadata />
+    </Input>
+    <Input id="7">
+      <Value type="1953720652" value="" />
       <Metadata />
     </Input>
   </DefaultInputs>

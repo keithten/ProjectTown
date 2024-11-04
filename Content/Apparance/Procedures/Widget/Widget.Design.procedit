@@ -1,6 +1,6 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>255.4305,350.0368</Centre>
+    <Centre>180.4305,439.0368</Centre>
     <Zoom>1.00000024</Zoom>
   </View>
   <Procedure>
@@ -8,7 +8,7 @@
     <DisplayName>Design</DisplayName>
     <Description>Look and feel config</Description>
     <TopLeft>-386,-20</TopLeft>
-    <BottomRight>600,533</BottomRight>
+    <BottomRight>600,715.92</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
@@ -42,6 +42,22 @@
       </Comment>
       <InputMetadata />
     </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>10,354</Location>
+      <Size>111.16,142.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="6">
+      <Location>7.999992,523</Location>
+      <Size>98.64,142.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
     <Object type="ProcedureOutputState" id="1">
       <Name>Line Width</Name>
       <Description>Widget line width in world space</Description>
@@ -51,8 +67,12 @@
       <Description>
       </Description>
     </Object>
+    <Object type="ProcedureOutputState" id="3">
+      <Name>Handle Alpha</Name>
+      <Description>When not highlighted</Description>
+    </Object>
     <Object type="ProcedureInputState" id="1">
-      <Name>Location</Name>
+      <Name>Theme</Name>
       <Description>
       </Description>
     </Object>
@@ -62,9 +82,5 @@
     <Look>0,0,0</Look>
     <Interest>0</Interest>
   </Camera>
-  <DefaultInputs>
-    <Input id="1">
-      <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
-    </Input>
-  </DefaultInputs>
+  <DefaultInputs />
 </ProcedureEditData>

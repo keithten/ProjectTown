@@ -1,19 +1,19 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>1074.446,771.9591</Centre>
-    <Zoom>0.620921731</Zoom>
+    <Centre>1217.084,610.8508</Centre>
+    <Zoom>0.7513156</Zoom>
   </View>
   <Procedure>
     <Category>Tile</Category>
     <DisplayName>Main</DisplayName>
     <Description>Main town tile repeat piece</Description>
-    <TopLeft>-814.2085,-105.8006</TopLeft>
+    <TopLeft>-848.9606,-105.8006</TopLeft>
     <BottomRight>1716.943,1274.593</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
       <Location>1288.75,309.0093</Location>
-      <Size>77.98,91.08</Size>
+      <Size>77.98,104.04</Size>
       <NoteID>0</NoteID>
       <Comment>Ground</Comment>
       <InputMetadata />
@@ -114,7 +114,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="14">
       <Location>283.1414,697.4526</Location>
-      <Size>121.6567,129.96</Size>
+      <Size>121.6567,142.92</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -281,7 +281,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="35">
       <Location>1154.618,690.5569</Location>
-      <Size>90.87666,117</Size>
+      <Size>90.87666,129.96</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -304,7 +304,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="38">
-      <Location>1468.338,604.4586</Location>
+      <Location>1464.702,549.9128</Location>
       <Size>74.33,65.16</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -445,6 +445,14 @@
       </Comment>
       <InputMetadata />
     </Object>
+    <Object type="ProcedureOperatorState" id="53">
+      <Location>-648.9606,667.9647</Location>
+      <Size>97.79667,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
     <Object type="ProcedureInputState" id="1">
       <Name>Size</Name>
       <Description>
@@ -465,6 +473,11 @@
     </Object>
     <Object type="ProcedureInputState" id="5">
       <Name>Forests</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="6">
+      <Name>Theme</Name>
       <Description>
       </Description>
     </Object>
@@ -500,6 +513,17 @@
     <Input id="5">
       <Value type="1953720652" value="" />
       <Metadata />
+    </Input>
+    <Input id="6">
+      <Value type="842221856" value="0" />
+      <Metadata>
+        <Input Name="Min">
+          <Value type="842221856" value="0" />
+        </Input>
+        <Input Name="Max">
+          <Value type="842221856" value="1" />
+        </Input>
+      </Metadata>
     </Input>
   </DefaultInputs>
 </ProcedureEditData>

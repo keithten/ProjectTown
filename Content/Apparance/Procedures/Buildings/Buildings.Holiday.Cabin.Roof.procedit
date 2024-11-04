@@ -1,0 +1,690 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>688.9909,1393.468</Centre>
+    <Zoom>0.909090936</Zoom>
+  </View>
+  <Procedure>
+    <Category>Buildings</Category>
+    <DisplayName>Holiday.Cabin.Roof</DisplayName>
+    <Description>Roof module for top of cabin</Description>
+    <TopLeft>-183.6364,-246.0909</TopLeft>
+    <BottomRight>2005.013,1772.875</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>223.0017,700.8275</Location>
+      <Size>95.62334,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>79.53464,458.6185</Location>
+      <Size>143.02,78.12</Size>
+      <NoteID>0</NoteID>
+      <Comment>one layer of roof to add on</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>75.95876,21.27289</Location>
+      <Size>92.17333,69.28</Size>
+      <NoteID>19</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>360.3792,279.1151</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>261.5355,272.5745</Location>
+      <Size>59.94667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="6">
+      <Location>227,81</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="7">
+      <Location>284.7191,-83.23141</Location>
+      <Size>94.55,69.28</Size>
+      <NoteID>19</NoteID>
+      <Comment>x fitting</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="8">
+      <Location>61.07436,-62.79336</Location>
+      <Size>159.8333,69.28</Size>
+      <NoteID>19</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="9">
+      <Location>285.5621,29.08268</Location>
+      <Size>94.55,69.28</Size>
+      <NoteID>19</NoteID>
+      <Comment>y fitting</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="10">
+      <Location>654.2728,-130.6363</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>18</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="11">
+      <Location>656.0909,-91.54543</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>18</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="12">
+      <Location>779.1827,-121.2727</Location>
+      <Size>62.19667,32.92</Size>
+      <NoteID>18</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="13">
+      <Location>1430.922,48.49001</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="14">
+      <Location>449.0002,343.545</Location>
+      <Size>59.94667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="15">
+      <Location>614.0001,110.8</Location>
+      <Size>90.55334,91.08</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="16">
+      <Location>616.1523,552.2151</Location>
+      <Size>224.68,91.08</Size>
+      <NoteID>21</NoteID>
+      <Comment>front-back gable</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="17">
+      <Location>616.4833,671.8486</Location>
+      <Size>224.68,91.08</Size>
+      <NoteID>21</NoteID>
+      <Comment>side gables</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="18">
+      <Location>492.4196,664.1951</Location>
+      <Size>69.12,65.16</Size>
+      <NoteID>21</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="19">
+      <Location>1040.35,423.1202</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="20">
+      <Location>1037.45,521.5201</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="21">
+      <Location>586.6902,8.699951</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="22">
+      <Location>588.7903,60.70004</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="23">
+      <Location>776.9589,30.64116</Location>
+      <Size>62.73333,32.92</Size>
+      <NoteID>20</NoteID>
+      <Comment>Hip allowed</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="24">
+      <Location>975.0077,49.48829</Location>
+      <Size>62.19667,32.92</Size>
+      <NoteID>20</NoteID>
+      <Comment>do hip?</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="25">
+      <Location>806.4933,72.09393</Location>
+      <Size>148.4467,54.28</Size>
+      <NoteID>20</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="26">
+      <Location>683.671,384.2829</Location>
+      <Size>48.01667,32.92</Size>
+      <NoteID>21</NoteID>
+      <Comment>Possible?</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="27">
+      <Location>1107.96,99.14995</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="28">
+      <Location>1084.693,69.79384</Location>
+      <Size>156.6933,91.08</Size>
+      <NoteID>20</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="29">
+      <Location>1948.32,40.07089</Location>
+      <Size>156.6933,91.08</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="30">
+      <Location>1216.931,431.5179</Location>
+      <Size>156.6933,91.08</Size>
+      <NoteID>21</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="31">
+      <Location>782.7031,139.7097</Location>
+      <Size>208.5567,78.12</Size>
+      <NoteID>20</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="32">
+      <Location>479.5405,470.153</Location>
+      <Size>148.4467,54.28</Size>
+      <NoteID>21</NoteID>
+      <Comment>bias to front-back gable</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="33">
+      <Location>918.7625,523.1127</Location>
+      <Size>156.6933,91.08</Size>
+      <NoteID>21</NoteID>
+      <Comment>which way?</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="34">
+      <Location>684.9509,444.1629</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>21</NoteID>
+      <Comment>can do side?</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="35">
+      <Location>811.9509,445.1629</Location>
+      <Size>99.77333,65.16</Size>
+      <NoteID>21</NoteID>
+      <Comment>can do front-back?</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="36">
+      <Location>732.0212,1453.112</Location>
+      <Size>209.1667,91.08</Size>
+      <NoteID>22</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="37">
+      <Location>683,808.8093</Location>
+      <Size>74.83,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>Gable allowed</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="38">
+      <Location>492.8573,1356.333</Location>
+      <Size>148.4467,54.28</Size>
+      <NoteID>22</NoteID>
+      <Comment>select side or FB?</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="39">
+      <Location>697.8579,1330.333</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>22</NoteID>
+      <Comment>can do side?</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="40">
+      <Location>824.8576,1331.333</Location>
+      <Size>99.77333,65.16</Size>
+      <NoteID>22</NoteID>
+      <Comment>can do front-back?</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="41">
+      <Location>630.1075,1284.122</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>22</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="42">
+      <Location>768.8056,1277.44</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>22</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="43">
+      <Location>495.9751,1568.126</Location>
+      <Size>69.12,65.16</Size>
+      <NoteID>22</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="44">
+      <Location>731.1829,1580.784</Location>
+      <Size>209.1667,91.08</Size>
+      <NoteID>22</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="45">
+      <Location>994.9562,1422.974</Location>
+      <Size>156.6933,91.08</Size>
+      <NoteID>22</NoteID>
+      <Comment>which way?</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="46">
+      <Location>1506.494,168.8897</Location>
+      <Size>77.65667,91.08</Size>
+      <NoteID>0</NoteID>
+      <Comment>above</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="47">
+      <Location>949.6906,408.68</Location>
+      <Size>148.4467,54.28</Size>
+      <NoteID>21</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="48">
+      <Location>1121.04,388.1</Location>
+      <Size>62.19667,32.92</Size>
+      <NoteID>21</NoteID>
+      <Comment>do gable?</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="49">
+      <Location>1247.233,823.82</Location>
+      <Size>156.6933,91.08</Size>
+      <NoteID>23</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="50">
+      <Location>730.3005,820.4368</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>23</NoteID>
+      <Comment>single x</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="51">
+      <Location>733.2286,871.6658</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>23</NoteID>
+      <Comment>single y</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="52">
+      <Location>594.9897,9.400208</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="53">
+      <Location>588.9399,50.9305</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="54">
+      <Location>1644.273,206.7346</Location>
+      <Size>143.96,78.12</Size>
+      <NoteID>0</NoteID>
+      <Comment>RECURSE SKYWARDS!</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="55">
+      <Location>1841.714,124.8286</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="56">
+      <Location>236.0992,241.281</Location>
+      <Size>72.57667,45.88</Size>
+      <NoteID>0</NoteID>
+      <Comment>object scaling</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="57">
+      <Location>171.2788,565.9283</Location>
+      <Size>72.23666,45.88</Size>
+      <NoteID>0</NoteID>
+      <Comment>Sizing info XY</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="58">
+      <Location>166.9628,639.1398</Location>
+      <Size>72.23666,45.88</Size>
+      <NoteID>0</NoteID>
+      <Comment>Sizing info YX</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="59">
+      <Location>51.9628,635.1398</Location>
+      <Size>71.52666,50</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="60">
+      <Location>674.048,292.7069</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>21</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="61">
+      <Location>674.3951,327.5747</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>21</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="62">
+      <Location>691.7089,369.5355</Location>
+      <Size>81.84333,32.92</Size>
+      <NoteID>21</NoteID>
+      <Comment>Gable Allowed?</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="63">
+      <Location>809.9911,341.6198</Location>
+      <Size>62.73333,32.92</Size>
+      <NoteID>21</NoteID>
+      <Comment>Hip allowed</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="64">
+      <Location>833.9735,828.5737</Location>
+      <Size>48.79333,32.92</Size>
+      <NoteID>23</NoteID>
+      <Comment>possible?</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="65">
+      <Location>502.1453,852.052</Location>
+      <Size>148.4467,54.28</Size>
+      <NoteID>23</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="66">
+      <Location>1070.641,841.8741</Location>
+      <Size>62.19667,32.92</Size>
+      <NoteID>23</NoteID>
+      <Comment>Do Ridge?</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="67">
+      <Location>581.0803,958.2878</Location>
+      <Size>224.5733,91.08</Size>
+      <NoteID>23</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="68">
+      <Location>589.0553,1061.206</Location>
+      <Size>224.5733,91.08</Size>
+      <NoteID>23</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="69">
+      <Location>957.091,993.8259</Location>
+      <Size>156.6933,91.08</Size>
+      <NoteID>23</NoteID>
+      <Comment>which way?</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="70">
+      <Location>814.9089,900.7766</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>23</NoteID>
+      <Comment>can do side?</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="71">
+      <Location>934.6362,902.6858</Location>
+      <Size>99.77333,65.16</Size>
+      <NoteID>23</NoteID>
+      <Comment>can do front-back?</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="72">
+      <Location>491.0909,1050.364</Location>
+      <Size>69.12,65.16</Size>
+      <NoteID>23</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>Frame</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>#</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="3">
+      <Name>Roof Assets</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="4">
+      <Name>Wall Assets</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>
+      </Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureNote" id="18">
+      <ID>18</ID>
+      <Location>
+        <X>629.2726</X>
+        <Y>-196.0909</Y>
+      </Location>
+      <Size>
+        <Width>224.3794</Width>
+        <Height>162.4655</Height>
+      </Size>
+      <Title>Anything?</Title>
+      <Text>Can we fit any roof in?</Text>
+    </Object>
+    <Object type="ProcedureNote" id="19">
+      <ID>19</ID>
+      <Location>
+        <X>44.33878</X>
+        <Y>-168.686</Y>
+      </Location>
+      <Size>
+        <Width>360.7732</Width>
+        <Height>292.0486</Height>
+      </Size>
+      <Title>Divide Up</Title>
+      <Text>How many roof modules will fit each way?</Text>
+    </Object>
+    <Object type="ProcedureNote" id="20">
+      <ID>20</ID>
+      <Location>
+        <X>757.7031</X>
+        <Y>-28.10596</Y>
+      </Location>
+      <Size>
+        <Width>541.3401</Width>
+        <Height>289.9196</Height>
+      </Size>
+      <Title>Hipped Roof</Title>
+      <Text>
+      </Text>
+    </Object>
+    <Object type="ProcedureNote" id="21">
+      <ID>21</ID>
+      <Location>
+        <X>454.5406</X>
+        <Y>278.0361</Y>
+      </Location>
+      <Size>
+        <Width>981.1398</Width>
+        <Height>511.0509</Height>
+      </Size>
+      <Title>Gable Roof</Title>
+      <Text>
+      </Text>
+    </Object>
+    <Object type="ProcedureNote" id="22">
+      <ID>22</ID>
+      <Location>
+        <X>462.0009</X>
+        <Y>1214.12</Y>
+      </Location>
+      <Size>
+        <Width>747.3054</Width>
+        <Height>508.7553</Height>
+      </Size>
+      <Title>Flat Roof</Title>
+      <Text>
+      </Text>
+    </Object>
+    <Object type="ProcedureNote" id="23">
+      <ID>23</ID>
+      <Location>
+        <X>475.126</X>
+        <Y>796.3871</Y>
+      </Location>
+      <Size>
+        <Width>953.3139</Width>
+        <Height>395.3248</Height>
+      </Size>
+      <Title>Steep Ridge Roof</Title>
+      <Text>
+      </Text>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
+      <Metadata />
+    </Input>
+    <Input id="2">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="3">
+      <Value type="1953720652" value="" />
+      <Metadata />
+    </Input>
+    <Input id="4">
+      <Value type="1953720652" value="" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
+</ProcedureEditData>

@@ -1,0 +1,157 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>569.876,406.7852</Centre>
+    <Zoom>0.826446533</Zoom>
+  </View>
+  <Procedure>
+    <Category>Tile</Category>
+    <DisplayName>Asset.Config</DisplayName>
+    <Description>Configuration for assets to use</Description>
+    <TopLeft>-30,-20</TopLeft>
+    <BottomRight>925.0895,1073.105</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>837.3465,108.7603</Location>
+      <Size>70.85333,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[0] Asset root</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>610.8511,64.31403</Location>
+      <Size>105.3367,142.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>326.2437,702.5983</Location>
+      <Size>73.16333,39.28</Size>
+      <NoteID>7</NoteID>
+      <Comment>1/3 grass</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>323.7643,618.9957</Location>
+      <Size>64.82333,65.16</Size>
+      <NoteID>7</NoteID>
+      <Comment>2/3 tarmac</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>339.252,763.2427</Location>
+      <Size>64.82333,65.16</Size>
+      <NoteID>7</NoteID>
+      <Comment>0/3 dirt</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="6">
+      <Location>331.0701,532.8317</Location>
+      <Size>64.82333,65.16</Size>
+      <NoteID>7</NoteID>
+      <Comment>3/3 unused</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="7">
+      <Location>424.3233,534.4956</Location>
+      <Size>65.97667,52.2</Size>
+      <NoteID>7</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="8">
+      <Location>433.744,617.6354</Location>
+      <Size>65.97667,52.2</Size>
+      <NoteID>7</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="9">
+      <Location>433.6945,694.3787</Location>
+      <Size>65.97667,52.2</Size>
+      <NoteID>7</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="10">
+      <Location>436.3889,768.321</Location>
+      <Size>65.97667,52.2</Size>
+      <NoteID>7</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="11">
+      <Location>586.4713,168.1653</Location>
+      <Size>65.97667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="12">
+      <Location>838.4304,191.0661</Location>
+      <Size>98.93333,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[1] Ground colours</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="13">
+      <Location>613.1564,213.8843</Location>
+      <Size>87.63333,142.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="14">
+      <Location>360,216</Location>
+      <Size>159.6467,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="15">
+      <Location>358,262</Location>
+      <Size>162.35,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="16">
+      <Location>838.0602,281.6998</Location>
+      <Size>84.79667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[2] Theme index</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>Theme</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>Config</Name>
+      <Description>
+      </Description>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
+</ProcedureEditData>

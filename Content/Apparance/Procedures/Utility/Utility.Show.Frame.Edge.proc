@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="C22C311B">
+    <Inputs>
+        <Input id="1" type="Frame" name="Frame" description=""/>
+        <Input id="2" type="Float" name="Size" description=""/>
+    </Inputs>
+    <Constants>
+        <Constant id="-3" type="Integer">0</Constant>
+        <Constant id="-4" type="Integer">0</Constant>
+        <Constant id="-5" type="Integer">1</Constant>
+        <Constant id="-6" type="Integer">0</Constant>
+        <Constant id="-7" type="Integer">0</Constant>
+        <Constant id="-8" type="Integer">1</Constant>
+        <Constant id="-18" type="Float">1.000000</Constant>
+        <Constant id="-20" type="Integer">63</Constant>
+        <Constant id="-21" type="Integer">1</Constant>
+        <Constant id="-22" type="Integer">1</Constant>
+        <Constant id="-23" type="Integer">1</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="E99E1179">
+            <Connect in="100" input="1"/>
+            <Connect in="101" to="3" out="100"/>
+            <Connect in="102" constant="-3"/>
+            <Connect in="103" constant="-4"/>
+            <Connect in="104" constant="-5"/>
+            <Connect in="105" constant="-6"/>
+            <Connect in="106" constant="-7"/>
+            <Connect in="107" constant="-8"/>
+        </Operator>
+        <Operator id="3" type="D2698D20">
+            <Connect in="100" input="2"/>
+            <Connect in="101" input="2"/>
+            <Connect in="102" constant="-18"/>
+        </Operator>
+        <Operator id="4" type="09FEED26">
+            <Connect in="100" to="1" out="100"/>
+            <Connect in="104" constant="-20"/>
+            <Connect in="105" constant="-21"/>
+            <Connect in="106" constant="-22"/>
+            <Connect in="107" constant="-23"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="ModelSegment" name="Out" description="" to="4" out="100"/>
+    </Outputs>
+</Procedure>

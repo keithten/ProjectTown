@@ -31,6 +31,7 @@
         <Constant id="-36" type="Integer">1</Constant>
         <Constant id="-39" type="ModelSegment"></Constant>
         <Constant id="-40" type="ModelSegment"></Constant>
+        <Constant id="-41" type="Integer">0</Constant>
     </Constants>
     <Operators>
         <Operator id="1" type="FA76F6CE">
@@ -38,6 +39,7 @@
             <Connect in="2" to="2" out="101"/>
             <Connect in="3" constant="-2"/>
             <Connect in="5" constant="-4"/>
+            <Connect in="6" constant="-41"/>
         </Operator>
         <Operator id="2" type="DFE4B30E">
             <Connect in="100" constant="-5"/>

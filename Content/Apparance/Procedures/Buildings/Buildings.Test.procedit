@@ -67,5 +67,13 @@
       <Value type="842221088" value="0" />
       <Metadata />
     </Input>
+    <Input id="4">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="3">
+      <Value type="1819242306" value="False" />
+      <Metadata />
+    </Input>
   </DefaultInputs>
 </ProcedureEditData>

@@ -6,6 +6,7 @@
         <Input id="3" type="List" name="Towns" description="Town modifiers"/>
         <Input id="4" type="List" name="Hero Buildings" description=""/>
         <Input id="5" type="List" name="Forests" description=""/>
+        <Input id="6" type="Integer" name="Theme" description="|Min=0|Max=1"/>
     </Inputs>
     <Constants>
         <Constant id="-6" type="Integer">0</Constant>
@@ -67,6 +68,7 @@
             <Connect in="3" to="5" out="100"/>
             <Connect in="4" to="40" out="100"/>
             <Connect in="5" to="52" out="101"/>
+            <Connect in="6" to="53" out="1"/>
         </Operator>
         <Operator id="3" type="EAE4856E">
             <Connect in="100" input="1"/>
@@ -98,8 +100,8 @@
         </Operator>
         <Operator id="12" type="EB4EAAA4">
             <Connect in="100" to="37" out="100"/>
-            <Connect in="101" to="14" out="1"/>
-            <Connect in="102" to="38" out="100"/>
+            <Connect in="101" to="38" out="100"/>
+            <Connect in="102" to="14" out="1"/>
             <Connect in="103" constant="-36"/>
             <Connect in="104" constant="-118"/>
         </Operator>
@@ -112,6 +114,7 @@
             <Connect in="6" to="22" out="1"/>
             <Connect in="7" to="50" out="100"/>
             <Connect in="8" to="26" out="1"/>
+            <Connect in="9" to="53" out="1"/>
         </Operator>
         <Operator id="15" type="88B7A911">
             <Connect in="100" to="12" out="100"/>
@@ -181,6 +184,7 @@
             <Connect in="5" to="5" out="100"/>
             <Connect in="6" to="3" out="100"/>
             <Connect in="7" to="52" out="100"/>
+            <Connect in="8" to="53" out="1"/>
         </Operator>
         <Operator id="36" type="69AFB575"/>
         <Operator id="37" type="C01FB46B">
@@ -252,6 +256,9 @@
         </Operator>
         <Operator id="52" type="730CA679">
             <Connect in="100" to="48" out="2"/>
+        </Operator>
+        <Operator id="53" type="2013FD9D">
+            <Connect in="1" input="6"/>
         </Operator>
     </Operators>
     <Outputs>

@@ -1,7 +1,7 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>555.7762,329.1504</Centre>
-    <Zoom>0.7513149</Zoom>
+    <Centre>547.9758,196.3504</Centre>
+    <Zoom>0.909091234</Zoom>
   </View>
   <Procedure>
     <Category>Smart</Category>
@@ -36,7 +36,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="4">
-      <Location>283.3471,206.752</Location>
+      <Location>300.3471,177.752</Location>
       <Size>65.97667,52.2</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -44,7 +44,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="5">
-      <Location>282.5372,260.5784</Location>
+      <Location>299.5372,231.5784</Location>
       <Size>65.97667,52.2</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -76,7 +76,7 @@ happens before needed</Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="9">
-      <Location>282,314.9587</Location>
+      <Location>299,285.9587</Location>
       <Size>65.97667,52.2</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -84,7 +84,7 @@ happens before needed</Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="10">
-      <Location>284.4793,376.3967</Location>
+      <Location>301.4793,347.3967</Location>
       <Size>65.97667,52.2</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -93,7 +93,7 @@ happens before needed</Comment>
     </Object>
     <Object type="ProcedureOperatorState" id="11">
       <Location>594.8184,206.2728</Location>
-      <Size>107.2867,52.2</Size>
+      <Size>107.2867,65.16</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -231,6 +231,11 @@ happens before needed</Comment>
     <Object type="ProcedureInputState" id="5">
       <Name>Density %</Name>
       <Description>How densely populated</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="6">
+      <Name>Theme</Name>
+      <Description>
+      </Description>
     </Object>
     <Object type="ProcedureOutputState" id="1">
       <Name>Out</Name>

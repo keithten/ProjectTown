@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="C3E50E06">
+    <Inputs>
+        <Input id="1" type="Frame" name="Side" description="Side to add corner to (left of)"/>
+    </Inputs>
+    <Constants>
+        <Constant id="-1" type="Float">1.000000</Constant>
+        <Constant id="-2" type="Integer">0</Constant>
+        <Constant id="-3" type="Integer">0</Constant>
+        <Constant id="-7" type="Bool">False</Constant>
+        <Constant id="-8" type="Bool">False</Constant>
+        <Constant id="-9" type="Bool">False</Constant>
+        <Constant id="-10" type="Float">0.500000</Constant>
+        <Constant id="-11" type="Integer">0</Constant>
+        <Constant id="-20" type="Bool">False</Constant>
+        <Constant id="-32" type="String">Town.Holiday.Specific.Cabin.Corner</Constant>
+        <Constant id="-34" type="Integer">0</Constant>
+        <Constant id="-41" type="Integer">2</Constant>
+        <Constant id="-42" type="Integer">2</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="E82F5975">
+            <Connect in="100" input="1"/>
+            <Connect in="101" constant="-1"/>
+            <Connect in="102" constant="-2"/>
+            <Connect in="103" constant="-3"/>
+        </Operator>
+        <Operator id="3" type="0662B77B">
+            <Connect in="1" to="11" out="100"/>
+            <Connect in="2" constant="-7"/>
+            <Connect in="3" constant="-8"/>
+            <Connect in="4" constant="-9"/>
+            <Connect in="5" constant="-20"/>
+        </Operator>
+        <Operator id="4" type="C2203357"/>
+        <Operator id="5" type="EA5D30C6">
+            <Connect in="100" input="1"/>
+        </Operator>
+        <Operator id="6" type="DED78D0E">
+            <Connect in="100" to="5" out="102"/>
+            <Connect in="101" to="4" out="2"/>
+        </Operator>
+        <Operator id="7" type="B5029B60">
+            <Connect in="100" to="5" out="102"/>
+            <Connect in="101" to="4" out="1"/>
+        </Operator>
+        <Operator id="8" type="85D4CBD8">
+            <Connect in="100" to="6" out="100"/>
+            <Connect in="101" constant="-10"/>
+        </Operator>
+        <Operator id="9" type="D0C62994">
+            <Connect in="100" to="8" out="100"/>
+        </Operator>
+        <Operator id="10" type="60628950">
+            <Connect in="100" to="9" out="100"/>
+            <Connect in="101" constant="-11"/>
+        </Operator>
+        <Operator id="11" type="E6571016">
+            <Connect in="100" to="7" out="100"/>
+            <Connect in="101" to="10" out="100"/>
+        </Operator>
+        <Operator id="12" type="C3E3190A">
+            <Connect in="1" to="20" out="100"/>
+            <Connect in="2" to="3" out="1"/>
+            <Connect in="3" to="4" out="1"/>
+            <Connect in="5" to="18" out="100"/>
+            <Connect in="6" to="4" out="3"/>
+        </Operator>
+        <Operator id="17" type="F3E5FC30">
+            <Connect in="100" constant="-32"/>
+        </Operator>
+        <Operator id="18" type="D56CEA6D">
+            <Connect in="100" to="17" out="100"/>
+            <Connect in="101" constant="-34"/>
+        </Operator>
+        <Operator id="20" type="EBC5C37C">
+            <Connect in="100" to="1" out="100"/>
+            <Connect in="101" constant="-41"/>
+            <Connect in="102" constant="-42"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="ModelSegment" name="Out" description="" to="12" out="1"/>
+    </Outputs>
+</Procedure>

@@ -1,7 +1,7 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>1020.246,623.2625</Centre>
-    <Zoom>0.620921433</Zoom>
+    <Centre>257.7745,706.42</Centre>
+    <Zoom>0.826446533</Zoom>
   </View>
   <Procedure>
     <Category>Widget</Category>
@@ -52,7 +52,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="6">
       <Location>942,315</Location>
-      <Size>89.30334,52.2</Size>
+      <Size>89.30334,65.16</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -84,7 +84,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="10">
       <Location>-135.5599,380</Location>
-      <Size>136.4367,54.28</Size>
+      <Size>127.28,69.28</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -219,7 +219,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="27">
       <Location>441.4,997.8997</Location>
-      <Size>89.30334,52.2</Size>
+      <Size>89.30334,65.16</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -376,6 +376,11 @@
     <Object type="ProcedureInputState" id="5">
       <Name>Show Always?</Name>
       <Description>if not, only shows when highlighted</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="6">
+      <Name>Theme</Name>
+      <Description>
+      </Description>
     </Object>
     <Object type="ProcedureOutputState" id="1">
       <Name>Out</Name>

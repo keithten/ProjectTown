@@ -7,7 +7,7 @@
     <Category>Buildings</Category>
     <DisplayName>Building.Tower</DisplayName>
     <Description>Single pre-built tower</Description>
-    <TopLeft>-44.81805,-20</TopLeft>
+    <TopLeft>-87.72723,-54</TopLeft>
     <BottomRight>815.6699,436.368</BottomRight>
   </Procedure>
   <Objects>
@@ -59,6 +59,14 @@
       </Comment>
       <InputMetadata />
     </Object>
+    <Object type="ProcedureOperatorState" id="7">
+      <Location>166.8182,7.818187</Location>
+      <Size>104.71,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
     <Object type="ProcedureInputState" id="1">
       <Name>Frame</Name>
       <Description>
@@ -66,6 +74,11 @@
     </Object>
     <Object type="ProcedureInputState" id="2">
       <Name>#</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="3">
+      <Name>Config</Name>
       <Description>
       </Description>
     </Object>

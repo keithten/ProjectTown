@@ -1,0 +1,367 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>54.92595,567.7333</Centre>
+    <Zoom>1.21</Zoom>
+  </View>
+  <Procedure>
+    <Category>Buildings</Category>
+    <DisplayName>Holiday.Cabin.Wall.Panel.Select</DisplayName>
+    <Description>Decide which panel to place?</Description>
+    <TopLeft>-370,-27.62702</TopLeft>
+    <BottomRight>727.59,835.4302</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>327.6735,103.5049</Location>
+      <Size>73.64667,32.92</Size>
+      <NoteID>12</NoteID>
+      <Comment>Ground floor?</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>711.0487,84.95865</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>12</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>406.0165,155.5207</Location>
+      <Size>69.34,65.16</Size>
+      <NoteID>12</NoteID>
+      <Comment>door where?</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>341.2728,193.2066</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>12</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>489.0249,130.843</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>12</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="6">
+      <Location>548.807,102.2979</Location>
+      <Size>62.19667,32.92</Size>
+      <NoteID>12</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="7">
+      <Location>298,315</Location>
+      <Size>64.62334,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>upper floors</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="8">
+      <Location>374.7686,323.4546</Location>
+      <Size>69.34,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>window?</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="9">
+      <Location>527.4299,348.7025</Location>
+      <Size>50.15667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>% chance</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="10">
+      <Location>694.7795,368.6738</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>16</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="11">
+      <Location>293.83,695.2703</Location>
+      <Size>69.34,65.16</Size>
+      <NoteID>17</NoteID>
+      <Comment>bay mix</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="12">
+      <Location>426.8299,722.2704</Location>
+      <Size>50.15667,32.92</Size>
+      <NoteID>17</NoteID>
+      <Comment>% chance</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="13">
+      <Location>728.2599,641.1403</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>17</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="14">
+      <Location>513.7799,693.4902</Location>
+      <Size>92.92,32.92</Size>
+      <NoteID>17</NoteID>
+      <Comment>ground floor only
+for bays</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="15">
+      <Location>-74.79998,453.38</Location>
+      <Size>82.96,65.16</Size>
+      <NoteID>15</NoteID>
+      <Comment>window pattern</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="16">
+      <Location>-147.2438,686.2807</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>15</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="17">
+      <Location>-81.49998,670.76</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>15</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="18">
+      <Location>93.50003,572.76</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>15</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="19">
+      <Location>-131.9001,552.1602</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>15</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="20">
+      <Location>-58.5,596.76</Location>
+      <Size>56.5,32.92</Size>
+      <NoteID>15</NoteID>
+      <Comment>index back</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="21">
+      <Location>123.5,447.7599</Location>
+      <Size>68.83667,52.2</Size>
+      <NoteID>15</NoteID>
+      <Comment>select</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="22">
+      <Location>-80,134</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="23">
+      <Location>318.2601,346.7201</Location>
+      <Size>51.61333,32.92</Size>
+      <NoteID>16</NoteID>
+      <Comment>windows?</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="24">
+      <Location>177.2999,75.37998</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>12</NoteID>
+      <Comment>doors?</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="25">
+      <Location>622.5001,61.30004</Location>
+      <Size>62.19667,32.92</Size>
+      <NoteID>12</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="26">
+      <Location>588.8298,347.86</Location>
+      <Size>62.19667,32.92</Size>
+      <NoteID>16</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="27">
+      <Location>329.51,601.32</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>17</NoteID>
+      <Comment>bays?</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="28">
+      <Location>626.15,642.27</Location>
+      <Size>92.92,32.92</Size>
+      <NoteID>17</NoteID>
+      <Comment>ground floor only
+for bays</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="29">
+      <Location>162.2,73.69999</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>12</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="30">
+      <Location>-65.99174,677.3976</Location>
+      <Size>53.23,32.92</Size>
+      <NoteID>15</NoteID>
+      <Comment>right half?</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>Floor</Name>
+      <Description>Which floor are we on? 0 = ground floor</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Panel</Name>
+      <Description>Where along row of panels are we, 0 = left, N-1 = right</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="3">
+      <Name>Panels</Name>
+      <Description>How many panels along this row?</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="4">
+      <Name>Floors</Name>
+      <Description>How many floors are there?</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="5">
+      <Name>Building#</Name>
+      <Description>Seed for this building</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="6">
+      <Name>Panel#</Name>
+      <Description>Panel seed</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="7">
+      <Name>Face Type</Name>
+      <Description>0 = occluded, no windows
+1 = flat windows only
+2 = doors and windows
+3 = doors, windows, and bays</Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>Out</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureNote" id="12">
+      <ID>12</ID>
+      <Location>
+        <X>143.2428</X>
+        <Y>22.37298</Y>
+      </Location>
+      <Size>
+        <Width>673.7371</Width>
+        <Height>228.7537</Height>
+      </Size>
+      <Title>Door</Title>
+      <Text>
+      </Text>
+    </Object>
+    <Object type="ProcedureNote" id="15">
+      <ID>15</ID>
+      <Location>
+        <X>-163.5</X>
+        <Y>366.6899</Y>
+      </Location>
+      <Size>
+        <Width>380.8367</Width>
+        <Height>379.9901</Height>
+      </Size>
+      <Title>Window Pattern</Title>
+      <Text>
+      </Text>
+    </Object>
+    <Object type="ProcedureNote" id="16">
+      <ID>16</ID>
+      <Location>
+        <X>293.2601</X>
+        <Y>262.4501</Y>
+      </Location>
+      <Size>
+        <Width>500.8494</Width>
+        <Height>196.3837</Height>
+      </Size>
+      <Title>Windows</Title>
+      <Text>
+      </Text>
+    </Object>
+    <Object type="ProcedureNote" id="17">
+      <ID>17</ID>
+      <Location>
+        <X>268.83</X>
+        <Y>501.3199</Y>
+      </Location>
+      <Size>
+        <Width>558.7599</Width>
+        <Height>284.1103</Height>
+      </Size>
+      <Title>Window Type</Title>
+      <Text>Flat or bay?</Text>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="2">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="3">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="4">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="5">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="6">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="7">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
+</ProcedureEditData>

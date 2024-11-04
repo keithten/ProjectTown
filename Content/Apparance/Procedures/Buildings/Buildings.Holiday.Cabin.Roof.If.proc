@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="C3490CCC">
+    <Inputs>
+        <Input id="1" type="Bool" name="Select?" description=""/>
+        <Input id="2" type="ModelSegment" name="Content" description=""/>
+        <Input id="3" type="Frame" name="Next" description=""/>
+        <Input id="4" type="ModelSegment" name="Fallback Content" description=""/>
+        <Input id="5" type="Frame" name="Fallback Next" description=""/>
+    </Inputs>
+    <Constants/>
+    <Operators>
+        <Operator id="1" type="C01FB46B">
+            <Connect in="100" input="1"/>
+            <Connect in="101" input="4"/>
+            <Connect in="102" input="2"/>
+        </Operator>
+        <Operator id="2" type="C35E3C5A">
+            <Connect in="100" input="1"/>
+            <Connect in="101" input="5"/>
+            <Connect in="102" input="3"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="ModelSegment" name="Content" description="" to="1" out="100"/>
+        <Output id="2" type="Frame" name="Next" description="" to="2" out="100"/>
+    </Outputs>
+</Procedure>

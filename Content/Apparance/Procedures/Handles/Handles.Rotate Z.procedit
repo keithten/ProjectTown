@@ -13,7 +13,7 @@
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
       <Location>371.7273,80.09915</Location>
-      <Size>127.0567,91.08</Size>
+      <Size>127.0567,104.04</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -53,7 +53,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="6">
       <Location>374,303</Location>
-      <Size>127.0567,91.08</Size>
+      <Size>127.0567,104.04</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -77,7 +77,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="9">
       <Location>374,526.0298</Location>
-      <Size>127.0567,91.08</Size>
+      <Size>127.0567,104.04</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -93,7 +93,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="11">
       <Location>374,749</Location>
-      <Size>127.0567,91.08</Size>
+      <Size>127.0567,104.04</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -117,6 +117,11 @@
       <Description>
       </Description>
     </Object>
+    <Object type="ProcedureInputState" id="3">
+      <Name>Theme</Name>
+      <Description>
+      </Description>
+    </Object>
     <Object type="ProcedureOutputState" id="1">
       <Name>
       </Name>
@@ -132,6 +137,10 @@
   <DefaultInputs>
     <Input id="1">
       <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
+      <Metadata />
+    </Input>
+    <Input id="2">
+      <Value type="1953720652" value="" />
       <Metadata />
     </Input>
   </DefaultInputs>

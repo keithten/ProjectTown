@@ -1,0 +1,507 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>176.902,320.7789</Centre>
+    <Zoom>0.564474046</Zoom>
+  </View>
+  <Procedure>
+    <Category>Buildings</Category>
+    <DisplayName>Holiday.Cabin.Wall.Panel</DisplayName>
+    <Description>Panel along a row</Description>
+    <TopLeft>-803.3575,-414.7734</TopLeft>
+    <BottomRight>1134.135,1077.112</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>869.7274,343.3706</Location>
+      <Size>95.62334,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>-460.6986,407.4149</Location>
+      <Size>66.30666,52.2</Size>
+      <NoteID>10</NoteID>
+      <Comment>[0] Plain wall</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>-182.1624,412.9326</Location>
+      <Size>75.80334,52.2</Size>
+      <NoteID>10</NoteID>
+      <Comment>Which height?</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>109.8182,402.7271</Location>
+      <Size>66.30666,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[0] Plain wall</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>217.8181,402.7271</Location>
+      <Size>95.44,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[0] Normal Height</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="6">
+      <Location>275,386</Location>
+      <Size>108.8133,78.12</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="7">
+      <Location>266.757,212.5366</Location>
+      <Size>86.40667,117</Size>
+      <NoteID>8</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="8">
+      <Location>20.6691,153.5207</Location>
+      <Size>104.0233,69.28</Size>
+      <NoteID>8</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="9">
+      <Location>418.8565,277.1998</Location>
+      <Size>164.56,104.04</Size>
+      <NoteID>8</NoteID>
+      <Comment>assets are X axis facing forward</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="10">
+      <Location>762.5176,191.7533</Location>
+      <Size>86.38,129.96</Size>
+      <NoteID>8</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="11">
+      <Location>64.46056,-222.9002</Location>
+      <Size>92.17333,69.28</Size>
+      <NoteID>7</NoteID>
+      <Comment>output size</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="12">
+      <Location>66.08028,-132.487</Location>
+      <Size>92.17333,69.28</Size>
+      <NoteID>7</NoteID>
+      <Comment>asset size</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="13">
+      <Location>304.6422,-203.9002</Location>
+      <Size>79.95667,32.92</Size>
+      <NoteID>7</NoteID>
+      <Comment>Thickness scale</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="14">
+      <Location>238.5265,-186.2225</Location>
+      <Size>61.25333,32.92</Size>
+      <NoteID>7</NoteID>
+      <Comment>Width scale</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="15">
+      <Location>408.4546,156.6364</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="16">
+      <Location>4.741452,-45.75145</Location>
+      <Size>159.8333,69.28</Size>
+      <NoteID>7</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="17">
+      <Location>241.7084,-129.8589</Location>
+      <Size>64.84,32.92</Size>
+      <NoteID>7</NoteID>
+      <Comment>Height scale</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="18">
+      <Location>483,-70</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="19">
+      <Location>483.6244,-116.7365</Location>
+      <Size>71.52666,45.88</Size>
+      <NoteID>7</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="20">
+      <Location>586.217,198.8545</Location>
+      <Size>108.8133,78.12</Size>
+      <NoteID>8</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="21">
+      <Location>-341.247,457.5989</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>10</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="22">
+      <Location>-272.4568,445.5988</Location>
+      <Size>95.44,65.16</Size>
+      <NoteID>10</NoteID>
+      <Comment>[0] Normal Height
+[1] Half height</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="23">
+      <Location>-244.3001,218.3999</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="24">
+      <Location>-248,270</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="25">
+      <Location>-603.3575,535.607</Location>
+      <Size>66.70667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>feature wall?</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="26">
+      <Location>-460.7051,649.2256</Location>
+      <Size>117.3833,52.2</Size>
+      <NoteID>11</NoteID>
+      <Comment>[2-4] Wall with feature</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="27">
+      <Location>-13.10534,502.0092</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="28">
+      <Location>-344.5551,688.1058</Location>
+      <Size>64.34333,52.2</Size>
+      <NoteID>11</NoteID>
+      <Comment>[0] Wall part</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="29">
+      <Location>684.2817,727.8824</Location>
+      <Size>86.38,129.96</Size>
+      <NoteID>9</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="30">
+      <Location>467.372,811.8176</Location>
+      <Size>108.8133,78.12</Size>
+      <NoteID>9</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="31">
+      <Location>294.6675,699.1724</Location>
+      <Size>86.40667,117</Size>
+      <NoteID>9</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="32">
+      <Location>472.9679,772.6728</Location>
+      <Size>164.56,104.04</Size>
+      <NoteID>9</NoteID>
+      <Comment>assets are X axis facing forward</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="33">
+      <Location>24.17312,804.4026</Location>
+      <Size>104.0233,69.28</Size>
+      <NoteID>9</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="34">
+      <Location>-345.6692,776.7568</Location>
+      <Size>89.14,52.2</Size>
+      <NoteID>11</NoteID>
+      <Comment>[0] Feature insert</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="35">
+      <Location>622.9778,656.4025</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>9</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="36">
+      <Location>1070.251,318.662</Location>
+      <Size>46.75667,58.84</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="37">
+      <Location>483.2485,628.11</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>9</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="38">
+      <Location>346.4095,652.0099</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>9</NoteID>
+      <Comment>window?</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="39">
+      <Location>778.4352,508.0504</Location>
+      <Size>95.62334,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="40">
+      <Location>893.8134,509.1066</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="41">
+      <Location>754.9649,672.0853</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>9</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="42">
+      <Location>662,502</Location>
+      <Size>95.62334,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="43">
+      <Location>183.7604,447.0104</Location>
+      <Size>164.56,104.04</Size>
+      <NoteID>0</NoteID>
+      <Comment>assets are X axis facing forward</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="44">
+      <Location>174.9998,616</Location>
+      <Size>69.12,65.16</Size>
+      <NoteID>9</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="45">
+      <Location>-107,881</Location>
+      <Size>86.38,104.04</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="46">
+      <Location>479.7986,900.1999</Location>
+      <Size>138.2033,78.12</Size>
+      <NoteID>9</NoteID>
+      <Comment>gives us centre of rotation
+we need to fix </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="47">
+      <Location>265.599,919.3002</Location>
+      <Size>130.09,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>find pivot in world space</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="48">
+      <Location>92.59978,920.5001</Location>
+      <Size>122.3467,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>extract pivot</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>Frame</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Wall Assets</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="3">
+      <Name>#</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="4">
+      <Name>Type</Name>
+      <Description>0 - Plain
+1 - Plain (half height)
+2 - Door
+3 - Window
+4 - Bay</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="5">
+      <Name>Allow Features?</Name>
+      <Description>Allow placement of features on this wall (i.e. windows and doors)?</Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>
+      </Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureNote" id="7">
+      <ID>7</ID>
+      <Location>
+        <X>-30.1759</X>
+        <Y>-364.7734</Y>
+      </Location>
+      <Size>
+        <Width>610.327</Width>
+        <Height>412.5168</Height>
+      </Size>
+      <Title>Calculate Scaling</Title>
+      <Text>Needed to fit asset into space required, whilst scaling the thickness a similar ammount, but consistently regardless of object width/height.
+This is done as a Proportional scale so we can apply the same scale to the feature itself which will have a size unrelated to the wall piece, but can vary.</Text>
+    </Object>
+    <Object type="ProcedureNote" id="8">
+      <ID>8</ID>
+      <Location>
+        <X>-7.551925</X>
+        <Y>68.01524</Y>
+      </Location>
+      <Size>
+        <Width>760.6367</Width>
+        <Height>338.2245</Height>
+      </Size>
+      <Title>Wall</Title>
+      <Text>The wall piece, may have an opening for a feature</Text>
+    </Object>
+    <Object type="ProcedureNote" id="9">
+      <ID>9</ID>
+      <Location>
+        <X>-6.826875</X>
+        <Y>579.6309</Y>
+      </Location>
+      <Size>
+        <Width>761.0234</Width>
+        <Height>402.0943</Height>
+      </Size>
+      <Title>Feature</Title>
+      <Text>Some walls have openings for features to sit in</Text>
+    </Object>
+    <Object type="ProcedureNote" id="10">
+      <ID>10</ID>
+      <Location>
+        <X>-485.6986</X>
+        <Y>348.6759</Y>
+      </Location>
+      <Size>
+        <Width>404.3395</Width>
+        <Height>187.0829</Height>
+      </Size>
+      <Title>
+      </Title>
+      <Text>Plain wall (optionally half height)</Text>
+    </Object>
+    <Object type="ProcedureNote" id="11">
+      <ID>11</ID>
+      <Location>
+        <X>-485.705</X>
+        <Y>597.1415</Y>
+      </Location>
+      <Size>
+        <Width>246.2693</Width>
+        <Height>256.8152</Height>
+      </Size>
+      <Title>
+      </Title>
+      <Text>Feature wall with insert piece</Text>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
+      <Metadata />
+    </Input>
+    <Input id="2">
+      <Value type="1953720652" value="" />
+      <Metadata />
+    </Input>
+    <Input id="4">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="3">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="5">
+      <Value type="1819242306" value="False" />
+    </Input>
+  </DefaultInputs>
+</ProcedureEditData>

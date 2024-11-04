@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="C25040DE">
+    <Inputs>
+        <Input id="1" type="Frame" name="Frame" description=""/>
+        <Input id="2" type="List" name="Wall Assets" description=""/>
+        <Input id="3" type="Integer" name="#" description=""/>
+        <Input id="4" type="Integer" name="Type" description="0 - Plain%0D%0A1 - Plain (half height)%0D%0A2 - Door%0D%0A3 - Window%0D%0A4 - Bay"/>
+    </Inputs>
+    <Constants>
+        <Constant id="-3" type="Integer">0</Constant>
+        <Constant id="-13" type="Vector3">0.500000, 1.000000, 0.000000</Constant>
+        <Constant id="-14" type="Integer">1</Constant>
+        <Constant id="-15" type="Integer">1</Constant>
+        <Constant id="-16" type="Integer">1</Constant>
+        <Constant id="-51" type="Float">0.000000</Constant>
+        <Constant id="-52" type="List"></Constant>
+        <Constant id="-54" type="Integer">1</Constant>
+        <Constant id="-56" type="Integer">0</Constant>
+        <Constant id="-57" type="Integer">1</Constant>
+        <Constant id="-65" type="Integer">2</Constant>
+        <Constant id="-71" type="Integer">0</Constant>
+        <Constant id="-78" type="Float">0.000000</Constant>
+        <Constant id="-79" type="List"></Constant>
+        <Constant id="-80" type="Vector3">0.500000, 1.000000, 0.000000</Constant>
+        <Constant id="-81" type="Integer">1</Constant>
+        <Constant id="-82" type="Integer">1</Constant>
+        <Constant id="-83" type="Integer">1</Constant>
+        <Constant id="-91" type="Integer">1</Constant>
+        <Constant id="-93" type="ModelSegment"></Constant>
+        <Constant id="-97" type="ModelSegment"></Constant>
+        <Constant id="-107" type="ModelSegment"></Constant>
+        <Constant id="-141" type="Integer">0</Constant>
+        <Constant id="-142" type="Integer">0</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="2" type="D56CEA6D">
+            <Connect in="100" input="2"/>
+            <Connect in="101" constant="-3"/>
+        </Operator>
+        <Operator id="3" type="D56CEA6D">
+            <Connect in="100" to="2" out="100"/>
+            <Connect in="101" to="22" out="100"/>
+        </Operator>
+        <Operator id="7" type="6F5FFB15">
+            <Connect in="100" to="8" out="2"/>
+            <Connect in="101" input="1"/>
+            <Connect in="102" constant="-13"/>
+            <Connect in="103" constant="-14"/>
+            <Connect in="104" constant="-15"/>
+            <Connect in="105" constant="-16"/>
+            <Connect in="106" to="19" out="100"/>
+        </Operator>
+        <Operator id="8" type="C268C6D7">
+            <Connect in="1" to="27" out="100"/>
+            <Connect in="2" input="3"/>
+            <Connect in="3" constant="-141"/>
+        </Operator>
+        <Operator id="11" type="EA5D30C6">
+            <Connect in="100" input="1"/>
+        </Operator>
+        <Operator id="12" type="EA5D30C6">
+            <Connect in="100" to="8" out="2"/>
+        </Operator>
+        <Operator id="14" type="DED78D0E">
+            <Connect in="100" to="11" out="100"/>
+            <Connect in="101" to="12" out="100"/>
+        </Operator>
+        <Operator id="16" type="C2203357"/>
+        <Operator id="17" type="DED78D0E">
+            <Connect in="100" to="11" out="102"/>
+            <Connect in="101" to="12" out="102"/>
+        </Operator>
+        <Operator id="19" type="D2698D20">
+            <Connect in="100" to="14" out="100"/>
+            <Connect in="101" to="16" out="3"/>
+            <Connect in="102" to="17" out="100"/>
+        </Operator>
+        <Operator id="20" type="A58A93E3">
+            <Connect in="100" to="8" out="1"/>
+            <Connect in="101" to="7" out="100"/>
+            <Connect in="102" constant="-51"/>
+            <Connect in="103" constant="-52"/>
+        </Operator>
+        <Operator id="21" type="BB6EAC9D">
+            <Connect in="100" input="4"/>
+            <Connect in="101" constant="-54"/>
+        </Operator>
+        <Operator id="22" type="C0D4BFBD">
+            <Connect in="100" to="21" out="100"/>
+            <Connect in="101" constant="-56"/>
+            <Connect in="102" constant="-57"/>
+        </Operator>
+        <Operator id="25" type="B682F79B">
+            <Connect in="100" input="4"/>
+            <Connect in="101" constant="-65"/>
+        </Operator>
+        <Operator id="26" type="D56CEA6D">
+            <Connect in="100" input="2"/>
+            <Connect in="101" input="4"/>
+        </Operator>
+        <Operator id="27" type="DF46C795">
+            <Connect in="100" to="25" out="100"/>
+            <Connect in="101" to="3" out="100"/>
+            <Connect in="102" to="28" out="100"/>
+        </Operator>
+        <Operator id="28" type="D56CEA6D">
+            <Connect in="100" to="26" out="100"/>
+            <Connect in="101" constant="-71"/>
+        </Operator>
+        <Operator id="30" type="A58A93E3">
+            <Connect in="100" to="33" out="1"/>
+            <Connect in="101" to="31" out="100"/>
+            <Connect in="102" constant="-78"/>
+            <Connect in="103" constant="-79"/>
+        </Operator>
+        <Operator id="31" type="6F5FFB15">
+            <Connect in="100" to="33" out="2"/>
+            <Connect in="101" input="1"/>
+            <Connect in="102" constant="-80"/>
+            <Connect in="103" constant="-81"/>
+            <Connect in="104" constant="-82"/>
+            <Connect in="105" constant="-83"/>
+            <Connect in="106" to="19" out="100"/>
+        </Operator>
+        <Operator id="33" type="C268C6D7">
+            <Connect in="1" to="34" out="100"/>
+            <Connect in="2" input="3"/>
+            <Connect in="3" constant="-142"/>
+        </Operator>
+        <Operator id="34" type="D56CEA6D">
+            <Connect in="100" to="26" out="100"/>
+            <Connect in="101" constant="-91"/>
+        </Operator>
+        <Operator id="35" type="C01FB46B">
+            <Connect in="100" to="25" out="100"/>
+            <Connect in="101" constant="-93"/>
+            <Connect in="102" to="30" out="100"/>
+        </Operator>
+        <Operator id="36" type="B4A997AD">
+            <Connect in="100" to="20" out="100"/>
+            <Connect in="101" to="35" out="100"/>
+            <Connect in="102" constant="-97"/>
+            <Connect in="103" constant="-107"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="ModelSegment" name="" description="" to="36" out="100"/>
+    </Outputs>
+</Procedure>

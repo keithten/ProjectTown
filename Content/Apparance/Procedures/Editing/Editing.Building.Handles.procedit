@@ -1,7 +1,7 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>327.0304,348.8157</Centre>
-    <Zoom>0.909090936</Zoom>
+    <Centre>290.7302,353.2157</Centre>
+    <Zoom>0.826446354</Zoom>
   </View>
   <Procedure>
     <Category>Editing</Category>
@@ -61,7 +61,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="7">
       <Location>363.4997,157.4</Location>
-      <Size>95.00667,52.2</Size>
+      <Size>95.00667,65.16</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -69,7 +69,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="8">
       <Location>382.8997,230.9999</Location>
-      <Size>69.33667,52.2</Size>
+      <Size>69.33667,65.16</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -85,7 +85,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="10">
       <Location>357.2001,24</Location>
-      <Size>108.5833,78.12</Size>
+      <Size>108.5833,91.08</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -117,6 +117,11 @@
     </Object>
     <Object type="ProcedureInputState" id="1">
       <Name>Frame</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Theme</Name>
       <Description>
       </Description>
     </Object>

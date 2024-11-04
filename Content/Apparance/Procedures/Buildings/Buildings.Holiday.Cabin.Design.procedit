@@ -1,0 +1,95 @@
+<ProcedureEditData version="1">
+  <View>
+    <Centre>460.1813,278.6261</Centre>
+    <Zoom>1.00000024</Zoom>
+  </View>
+  <Procedure>
+    <Category>Buildings</Category>
+    <DisplayName>Holiday.Cabin.Design</DisplayName>
+    <Description>Design parameters</Description>
+    <TopLeft>-660.6986,-203.9002</TopLeft>
+    <BottomRight>618.2435,602.9326</BottomRight>
+  </Procedure>
+  <Objects>
+    <Object type="ProcedureOperatorState" id="1">
+      <Location>345.6364,90.41321</Location>
+      <Size>73.16333,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>Unit Size</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="2">
+      <Location>617.4868,175.8347</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="3">
+      <Location>475.3001,258.1999</Location>
+      <Size>79.95667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>Thickness scale</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="4">
+      <Location>301,351.5</Location>
+      <Size>92.17333,69.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>main asset width</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="5">
+      <Location>-113.72,351.1797</Location>
+      <Size>66.30666,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[0] Plain wall</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="6">
+      <Location>-12.81996,353.9797</Location>
+      <Size>93.71,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[0] Normal height</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="7">
+      <Location>91.13,373.1801</Location>
+      <Size>63.73667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[1] Bounds</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="8">
+      <Location>140.4399,345.1</Location>
+      <Size>128.5367,69.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOutputState" id="1">
+      <Name>Unit</Name>
+      <Description>Size of common modular unit the cabin assets are built to</Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="2">
+      <Name>Half Unit</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="3">
+      <Name>Thickness Scale</Name>
+      <Description>Scaling factor for wall thickness. Consistent across assets and not dependent on target placement frame.</Description>
+    </Object>
+    <Object type="ProcedureOutputState" id="4">
+      <Name>Asset Height</Name>
+      <Description>Height of wall assets</Description>
+    </Object>
+  </Objects>
+  <Camera>
+    <Position>0,0,0</Position>
+    <Look>0,0,0</Look>
+    <Interest>0</Interest>
+  </Camera>
+</ProcedureEditData>
