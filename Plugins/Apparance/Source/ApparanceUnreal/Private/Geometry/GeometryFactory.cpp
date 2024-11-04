@@ -29,7 +29,7 @@ FGeometryFactory::FGeometryFactory()
 extern bool Apparance_NotifyGeometryDestruction( struct Apparance::Host::IGeometry* pgeometry );
 #endif
 
-struct Apparance::Host::IGeometry* FGeometryFactory::CreateGeometry()
+struct Apparance::Host::IGeometry* FGeometryFactory::CreateGeometry(int debug_request_version)
 {
 	return new FApparanceGeometry();
 }

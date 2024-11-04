@@ -24,7 +24,7 @@ public:
 
 
 	//~ Begin Apparance IGeometryFactory Interface
-	virtual struct Apparance::Host::IGeometry* CreateGeometry();
+	virtual struct Apparance::Host::IGeometry* CreateGeometry(int debug_request_version);
 	virtual void DestroyGeometry( struct Apparance::Host::IGeometry* pgeometry );
 
 	virtual Apparance::MaterialID GetDefaultTriangleMaterial();
