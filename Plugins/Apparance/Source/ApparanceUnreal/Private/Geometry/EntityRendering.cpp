@@ -1393,7 +1393,7 @@ static void FixupFrameOrigins( Apparance::IParameterCollection* params )
 						ApparanceFrameOriginAdjust( frame, origin, true/*reverse*/);
 						Apparance::Vector3 post_origin = frame.Origin;
 
-						UE_LOG( LogApparance, Log, TEXT( "Entity Frame Fixup: origin before %f,%f,%f  origin after %f,%f,%f" ), pre_origin.X, pre_origin.Y, pre_origin.Z, post_origin.X, post_origin.Y, post_origin.Z);
+						//UE_LOG( LogApparance, Log, TEXT( "Entity Frame Fixup: origin before %f,%f,%f  origin after %f,%f,%f" ), pre_origin.X, pre_origin.Y, pre_origin.Z, post_origin.X, post_origin.Y, post_origin.Z);
 
 
 						params->EndAccess();
