@@ -9,7 +9,7 @@
         <Constant id="-2" type="Integer">0</Constant>
         <Constant id="-3" type="Bool">True</Constant>
         <Constant id="-13" type="String">Rotate1</Constant>
-        <Constant id="-17" type="Vector3">0.000000, 0.000000, -1.000000</Constant>
+        <Constant id="-17" type="Vector3">0.000000, 0.000000, -5.000000</Constant>
         <Constant id="-20" type="Vector3">0.500000, 0.500000, 0.000000</Constant>
         <Constant id="-21" type="Integer">1</Constant>
         <Constant id="-22" type="Integer">1</Constant>

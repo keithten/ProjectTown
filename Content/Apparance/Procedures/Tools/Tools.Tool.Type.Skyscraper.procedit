@@ -5,7 +5,7 @@
   </View>
   <Procedure>
     <Category>Tools</Category>
-    <DisplayName>Tool.Type.HeroBuilding</DisplayName>
+    <DisplayName>Tool.Type.Skyscraper</DisplayName>
     <Description>Visuals for hero building button</Description>
     <TopLeft>-455,-20</TopLeft>
     <BottomRight>662.8702,579.9699</BottomRight>

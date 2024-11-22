@@ -1,14 +1,14 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>506.661,169.2664</Centre>
-    <Zoom>0.82644707</Zoom>
+    <Centre>504.5314,249.1626</Centre>
+    <Zoom>0.751315653</Zoom>
   </View>
   <Procedure>
     <Category>Tools</Category>
     <DisplayName>Tool</DisplayName>
     <Description>3D tool ui for a single tool</Description>
     <TopLeft>-282,-402.6002</TopLeft>
-    <BottomRight>1151.091,712.1895</BottomRight>
+    <BottomRight>1151.091,841.2964</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
@@ -53,7 +53,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="6">
       <Location>695.5385,56.50721</Location>
-      <Size>108.5833,78.12</Size>
+      <Size>108.5833,91.08</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -257,7 +257,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="27">
       <Location>367.7272,339.0909</Location>
-      <Size>171.8067,65.16</Size>
+      <Size>154.8133,65.16</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -313,7 +313,7 @@
       </InputMetadata>
     </Object>
     <Object type="ProcedureOperatorState" id="32">
-      <Location>387.5726,513.5219</Location>
+      <Location>392.8966,642.6288</Location>
       <Size>125.0133,65.16</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -321,7 +321,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="33">
-      <Location>383.799,597.0294</Location>
+      <Location>389.123,726.1364</Location>
       <Size>127.3467,65.16</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -339,6 +339,14 @@
     <Object type="ProcedureOperatorState" id="35">
       <Location>338.9001,-282.2</Location>
       <Size>74.33,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="36">
+      <Location>386.5095,496.2678</Location>
+      <Size>124.34,65.16</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
