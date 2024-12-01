@@ -21,7 +21,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="2">
       <Location>410.281,133.0992</Location>
-      <Size>227.0933,194.76</Size>
+      <Size>227.0933,207.72</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -115,6 +115,11 @@
       <Description>
       </Description>
     </Object>
+    <Object type="ProcedureInputState" id="9">
+      <Name>Config</Name>
+      <Description>
+      </Description>
+    </Object>
     <Object type="ProcedureOutputState" id="1">
       <Name>
       </Name>
@@ -148,6 +153,26 @@
     </Input>
     <Input id="2">
       <Value type="1953720652" value="" />
+      <Metadata />
+    </Input>
+    <Input id="4">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="5">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="6">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="7">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="8">
+      <Value type="842221856" value="0" />
       <Metadata />
     </Input>
   </DefaultInputs>

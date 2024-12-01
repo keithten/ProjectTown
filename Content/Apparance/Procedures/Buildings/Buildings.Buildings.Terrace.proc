@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="402C1129">
+    <Inputs>
+        <Input id="1" type="Frame" name="Frame" description=""/>
+        <Input id="2" type="Integer" name="#" description=""/>
+    </Inputs>
+    <Constants>
+        <Constant id="-3" type="Float">5.000000</Constant>
+        <Constant id="-6" type="Integer">0</Constant>
+        <Constant id="-7" type="Bool">False</Constant>
+        <Constant id="-8" type="Bool">False</Constant>
+        <Constant id="-9" type="Bool">False</Constant>
+        <Constant id="-10" type="Bool">False</Constant>
+        <Constant id="-11" type="Bool">False</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="402D4C18">
+            <Connect in="1" input="1"/>
+            <Connect in="2" to="3" out="1"/>
+            <Connect in="3" constant="-3"/>
+            <Connect in="4" input="2"/>
+            <Connect in="5" to="2" out="1"/>
+        </Operator>
+        <Operator id="2" type="2013FD9D">
+            <Connect in="1" constant="-6"/>
+        </Operator>
+        <Operator id="3" type="0662B77B">
+            <Connect in="1" constant="-7"/>
+            <Connect in="2" constant="-8"/>
+            <Connect in="3" constant="-9"/>
+            <Connect in="4" constant="-10"/>
+            <Connect in="5" constant="-11"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="ModelSegment" name="Out" description="" to="1" out="1"/>
+    </Outputs>
+</Procedure>

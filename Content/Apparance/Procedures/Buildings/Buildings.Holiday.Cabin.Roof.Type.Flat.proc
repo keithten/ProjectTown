@@ -6,6 +6,7 @@
         <Input id="6" type="Integer" name="#" description=""/>
         <Input id="9" type="Vector3" name="Size Info" description="XY Size and Z Scale"/>
         <Input id="10" type="Bool" name="Swap XY?" description=""/>
+        <Input id="11" type="List" name="Config" description=""/>
     </Inputs>
     <Constants>
         <Constant id="-14" type="Integer">0</Constant>
@@ -68,6 +69,7 @@
             <Connect in="3" constant="-84"/>
             <Connect in="4" constant="-53"/>
             <Connect in="5" constant="-54"/>
+            <Connect in="6" input="11"/>
         </Operator>
         <Operator id="18" type="D233A94E">
             <Connect in="100" constant="-89"/>
@@ -87,7 +89,9 @@
             <Connect in="100" to="23" out="1"/>
             <Connect in="101" to="28" out="100"/>
         </Operator>
-        <Operator id="23" type="C2203357"/>
+        <Operator id="23" type="C2203357">
+            <Connect in="2" input="11"/>
+        </Operator>
         <Operator id="24" type="D2698D20">
             <Connect in="100" constant="-70"/>
             <Connect in="101" to="21" out="100"/>

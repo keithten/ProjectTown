@@ -1,14 +1,14 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>538.7699,458.754</Centre>
-    <Zoom>0.909091055</Zoom>
+    <Centre>404.7596,503.9423</Centre>
+    <Zoom>0.6209215</Zoom>
   </View>
   <Procedure>
     <Category>Buildings</Category>
     <DisplayName>Holiday.Cabin</DisplayName>
     <Description>Log cabin composition</Description>
-    <TopLeft>-226.832,-86.83379</TopLeft>
-    <BottomRight>895.7725,883.0107</BottomRight>
+    <TopLeft>-484.0002,-86.83379</TopLeft>
+    <BottomRight>1154.487,883.0107</BottomRight>
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
@@ -37,7 +37,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="4">
       <Location>679.6414,149.0008</Location>
-      <Size>141.27,91.08</Size>
+      <Size>141.27,104.04</Size>
       <NoteID>0</NoteID>
       <Comment>front</Comment>
       <InputMetadata />
@@ -67,7 +67,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="8">
       <Location>677.7907,279.009</Location>
-      <Size>141.27,91.08</Size>
+      <Size>141.27,104.04</Size>
       <NoteID>0</NoteID>
       <Comment>side</Comment>
       <InputMetadata />
@@ -106,7 +106,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="13">
       <Location>673.1544,425.4636</Location>
-      <Size>141.27,91.08</Size>
+      <Size>141.27,104.04</Size>
       <NoteID>0</NoteID>
       <Comment>back</Comment>
       <InputMetadata />
@@ -137,7 +137,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="16">
       <Location>667.6998,581.1</Location>
-      <Size>141.27,91.08</Size>
+      <Size>141.27,104.04</Size>
       <NoteID>0</NoteID>
       <Comment>side</Comment>
       <InputMetadata />
@@ -152,7 +152,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="18">
       <Location>593.2809,757.7391</Location>
-      <Size>143.96,78.12</Size>
+      <Size>143.96,91.08</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -174,7 +174,7 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="21">
-      <Location>-26.83199,682.1199</Location>
+      <Location>-0.8319893,678.1199</Location>
       <Size>159.8333,69.28</Size>
       <NoteID>0</NoteID>
       <Comment>
@@ -186,6 +186,78 @@
       <Size>78.29,52.2</Size>
       <NoteID>0</NoteID>
       <Comment>[1] Roof Assets</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="23">
+      <Location>-79.98445,177.0916</Location>
+      <Size>125.4433,54.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="24">
+      <Location>1142.66,291.3102</Location>
+      <Size>111.8267,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="25">
+      <Location>-249.1001,190.3</Location>
+      <Size>73.16333,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata>
+        <Input id="100">
+          <Data name="MaximumValue">
+            <DataValue typeid="842221088">
+              <Float>2</Float>
+            </DataValue>
+          </Data>
+        </Input>
+      </InputMetadata>
+    </Object>
+    <Object type="ProcedureOperatorState" id="26">
+      <Location>139,609</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="27">
+      <Location>-116.5,566.9004</Location>
+      <Size>65.97667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="28">
+      <Location>-227.2316,577.4217</Location>
+      <Size>209.94,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata>
+        <Input id="1">
+          <Data name="MaximumValue">
+            <DataValue typeid="842221088">
+              <Float>5</Float>
+            </DataValue>
+          </Data>
+        </Input>
+      </InputMetadata>
+    </Object>
+    <Object type="ProcedureOperatorState" id="29">
+      <Location>-284.0002,613.6998</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureInputState" id="1">

@@ -10,6 +10,7 @@
         <Input id="7" type="Integer" name="Row#" description=""/>
         <Input id="8" type="Integer" name="Building#" description=""/>
         <Input id="9" type="Integer" name="Face Type" description=""/>
+        <Input id="10" type="List" name="Config" description=""/>
     </Inputs>
     <Constants>
         <Constant id="-4" type="ModelSegment"></Constant>
@@ -56,6 +57,7 @@
             <Connect in="7" to="8" out="100"/>
             <Connect in="8" input="8"/>
             <Connect in="9" input="9"/>
+            <Connect in="10" input="10"/>
         </Operator>
         <Operator id="5" type="C25119BA">
             <Connect in="1" to="2" out="4"/>
@@ -67,6 +69,7 @@
             <Connect in="7" to="9" out="100"/>
             <Connect in="8" input="8"/>
             <Connect in="9" input="9"/>
+            <Connect in="10" input="10"/>
         </Operator>
         <Operator id="6" type="C2538923">
             <Connect in="1" to="2" out="8"/>
@@ -76,6 +79,7 @@
             <Connect in="6" to="2" out="13"/>
             <Connect in="7" input="8"/>
             <Connect in="8" input="9"/>
+            <Connect in="9" input="10"/>
         </Operator>
         <Operator id="7" type="C2538923">
             <Connect in="1" to="2" out="9"/>
@@ -85,6 +89,7 @@
             <Connect in="6" to="2" out="13"/>
             <Connect in="7" input="8"/>
             <Connect in="8" input="9"/>
+            <Connect in="9" input="10"/>
         </Operator>
         <Operator id="8" type="0B64055F">
             <Connect in="100" input="7"/>

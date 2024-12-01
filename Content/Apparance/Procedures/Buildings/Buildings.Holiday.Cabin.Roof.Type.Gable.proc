@@ -6,6 +6,7 @@
         <Input id="7" type="List" name="Wall Assets" description=""/>
         <Input id="5" type="Integer" name="#" description=""/>
         <Input id="6" type="Vector3" name="Size Info" description=""/>
+        <Input id="8" type="List" name="Config" description=""/>
     </Inputs>
     <Constants>
         <Constant id="-3" type="Integer">0</Constant>
@@ -91,6 +92,7 @@
             <Connect in="3" constant="-38"/>
             <Connect in="4" to="18" out="100"/>
             <Connect in="5" constant="-68"/>
+            <Connect in="6" input="8"/>
         </Operator>
         <Operator id="12" type="D233A94E">
             <Connect in="100" input="6"/>
@@ -114,6 +116,7 @@
             <Connect in="3" constant="-45"/>
             <Connect in="4" to="18" out="100"/>
             <Connect in="5" constant="-69"/>
+            <Connect in="6" input="8"/>
         </Operator>
         <Operator id="16" type="EBC5C37C">
             <Connect in="100" to="1" out="102"/>
@@ -136,6 +139,7 @@
             <Connect in="3" input="3"/>
             <Connect in="4" input="5"/>
             <Connect in="5" input="7"/>
+            <Connect in="6" input="8"/>
         </Operator>
         <Operator id="21" type="E82F5975">
             <Connect in="100" input="1"/>
@@ -182,13 +186,16 @@
             <Connect in="100" to="33" out="1"/>
             <Connect in="101" constant="-105"/>
         </Operator>
-        <Operator id="33" type="C2203357"/>
+        <Operator id="33" type="C2203357">
+            <Connect in="2" input="8"/>
+        </Operator>
         <Operator id="34" type="C0EA180C">
             <Connect in="1" to="36" out="100"/>
             <Connect in="2" input="6"/>
             <Connect in="3" input="3"/>
             <Connect in="4" to="35" out="100"/>
             <Connect in="5" input="7"/>
+            <Connect in="6" input="8"/>
         </Operator>
         <Operator id="35" type="0B64055F">
             <Connect in="100" input="5"/>

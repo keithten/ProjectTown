@@ -8,6 +8,7 @@
         <Input id="6" type="Integer" name="Floors" description=""/>
         <Input id="7" type="Integer" name="Building#" description=""/>
         <Input id="8" type="Integer" name="Face Type" description=""/>
+        <Input id="9" type="List" name="Config" description=""/>
     </Inputs>
     <Constants>
         <Constant id="-5" type="Integer">0</Constant>
@@ -34,6 +35,7 @@
             <Connect in="11" input="7"/>
             <Connect in="12" input="4"/>
             <Connect in="13" input="8"/>
+            <Connect in="14" input="9"/>
         </Operator>
         <Operator id="3" type="0662B77B">
             <Connect in="1" constant="-8"/>
@@ -42,7 +44,9 @@
             <Connect in="4" constant="-11"/>
             <Connect in="5" constant="-12"/>
         </Operator>
-        <Operator id="4" type="C2203357"/>
+        <Operator id="4" type="C2203357">
+            <Connect in="2" input="9"/>
+        </Operator>
         <Operator id="5" type="EA5D30C6">
             <Connect in="100" input="1"/>
         </Operator>

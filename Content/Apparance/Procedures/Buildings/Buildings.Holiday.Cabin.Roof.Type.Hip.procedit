@@ -1,13 +1,13 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>849.9047,115.5074</Centre>
+    <Centre>596.6158,152.1098</Centre>
     <Zoom>0.683014154</Zoom>
   </View>
   <Procedure>
     <Category>Buildings</Category>
     <DisplayName>Holiday.Cabin.Roof.Type.Hip</DisplayName>
     <Description>Hipped roof layer</Description>
-    <TopLeft>-241.8182,-451.8987</TopLeft>
+    <TopLeft>-241.8182,-465.0756</TopLeft>
     <BottomRight>1401.54,1163.783</BottomRight>
   </Procedure>
   <Objects>
@@ -181,7 +181,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="18">
       <Location>871.7219,-295.6519</Location>
-      <Size>177.5933,91.08</Size>
+      <Size>177.5933,104.04</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -189,7 +189,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="19">
       <Location>896.3667,495.015</Location>
-      <Size>177.5933,91.08</Size>
+      <Size>177.5933,104.04</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -197,7 +197,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="20">
       <Location>827.0544,178.6899</Location>
-      <Size>177.5933,91.08</Size>
+      <Size>177.5933,104.04</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -213,7 +213,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="22">
       <Location>842.7725,8.902027</Location>
-      <Size>177.5933,91.08</Size>
+      <Size>177.5933,104.04</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -252,8 +252,8 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="27">
-      <Location>865.2175,-401.8987</Location>
-      <Size>195.2567,91.08</Size>
+      <Location>868.1458,-415.0756</Location>
+      <Size>195.2567,104.04</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -276,7 +276,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="30">
       <Location>868.8387,-161.45</Location>
-      <Size>195.2567,91.08</Size>
+      <Size>195.2567,104.04</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -292,7 +292,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="32">
       <Location>888.5256,375.664</Location>
-      <Size>195.2567,91.08</Size>
+      <Size>195.2567,104.04</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -308,7 +308,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="34">
       <Location>882.9579,671.6167</Location>
-      <Size>195.2567,91.08</Size>
+      <Size>195.2567,104.04</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -375,6 +375,11 @@
       <Description>
       </Description>
     </Object>
+    <Object type="ProcedureInputState" id="7">
+      <Name>Config</Name>
+      <Description>
+      </Description>
+    </Object>
     <Object type="ProcedureOutputState" id="1">
       <Name>Out</Name>
       <Description>
@@ -396,11 +401,17 @@
       <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
       <Metadata />
     </Input>
-    <Input id="2">
-      <Value type="842221088" value="0" />
+    <Input id="4">
+      <Value type="1953720652" value="" />
+      <Metadata />
     </Input>
-    <Input id="3">
-      <Value type="842221088" value="0" />
+    <Input id="5">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="6">
+      <Value type="862152022" value="[0,0,0]" />
+      <Metadata />
     </Input>
   </DefaultInputs>
 </ProcedureEditData>

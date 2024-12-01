@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="4015EB17">
+    <Inputs>
+        <Input id="1" type="Float" name="Scale" description=""/>
+    </Inputs>
+    <Constants>
+        <Constant id="-1" type="List"></Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="6FAE9477">
+            <Connect in="100" constant="-1"/>
+            <Connect in="101" input="1"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="List" name="Config" description="" to="1" out="100"/>
+    </Outputs>
+</Procedure>

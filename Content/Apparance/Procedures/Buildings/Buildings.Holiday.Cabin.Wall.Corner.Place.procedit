@@ -156,6 +156,11 @@
       <Description>
       </Description>
     </Object>
+    <Object type="ProcedureInputState" id="5">
+      <Name>Config</Name>
+      <Description>
+      </Description>
+    </Object>
     <Object type="ProcedureOutputState" id="1">
       <Name>
       </Name>
@@ -195,4 +200,18 @@ Unfortunately there isn't a half height corner so we have to make do by placing 
     <Look>0,0,0</Look>
     <Interest>0</Interest>
   </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
+      <Metadata />
+    </Input>
+    <Input id="2">
+      <Value type="1953720652" value="" />
+      <Metadata />
+    </Input>
+    <Input id="4">
+      <Value type="842221088" value="0" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
 </ProcedureEditData>

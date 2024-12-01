@@ -2,6 +2,7 @@
 <Procedure Version="5" type="C3E50E06">
     <Inputs>
         <Input id="1" type="Frame" name="Side" description="Side to add corner to (left of)"/>
+        <Input id="2" type="List" name="Config" description=""/>
     </Inputs>
     <Constants>
         <Constant id="-1" type="Float">1.000000</Constant>
@@ -32,7 +33,9 @@
             <Connect in="4" constant="-9"/>
             <Connect in="5" constant="-20"/>
         </Operator>
-        <Operator id="4" type="C2203357"/>
+        <Operator id="4" type="C2203357">
+            <Connect in="2" input="2"/>
+        </Operator>
         <Operator id="5" type="EA5D30C6">
             <Connect in="100" input="1"/>
         </Operator>
@@ -65,6 +68,7 @@
             <Connect in="3" to="4" out="1"/>
             <Connect in="5" to="18" out="100"/>
             <Connect in="6" to="4" out="3"/>
+            <Connect in="7" input="2"/>
         </Operator>
         <Operator id="17" type="F3E5FC30">
             <Connect in="100" constant="-32"/>

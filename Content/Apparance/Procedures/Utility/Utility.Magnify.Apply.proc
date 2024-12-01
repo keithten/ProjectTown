@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Procedure Version="5" type="401C4667">
+    <Inputs>
+        <Input id="1" type="ModelSegment" name="" description=""/>
+        <Input id="2" type="Frame" name="From" description=""/>
+        <Input id="3" type="Frame" name="To" description=""/>
+    </Inputs>
+    <Constants>
+        <Constant id="-4" type="Integer">0</Constant>
+        <Constant id="-5" type="Integer">0</Constant>
+        <Constant id="-6" type="Integer">0</Constant>
+    </Constants>
+    <Operators>
+        <Operator id="1" type="1F956AE2">
+            <Connect in="100" input="1"/>
+            <Connect in="101" input="2"/>
+            <Connect in="102" input="3"/>
+            <Connect in="103" constant="-4"/>
+            <Connect in="104" constant="-5"/>
+            <Connect in="105" constant="-6"/>
+        </Operator>
+    </Operators>
+    <Outputs>
+        <Output id="1" type="ModelSegment" name="Out" description="" to="1" out="100"/>
+    </Outputs>
+</Procedure>

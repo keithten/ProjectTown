@@ -1,7 +1,7 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>460.1813,278.6261</Centre>
-    <Zoom>1.00000024</Zoom>
+    <Centre>105.3206,303.8324</Centre>
+    <Zoom>0.7513149</Zoom>
   </View>
   <Procedure>
     <Category>Buildings</Category>
@@ -12,7 +12,7 @@
   </Procedure>
   <Objects>
     <Object type="ProcedureOperatorState" id="1">
-      <Location>345.6364,90.41321</Location>
+      <Location>178.6563,75.89322</Location>
       <Size>73.16333,39.28</Size>
       <NoteID>0</NoteID>
       <Comment>Unit Size</Comment>
@@ -69,6 +69,45 @@
       </Comment>
       <InputMetadata />
     </Object>
+    <Object type="ProcedureOperatorState" id="9">
+      <Location>264.939,130.888</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="10">
+      <Location>-255.1999,170.0899</Location>
+      <Size>63.73667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>[0] scale</Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="11">
+      <Location>-458.41,106.47</Location>
+      <Size>64.82333,39.28</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="12">
+      <Location>-366.4501,113.47</Location>
+      <Size>46.75667,32.92</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="13">
+      <Location>-170.34,130.53</Location>
+      <Size>74.33,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
     <Object type="ProcedureOutputState" id="1">
       <Name>Unit</Name>
       <Description>Size of common modular unit the cabin assets are built to</Description>
@@ -86,10 +125,22 @@
       <Name>Asset Height</Name>
       <Description>Height of wall assets</Description>
     </Object>
+    <Object type="ProcedureInputState" id="1">
+      <Name>
+      </Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="2">
+      <Name>Config</Name>
+      <Description>
+      </Description>
+    </Object>
   </Objects>
   <Camera>
     <Position>0,0,0</Position>
     <Look>0,0,0</Look>
     <Interest>0</Interest>
   </Camera>
+  <DefaultInputs />
 </ProcedureEditData>

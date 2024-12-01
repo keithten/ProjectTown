@@ -1,7 +1,7 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>505.9837,355.0245</Centre>
-    <Zoom>0.751315236</Zoom>
+    <Centre>-419.327,131.0174</Centre>
+    <Zoom>0.683013856</Zoom>
   </View>
   <Procedure>
     <Category>Buildings</Category>
@@ -44,7 +44,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="5">
       <Location>117.1353,386.7658</Location>
-      <Size>202.52,91.08</Size>
+      <Size>202.52,104.04</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -199,7 +199,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="19">
       <Location>831.7603,184.1121</Location>
-      <Size>174.82,117</Size>
+      <Size>174.82,129.96</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -296,6 +296,11 @@
     </Object>
     <Object type="ProcedureInputState" id="5">
       <Name>Wall Assets</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="6">
+      <Name>Config</Name>
       <Description>
       </Description>
     </Object>

@@ -5,6 +5,7 @@
         <Input id="4" type="List" name="Roof Assets" description=""/>
         <Input id="5" type="Integer" name="#" description=""/>
         <Input id="6" type="Vector3" name="Size Info" description=""/>
+        <Input id="7" type="List" name="Config" description=""/>
     </Inputs>
     <Constants>
         <Constant id="-3" type="Integer">0</Constant>
@@ -118,6 +119,7 @@
             <Connect in="3" input="6"/>
             <Connect in="4" to="23" out="100"/>
             <Connect in="5" constant="-67"/>
+            <Connect in="6" input="7"/>
         </Operator>
         <Operator id="19" type="947E0B6E">
             <Connect in="1" to="17" out="100"/>
@@ -125,6 +127,7 @@
             <Connect in="3" input="6"/>
             <Connect in="4" to="26" out="100"/>
             <Connect in="5" constant="-68"/>
+            <Connect in="6" input="7"/>
         </Operator>
         <Operator id="20" type="947E0B6E">
             <Connect in="1" to="2" out="102"/>
@@ -132,6 +135,7 @@
             <Connect in="3" input="6"/>
             <Connect in="4" to="25" out="100"/>
             <Connect in="5" constant="-69"/>
+            <Connect in="6" input="7"/>
         </Operator>
         <Operator id="21" type="EBC5C37C">
             <Connect in="100" to="2" out="100"/>
@@ -144,6 +148,7 @@
             <Connect in="3" input="6"/>
             <Connect in="4" to="24" out="100"/>
             <Connect in="5" constant="-70"/>
+            <Connect in="6" input="7"/>
         </Operator>
         <Operator id="23" type="0B64055F">
             <Connect in="100" input="5"/>
@@ -167,6 +172,7 @@
             <Connect in="3" to="23" out="100"/>
             <Connect in="4" input="6"/>
             <Connect in="5" constant="-105"/>
+            <Connect in="6" input="7"/>
         </Operator>
         <Operator id="28" type="B4A997AD">
             <Connect in="100" to="27" out="1"/>
@@ -185,6 +191,7 @@
             <Connect in="3" to="38" out="100"/>
             <Connect in="4" input="6"/>
             <Connect in="5" constant="-106"/>
+            <Connect in="6" input="7"/>
         </Operator>
         <Operator id="31" type="EBC5C37C">
             <Connect in="100" to="9" out="102"/>
@@ -197,6 +204,7 @@
             <Connect in="3" to="26" out="100"/>
             <Connect in="4" input="6"/>
             <Connect in="5" constant="-107"/>
+            <Connect in="6" input="7"/>
         </Operator>
         <Operator id="33" type="EBC5C37C">
             <Connect in="100" to="15" out="100"/>
@@ -209,6 +217,7 @@
             <Connect in="3" to="37" out="100"/>
             <Connect in="4" input="6"/>
             <Connect in="5" constant="-108"/>
+            <Connect in="6" input="7"/>
         </Operator>
         <Operator id="36" type="D56CEA6D">
             <Connect in="100" input="4"/>

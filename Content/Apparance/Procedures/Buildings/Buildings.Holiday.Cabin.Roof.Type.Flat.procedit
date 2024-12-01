@@ -1,7 +1,7 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>430.0717,423.0643</Centre>
-    <Zoom>0.826447964</Zoom>
+    <Centre>-270.4986,216.9196</Centre>
+    <Zoom>0.6209227</Zoom>
   </View>
   <Procedure>
     <Category>Buildings</Category>
@@ -155,7 +155,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="17">
       <Location>265.7382,402.5233</Location>
-      <Size>202.52,91.08</Size>
+      <Size>202.52,104.04</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -357,6 +357,11 @@
       <Description>
       </Description>
     </Object>
+    <Object type="ProcedureInputState" id="11">
+      <Name>Config</Name>
+      <Description>
+      </Description>
+    </Object>
     <Object type="ProcedureOutputState" id="1">
       <Name>Roof geometry</Name>
       <Description>
@@ -401,6 +406,10 @@
     </Input>
     <Input id="9">
       <Value type="862152022" value="[0,0,0]" />
+      <Metadata />
+    </Input>
+    <Input id="10">
+      <Value type="1819242306" value="False" />
       <Metadata />
     </Input>
   </DefaultInputs>

@@ -6,6 +6,7 @@
         <Input id="3" type="List" name="Roof Assets" description=""/>
         <Input id="5" type="List" name="Wall Assets" description=""/>
         <Input id="4" type="Integer" name="#" description=""/>
+        <Input id="6" type="List" name="Config" description=""/>
     </Inputs>
     <Constants>
         <Constant id="-3" type="Integer">0</Constant>
@@ -39,6 +40,7 @@
         <Constant id="-68" type="Integer">2</Constant>
         <Constant id="-70" type="Integer">1</Constant>
         <Constant id="-71" type="Integer">0</Constant>
+        <Constant id="-72" type="List"></Constant>
     </Constants>
     <Operators>
         <Operator id="1" type="E853B53E">
@@ -66,6 +68,7 @@
             <Connect in="3" constant="-13"/>
             <Connect in="4" constant="-14"/>
             <Connect in="5" constant="-34"/>
+            <Connect in="6" input="6"/>
         </Operator>
         <Operator id="6" type="6F5FFB15">
             <Connect in="100" to="4" out="2"/>
@@ -125,6 +128,7 @@
             <Connect in="6" constant="-68"/>
             <Connect in="7" input="4"/>
             <Connect in="8" constant="-70"/>
+            <Connect in="9" constant="-72"/>
         </Operator>
     </Operators>
     <Outputs>

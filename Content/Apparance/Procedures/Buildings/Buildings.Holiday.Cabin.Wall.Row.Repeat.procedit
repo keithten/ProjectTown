@@ -7,7 +7,7 @@
     <Category>Buildings</Category>
     <DisplayName>Holiday.Cabin.Wall.Row.Repeat</DisplayName>
     <Description>Repeat part for wall along a row</Description>
-    <TopLeft>-298.1559,-466.9016</TopLeft>
+    <TopLeft>-298.1559,-488.1976</TopLeft>
     <BottomRight>1209.65,489.4799</BottomRight>
   </Procedure>
   <Objects>
@@ -28,8 +28,8 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="3">
-      <Location>637.7023,-416.9016</Location>
-      <Size>227.0933,194.76</Size>
+      <Location>639.0333,-438.1976</Location>
+      <Size>227.0933,207.72</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -37,7 +37,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="4">
       <Location>637.8004,-210.8697</Location>
-      <Size>227.0933,194.76</Size>
+      <Size>227.0933,207.72</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -45,7 +45,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="5">
       <Location>760.0854,190.3241</Location>
-      <Size>182.63,78.12</Size>
+      <Size>182.63,91.08</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -69,7 +69,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="8">
       <Location>769.9024,305.275</Location>
-      <Size>182.63,78.12</Size>
+      <Size>182.63,91.08</Size>
       <NoteID>0</NoteID>
       <Comment>short wall at top?</Comment>
       <InputMetadata />
@@ -163,6 +163,11 @@
       <Description>
       </Description>
     </Object>
+    <Object type="ProcedureInputState" id="14">
+      <Name>Config</Name>
+      <Description>
+      </Description>
+    </Object>
     <Object type="ProcedureOutputState" id="1">
       <Name>Out</Name>
       <Description>
@@ -174,4 +179,58 @@
     <Look>0,0,0</Look>
     <Interest>0</Interest>
   </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
+      <Metadata />
+    </Input>
+    <Input id="2">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="3">
+      <Value type="842221088" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="4">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="5">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="6">
+      <Value type="1953720652" value="" />
+      <Metadata />
+    </Input>
+    <Input id="7">
+      <Value type="1819242306" value="False" />
+      <Metadata />
+    </Input>
+    <Input id="8">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="9">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="10">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="11">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="12">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="13">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
 </ProcedureEditData>

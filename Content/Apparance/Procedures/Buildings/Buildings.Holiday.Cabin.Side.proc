@@ -6,6 +6,7 @@
         <Input id="3" type="Integer" name="Side#" description=""/>
         <Input id="4" type="Integer" name="Building#" description=""/>
         <Input id="5" type="Integer" name="Face Type" description="0 = occluded, no windows%0D%0A1 = flat windows only%0D%0A2 = doors and windows%0D%0A3 = doors, windows, and bays"/>
+        <Input id="6" type="List" name="Config" description=""/>
     </Inputs>
     <Constants>
         <Constant id="-2" type="Float">1.000000</Constant>
@@ -38,6 +39,7 @@
             <Connect in="7" input="3"/>
             <Connect in="8" input="4"/>
             <Connect in="9" input="5"/>
+            <Connect in="10" input="6"/>
         </Operator>
         <Operator id="5" type="0662B77B">
             <Connect in="1" constant="-14"/>
@@ -46,7 +48,9 @@
             <Connect in="4" constant="-17"/>
             <Connect in="5" to="13" out="100"/>
         </Operator>
-        <Operator id="6" type="C2203357"/>
+        <Operator id="6" type="C2203357">
+            <Connect in="2" input="6"/>
+        </Operator>
         <Operator id="7" type="EA5D30C6">
             <Connect in="100" input="1"/>
         </Operator>
@@ -75,6 +79,7 @@
         </Operator>
         <Operator id="15" type="C3E50E06">
             <Connect in="1" to="1" out="100"/>
+            <Connect in="2" input="6"/>
         </Operator>
         <Operator id="16" type="8F0444EE">
             <Connect in="100" to="4" out="1"/>

@@ -1,6 +1,6 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>304.804,478.065</Centre>
+    <Centre>437.804,323.065</Centre>
     <Zoom>1.00000048</Zoom>
   </View>
   <Procedure>
@@ -70,7 +70,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="6">
       <Location>177.118,381.5239</Location>
-      <Size>202.52,91.08</Size>
+      <Size>202.52,104.04</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -118,6 +118,11 @@
       <Description>
       </Description>
     </Object>
+    <Object type="ProcedureInputState" id="6">
+      <Name>Config</Name>
+      <Description>
+      </Description>
+    </Object>
     <Object type="ProcedureOutputState" id="1">
       <Name>
       </Name>
@@ -130,4 +135,26 @@
     <Look>0,0,0</Look>
     <Interest>0</Interest>
   </Camera>
+  <DefaultInputs>
+    <Input id="1">
+      <Value type="1835102790" value="[0,0,0][1,0,0][0,1,0][0,0,1][1,1,1]" />
+      <Metadata />
+    </Input>
+    <Input id="2">
+      <Value type="1953720652" value="" />
+      <Metadata />
+    </Input>
+    <Input id="3">
+      <Value type="842221856" value="0" />
+      <Metadata />
+    </Input>
+    <Input id="4">
+      <Value type="862152022" value="[0,0,0]" />
+      <Metadata />
+    </Input>
+    <Input id="5">
+      <Value type="1819242306" value="False" />
+      <Metadata />
+    </Input>
+  </DefaultInputs>
 </ProcedureEditData>

@@ -4,6 +4,7 @@
         <Input id="1" type="Frame" name="Frame" description=""/>
         <Input id="2" type="List" name="Corner Asset" description=""/>
         <Input id="4" type="Float" name="Thickness Scale" description=""/>
+        <Input id="5" type="List" name="Config" description=""/>
     </Inputs>
     <Constants>
         <Constant id="-4" type="Vector3">0.000000, 0.000000, 0.000000</Constant>
@@ -66,7 +67,9 @@
             <Connect in="100" to="8" out="102"/>
             <Connect in="101" to="9" out="102"/>
         </Operator>
-        <Operator id="11" type="C2203357"/>
+        <Operator id="11" type="C2203357">
+            <Connect in="2" input="5"/>
+        </Operator>
         <Operator id="12" type="B32758F6">
             <Connect in="100" to="8" out="102"/>
             <Connect in="101" to="13" out="100"/>

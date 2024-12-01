@@ -6,6 +6,7 @@
         <Input id="3" type="Vector3" name="Size Info" description=""/>
         <Input id="4" type="Integer" name="#" description=""/>
         <Input id="5" type="Bool" name="Swap XY?" description=""/>
+        <Input id="6" type="List" name="Config" description=""/>
     </Inputs>
     <Constants>
         <Constant id="-2" type="Bool">False</Constant>
@@ -31,6 +32,7 @@
             <Connect in="3" input="5"/>
             <Connect in="4" to="5" out="100"/>
             <Connect in="5" constant="-2"/>
+            <Connect in="6" input="6"/>
         </Operator>
         <Operator id="4" type="D2698D20">
             <Connect in="100" constant="-5"/>

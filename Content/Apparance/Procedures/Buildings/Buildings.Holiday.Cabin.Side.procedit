@@ -1,7 +1,7 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>-58.24935,214.0662</Centre>
-    <Zoom>0.6830141</Zoom>
+    <Centre>-46.05795,226.5226</Centre>
+    <Zoom>0.826447368</Zoom>
   </View>
   <Procedure>
     <Category>Buildings</Category>
@@ -37,7 +37,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="4">
       <Location>391.1901,83.08264</Location>
-      <Size>181.61,142.92</Size>
+      <Size>181.61,155.88</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -124,7 +124,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="15">
       <Location>355.321,361.8882</Location>
-      <Size>192.61,39.28</Size>
+      <Size>192.61,52.2</Size>
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
@@ -164,6 +164,11 @@
 1 = flat windows only
 2 = doors and windows
 3 = doors, windows, and bays</Description>
+    </Object>
+    <Object type="ProcedureInputState" id="6">
+      <Name>Config</Name>
+      <Description>
+      </Description>
     </Object>
     <Object type="ProcedureOutputState" id="1">
       <Name>

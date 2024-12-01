@@ -190,6 +190,11 @@
       <Name>Side?</Name>
       <Description>A side object, i.e. swap Y and Z</Description>
     </Object>
+    <Object type="ProcedureInputState" id="6">
+      <Name>Config</Name>
+      <Description>
+      </Description>
+    </Object>
     <Object type="ProcedureOutputState" id="1">
       <Name>Scaling</Name>
       <Description>Scaling to apply to asset</Description>
@@ -214,6 +219,10 @@
       <Metadata />
     </Input>
     <Input id="5">
+      <Value type="1819242306" value="False" />
+      <Metadata />
+    </Input>
+    <Input id="3">
       <Value type="1819242306" value="False" />
       <Metadata />
     </Input>

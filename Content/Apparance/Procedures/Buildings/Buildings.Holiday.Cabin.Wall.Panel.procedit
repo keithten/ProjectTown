@@ -1,7 +1,7 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>176.902,320.7789</Centre>
-    <Zoom>0.564474046</Zoom>
+    <Centre>-28.07177,366.0328</Centre>
+    <Zoom>0.751315057</Zoom>
   </View>
   <Procedure>
     <Category>Buildings</Category>
@@ -65,7 +65,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="8">
       <Location>20.6691,153.5207</Location>
-      <Size>104.0233,69.28</Size>
+      <Size>121.65,69.28</Size>
       <NoteID>8</NoteID>
       <Comment>
       </Comment>
@@ -255,7 +255,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="33">
       <Location>24.17312,804.4026</Location>
-      <Size>104.0233,69.28</Size>
+      <Size>121.65,69.28</Size>
       <NoteID>9</NoteID>
       <Comment>
       </Comment>
@@ -400,8 +400,9 @@ we need to fix </Comment>
 4 - Bay</Description>
     </Object>
     <Object type="ProcedureInputState" id="5">
-      <Name>Allow Features?</Name>
-      <Description>Allow placement of features on this wall (i.e. windows and doors)?</Description>
+      <Name>Config</Name>
+      <Description>
+      </Description>
     </Object>
     <Object type="ProcedureOutputState" id="1">
       <Name>
@@ -501,7 +502,8 @@ This is done as a Proportional scale so we can apply the same scale to the featu
       <Metadata />
     </Input>
     <Input id="5">
-      <Value type="1819242306" value="False" />
+      <Value type="1953720652" value="" />
+      <Metadata />
     </Input>
   </DefaultInputs>
 </ProcedureEditData>

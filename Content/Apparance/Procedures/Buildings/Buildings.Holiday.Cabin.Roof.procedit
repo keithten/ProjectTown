@@ -1,7 +1,7 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>688.9909,1393.468</Centre>
-    <Zoom>0.909090936</Zoom>
+    <Centre>786.6403,883.6556</Centre>
+    <Zoom>0.620921731</Zoom>
   </View>
   <Procedure>
     <Category>Buildings</Category>
@@ -130,14 +130,14 @@
     </Object>
     <Object type="ProcedureOperatorState" id="16">
       <Location>616.1523,552.2151</Location>
-      <Size>224.68,91.08</Size>
+      <Size>224.68,104.04</Size>
       <NoteID>21</NoteID>
       <Comment>front-back gable</Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="17">
-      <Location>616.4833,671.8486</Location>
-      <Size>224.68,91.08</Size>
+      <Location>619.7043,671.8486</Location>
+      <Size>224.68,104.04</Size>
       <NoteID>21</NoteID>
       <Comment>side gables</Comment>
       <InputMetadata />
@@ -245,7 +245,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="31">
       <Location>782.7031,139.7097</Location>
-      <Size>208.5567,78.12</Size>
+      <Size>208.5567,91.08</Size>
       <NoteID>20</NoteID>
       <Comment>
       </Comment>
@@ -281,7 +281,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="36">
       <Location>732.0212,1453.112</Location>
-      <Size>209.1667,91.08</Size>
+      <Size>209.1667,104.04</Size>
       <NoteID>22</NoteID>
       <Comment>
       </Comment>
@@ -341,7 +341,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="44">
       <Location>731.1829,1580.784</Location>
-      <Size>209.1667,91.08</Size>
+      <Size>209.1667,104.04</Size>
       <NoteID>22</NoteID>
       <Comment>
       </Comment>
@@ -416,7 +416,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="54">
       <Location>1644.273,206.7346</Location>
-      <Size>143.96,78.12</Size>
+      <Size>143.96,91.08</Size>
       <NoteID>0</NoteID>
       <Comment>RECURSE SKYWARDS!</Comment>
       <InputMetadata />
@@ -511,8 +511,8 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="67">
-      <Location>581.0803,958.2878</Location>
-      <Size>224.5733,91.08</Size>
+      <Location>585.9119,943.7932</Location>
+      <Size>224.5733,104.04</Size>
       <NoteID>23</NoteID>
       <Comment>
       </Comment>
@@ -520,7 +520,7 @@
     </Object>
     <Object type="ProcedureOperatorState" id="68">
       <Location>589.0553,1061.206</Location>
-      <Size>224.5733,91.08</Size>
+      <Size>224.5733,104.04</Size>
       <NoteID>23</NoteID>
       <Comment>
       </Comment>
@@ -534,14 +534,14 @@
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="70">
-      <Location>814.9089,900.7766</Location>
+      <Location>839.0666,903.9976</Location>
       <Size>74.33,65.16</Size>
       <NoteID>23</NoteID>
       <Comment>can do side?</Comment>
       <InputMetadata />
     </Object>
     <Object type="ProcedureOperatorState" id="71">
-      <Location>934.6362,902.6858</Location>
+      <Location>958.7939,897.8542</Location>
       <Size>99.77333,65.16</Size>
       <NoteID>23</NoteID>
       <Comment>can do front-back?</Comment>
@@ -572,6 +572,11 @@
     </Object>
     <Object type="ProcedureInputState" id="4">
       <Name>Wall Assets</Name>
+      <Description>
+      </Description>
+    </Object>
+    <Object type="ProcedureInputState" id="5">
+      <Name>Config</Name>
       <Description>
       </Description>
     </Object>

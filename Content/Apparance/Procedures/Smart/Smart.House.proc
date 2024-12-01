@@ -3,12 +3,13 @@
     <Inputs>
         <Input id="1" type="Frame" name="Frame" description=""/>
         <Input id="2" type="Integer" name="Theme" description=""/>
+        <Input id="3" type="Integer" name="Seed" description="|Min=0|Max=10000"/>
     </Inputs>
     <Constants>
         <Constant id="-1" type="ModelSegment"></Constant>
         <Constant id="-2" type="String">Hero Buildings</Constant>
         <Constant id="-3" type="List"></Constant>
-        <Constant id="-4" type="Float">1.000000</Constant>
+        <Constant id="-4" type="Float">1.100000</Constant>
         <Constant id="-5" type="Float">0.500000</Constant>
         <Constant id="-6" type="Float">0.000000</Constant>
         <Constant id="-7" type="Float">0.000000</Constant>
@@ -23,8 +24,11 @@
         <Constant id="-17" type="ModelSegment"></Constant>
         <Constant id="-18" type="ModelSegment"></Constant>
         <Constant id="-28" type="Integer">0</Constant>
-        <Constant id="-30" type="Integer">0</Constant>
         <Constant id="-32" type="String">Frame</Constant>
+        <Constant id="-34" type="Float">-5.000000</Constant>
+        <Constant id="-35" type="Integer">0</Constant>
+        <Constant id="-36" type="Integer">2</Constant>
+        <Constant id="-37" type="Bool">True</Constant>
     </Constants>
     <Operators>
         <Operator id="1" type="88B7A911">
@@ -64,7 +68,7 @@
         </Operator>
         <Operator id="9" type="FA123505">
             <Connect in="1" input="2"/>
-            <Connect in="2" to="12" out="1"/>
+            <Connect in="2" to="14" out="1"/>
             <Connect in="3" to="11" out="1"/>
             <Connect in="4" constant="-13"/>
             <Connect in="5" constant="-14"/>
@@ -75,15 +79,23 @@
         </Operator>
         <Operator id="11" type="C2169458">
             <Connect in="1" input="1"/>
-            <Connect in="2" constant="-30"/>
-        </Operator>
-        <Operator id="12" type="C22F65F7">
-            <Connect in="1" input="1"/>
+            <Connect in="2" input="3"/>
         </Operator>
         <Operator id="13" type="BDD21D00">
             <Connect in="1" input="1"/>
             <Connect in="2" constant="-32"/>
             <Connect in="3" input="2"/>
+        </Operator>
+        <Operator id="14" type="40319EC6">
+            <Connect in="1" to="15" out="100"/>
+            <Connect in="2" input="3"/>
+        </Operator>
+        <Operator id="15" type="D729EF5D">
+            <Connect in="100" input="1"/>
+            <Connect in="101" constant="-34"/>
+            <Connect in="102" constant="-35"/>
+            <Connect in="103" constant="-36"/>
+            <Connect in="104" constant="-37"/>
         </Operator>
     </Operators>
     <Outputs>

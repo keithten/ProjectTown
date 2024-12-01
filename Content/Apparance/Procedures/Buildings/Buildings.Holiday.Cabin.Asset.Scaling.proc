@@ -6,6 +6,7 @@
         <Input id="3" type="Bool" name="Swap XY?" description=""/>
         <Input id="4" type="Vector3" name="Multiplier" description="Extra scaling adjustments|Default=[1,1,1]"/>
         <Input id="5" type="Bool" name="Side?" description="A side object, i.e. swap Y and Z"/>
+        <Input id="6" type="List" name="Config" description=""/>
     </Inputs>
     <Constants>
         <Constant id="-1" type="Integer">1</Constant>
@@ -74,7 +75,9 @@
             <Connect in="101" to="7" out="102"/>
             <Connect in="102" to="17" out="100"/>
         </Operator>
-        <Operator id="20" type="C2203357"/>
+        <Operator id="20" type="C2203357">
+            <Connect in="2" input="6"/>
+        </Operator>
     </Operators>
     <Outputs>
         <Output id="1" type="Vector3" name="Scaling" description="" to="1" out="100"/>
