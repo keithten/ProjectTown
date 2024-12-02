@@ -1,6 +1,6 @@
 <ProcedureEditData version="1">
   <View>
-    <Centre>96.52319,470.6169</Centre>
+    <Centre>234.5232,439.6169</Centre>
     <Zoom>1.00000048</Zoom>
   </View>
   <Procedure>
@@ -17,7 +17,17 @@
       <NoteID>0</NoteID>
       <Comment>
       </Comment>
-      <InputMetadata />
+      <InputMetadata>
+        <Input id="101">
+          <Data name="MaximumValue">
+            <DataValue typeid="862152022">
+              <X>20</X>
+              <Y>20</Y>
+              <Z>10</Z>
+            </DataValue>
+          </Data>
+        </Input>
+      </InputMetadata>
     </Object>
     <Object type="ProcedureOperatorState" id="2">
       <Location>572,367</Location>
@@ -146,6 +156,30 @@
       <Comment>
       </Comment>
       <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="18">
+      <Location>-203,218</Location>
+      <Size>69.12,65.16</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata />
+    </Object>
+    <Object type="ProcedureOperatorState" id="19">
+      <Location>438,55</Location>
+      <Size>99.25667,52.2</Size>
+      <NoteID>0</NoteID>
+      <Comment>
+      </Comment>
+      <InputMetadata>
+        <Input id="2">
+          <Data name="MaximumValue">
+            <DataValue typeid="842221856">
+              <Int>1000</Int>
+            </DataValue>
+          </Data>
+        </Input>
+      </InputMetadata>
     </Object>
     <Object type="ProcedureInputState" id="1">
       <Name>In</Name>
