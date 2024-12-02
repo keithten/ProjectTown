@@ -7,7 +7,7 @@
 //----
 
 // enable for Apparance development library use
-#define ENABLE_DEVELOPMENT
+//#define ENABLE_DEVELOPMENT
 
 
 using UnrealBuildTool;

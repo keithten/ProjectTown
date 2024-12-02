@@ -1,4 +1,7 @@
-﻿  Copied Source\ThirdParty\Apparance\lib\Win64\Shipping\ApparanceCoreLib.lib
+﻿  Deleted Source\ThirdParty\Apparance\lib\Win64\Shipping\ApparanceCoreLib.lib
+  Deleted Source\ThirdParty\Apparance\lib\Win64\Shipping\ApparanceEngineLib.lib
+  Deleted Source\ThirdParty\Apparance\inc\Apparance.h
+  Copied Source\ThirdParty\Apparance\lib\Win64\Shipping\ApparanceCoreLib.lib
   Copied Source\ThirdParty\Apparance\lib\Win64\Shipping\ApparanceEngineLib.lib
   Copied Source\ThirdParty\Apparance\inc\Apparance.h
   Copied Source\ThirdParty\Apparance\lib\Win64\Shipping\libpng16.lib
